@@ -11,7 +11,7 @@
     "lock_sha256": "db651778e9a788477213181183fab4bd5ec7e4c36f982477b34167d385555a56"
   },
   "paper": {
-    "main_tex_sha256": "3d162e251102c7f97a2144784e9d7e101822f310ae45254118b68e0e420db7f9",
+    "main_tex_sha256": "538231430c3f36fba3465c4c36cb658be89f7f375844ab9df71db643a2e51fba",
     "supplement_tex_sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
     "pages": {
       "main.pdf": 210
@@ -21,7 +21,7 @@
     "single_abstract": true,
     "original_main_label_numbers_unchanged": 462,
     "exact_computational_formula_blocks_retained": 167,
-    "internal_links": 960,
+    "internal_links": 967,
     "external_pdf_links": 0,
     "boundary_first_integrals_revision": {
       "review": "E:\\Documents\\ORIC\\output\\ericksen_language_revision_20261011\\work\\boundary_first_integrals_20261012\\verification.json",
@@ -50,6 +50,18 @@
       "label_numbers_unchanged": true,
       "pages_48_through_52_unchanged": true,
       "compiled_twice": true
+    },
+    "conclusion_discussion_revision": {
+      "updated_utc": "2026-10-12T22:25:21.545009+00:00",
+      "section": "10",
+      "label": "sec:conclusion",
+      "page": 69,
+      "word_count": 356,
+      "scope": "Summary of principal plane integrability and the rank reductions; global pressure periods and anisotropic material preferred directions.",
+      "formal_mathematical_environments_unchanged": true,
+      "old_label_numbers_unchanged": true,
+      "appendices_and_supplement_unchanged": true,
+      "compiled_twice": true
     }
   },
   "packages": {
@@ -77,13 +89,13 @@
         "indexed_roots": 63,
         "registered_tasks": 63,
         "dependency_closure": 63,
-        "paper_sha256": "3d162e251102c7f97a2144784e9d7e101822f310ae45254118b68e0e420db7f9",
+        "paper_sha256": "538231430c3f36fba3465c4c36cb658be89f7f375844ab9df71db643a2e51fba",
         "formula_inputs": 1
       },
       "format": "directory",
       "files": 124,
       "uncompressed_bytes": 1236904,
-      "directory_tree_sha256": "112087c78244957a3308ec8fc240083d605e82345732acaf0deae8af4a7bff6f"
+      "directory_tree_sha256": "d8198641d8ad3782438ee259794d7bce1bd634fda61f9a4239f8905d2c8a17f7"
     },
     "rank3": {
       "status": "PASS",
@@ -108,13 +120,13 @@
         "indexed_roots": 276,
         "registered_tasks": 484,
         "dependency_closure": 484,
-        "paper_sha256": "3d162e251102c7f97a2144784e9d7e101822f310ae45254118b68e0e420db7f9",
+        "paper_sha256": "538231430c3f36fba3465c4c36cb658be89f7f375844ab9df71db643a2e51fba",
         "formula_inputs": 1
       },
       "format": "directory",
       "files": 590,
-      "uncompressed_bytes": 380792402,
-      "directory_tree_sha256": "cdb62d01cc428bcfd86bd81287aab10eedfa26be845fb5f6b48e9f990c3fb07c",
+      "uncompressed_bytes": 380792404,
+      "directory_tree_sha256": "c1a4b51ddc211b0da21ac446ecc89b4cbd82ecad62bf27dcd452b898fed7ca47",
       "existing_complete_run": {
         "registered_tasks": 466,
         "actual_mathematical_executions": 337,
@@ -10650,12 +10662,12 @@
       "bytes": 1946
     },
     "paper/main.pdf": {
-      "sha256": "5905ccf47b4dd49a105bf05ca26c2cfa315962b0df63d98afca0d4e3569b3102",
-      "bytes": 1441207
+      "sha256": "540f2c37380adafdd716394178e1f0c08f7c975386c9105d301d5f1568cd0fa1",
+      "bytes": 1444588
     },
     "paper/main.tex": {
-      "sha256": "3d162e251102c7f97a2144784e9d7e101822f310ae45254118b68e0e420db7f9",
-      "bytes": 593298
+      "sha256": "538231430c3f36fba3465c4c36cb658be89f7f375844ab9df71db643a2e51fba",
+      "bytes": 596107
     },
     "paper/supplement.tex": {
       "sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
@@ -10734,7 +10746,7 @@
       "bytes": 71505
     },
     "Rank012/MANIFEST.json": {
-      "sha256": "91fe6e8e6b09d6ad1e5bb3d955b75f72868246b21f04877367247e64d145ed54",
+      "sha256": "7b6f78b8f7f64cbcb3f07048ce887104c716e6a557d4d5055e196d4d0961cfb3",
       "bytes": 93895
     },
     "Rank012/paper_index.py": {
@@ -10742,11 +10754,11 @@
       "bytes": 5939
     },
     "Rank012/PROOF_MAP.json": {
-      "sha256": "cbc90c802363f18dd157556b8c4c1e4ab66334a28a36dae847c9f30454440970",
+      "sha256": "7f914d7ccb0da14761a50906d62f1c4b620eac6a57840629c0896ffa69e9a712",
       "bytes": 174819
     },
     "Rank012/PROOF_MAP.md": {
-      "sha256": "e439322bdb929c6ee7d7b3031ec40cdab2d79e7bda5e7c3f0c225340db047ca2",
+      "sha256": "3f37b4b52582b7d3a517f023bd56f26e648fac7124919162f6bf915236fd298f",
       "bytes": 3735
     },
     "Rank012/README.txt": {
@@ -12086,7 +12098,7 @@
       "bytes": 7799
     },
     "Rank3/MANIFEST.json": {
-      "sha256": "08e5b07f70b44e336eee240eb59b632ac93c7475e20ee17ea82e8f2b1dec18dd",
+      "sha256": "55a1d9e575775bc51942369d37797a57312f518cb0e2fae3e8522eaa909325a8",
       "bytes": 422035
     },
     "Rank3/paper_index.py": {
@@ -12094,11 +12106,11 @@
       "bytes": 5939
     },
     "Rank3/PROOF_MAP.json": {
-      "sha256": "b7f9306c0b3ba307f1dca581b22d7797ea69c3e810dddd1410f465448a920b05",
-      "bytes": 1122280
+      "sha256": "4103eb8a82499659efe3932705e470f51d7574415fda20b0d1da8303bfb40478",
+      "bytes": 1122282
     },
     "Rank3/PROOF_MAP.md": {
-      "sha256": "5eca53d18bb9f851bc42804670ca2b47bfd806e53139f5466fc906ce1c2a3c52",
+      "sha256": "3120f83b592dfd60713b3461be32184739a1a5d525fc3883a94730140ef98fc6",
       "bytes": 18787
     },
     "Rank3/README.md": {

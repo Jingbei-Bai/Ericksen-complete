@@ -12,15 +12,15 @@
       "archive_path": "PROOF_MAP.json",
       "work_path": "PROOF_MAP.json",
       "kind": "documentation",
-      "bytes": 1122280,
-      "sha256": "b7f9306c0b3ba307f1dca581b22d7797ea69c3e810dddd1410f465448a920b05"
+      "bytes": 1122282,
+      "sha256": "4103eb8a82499659efe3932705e470f51d7574415fda20b0d1da8303bfb40478"
     },
     {
       "archive_path": "PROOF_MAP.md",
       "work_path": "PROOF_MAP.md",
       "kind": "documentation",
       "bytes": 18787,
-      "sha256": "5eca53d18bb9f851bc42804670ca2b47bfd806e53139f5466fc906ce1c2a3c52"
+      "sha256": "3120f83b592dfd60713b3461be32184739a1a5d525fc3883a94730140ef98fc6"
     },
     {
       "archive_path": "README.md",
@@ -6878,7 +6878,7 @@
       "sha256": "b04539083448ee05665858dbec2fa74080224cbdaf6fd076a0fe6f9e28a247e9"
     }
   ],
-  "paper_sha256": "3d162e251102c7f97a2144784e9d7e101822f310ae45254118b68e0e420db7f9",
+  "paper_sha256": "538231430c3f36fba3465c4c36cb658be89f7f375844ab9df71db643a2e51fba",
   "recorded_outputs": [
     {
       "path": "results/conic_endpoint/subcritical_single_endpoint_whole_J3_reader.json",
