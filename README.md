@@ -2,7 +2,7 @@
 
 Release date: 12 October 2026.
 
-Extract the archive once. Its contents are ready to use:
+Clone the repository or extract the release archive. Its contents are ready to use:
 
 ```text
 README.md

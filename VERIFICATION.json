@@ -2,7 +2,7 @@
   "schema": "ericksen.verified-release.v3",
   "release_date": "2026-10-12",
   "status": "PASS",
-  "verified_utc": "2026-10-12T15:21:35.320615+00:00",
+  "verified_utc": "2026-10-12T15:52:41.674825+00:00",
   "environment": {
     "sage": "10.9",
     "python": "3.12.14",
@@ -11,7 +11,7 @@
     "lock_sha256": "db651778e9a788477213181183fab4bd5ec7e4c36f982477b34167d385555a56"
   },
   "paper": {
-    "main_tex_sha256": "d5ad1c2d41f5505e16524ebc4c9c01d19dcc6e64d22a4b42370cabb919ad1125",
+    "main_tex_sha256": "c0c8f5d5f089b8aafdae77312d80199cf9eb875c6ce1c73b85b4124184e68a9b",
     "supplement_tex_sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
     "pages": {
       "main.pdf": 204
@@ -29,7 +29,9 @@
       "original_formal_statements_and_numbered_equations_unchanged": true,
       "weights": "1 < gamma < 2",
       "new_mathematical_symbols": 0
-    }
+    },
+    "computational_repository": "https://github.com/Jingbei-Bai/Ericksen-complete",
+    "repository_visibility": "private"
   },
   "packages": {
     "rank012": {
@@ -56,13 +58,13 @@
         "indexed_roots": 63,
         "registered_tasks": 63,
         "dependency_closure": 63,
-        "paper_sha256": "d5ad1c2d41f5505e16524ebc4c9c01d19dcc6e64d22a4b42370cabb919ad1125",
+        "paper_sha256": "c0c8f5d5f089b8aafdae77312d80199cf9eb875c6ce1c73b85b4124184e68a9b",
         "formula_inputs": 1
       },
       "format": "directory",
       "files": 124,
       "uncompressed_bytes": 1236889,
-      "directory_tree_sha256": "e5e70371acbc08a234c73e0088e88011baecb9cd3dbd9c7a8705b9979d8f8147"
+      "directory_tree_sha256": "efd8b9c7c0bfb45c2994fae0ef53513c688c5618934d1af4f6bc65dd39ed84ac"
     },
     "rank3": {
       "status": "PASS",
@@ -88,13 +90,13 @@
         "indexed_roots": 267,
         "registered_tasks": 466,
         "dependency_closure": 466,
-        "paper_sha256": "d5ad1c2d41f5505e16524ebc4c9c01d19dcc6e64d22a4b42370cabb919ad1125",
+        "paper_sha256": "c0c8f5d5f089b8aafdae77312d80199cf9eb875c6ce1c73b85b4124184e68a9b",
         "formula_inputs": 1
       },
       "format": "directory",
       "files": 567,
       "uncompressed_bytes": 373229346,
-      "directory_tree_sha256": "cdbf7f39e00da6c9bfec826a43cc05b0d92b8e958d7e08acf3373c26b68835dd"
+      "directory_tree_sha256": "4e3e24785ab62b8ebb65c1b6597decca32ab7933014041f55a167d3ee4b382d3"
     }
   },
   "all_original_readers_rerun_unmodified": true,
@@ -10027,12 +10029,12 @@
       "bytes": 1946
     },
     "paper/main.pdf": {
-      "sha256": "c04f40fe979bae63cd0673ea3acff6f944e9a800cad0733ef4e8dd16d5cf51bf",
-      "bytes": 1418325
+      "sha256": "f975d4d9c3febe68980d3cae9f969f41ff6732b770b1c4fa151467453a80312d",
+      "bytes": 1418318
     },
     "paper/main.tex": {
-      "sha256": "d5ad1c2d41f5505e16524ebc4c9c01d19dcc6e64d22a4b42370cabb919ad1125",
-      "bytes": 571247
+      "sha256": "c0c8f5d5f089b8aafdae77312d80199cf9eb875c6ce1c73b85b4124184e68a9b",
+      "bytes": 571239
     },
     "paper/supplement.tex": {
       "sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
@@ -10111,7 +10113,7 @@
       "bytes": 71505
     },
     "Rank012/MANIFEST.json": {
-      "sha256": "66a5c21b0c42d9b90086667f1755008c7b665e747362b8fd6b10a3972ac6fbb4",
+      "sha256": "aeaf63f576b718440e9fdb92898701f9be4f2f793766bebeb93b01b0fb2a451e",
       "bytes": 93895
     },
     "Rank012/paper_index.py": {
@@ -10119,7 +10121,7 @@
       "bytes": 5939
     },
     "Rank012/PROOF_MAP.json": {
-      "sha256": "0ff5dc182065dd9ad3d35c1f62556bb1c08ce095b95c3827853f61ca3f795b08",
+      "sha256": "f28550285e102251bd893310e0854237f7bddc412eb248576eb82069933bb153",
       "bytes": 174821
     },
     "Rank012/PROOF_MAP.md": {
@@ -11463,7 +11465,7 @@
       "bytes": 7799
     },
     "Rank3/MANIFEST.json": {
-      "sha256": "87834bb9bc1b8ae55759d9826d03c7d1c9292e6e0e663d16c792ac252b5a2e16",
+      "sha256": "235d2e413c0015bb763be807bf5dfdf0c2dcd72d5dabfe448698dc4e0a3225f6",
       "bytes": 410628
     },
     "Rank3/paper_index.py": {
@@ -11471,7 +11473,7 @@
       "bytes": 5939
     },
     "Rank3/PROOF_MAP.json": {
-      "sha256": "8e9bc3e776c7797d126b73effe44ce39e395b70b543c8e7545250d9ca8bb8f81",
+      "sha256": "45117b1fd5b6df83c916df35f8b56ac5623eb7923fae999bff2b1804d939e954",
       "bytes": 1038545
     },
     "Rank3/PROOF_MAP.md": {
@@ -12803,8 +12805,8 @@
       "bytes": 371683
     },
     "README.md": {
-      "sha256": "85da2369110bee06d8d344b401b14fd9aedb4c947a1c2343841e56a99c5d8306",
-      "bytes": 4729
+      "sha256": "90e49c2b8256ed5c9d852a47fd2c1826964d6f5eefc7f79ece81501389a18c34",
+      "bytes": 4756
     }
   },
   "packaging": {
