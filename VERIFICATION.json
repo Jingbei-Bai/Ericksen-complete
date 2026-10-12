@@ -1,8 +1,8 @@
 {
-  "schema": "ericksen.verified-release.v3",
+  "schema": "ericksen.verified-release.v4",
   "release_date": "2026-10-12",
   "status": "PASS",
-  "verified_utc": "2026-10-12T17:44:08.189891+00:00",
+  "verified_utc": "2026-10-12T22:04:37.791266+00:00",
   "environment": {
     "sage": "10.9",
     "python": "3.12.14",
@@ -11,17 +11,17 @@
     "lock_sha256": "db651778e9a788477213181183fab4bd5ec7e4c36f982477b34167d385555a56"
   },
   "paper": {
-    "main_tex_sha256": "385fbcc35927532130f2e5683d8f7492af0564be92b5cc583eac370504feaa79",
+    "main_tex_sha256": "7dfd41a5f5d96263f46c73a6ce945a4d2be87223d52063b5ec3642fdfbb1e806",
     "supplement_tex_sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
     "pages": {
-      "main.pdf": 204
+      "main.pdf": 210
     },
-    "supplement_first_page": 162,
+    "supplement_first_page": 168,
     "supplement_included_after_appendix": "E",
     "single_abstract": true,
     "original_main_label_numbers_unchanged": 462,
     "exact_computational_formula_blocks_retained": 167,
-    "internal_links": 957,
+    "internal_links": 960,
     "external_pdf_links": 0,
     "boundary_first_integrals_revision": {
       "review": "E:\\Documents\\ORIC\\output\\ericksen_language_revision_20261011\\work\\boundary_first_integrals_20261012\\verification.json",
@@ -30,7 +30,15 @@
       "weights": "1 < gamma < 2",
       "new_mathematical_symbols": 0
     },
-    "computational_repository": "https://github.com/Jingbei-Bai/Ericksen-complete"
+    "computational_repository": "https://github.com/Jingbei-Bai/Ericksen-complete",
+    "section8_endpoint_revision": {
+      "section8_integrated": true,
+      "endpoint_paragraph": "appr3whole:endpoint",
+      "endpoint_clean_run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+      "old_numbered_environments_unchanged": 363,
+      "old_label_numbers_unchanged": 589,
+      "new_label": "appr3whole:endpoint"
+    }
   },
   "packages": {
     "rank012": {
@@ -57,21 +65,20 @@
         "indexed_roots": 63,
         "registered_tasks": 63,
         "dependency_closure": 63,
-        "paper_sha256": "385fbcc35927532130f2e5683d8f7492af0564be92b5cc583eac370504feaa79",
+        "paper_sha256": "7dfd41a5f5d96263f46c73a6ce945a4d2be87223d52063b5ec3642fdfbb1e806",
         "formula_inputs": 1
       },
       "format": "directory",
       "files": 124,
-      "uncompressed_bytes": 1236889,
-      "directory_tree_sha256": "d78dcfd4955346c37ed70ecc682c0db7a6ee1854b1895e58f86e1d53bcd72c7c"
+      "uncompressed_bytes": 1236904,
+      "directory_tree_sha256": "431d57315c08d82cd86ed81dc9ca1d8435af69a7e682acad2f30dd03df399843"
     },
     "rank3": {
       "status": "PASS",
       "path": "Rank3",
-      "registered_tasks": 466,
-      "actual_mathematical_executions": 337,
-      "fresh_generated_copies": 129,
-      "run_id": "d65ed780-43b4-483f-8c33-7e68dee8da30",
+      "registered_tasks": 484,
+      "actual_mathematical_executions": 346,
+      "fresh_generated_copies": 138,
       "actual_execution_archive_sha256": "bd7904feee2359aab10c26b04d3575d3d54d4a203da0cb27b44c6e6242c5e4a2",
       "inherited_execution_results_used": false,
       "generated_outputs_initially_absent": true,
@@ -85,23 +92,41 @@
       ],
       "current_paper_index": {
         "status": "INDEX_PASS",
-        "proof_nodes": 51,
-        "indexed_roots": 267,
-        "registered_tasks": 466,
-        "dependency_closure": 466,
-        "paper_sha256": "385fbcc35927532130f2e5683d8f7492af0564be92b5cc583eac370504feaa79",
+        "proof_nodes": 52,
+        "indexed_roots": 276,
+        "registered_tasks": 484,
+        "dependency_closure": 484,
+        "paper_sha256": "7dfd41a5f5d96263f46c73a6ce945a4d2be87223d52063b5ec3642fdfbb1e806",
         "formula_inputs": 1
       },
       "format": "directory",
-      "files": 567,
-      "uncompressed_bytes": 373229346,
-      "directory_tree_sha256": "5c54c60423ccc69a9207f7a527c6f0833eddb2f110930b1735c8eac63e57aa16"
+      "files": 590,
+      "uncompressed_bytes": 380792403,
+      "directory_tree_sha256": "cf0265a334fd9e430b835b9960d89da6f3c4cfa1e32a46542e2df160e6ac089e",
+      "existing_complete_run": {
+        "registered_tasks": 466,
+        "actual_mathematical_executions": 337,
+        "fresh_generated_copies": 129,
+        "run_id": "d65ed780-43b4-483f-8c33-7e68dee8da30",
+        "actual_execution_archive_sha256": "bd7904feee2359aab10c26b04d3575d3d54d4a203da0cb27b44c6e6242c5e4a2"
+      },
+      "byte_identity_scope": "Existing mathematical sources/inputs/arguments/wrappers against the complete baseline run; new source programs against the clean endpoint run.",
+      "additional_clean_dependency_run": {
+        "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+        "record": "Rank3/results/conic_endpoint/execution.json",
+        "record_sha256": "6d95dc6b17a88b8456966f4a969aa9cc67c08455df3ed0f215a165b1ca9977bf",
+        "selected_tasks": 42,
+        "mathematical_executions": 23,
+        "generated_input_copies": 19,
+        "new_math_tasks": 9,
+        "new_input_copies": 9
+      }
     }
   },
   "all_original_readers_rerun_unmodified": true,
   "all_jobs_rebuilt_from_empty_generated_tree": true,
   "all_large_calculations_rerun": true,
-  "scope_of_all_flags": "The retained registered sources/readers and generated outputs of these two packages.",
+  "scope_of_all_flags": "Every retained registered mathematical task has a clean execution at its current mathematical source/input version: the previous complete runs and the additional clean C9_ENDPOINT dependency run. Original readers means the pre-endpoint registered readers; the added endpoint programs were executed in the versions included here. The large calculations retain their unchanged versions from the previous complete runs.",
   "complete_clean_execution_checks": {
     "rank012": {
       "schema": "ericksen_rank012_final_clean_execution_audit/v1",
@@ -10012,6 +10037,591 @@
         }
       ],
       "scope": "All466 retained tasks, including337 actual full-source mathematical executions and129 fresh-output copies, are verified against the exact run/archive bytes. All3004 exact large nodes and both full independent-reader reports are complete. This is complete clean execution evidence; the paper-to-certificate mathematical implications remain those in the separate proof map."
+    },
+    "conic_endpoint": {
+      "schema": "ericksen_conic_endpoint_clean_execution/v1",
+      "status": "PASS",
+      "checked_utc": "2026-10-12T22:02:10.523276+00:00",
+      "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+      "started_utc": "2026-10-12T21:05:40.135589+00:00",
+      "finished_utc": "2026-10-12T22:00:44.532092+00:00",
+      "execution_plan_sha256": "69e1035452f2dfaa649a18a65064d33e783228b047561db3f02d54f12787221f",
+      "execution_manifest_sha256": "24ffffdc9cd656ab507d3b9186cd7a0269d1a058bf2593e53250087687c2980d",
+      "sage": "10.9",
+      "registered_selection_tasks": 42,
+      "actual_mathematical_executions": 23,
+      "fresh_generated_input_copies": 19,
+      "new_mathematical_tasks": 9,
+      "new_generated_input_copies": 9,
+      "inherited_execution_results_used": false,
+      "generated_outputs_initially_absent": true,
+      "all_selected_source_bytes_match_current_package": true,
+      "all_executed_source_receipts_checked": true,
+      "all_external_supervisor_children_exit_zero": true,
+      "all_stdout_log_hashes_checked": true,
+      "work_tree_checkpoint_checked": true,
+      "outputs": [
+        {
+          "path": "results/conic_endpoint/subcritical_single_endpoint_whole_J3_reader.json",
+          "task_id": "conic_endpoint:whole_J3",
+          "sha256": "145bb93064f7dcccf3761f1ad36b0306c9aff705668bea1373b0f1667ed5936c",
+          "bytes": 262
+        },
+        {
+          "path": "results/conic_endpoint/generic_regularity.json",
+          "task_id": "conic_endpoint:generic_regularity",
+          "sha256": "2332b95472a0bc8fda48d4e53536ab1156af12035b7f6281e449a4157d269322",
+          "bytes": 18900
+        },
+        {
+          "path": "results/conic_endpoint/whole_coefficient_units.json",
+          "task_id": "conic_endpoint:coefficient_units",
+          "sha256": "aed2c37e4c9627d6b7b1f926f9a8951cefd6be9f829b40eb6916b4fe71d97418",
+          "bytes": 2946420
+        },
+        {
+          "path": "results/conic_endpoint/relative_boundary_reconstruction.json",
+          "task_id": "conic_endpoint:relative_boundary",
+          "sha256": "af62273eb5d6e9a8fdf8ddce9f9f6d22db13e2fc1ec3fd30add12e1baf299ca1",
+          "bytes": 12071
+        },
+        {
+          "path": "results/conic_endpoint/manuscript_gauge_binding.json",
+          "task_id": "conic_endpoint:gauge_binding",
+          "sha256": "03a686a7bb20eb6d61b8a684fa1178301fd51c43ba2809eeabf3263daf18d2cd",
+          "bytes": 422
+        },
+        {
+          "path": "results/conic_endpoint/generic_G_relative_regular.json",
+          "task_id": "conic_endpoint:rebuild_G21",
+          "sha256": "94f7ef82330277824d0d466a32efd603895809da486f302a1690753ae2337937",
+          "bytes": 5781
+        },
+        {
+          "path": "results/conic_endpoint/generic_G_ideal_decomposition_sparse.json",
+          "task_id": "conic_endpoint:rebuild_G21",
+          "sha256": "0d6b20ea60f3304aaaecb9cc2c2de02dd0ecafc02d547b45b8613ffc9f69f22c",
+          "bytes": 4395853
+        },
+        {
+          "path": "results/conic_endpoint/new_generic_G_J8.json",
+          "task_id": "conic_endpoint:G21_conic_membership",
+          "sha256": "29b2c1c06b53402939014fa090c633d0b3d5f075f3b47bc1d218adab8ad9574b",
+          "bytes": 1518
+        },
+        {
+          "path": "results/conic_endpoint/endpoint_unit_and_obstructions.json",
+          "task_id": "conic_endpoint:implicit_graph",
+          "sha256": "2d862a40d67ebeeb0e5236ae7113f0185a95ceb35aa104f2bdeecf06601ad6e7",
+          "bytes": 2572
+        },
+        {
+          "path": "results/conic_endpoint/endpoint_normal_matrix.txt",
+          "task_id": "conic_endpoint:implicit_graph",
+          "sha256": "7315992db61fd12508d39fd92a3fc5d5674abb19d9821e4b00bd344def4aaa5f",
+          "bytes": 1498
+        },
+        {
+          "path": "results/conic_endpoint/conic_open_minor.json",
+          "task_id": "conic_endpoint:open_conic_minor",
+          "sha256": "a89a01743f7e492816403aef26e59fb33a06be2996360b0d13d6a115bb478bd9",
+          "bytes": 592
+        },
+        {
+          "path": "results/conic_endpoint/conic_normal_matrix.json",
+          "task_id": "conic_endpoint:open_conic_minor",
+          "sha256": "606b856e3358b5da232c2bd9a3dba53f4dc54f265e7a0e629ac7291abc52fb48",
+          "bytes": 2125
+        }
+      ],
+      "tasks": [
+        {
+          "id": "foundations:rebuild_state17",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:05:40.138678+00:00",
+          "finished_utc": "2026-10-12T21:06:06.187696+00:00",
+          "seconds": 26.04838921800001,
+          "source_member": "research/ericksen_20261007/full_recompute_20261009/foundations/rebuild_state17.py",
+          "source_sha256": "92a4da54ae67f272d856a90bb8d47d48ca7acdf6fa9b71d319723832a634222b",
+          "stdout_log_sha256": "295401130b2b641f96f7f4395a6bd6d22495687e53afa521d0a240118c4c10eb"
+        },
+        {
+          "id": "rank3_sources:fresh_joint_sources",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:06:06.192436+00:00",
+          "finished_utc": "2026-10-12T21:08:34.492444+00:00",
+          "seconds": 148.29935034599998,
+          "source_member": "research/ericksen_20261007/full_recompute_20261009/rank3/fresh_joint_sources.py",
+          "source_sha256": "3bc99a7266d55f9ab03a65b141981c40f8c5c871a2195094e2c76cf6e06d0fc8",
+          "stdout_log_sha256": "140c000f70850247fec3710f98c9e7d3a9d92f50a1dd83fe9f23328e2985b575"
+        },
+        {
+          "id": "rank3_sources:fresh_global_sources",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:08:34.493747+00:00",
+          "finished_utc": "2026-10-12T21:16:49.405609+00:00",
+          "seconds": 494.911312015,
+          "source_member": "research/ericksen_20261007/full_recompute_20261009/rank3/fresh_global_sources.py",
+          "source_sha256": "81d0e80003401db934e3076f3458f6d95b9a6054d8a64b27d1cb66766539d362",
+          "stdout_log_sha256": "b0dedbcfe7fd1db266dbd71d3305b0464d1e293af1edab216ad7c34fd7c06543"
+        },
+        {
+          "id": "rank3_current_proof:fresh_saturation_sources",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:16:49.406730+00:00",
+          "finished_utc": "2026-10-12T21:25:53.700023+00:00",
+          "seconds": 544.292031662,
+          "source_member": "reproduction/saturation/fresh_saturation_sources.py",
+          "source_sha256": "1f77d460821aba5fc78abca1a8df126117e3a90d8fbcbcb694d6143b73f1972a",
+          "stdout_log_sha256": "5ae0a91afe4e03e1e0cdae84a28a44e02e3e033167e14e4749ae8f8c3321315e"
+        },
+        {
+          "id": "rank3_current_proof:complete_global_source_views",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:16:49.409117+00:00",
+          "finished_utc": "2026-10-12T21:35:11.914525+00:00",
+          "seconds": 1102.503714971,
+          "source_member": "reproduction/source_views.py",
+          "source_sha256": "54fa1860a5fe74a216da7d5acbcc34a020adddbaff7036289052330a68eac20b",
+          "stdout_log_sha256": "d97ec68af2a35509c11ab4f63dcccca194c791a256d48a83f09ea0caf765519e"
+        },
+        {
+          "id": "rank3_coverage:independent_delta_subcritical_H_initials:independent_delta_subcritical_H_initials",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:35:11.916248+00:00",
+          "finished_utc": "2026-10-12T21:42:55.056893+00:00",
+          "seconds": 463.1391856240002,
+          "source_member": "research/ericksen_20261007/round10/independent_delta_subcritical_H_initials.py",
+          "source_sha256": "e1cb772495011f0b1b1566c3395174cdb895f74a3a8b953a376d41f874dd57f6",
+          "stdout_log_sha256": "7b2e5e8a419b62e245c6ef48b54b41139caaf96c653633d00f5ea9baa8c0a1f1"
+        },
+        {
+          "id": "rank3_coverage:independent_support_Newton_field_reader:independent_support_Newton_field_reader",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:42:55.058073+00:00",
+          "finished_utc": "2026-10-12T21:43:46.290380+00:00",
+          "seconds": 51.23130893999996,
+          "source_member": "research/ericksen_20261007/round10/independent_support_Newton_field_reader.py",
+          "source_sha256": "33c96661f79b789e5a7b35c46f16bbf8b9c937e0b5e9f0209f4c8cd1110b21c1",
+          "stdout_log_sha256": "0d4e8290c22e193c3e72fc0a74f5d2e98ebcc0fc08c35daa131cb3216772b85a"
+        },
+        {
+          "id": "rank3_current_proof:saturation_source_view:independent_delta_subcritical_Q0_full_source",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:25:53.701472+00:00",
+          "finished_utc": "2026-10-12T21:25:53.703076+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "a2451f2fb02b7c97a4d8a59f697ec5244db292cd014d58dcedb3a8d6a569296b"
+        },
+        {
+          "id": "rank3_current_proof:independent_supercritical_first_boundary_probe",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:43:46.291400+00:00",
+          "finished_utc": "2026-10-12T21:44:06.833641+00:00",
+          "seconds": 20.54103111600034,
+          "source_member": "research/ericksen_20261007/round10/independent_supercritical_first_boundary_probe.py",
+          "source_sha256": "a119e97e6d4415c20f9629544e5cf3b61f278ec7843ca289b3453ebf25c9575e",
+          "stdout_log_sha256": "90b75df924d743a61f510560b49eac6c750d3db00d4399dfa8fd744bd4102cf7"
+        },
+        {
+          "id": "rank3_current_proof:first_boundary_source_view",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:44:06.834594+00:00",
+          "finished_utc": "2026-10-12T21:44:06.835127+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "6843f2ffaec20ccdf8b7f70f2144c394a86b9f5fa52092c045fad04702ead2af"
+        },
+        {
+          "id": "rank3_current_proof:saturation_source_view:independent_delta_Q0_kernel_compatibility",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:25:54.206998+00:00",
+          "finished_utc": "2026-10-12T21:25:54.208071+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "f1f55ad93fdee05486a6dfcb86450c2bab80760a970320c37fa8c278b53e8e34"
+        },
+        {
+          "id": "rank3_current_proof:saturation_source_view:independent_delta_subcritical_even_full_source",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:25:54.710274+00:00",
+          "finished_utc": "2026-10-12T21:25:54.712186+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "530373b253d4269736e89d7f395b59ab9b1f5cfcb214808310a734a139929a46"
+        },
+        {
+          "id": "rank3_current_proof:independent_supercritical_RR_small_support_sources",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:44:07.338620+00:00",
+          "finished_utc": "2026-10-12T21:44:32.386019+00:00",
+          "seconds": 25.046247240999946,
+          "source_member": "research/ericksen_20261007/round10/independent_supercritical_RR_small_support_sources.py",
+          "source_sha256": "8785b2b8017a45657196e46da2dfd303332a6c96c5b19d3ae1f665c9874f1515",
+          "stdout_log_sha256": "9ca4fb8fb2e15a5f49bfb3ec9714f7ba1defaf27832e8b4cb33e23b95363e9e9"
+        },
+        {
+          "id": "rank3_current_proof:complete_small_support_source_view",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:44:32.387214+00:00",
+          "finished_utc": "2026-10-12T21:44:32.389153+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "88bd355c60d43e9fea8c7ba0a742930baa4f50c51da2d00e6d610beb2a76148b"
+        },
+        {
+          "id": "generated_alias:round10/independent_delta_subcritical_H_initials.sobj",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:42:55.059577+00:00",
+          "finished_utc": "2026-10-12T21:42:55.078285+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "345e88a0061400c8cbd01fe21c7c9d54751e55d7b48027bc7d3e3f7e7f59aefe"
+        },
+        {
+          "id": "rank3_coverage:independent_inactive_single_RR_boundary:independent_inactive_single_RR_boundary",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:44:32.892445+00:00",
+          "finished_utc": "2026-10-12T21:44:50.935065+00:00",
+          "seconds": 18.041366629000095,
+          "source_member": "research/ericksen_20261007/round10/independent_inactive_single_RR_boundary.py",
+          "source_sha256": "b703cff8cca5c7eea0ee89e00c03b6cbb6b3d925d9388f5d30f0e5f8c2a5f91b",
+          "stdout_log_sha256": "75af6a7a11023787905e4a354ef1ade45ec7558dc7acc4f59aa8a5f943e9df31"
+        },
+        {
+          "id": "generated_alias:round10/independent_inactive_single_RR_boundary.sobj",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:44:50.937411+00:00",
+          "finished_utc": "2026-10-12T21:44:50.938497+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "cfc1bd0e24d7a0b087002c8759d55bfd4292d4bd4a2db34a3481c950ccc5a6d0"
+        },
+        {
+          "id": "rank3_coverage:independent_critical_single_RR3_normal:independent_critical_single_RR3_normal",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:44:51.441550+00:00",
+          "finished_utc": "2026-10-12T21:55:11.256156+00:00",
+          "seconds": 619.8128459209997,
+          "source_member": "research/ericksen_20261007/round10/independent_critical_single_RR3_normal.py",
+          "source_sha256": "c896f7c1e2ac569011d846543fbae93bf9b833a6b18ff959ca4efb70cf1348de",
+          "stdout_log_sha256": "e1d7e15efc7d51cab3c873b997a74b76c55cadba59211bdc48b06421d45f692b"
+        },
+        {
+          "id": "generated_alias:round10/independent_critical_single_RR3_normal.sobj",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:55:11.257748+00:00",
+          "finished_utc": "2026-10-12T21:55:11.259662+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "ac1f3fcd4a3709875632ae3531bfe4ce4a68687f2c0afd69261f0233af5f3edd"
+        },
+        {
+          "id": "rank3_coverage:subcritical_single_full_regular_chart_H1:subcritical_single_full_regular_chart_H1:1",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:55:11.762868+00:00",
+          "finished_utc": "2026-10-12T21:56:46.472542+00:00",
+          "seconds": 94.70799381200004,
+          "source_member": "research/ericksen_20261007/round10/subcritical_single_full_regular_chart_H1.py",
+          "source_sha256": "eceb94a6d675e7dcf7f584d67c8f2116584a5edd851d3150b5dfe2a402bb877a",
+          "stdout_log_sha256": "25161367650b963f7ebec3b0b7d30908df7c0ae751dbf0733b4f5bba5b63ef21"
+        },
+        {
+          "id": "generated_alias:round10/independent_support_Newton_field_reader.sobj",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:44:51.443721+00:00",
+          "finished_utc": "2026-10-12T21:44:51.445073+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "60797d200c30c357616d542f505bbc0892260337fd2e00d3c480386386daaa46"
+        },
+        {
+          "id": "rank3_readers:independent_partial_D_Newton_gauges_reader:round10/independent_partial_D_Newton_gauges_reader.py",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:44:51.947098+00:00",
+          "finished_utc": "2026-10-12T21:45:12.504008+00:00",
+          "seconds": 20.555695117999676,
+          "source_member": "research/ericksen_20261007/round10/independent_partial_D_Newton_gauges_reader.py",
+          "source_sha256": "12bd016c5b9377b99a34902997aa24f7be3907db48bd354b424421fff5f4bfbc",
+          "stdout_log_sha256": "9ce75e11a988d7da6b1981731998af88b8820cbfc66839205b49913fc6e956d3"
+        },
+        {
+          "id": "generated_alias:round10/independent_partial_D_Newton_gauges_reader.sobj",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:45:12.504985+00:00",
+          "finished_utc": "2026-10-12T21:45:12.506922+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "9e6195394ad0414a9e6733ec0a84fa974e106f5d1cadabc639ca21c6a499ea69"
+        },
+        {
+          "id": "rank3_coverage:subcritical_single_full_complete_E_chart_H1:subcritical_single_full_complete_E_chart_H1",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:56:46.474622+00:00",
+          "finished_utc": "2026-10-12T21:57:13.040915+00:00",
+          "seconds": 26.56455546999996,
+          "source_member": "research/ericksen_20261007/round10/subcritical_single_full_complete_E_chart_H1.py",
+          "source_sha256": "d299edd0692113736f3a6496a33891255b16b3c640df8558bb01093b2af9039f",
+          "stdout_log_sha256": "5eb83c926fd3e3fd8398219cc725a2a535a17ae7b5b7cf056c89b148da397c46"
+        },
+        {
+          "id": "conic_endpoint:input:independent_delta_subcritical_Q0_full_source",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:25:55.215733+00:00",
+          "finished_utc": "2026-10-12T21:25:55.217419+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "a2451f2fb02b7c97a4d8a59f697ec5244db292cd014d58dcedb3a8d6a569296b"
+        },
+        {
+          "id": "conic_endpoint:input:independent_delta_subcritical_even_full_source",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:25:55.720042+00:00",
+          "finished_utc": "2026-10-12T21:25:55.722190+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "530373b253d4269736e89d7f395b59ab9b1f5cfcb214808310a734a139929a46"
+        },
+        {
+          "id": "conic_endpoint:input:independent_ratio_global_R_derivative_degreefall",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:35:11.918662+00:00",
+          "finished_utc": "2026-10-12T21:35:11.975690+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "a5cc7eb6ed0301a3560f17f516424bca33f4a1bff61b58e028b035a84dbb5ba2"
+        },
+        {
+          "id": "conic_endpoint:input:independent_delta_subcritical_H_initials",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:42:55.606510+00:00",
+          "finished_utc": "2026-10-12T21:42:55.625963+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "345e88a0061400c8cbd01fe21c7c9d54751e55d7b48027bc7d3e3f7e7f59aefe"
+        },
+        {
+          "id": "conic_endpoint:input:independent_partial_D_Newton_gauges_reader",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:45:13.010200+00:00",
+          "finished_utc": "2026-10-12T21:45:13.016913+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "9e6195394ad0414a9e6733ec0a84fa974e106f5d1cadabc639ca21c6a499ea69"
+        },
+        {
+          "id": "conic_endpoint:input:independent_critical_single_RR3_normal",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:55:11.765090+00:00",
+          "finished_utc": "2026-10-12T21:55:11.767152+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "ac1f3fcd4a3709875632ae3531bfe4ce4a68687f2c0afd69261f0233af5f3edd"
+        },
+        {
+          "id": "conic_endpoint:input:independent_subcritical_single_RR_full_regular_chart_H1",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:56:46.477073+00:00",
+          "finished_utc": "2026-10-12T21:56:46.480750+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "80d3a8ba4fdd8e807ae099c434119640991a95be12dd103db13980ca2772ccf2"
+        },
+        {
+          "id": "conic_endpoint:input:independent_subcritical_single_RR_full_complete_E_chart_H1",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:57:13.041918+00:00",
+          "finished_utc": "2026-10-12T21:57:13.045207+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "f5d968e791e0689d4ff151a9bd34234c012fff367f62b5bf5dc13621275fd5ee"
+        },
+        {
+          "id": "conic_endpoint:input:independent_ratio_p_boundary_second_gauge",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:35:12.539764+00:00",
+          "finished_utc": "2026-10-12T21:35:12.554097+00:00",
+          "seconds": 0,
+          "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+          "output_sha256": "2bdf04bc1702a708958deec4fcafed6545daee636f60e2e5291bdef59105f780"
+        },
+        {
+          "id": "conic_endpoint:generic_regularity",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:42:56.154872+00:00",
+          "finished_utc": "2026-10-12T21:44:51.440194+00:00",
+          "seconds": 115.28451863300006,
+          "source_member": "reproduction/conic_endpoint/verify_generic_regularity.py",
+          "source_sha256": "48863a7f291ed61fc9b05d0ced74ed050ddee6b66336996dbc554eefa12dca2d",
+          "stdout_log_sha256": "85236bf7e97f260ba3664c9d2f40124978b3ee11dc8b61401fa0333923f5a2f7"
+        },
+        {
+          "id": "conic_endpoint:coefficient_units",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:45:13.520190+00:00",
+          "finished_utc": "2026-10-12T21:45:35.072912+00:00",
+          "seconds": 21.551811912000176,
+          "source_member": "reproduction/conic_endpoint/verify_whole_coefficient_units.py",
+          "source_sha256": "2a5570837f1df1f02d57f3a1efa8eb763525f706f5362b3bfa6ab7453030f176",
+          "stdout_log_sha256": "a079b783c73c2cdee89d2d28a76c4001e5d03a3e5391cb088fb9c54725e108a5"
+        },
+        {
+          "id": "conic_endpoint:relative_boundary",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:45:35.073793+00:00",
+          "finished_utc": "2026-10-12T21:45:48.607981+00:00",
+          "seconds": 13.5332587769999,
+          "source_member": "reproduction/conic_endpoint/verify_relative_boundary.py",
+          "source_sha256": "ba3b864d8157345586c3f2af48652b7c5988d619716ea35548269ac692394c0a",
+          "stdout_log_sha256": "d97688122d12cf682ad3af5c0ec48405eaa4526c6f65dbff563f478b02382905"
+        },
+        {
+          "id": "conic_endpoint:gauge_binding",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:45:48.608845+00:00",
+          "finished_utc": "2026-10-12T21:45:58.130567+00:00",
+          "seconds": 9.520844452999881,
+          "source_member": "reproduction/conic_endpoint/verify_manuscript_gauge_binding.py",
+          "source_sha256": "46ee02c8401a8382911b93843a87b39c3f6c772343166e86fd68285fed4eaa83",
+          "stdout_log_sha256": "03a686a7bb20eb6d61b8a684fa1178301fd51c43ba2809eeabf3263daf18d2cd"
+        },
+        {
+          "id": "conic_endpoint:rebuild_G21",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:57:13.552835+00:00",
+          "finished_utc": "2026-10-12T21:59:45.386346+00:00",
+          "seconds": 151.8316889140001,
+          "source_member": "reproduction/conic_endpoint/rebuild_generic_G_p21_Q6.py",
+          "source_sha256": "70412c1054de1abd43a78b096ca1cd10a0a27813a4018c762aa0fc1a5ace341c",
+          "stdout_log_sha256": "7d69e0516e93d44b70d1ec56873e5558525ab7c1292891d4b001616c09491d3d"
+        },
+        {
+          "id": "conic_endpoint:G21_conic_membership",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:59:45.387124+00:00",
+          "finished_utc": "2026-10-12T22:00:27.991624+00:00",
+          "seconds": 42.603597874000116,
+          "source_member": "reproduction/conic_endpoint/verify_new_generic_G_J8.py",
+          "source_sha256": "9c332bcf9340119a6d6dc18bd1c78b4404b1d50f9a107b7cade5d754fd9615b4",
+          "stdout_log_sha256": "29b2c1c06b53402939014fa090c633d0b3d5f075f3b47bc1d218adab8ad9574b"
+        },
+        {
+          "id": "conic_endpoint:open_conic_minor",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:59:45.388558+00:00",
+          "finished_utc": "2026-10-12T22:00:13.955338+00:00",
+          "seconds": 28.56584034100024,
+          "source_member": "reproduction/conic_endpoint/verify_conic_open_minor.py",
+          "source_sha256": "ea026d5f1f3a5971558a5620d604fcd743415ed13dcd2b9422464ebf358c7dbe",
+          "stdout_log_sha256": "a89a01743f7e492816403aef26e59fb33a06be2996360b0d13d6a115bb478bd9"
+        },
+        {
+          "id": "conic_endpoint:whole_J3",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T21:45:58.131359+00:00",
+          "finished_utc": "2026-10-12T21:46:36.725738+00:00",
+          "seconds": 38.59331812800019,
+          "source_member": "reproduction/conic_endpoint/subcritical_single_endpoint_whole_J3_reader.py",
+          "source_sha256": "9852831f7c5426fc08b0068996f951955830a0b523983be30aa68429ea80c59b",
+          "stdout_log_sha256": "e23fa35905d4b9750b46597a554aa7517351e27f6f2d3d9d689a48f2258dd80f"
+        },
+        {
+          "id": "conic_endpoint:implicit_graph",
+          "run_id": "96f113d6-b315-47d4-8e4b-45dea2a0e9ba",
+          "status": "EXECUTION_PASS",
+          "exit_code": 0,
+          "started_utc": "2026-10-12T22:00:13.956110+00:00",
+          "finished_utc": "2026-10-12T22:00:44.530417+00:00",
+          "seconds": 30.573420595999778,
+          "source_member": "reproduction/conic_endpoint/verify_endpoint_unit_and_obstructions.py",
+          "source_sha256": "2884e59c17dfcb63c1c3017f5522af8687536cc70e817b4ddd90c763a957b235",
+          "stdout_log_sha256": "2d862a40d67ebeeb0e5236ae7113f0185a95ceb35aa104f2bdeecf06601ad6e7"
+        }
+      ],
+      "mathematical_result": "The source identities, full relative ideal memberships, endpoint unit Jacobians and residual coefficients used in Appendix C.9 were recomputed. The local ideal implication is proved in the manuscript."
     }
   },
   "files": {
@@ -10028,12 +10638,12 @@
       "bytes": 1946
     },
     "paper/main.pdf": {
-      "sha256": "04a0ae8a8d775f9e8dfea7a33ebae716024351b10ab085f23294c03c870bd3f0",
-      "bytes": 1418211
+      "sha256": "d60a13d9e3543abd04c5061df136824e6abaa6c7351009777d9729101a1cfb08",
+      "bytes": 1441633
     },
     "paper/main.tex": {
-      "sha256": "385fbcc35927532130f2e5683d8f7492af0564be92b5cc583eac370504feaa79",
-      "bytes": 571110
+      "sha256": "7dfd41a5f5d96263f46c73a6ce945a4d2be87223d52063b5ec3642fdfbb1e806",
+      "bytes": 593955
     },
     "paper/supplement.tex": {
       "sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
@@ -10112,7 +10722,7 @@
       "bytes": 71505
     },
     "Rank012/MANIFEST.json": {
-      "sha256": "57773f33371f2af277aa373203aae39be1e1c45c36983682f92e3646b2f03836",
+      "sha256": "a131d6293336ee4e80cb4a78c7b57e247d411a953195657ce7a797efdae47b5b",
       "bytes": 93895
     },
     "Rank012/paper_index.py": {
@@ -10120,12 +10730,12 @@
       "bytes": 5939
     },
     "Rank012/PROOF_MAP.json": {
-      "sha256": "b0ab747d742fc3d7d2d3c248742de5079fa3ad0a635fab658c088aa00589a1a4",
-      "bytes": 174821
+      "sha256": "82b8297944fe592e0edab7d26c5a8ab816b39a20e90b4c325b7e471368c47186",
+      "bytes": 174819
     },
     "Rank012/PROOF_MAP.md": {
-      "sha256": "22393e70f7d46bcffbf5c00d7606d9f8c2d3eed5727c9f7370179496545eab07",
-      "bytes": 3718
+      "sha256": "e439322bdb929c6ee7d7b3031ec40cdab2d79e7bda5e7c3f0c225340db047ca2",
+      "bytes": 3735
     },
     "Rank012/README.txt": {
       "sha256": "940439c0847d42c69be0768a5e5e617cc77e9a0981f77d8f229e290fd2cb1239",
@@ -11464,24 +12074,24 @@
       "bytes": 7799
     },
     "Rank3/MANIFEST.json": {
-      "sha256": "21591edf647db55a8b2b75f4f5df4e98309205a792da4a5067b2cd622ed716ef",
-      "bytes": 410628
+      "sha256": "d9da716efde7156b82bfef978adc382451404f22cad7a3b2827dbe665851d100",
+      "bytes": 422035
     },
     "Rank3/paper_index.py": {
       "sha256": "7a6c9355d6ea60b9aa2a11470dc508d0da41822a8539a7f92c39d75e9e5b8cda",
       "bytes": 5939
     },
     "Rank3/PROOF_MAP.json": {
-      "sha256": "74cf6aa47ea5ff071cfc29572ea1cf5ca4d5cf94aa6f63b40dbd1b8c73c59758",
-      "bytes": 1038545
+      "sha256": "9d59d1d9c90655a7519e36e321ffd94bd5bc01bda9cba7668e4f92d5966ea675",
+      "bytes": 1122281
     },
     "Rank3/PROOF_MAP.md": {
-      "sha256": "e6911b97fe0d59ac95c1f4698b7789d6bce8eefbbd72e79f957f36d0038db90f",
-      "bytes": 18832
+      "sha256": "1c1789509c014fead7c4aeb61066d9c311b83baf12e1037bdef01b9b0702e06a",
+      "bytes": 18787
     },
     "Rank3/README.md": {
-      "sha256": "a6cbfae10832de9968bae2653b6fc45e424a035e8fb34ced0ab780472a62ce22",
-      "bytes": 1666
+      "sha256": "509365426013a26bfcd09c1b1f9df2514d5df7984460c91e091e40e822b9d192",
+      "bytes": 3483
     },
     "Rank3/run.py": {
       "sha256": "b3e4c8ce04bd3d1bedffcd2dd3d2fcb6abe495dba5b63f089134f06973c89f2d",
@@ -12796,16 +13406,116 @@
       "bytes": 2516
     },
     "Rank3/SYMBOLS.md": {
-      "sha256": "120a49f0103f01e82dcac46a0934885385ad45a89f79895f6f8b76aaab6416a4",
-      "bytes": 1044
+      "sha256": "26e3e8a25c5470258f0bef861805155c62cfd5b9f58c1ecdcda5791b8355ce0c",
+      "bytes": 1658
     },
     "Rank3/tasks.json": {
-      "sha256": "67a3ac7ba6e7c3f3932bf7e76e6b182200502d21144e4ab5b0e281343c17a3b5",
-      "bytes": 371683
+      "sha256": "b04539083448ee05665858dbec2fa74080224cbdaf6fd076a0fe6f9e28a247e9",
+      "bytes": 381901
     },
     "README.md": {
-      "sha256": "90e49c2b8256ed5c9d852a47fd2c1826964d6f5eefc7f79ece81501389a18c34",
-      "bytes": 4756
+      "sha256": "a714e2372821cc1f6417b5b41e8a1946e4b4efbc8dfd0e5da132e28819f4ced6",
+      "bytes": 5511
+    },
+    ".gitattributes": {
+      "sha256": "8781d16f00760c69157a8be423f04a94893c9ec3d644241a18d5fef66fc42373",
+      "bytes": 89
+    },
+    ".gitignore": {
+      "sha256": "2e8adcbb855b1c530a20cba79a397d417f12592ca417520c7260d14ed1e32624",
+      "bytes": 119
+    },
+    "Rank3/results/conic_endpoint/conic_normal_matrix.json": {
+      "sha256": "606b856e3358b5da232c2bd9a3dba53f4dc54f265e7a0e629ac7291abc52fb48",
+      "bytes": 2125
+    },
+    "Rank3/results/conic_endpoint/conic_open_minor.json": {
+      "sha256": "a89a01743f7e492816403aef26e59fb33a06be2996360b0d13d6a115bb478bd9",
+      "bytes": 592
+    },
+    "Rank3/results/conic_endpoint/endpoint_normal_matrix.txt": {
+      "sha256": "7315992db61fd12508d39fd92a3fc5d5674abb19d9821e4b00bd344def4aaa5f",
+      "bytes": 1498
+    },
+    "Rank3/results/conic_endpoint/endpoint_unit_and_obstructions.json": {
+      "sha256": "2d862a40d67ebeeb0e5236ae7113f0185a95ceb35aa104f2bdeecf06601ad6e7",
+      "bytes": 2572
+    },
+    "Rank3/results/conic_endpoint/execution.json": {
+      "sha256": "6d95dc6b17a88b8456966f4a969aa9cc67c08455df3ed0f215a165b1ca9977bf",
+      "bytes": 28660
+    },
+    "Rank3/results/conic_endpoint/generic_G_ideal_decomposition_sparse.json": {
+      "sha256": "0d6b20ea60f3304aaaecb9cc2c2de02dd0ecafc02d547b45b8613ffc9f69f22c",
+      "bytes": 4395853
+    },
+    "Rank3/results/conic_endpoint/generic_G_relative_regular.json": {
+      "sha256": "94f7ef82330277824d0d466a32efd603895809da486f302a1690753ae2337937",
+      "bytes": 5781
+    },
+    "Rank3/results/conic_endpoint/generic_regularity.json": {
+      "sha256": "2332b95472a0bc8fda48d4e53536ab1156af12035b7f6281e449a4157d269322",
+      "bytes": 18900
+    },
+    "Rank3/results/conic_endpoint/manuscript_gauge_binding.json": {
+      "sha256": "03a686a7bb20eb6d61b8a684fa1178301fd51c43ba2809eeabf3263daf18d2cd",
+      "bytes": 422
+    },
+    "Rank3/results/conic_endpoint/new_generic_G_J8.json": {
+      "sha256": "29b2c1c06b53402939014fa090c633d0b3d5f075f3b47bc1d218adab8ad9574b",
+      "bytes": 1518
+    },
+    "Rank3/results/conic_endpoint/relative_boundary_reconstruction.json": {
+      "sha256": "af62273eb5d6e9a8fdf8ddce9f9f6d22db13e2fc1ec3fd30add12e1baf299ca1",
+      "bytes": 12071
+    },
+    "Rank3/results/conic_endpoint/subcritical_single_endpoint_whole_J3_reader.json": {
+      "sha256": "145bb93064f7dcccf3761f1ad36b0306c9aff705668bea1373b0f1667ed5936c",
+      "bytes": 262
+    },
+    "Rank3/results/conic_endpoint/whole_coefficient_units.json": {
+      "sha256": "aed2c37e4c9627d6b7b1f926f9a8951cefd6be9f829b40eb6916b4fe71d97418",
+      "bytes": 2946420
+    },
+    "Rank3/sources/reproduction/conic_endpoint/generic_G_decomposition.py": {
+      "sha256": "da6b0501b0b96ac56237a290464ddd3bf3e00882277f5f993988ae8b802b7892",
+      "bytes": 1442
+    },
+    "Rank3/sources/reproduction/conic_endpoint/rebuild_generic_G_p21_Q6.py": {
+      "sha256": "70412c1054de1abd43a78b096ca1cd10a0a27813a4018c762aa0fc1a5ace341c",
+      "bytes": 6370
+    },
+    "Rank3/sources/reproduction/conic_endpoint/subcritical_single_endpoint_whole_J3_reader.py": {
+      "sha256": "9852831f7c5426fc08b0068996f951955830a0b523983be30aa68429ea80c59b",
+      "bytes": 2929
+    },
+    "Rank3/sources/reproduction/conic_endpoint/verify_conic_open_minor.py": {
+      "sha256": "ea026d5f1f3a5971558a5620d604fcd743415ed13dcd2b9422464ebf358c7dbe",
+      "bytes": 3597
+    },
+    "Rank3/sources/reproduction/conic_endpoint/verify_endpoint_unit_and_obstructions.py": {
+      "sha256": "2884e59c17dfcb63c1c3017f5522af8687536cc70e817b4ddd90c763a957b235",
+      "bytes": 5758
+    },
+    "Rank3/sources/reproduction/conic_endpoint/verify_generic_regularity.py": {
+      "sha256": "48863a7f291ed61fc9b05d0ced74ed050ddee6b66336996dbc554eefa12dca2d",
+      "bytes": 3458
+    },
+    "Rank3/sources/reproduction/conic_endpoint/verify_manuscript_gauge_binding.py": {
+      "sha256": "46ee02c8401a8382911b93843a87b39c3f6c772343166e86fd68285fed4eaa83",
+      "bytes": 1735
+    },
+    "Rank3/sources/reproduction/conic_endpoint/verify_new_generic_G_J8.py": {
+      "sha256": "9c332bcf9340119a6d6dc18bd1c78b4404b1d50f9a107b7cade5d754fd9615b4",
+      "bytes": 4925
+    },
+    "Rank3/sources/reproduction/conic_endpoint/verify_relative_boundary.py": {
+      "sha256": "ba3b864d8157345586c3f2af48652b7c5988d619716ea35548269ac692394c0a",
+      "bytes": 4730
+    },
+    "Rank3/sources/reproduction/conic_endpoint/verify_whole_coefficient_units.py": {
+      "sha256": "2a5570837f1df1f02d57f3a1efa8eb763525f706f5362b3bfa6ab7453030f176",
+      "bytes": 3692
     }
   },
   "packaging": {
@@ -12814,6 +13524,8 @@
     "readme_language": "English",
     "mathematical_runs_repeated_for_layout_revision": false,
     "directory_tree_hash_definition": "SHA256(sorted relative POSIX path + NUL + file SHA256 + newline)",
-    "all_mathematical_sources_inputs_arguments_and_wrappers_byte_identical": true
+    "all_mathematical_sources_inputs_arguments_and_wrappers_byte_identical": true,
+    "endpoint_calculations_rebuilt_from_empty_work_directory": true,
+    "existing_mathematical_sources_inputs_arguments_and_wrappers_unchanged": true
   }
 }

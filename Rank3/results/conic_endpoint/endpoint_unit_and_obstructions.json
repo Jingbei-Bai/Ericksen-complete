@@ -1,0 +1,114 @@
+{
+  "status": "PASS_EXACT_SYMBOLIC_INPUTS",
+  "scope": "Exact symbolic endpoint Jacobian and obstruction proof inputs.\n\nAll material parameters k,r stay indeterminate. This file establishes the\nunit and Taylor-coefficient inputs of the all-orders relative-ideal proof;\nit does NOT turn a finite jet test into a no-lift theorem.\nNo historical normal matrix, tangent matrix, or quadratic certificate is read.\n",
+  "source_hashes": {
+    "independent_subcritical_single_RR_full_regular_chart_H1.sobj": "80d3a8ba4fdd8e807ae099c434119640991a95be12dd103db13980ca2772ccf2",
+    "independent_subcritical_single_RR_full_complete_E_chart_H1.sobj": "f5d968e791e0689d4ff151a9bd34234c012fff367f62b5bf5dc13621275fd5ee"
+  },
+  "k_r_indeterminate": true,
+  "endpoint_root_equation": "xb^2=2*(1+k)",
+  "six_source_rows_zero_based": [
+    2,
+    3,
+    6,
+    25,
+    27,
+    33
+  ],
+  "six_source_determinant": "(36/7*k^4*r + 36/7*k^4 + 72/7*k^3*r + 72/7*k^3 + 36/7*k^2*r + 36/7*k^2)*xb",
+  "six_source_determinant_norm": "-2592/49*k^9*r^2 - 5184/49*k^9*r - 12960/49*k^8*r^2 - 2592/49*k^9 - 25920/49*k^8*r - 25920/49*k^7*r^2 - 12960/49*k^8 - 51840/49*k^7*r - 25920/49*k^6*r^2 - 25920/49*k^7 - 51840/49*k^6*r - 12960/49*k^5*r^2 - 25920/49*k^6 - 25920/49*k^5*r - 2592/49*k^4*r^2 - 12960/49*k^5 - 5184/49*k^4*r - 2592/49*k^4",
+  "three_source_determinant": "1/3584*k*r + 1/3584*k + 1/3584*r + 1/3584",
+  "tangent_columns": [
+    [
+      "-1/16",
+      "-1/2",
+      "0"
+    ],
+    [
+      "1/16",
+      "3/2",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "0",
+      "-2*xb"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "7/8",
+      "9",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "B_weights": {
+    "6": "1",
+    "13": "27/49/(k*r + k + r + 1)",
+    "21": "(-12/49)/(k*r + r)",
+    "23": "(39/98/(k + 1))*xb"
+  },
+  "F_weights": {
+    "25": "1",
+    "26": "(-1)/k"
+  },
+  "second_monomials": [
+    "v^2",
+    "v*s",
+    "s^2",
+    "v*w",
+    "s*w",
+    "w^2"
+  ],
+  "obstructions": {
+    "B": [
+      "0",
+      "0",
+      "0",
+      "((-3/224)/(k + 1))*xb",
+      "0",
+      "0"
+    ],
+    "F": [
+      "1/8",
+      "7/2",
+      "32",
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "quotient_U_constant": "((-3/224)/(k + 1))*xb",
+  "quotient_U_norm": "(-9/25088)/(k + 1)",
+  "source_denominator_factors": [
+    "k",
+    "k + 1",
+    "r",
+    "r + 1"
+  ],
+  "checks_count": 29336,
+  "seconds": 28.94656655000017
+}

@@ -1,0 +1,10 @@
+{
+  "status": "MANUSCRIPT_OPERATOR_MATCH",
+  "operator": "p21*Ehat2-c2diag*R2*d/dR2",
+  "c2diag": "-2*(zeta-1)/zeta",
+  "ratio_components_match": true,
+  "input_hashes": {
+    "independent_ratio_p_boundary_second_gauge.sobj": "2bdf04bc1702a708958deec4fcafed6545daee636f60e2e5291bdef59105f780",
+    "independent_partial_D_Newton_gauges_reader.sobj": "9e6195394ad0414a9e6733ec0a84fa974e106f5d1cadabc639ca21c6a499ea69"
+  }
+}

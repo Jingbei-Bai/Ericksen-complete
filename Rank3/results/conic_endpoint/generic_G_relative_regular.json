@@ -1,0 +1,225 @@
+{
+  "status": "PASS_COMPLETE_RELATIVE_REGULARITY",
+  "scope": "Build the COMPLETE relative G(p21,Q6) before any conic quotient.\n\nParameters k,r,eta,zeta and all nine incidence variables are independent.\nEvery negative kappa Newton layer is proved polynomial in the WHOLE\nincidence ring; no restriction to J8 is used to obtain regularity.\n",
+  "parameters": [
+    "k",
+    "r",
+    "eta",
+    "zeta"
+  ],
+  "source_hashes": {
+    "independent_partial_D_Newton_gauges_reader.sobj": "9e6195394ad0414a9e6733ec0a84fa974e106f5d1cadabc639ca21c6a499ea69",
+    "independent_delta_subcritical_even_full_source.sobj": "530373b253d4269736e89d7f395b59ab9b1f5cfcb214808310a734a139929a46"
+  },
+  "gauge": 2,
+  "Q_index": 6,
+  "layers": [
+    {
+      "ordinary_degree": 2,
+      "R_degree": 0,
+      "kappa_prefactor": 9,
+      "delta_prefactor": 4,
+      "whole_pullback_terms": 6,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 6
+    },
+    {
+      "ordinary_degree": 2,
+      "R_degree": 1,
+      "kappa_prefactor": 8,
+      "delta_prefactor": 4,
+      "whole_pullback_terms": 4,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 4
+    },
+    {
+      "ordinary_degree": 2,
+      "R_degree": 2,
+      "kappa_prefactor": 7,
+      "delta_prefactor": 4,
+      "whole_pullback_terms": 1,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 1
+    },
+    {
+      "ordinary_degree": 3,
+      "R_degree": 0,
+      "kappa_prefactor": 7,
+      "delta_prefactor": 3,
+      "whole_pullback_terms": 36,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 36
+    },
+    {
+      "ordinary_degree": 3,
+      "R_degree": 1,
+      "kappa_prefactor": 6,
+      "delta_prefactor": 3,
+      "whole_pullback_terms": 31,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 31
+    },
+    {
+      "ordinary_degree": 3,
+      "R_degree": 2,
+      "kappa_prefactor": 5,
+      "delta_prefactor": 3,
+      "whole_pullback_terms": 13,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 13
+    },
+    {
+      "ordinary_degree": 3,
+      "R_degree": 3,
+      "kappa_prefactor": 4,
+      "delta_prefactor": 3,
+      "whole_pullback_terms": 2,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 2
+    },
+    {
+      "ordinary_degree": 4,
+      "R_degree": 0,
+      "kappa_prefactor": 5,
+      "delta_prefactor": 2,
+      "whole_pullback_terms": 85,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 85
+    },
+    {
+      "ordinary_degree": 4,
+      "R_degree": 1,
+      "kappa_prefactor": 4,
+      "delta_prefactor": 2,
+      "whole_pullback_terms": 75,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 75
+    },
+    {
+      "ordinary_degree": 4,
+      "R_degree": 2,
+      "kappa_prefactor": 3,
+      "delta_prefactor": 2,
+      "whole_pullback_terms": 42,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 42
+    },
+    {
+      "ordinary_degree": 4,
+      "R_degree": 3,
+      "kappa_prefactor": 2,
+      "delta_prefactor": 2,
+      "whole_pullback_terms": 10,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 10
+    },
+    {
+      "ordinary_degree": 5,
+      "R_degree": 0,
+      "kappa_prefactor": 3,
+      "delta_prefactor": 1,
+      "whole_pullback_terms": 192,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 192
+    },
+    {
+      "ordinary_degree": 5,
+      "R_degree": 1,
+      "kappa_prefactor": 2,
+      "delta_prefactor": 1,
+      "whole_pullback_terms": 182,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 182
+    },
+    {
+      "ordinary_degree": 5,
+      "R_degree": 2,
+      "kappa_prefactor": 1,
+      "delta_prefactor": 1,
+      "whole_pullback_terms": 90,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 90
+    },
+    {
+      "ordinary_degree": 5,
+      "R_degree": 3,
+      "kappa_prefactor": 0,
+      "delta_prefactor": 1,
+      "whole_pullback_terms": 8,
+      "whole_pullback_min_kappa": 1,
+      "regular_terms": 8
+    },
+    {
+      "ordinary_degree": 6,
+      "R_degree": 0,
+      "kappa_prefactor": 1,
+      "delta_prefactor": 0,
+      "whole_pullback_terms": 376,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 376
+    },
+    {
+      "ordinary_degree": 6,
+      "R_degree": 1,
+      "kappa_prefactor": 0,
+      "delta_prefactor": 0,
+      "whole_pullback_terms": 239,
+      "whole_pullback_min_kappa": 0,
+      "regular_terms": 239
+    },
+    {
+      "ordinary_degree": 6,
+      "R_degree": 2,
+      "kappa_prefactor": -1,
+      "delta_prefactor": 0,
+      "whole_pullback_terms": 50,
+      "whole_pullback_min_kappa": 1,
+      "regular_terms": 50
+    },
+    {
+      "ordinary_degree": 6,
+      "R_degree": 3,
+      "kappa_prefactor": -2,
+      "delta_prefactor": 0,
+      "whole_pullback_terms": 2,
+      "whole_pullback_min_kappa": 2,
+      "regular_terms": 2
+    }
+  ],
+  "terms": 1444,
+  "all_negative_kappa_layers_exactly_divisible_before_any_quotient": true,
+  "all_coefficient_denominators_protected_at_cyclic_section": true,
+  "cyclic_denominator_material_factors": [
+    "kk",
+    "kk + 1",
+    "rr"
+  ],
+  "complete_cyclic_polynomial_matches_independent_source": true,
+  "complete_G_membership_in_t_kappa": {
+    "status": "PASS_COMPLETE_GENERIC_G_IN_T_KAPPA",
+    "coefficient_field": "QQ(k,r,eta,zeta)",
+    "variables": [
+      "x",
+      "z",
+      "w",
+      "e0",
+      "e1",
+      "e2",
+      "delta",
+      "t",
+      "kappa"
+    ],
+    "identity": "G = t*Gt + kappa*Gkappa",
+    "priority": [
+      "t",
+      "kappa"
+    ],
+    "G_terms": 1444,
+    "Gt_terms": 944,
+    "Gkappa_terms": 500,
+    "delta_square_cofactor_needed": false,
+    "exact_polynomial_identity_verified": true,
+    "sparse_cofactors_sha256": "0d6b20ea60f3304aaaecb9cc2c2de02dd0ecafc02d547b45b8613ffc9f69f22c"
+  },
+  "seconds": 121.17244429799985
+}

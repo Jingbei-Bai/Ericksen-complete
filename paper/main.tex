@@ -478,7 +478,6 @@ These are the frame components of $\operatorname{div}(\sum w_iP_i)$, and its cur
 D_jA_k(w)-D_kA_j(w)+\sum_\ell A_\ell(w)p_{\ell i}.
 \end{equation}
 
-
 \subsection{Finite closure of the frame equations}
 
 The curvature expressions \eqref{fnd:curvature} and the pressure
@@ -628,7 +627,6 @@ solving successive linear variational equations proves the order-$m$
 statement.
 \end{proof}
 
-
 \section{Normalized states and common similarities}\label{fnd:secnormalization}\label{sec:normalization}
 
 On a solution with $h_1h_2h_3\ne0$, weighted homogeneity removes one
@@ -720,7 +718,6 @@ of the retained coordinates.
 \caption{The state coordinates under weighted normalization, reconstruction and the rational change in Section~\ref{sec:rankthree}. The augmented state $\mathsf U$ incorporates Killing and angular data.}
 \label{fig:state-relations}
 \end{figure}
-
 
 \subsection{Nonconstancy of the ratios}\label{fnd:ratiosubsection}
 The frame equations imply that the two ratios of abnormalities cannot
@@ -842,7 +839,6 @@ L'=(D\mathcal V_j)(\mathsf X(t))L,\qquad R'=R\mathscr C_j(\mathsf X(t)),\qquad L
 Both fundamental matrices are invertible, so the rank is unchanged. Compositions of the three short frame flows reach a neighborhood of each point; the inverse function theorem applies because their three initial velocities form a basis. Hence the rank is locally constant, and connectedness proves the assertion.
 \end{proof}
 
-
 \subsection{The similarities determined by the fibres}
 The constant rank theorem gives fibres of dimension $3-\rho$.
 The equations \eqref{fnd:actualnormalized} give these fibres a further
@@ -896,7 +892,6 @@ Section~\ref{sec:completion}.
 \label{fig:rank-mechanism}
 \end{figure}
 
-
 \section{States of rank zero and one}\label{fnd:seclowrank}\label{sec:lowranks}
 
 The fibres of a state of rank one are surfaces. By
@@ -931,7 +926,6 @@ two translations or a rotation and an axial translation. When the
 dilation character is nonzero, the Lie bracket distinguishes the
 translation ideal from the commuting rotation ideal. The target
 algebra has the corresponding type, with an independent angular rate.
-
 
 \subsection{Two common Killing fields}
 
@@ -1348,7 +1342,6 @@ Section~\ref{iso:two-screws}\\
 \end{tabular}
 \end{table}
 
-
 The common parameter fixes the relative speeds, but does not equate
 the angular rates. For the logarithmic cylindrical map
 \eqref{fnd:logcylinder},
@@ -1625,8 +1618,6 @@ obstruction therefore has a Cauchy limit and the ODE extends through it.
 The differential ideal is preserved, and reconstruction realizes
 every continued state as a local germ.
 \end{proof}
-
-
 
 Continuation immediately excludes a source rotation paired with a
 target screw motion. Keep the common flow parameter and write
@@ -3136,14 +3127,32 @@ with Section~\ref{fnd:seclowrank}, this leaves the case of rank three.
 
 \section{The algebraic dimension bound}\label{sec:rankthree}
 
-At rank three the normalized state map is locally injective. We
-use the polynomial compatibility relations to bound the dimension
-of the Zariski closure of its image by two. The relevant projection
-is onto the two abnormality ratios. If their image fills the ratio
-plane, the generic state fibre must be finite; if their image is a
-curve, a fibre of dimension at most one suffices. These estimates
-follow from the equations at infinity and from the differential
-invariance of the state image.
+The rank two argument used a similarity along a fibre of the
+normalized state map. At rank three that map is locally injective,
+so there is no such fibre to which the argument can be applied.
+We instead consider the algebraic relations satisfied by the state
+and bound the dimension of its Zariski closure. A closure of
+dimension at most two cannot contain a local state image of rank
+three.
+
+The projection onto the two abnormality ratios separates the
+argument into two cases. Over the ratio plane we prove that the
+generic state fibre is finite. Over a ratio curve we prove that it
+has dimension at most one. The required estimates are therefore
+\[
+ \begin{array}{c|c|c}
+ \dim\mathscr B & \dim Y_{\mathrm{gen}} & \dim Y\\ \hline
+ 2&0&2\\
+ 1&\le1&\le2.
+ \end{array}
+\]
+Here $Y$ and $\mathscr B$ will denote the state closure and its
+ratio image, respectively. The distinction also determines what
+must be proved at infinity: the plane case requires an empty
+generic projective boundary, whereas the curve case requires only
+a finite one. The algebraic equations determine possible boundary
+states; the differential equations determine which of them can
+belong to the closure of a solution.
 
 \begin{theorem}[The rank bound]\label{r3:theorem}
 For every triple of positive, pairwise distinct, constant principal values,
@@ -3169,6 +3178,10 @@ given by \eqref{r3:RRreconstruction} in
 Appendix~\ref{appr3:sources}; its coefficients are invertible in this
 localization. It preserves differential rank.
 
+We may therefore compute the state fibre dimension using the
+nine coordinates consisting of the off-diagonal entries and the
+$\mathsf R_i$, with the ratios fixed.
+
 Let $\mathscr R_{\mathrm{norm}}$ be the localized complex coordinate
 ring and write $E_i\mathsf X=\mathcal V_i(\mathsf X)$ for the state
 equations. The state is analytic by Section~\ref{sec:geometry}.
@@ -3176,6 +3189,14 @@ We take the Zariski closure of the image of this solution. Its ideal
 records the algebraic relations along the solution, and the chain
 rule makes that ideal invariant under the state derivations. This
 invariance supplies additional equations on its projective boundary.
+
+The finite compatibility ideal is contained in this vanishing
+ideal. Its zero set may have components to which the state
+derivations are not tangent. Taking the vanishing ideal of the
+solution image selects an irreducible variety preserved by those
+derivations, on which every polynomial relation may be
+differentiated. The finite local ideals below consist of relations
+in this invariant ideal.
 
 \begin{lemma}[The invariant prime ideal]\label{r3short:actual-prime}
 The vanishing ideal
@@ -3224,6 +3245,16 @@ into boundary questions: an affine fibre of positive dimension has
 a nonempty boundary, and a fibre of dimension at least two has a
 boundary of positive dimension.
 
+These assertions can be checked after extending the generic base
+field to its algebraic closure. If an affine irreducible variety
+of positive dimension had no boundary in its projective closure,
+it would be both affine and proper and hence zero dimensional.
+More precisely, the homogenizing coordinate defines a nonzero
+section on the irreducible projective closure. When its zero set
+is nonempty, that zero set has codimension one. Thus a finite
+boundary bounds the affine dimension by one, while an empty
+boundary forces the affine variety to be finite.
+
 \begin{figure}[!htbp]
 \centering
 \setlength{\unitlength}{0.01\linewidth}
@@ -3251,7 +3282,7 @@ plane. It is this type of component that must be excluded.
 
 Give the six off-diagonal coordinates weight one and the three
 $\mathsf R_i$ weight two. Write
-$\overline p=\tau\widehat p$ and $v_j=\tau^2\mathsf R_j$ in the
+$\overline p=\tau\widehat p$ and $(\boldsymbol v)_j=\tau^2\mathsf R_j$ in the
 weighted projective closure. The construction in
 Appendix~\ref{r3:atlas} gives a proper modification equal to $Y$ on
 the affine open set $\tau\ne0$. Choose an open neighbourhood
@@ -3261,6 +3292,15 @@ $\mathscr U$. Its image is closed and contains the generic point, hence
 is all of $\mathscr U$. It therefore meets the fibre over $(1,-1)$.
 Throughout this argument the entries of $\overline p$ are ordered as
 $(12,13,21,23,31,32)$.
+
+The weights reflect the degrees of the state equations: frame
+coefficients have degree one, and their first derivative
+coordinates have degree two. A single ordinary projective chart
+would conflate these two growth scales. The modification separates
+their relative orders by blowing up the loci where the weighted
+derivative coordinates vanish. Properness brings a dominant
+boundary component to the chosen ratio fibre; the blowup charts
+give regular local equations at its points.
 
 Let $J$
 be the ideal of the closure of $Y$ in a
@@ -3279,6 +3319,15 @@ because they compare the first nonzero terms of an approaching arc.
 A nilpotent normal coordinate vanishes on the arc, and a system of
 weighted initial equations can force several normal coordinates to
 vanish together.
+
+Saturation also justifies division by an exceptional power when
+the quotient is regular: if $\tau^dF\in J$, then $F\in J$.
+This is the ideal-theoretic reason the divided equations remain
+necessary equations for the solution closure. We retain $\tau$
+in the local equations. A boundary point belonging to the closure
+of the affine solution must admit an arc with $\tau\ne0$ at its
+generic point. If the equations in $I$ force $\tau=0$ identically
+on every such arc, that point is excluded from the closure.
 
 \begin{lemma}[Exclusion by normal equations]\label{r3:normalexclusion}
 Work in the completed local ring of a boundary chart. Let
@@ -3302,17 +3351,38 @@ that vector, a contradiction. Hence all $g_j$ vanish on the arc, and
 the inclusion $\tau^N\in I+(g_1,\ldots,g_r)$ gives $\tau=0$.
 \end{proof}
 
-If the linear normal coefficient matrix has full column rank,
-an invertible minor solves the normal variables in the completed local
-ring. The equations vanish when those variables are zero, so their
-implicit solution is zero and they generate the normal ideal.
-On the zero locus of such a minor, one retains that locus as a
-parameter condition and eliminates only the variables with an
-invertible coefficient matrix. The residual equations in the other
-normal variables have weighted initial forms. If those forms have
-only the zero solution and $\tau^N\in I+(g_1,\ldots,g_r)$,
-Lemma~\ref{r3:normalexclusion} excludes an approaching affine arc. Lemmas~\ref{r3short:initial}
-and~\ref{r3short:schur} give these two local reductions.
+There are two ways in which the local equations will be used.
+First, suppose that all the equations vanish on a specified
+family, and that their linear coefficient matrix in its normal
+coordinates has full column rank. An invertible minor permits
+implicit elimination of these coordinates in the completed local
+ring. The zero normal coordinates already solve the full
+equations, so uniqueness of the implicit solution makes the
+eliminated coordinates zero. If $\tau$ is in this normal ideal,
+the family has no approaching affine arc.
+
+Second, a coefficient minor may vanish on a subfamily. On that
+locus we eliminate only the coordinates belonging to an
+invertible submatrix, using the full equations rather than their
+linear parts. The equations in the remaining coordinates then
+have well-defined weighted initial forms. If these forms have
+only the zero solution and
+$\tau^N\in I+(g_1,\ldots,g_r)$, the preceding lemma again
+excludes an affine arc. A quadratic term created by implicit
+elimination contributes to these initial forms; it cannot be
+read from the original linear matrix alone.
+Lemmas~\ref{r3short:initial} and~\ref{r3short:schur} give the
+corresponding local reductions.
+
+Some boundary families require a normal ideal containing products
+or squares of coordinates. If the compatibility relations belong to such an
+ideal and their classes span its quotient by the maximal ideal,
+Nakayama's lemma makes them generate the entire ideal. Membership
+in the ideal is checked for the full polynomials, and spanning is
+checked in this quotient. Thus the conclusion is an inclusion of
+ideals in the completed local ring, even when the family has a
+nonreduced normal structure. The powers and products are retained
+until this inclusion has been obtained.
 On the ordinary chart of the modification,
 $\boldsymbol v=\tau\boldsymbol R$, with $\boldsymbol R$ a regular
 coordinate vector on that chart.
@@ -3346,7 +3416,7 @@ The weighted coordinates distinguish growth of the frame coefficients
 from growth of their weight two jets. To keep track of this relative
 growth, on a formal arc meeting the affine locus set
 $n=\operatorname{ord}\tau>0$ and
-$s=\min_j\operatorname{ord}v_j$, where
+$s=\min_j\operatorname{ord}(\boldsymbol v)_j$, where
 $\boldsymbol v=\tau^2\mathsf R$ is the weighted homogeneous
 representative. The possible orders are partitioned by
 \[
@@ -3363,6 +3433,17 @@ normalized coordinate of $\boldsymbol v$. The remaining weighted charts cover
 $s=0$, including the locus $\overline p=0$.
 Every affine arc lifts to the finite algebraic covers after a finite
 extension, which multiplies all its orders by the same positive integer.
+
+These order regions are considered before any coefficient minor
+is inverted. Within a region, support means the set of coordinates
+whose leading coefficients are nonzero; it is unchanged by the
+finite ramified extension. Within a fixed support, a coefficient
+minor is either nonzero at the point or belongs to the maximal
+ideal. In the latter case its vanishing condition is retained in
+the next local equations. This order of the distinctions is
+needed, for example, at an intersection of a support boundary
+with an amplitude hypersurface: an elimination valid only off
+that hypersurface cannot be used at the intersection.
 
 Within each order region, the next distinction is which leading
 coordinates are nonzero. The incidence equations are monomial or
@@ -3391,20 +3472,59 @@ to an invertible submatrix using the full local equations. The remaining normal 
 have initial homogeneous forms with no nonzero common zero, or
 generate an ideal containing the required exceptional coordinate.
 Lemma~\ref{r3:normalexclusion} forces $\tau=0$ on such an arc.
-At the four-point family, implicit elimination identifies the residual
-ideal with the intersection of the two normal family ideals.
-The solved value of $\tau$ belongs to both ideals, hence to their
-intersection and to the original local ideal.
-The normal generators and the two ideals at the four-point family
-are written in Appendix~\ref{r3:boundarysources}.
+At the four-point family, implicit elimination gives two normal
+ideals describing the local families through those points. The
+remaining equations generate their intersection. The eliminated
+expression for $\tau$ belongs to both ideals, hence to their
+intersection. Pulling this membership back gives $\tau$ in the
+original local ideal, including at the intersection of the two
+families. Appendix~\ref{r3:boundarysources} gives the generators.
+
+The conic endpoint with $\overline p_{23}=0$ and one nonzero
+leading derivative coordinate requires an exact relative ideal.
+On its intermediate chart,
+$\boldsymbol v=\kappa\delta\overline{\boldsymbol R}$ and
+$\tau=\kappa^2\delta$. Six complete equations with an invertible
+Jacobian define an implicit graph. The reference conic ideal on
+this graph is generated by one coordinate and the square of
+another. A first residual is divisible by $\overline p_{23}$,
+and its regular quotient, together with a second residual,
+has an invertible coefficient matrix in these two generators.
+Thus $\overline p_{23}$ times the reference ideal belongs to the
+necessary ideal. The coordinate $\kappa$ belongs to the reference
+ideal, while $\delta$ is divisible by $\overline p_{23}$, giving
+\[
+ \kappa\delta\in I,\qquad \tau=\kappa^2\delta\in I.
+\]
+Appendix~\ref{appr3whole:identities} gives this local proof with
+$\eta,\zeta$ retained as parameters. Since $I\subset J$ and
+$J:\tau^\infty=J$, this endpoint is excluded from the relative
+closure of the affine state image.
 
 For each coefficient used in elimination, its nonvanishing set permits
 division and its zero locus is treated with the original equations.
 This gives a further partition of each support by coefficient rank.
-The paired supports further separate the amplitude hypersurfaces
-and their intersections with principal value resonances.
-On the canonical paired stratum, simultaneous vanishing of the
-elimination minors at the principal value resonance would require
+On the paired supports, the coefficient rank can drop on the
+two amplitude hypersurfaces
+\[
+ (1+a\kappa_0)\ell^2=a\kappa_0,
+ \qquad (1+a\kappa_0)\ell^2=-a\kappa_0.
+\]
+Their difference is $2a\kappa_0\ne0$, so they are disjoint.
+The material resonance in these strata is
+\[
+ a\kappa_0^2=(1+a\kappa_0)q
+ \quad\Longleftrightarrow\quad a\kappa_0+q=0.
+\]
+It is kept as a parameter condition when either amplitude
+hypersurface is considered. In the critical missing-row stratum,
+the original equations would require
+\[
+ 1+\frac{b(a-1)^2}{a(b-1)^2}=0,
+\]
+which is impossible because $a,b>0$. On the canonical paired
+stratum, simultaneous vanishing of the elimination minors at
+the material resonance would require
 \[
  -\kappa_0(1+\kappa_0)=\frac34.
 \]
@@ -3445,10 +3565,33 @@ local ring: the formal flows preserve $J$ and multiply $\tau$ by
 a unit. The supports lacking these fields were treated by the
 relative local identities above.
 
-The residual ordinary equations force the boundary coordinates to
-satisfy \eqref{r3:incomingfamily}; the local normal ideals on their
-coefficient rank strata are given in Appendix~\ref{r3:boundarysources}.
-Thus a nonempty open subset of the component lies in $\mathcal F_{\rm in}$.
+Coefficient comparison here takes place in a function field
+where the direction parameters are common constants and the
+ratios are algebraically independent over those constants.
+Formal transfer uses two regular lifted fields with an
+invertible base minor. Their formal flows preserve the saturated
+ideal and send the boundary equation to a unit multiple of
+itself, so they transport a radical inclusion forcing $\tau=0$
+from the selected fibre to the relative local ring. At a point
+where the base minor vanishes, the relative local identities
+above supply the exclusion.
+
+In the ordinary chart, the remaining local ideals give the
+radical inclusion
+\[
+ (\overline p_{13},\overline p_{21},\overline p_{23},
+   \overline p_{31},
+   (\boldsymbol R)_1-\lambda_{\mathrm{in}}(v)\overline p_{32})
+       \subset\sqrt{I+(\tau)}.
+\]
+Here the projective normalization is $\overline p_{12}=1$,
+and $u=(\boldsymbol R)_2$, $v=(\boldsymbol R)_3$. The normal ideals giving this inclusion
+are written in Appendix~\ref{r3:boundarysources}. Their squares
+and cubes force the residual normal coordinates to vanish on
+the reduced boundary; the quadratic change of coordinates on
+the resonant stratum has the same radical. Hence a nonempty
+open subset of the component satisfies
+\eqref{r3:incomingfamily}.
 Since this family is relatively closed, irreducibility puts the
 generic point of the component in it. On the ordinary projective closure,
 Lemma~\ref{r3logic:boundaryfields} applies to the invariant
@@ -3456,6 +3599,13 @@ prime $\mathfrak p$ and its saturated homogeneous closure. Its regularized
 derivations preserve the minimal primes of the boundary ideal,
 which gives the last assertion.
 \end{proof}
+
+The surviving family still has the three boundary coordinates
+$\ell,u,v$. Reduction to this family therefore does not yet give
+a fibre dimension bound. The next argument uses its induced
+differential equations: it first makes a boundary coordinate
+algebraic over the ratios and the common constants, and then
+excludes the resulting algebraic differential equation.
 
 \subsubsection{Differential equations on the ordinary boundary family}
 
@@ -3478,6 +3628,13 @@ base components and can be normalized to induce
 $\partial_\eta,\partial_\zeta$. Their equations and normal terms are
 given in Appendix~\ref{appr3:ordinaryalgebraicity}.
 
+The normalized fields send $(\eta,\zeta)$ to $(1,0)$ and
+$(0,1)$, respectively. We use their common constant field to
+compare coefficients. After fixing $\eta$, the second field
+induces $d/d\zeta$ on the ratio field. The loci $v=-2$ and
+$\Theta=0$, where the normalization fails, are treated separately
+in Proposition~\ref{r3:ordinaryexclusion}.
+
 \begin{lemma}[Algebraicity on the ordinary boundary family]
 \label{r3:ordinaryalgebraicity}
 Let $E$ be the function field of an invariant irreducible component of the boundary contained in $\mathcal F_{\rm in}$ and dominant
@@ -3497,6 +3654,17 @@ quantity
 A polynomial relation of least total degree between $\eta,\zeta$
 over $C$ would have both partial derivatives zero. In characteristic
 zero this is impossible.
+
+Thus the two ratio coordinates remain independent even after
+adjoining the first integrals to the constant field. This is the
+field over which the coefficient comparison must be made. A
+polynomial equation with coefficients depending on $\ell$ and the
+displayed first integral is an equation over
+$C(\eta,\zeta)$, because both of those quantities lie in $C$.
+To prove algebraicity of $v$, it remains to show that at least one
+of the necessary polynomial equations is nonzero in this field;
+the vanishing of all its coefficients would supply no such
+conclusion.
 
 Consider the matrix of linear normal terms of the compatibility
 relations along the family. A unit maximal minor would make the full
@@ -3537,6 +3705,15 @@ vanish, since
 The factorization of the coupled normal columns in the same appendix
 then gives a nonzero polynomial in $v$.
 
+The mixed generator $un_\perp$ is kept even though the value of
+$u$ is zero on the subfamily. Dividing it by $u$ would change the
+local ideal and would remove precisely this case. The quadratic
+generator $n_\perp^2$ records the remaining normal equation when
+the linear column degenerates. The two coefficient factors above
+show that the resulting polynomial conditions cannot both become
+identically zero; they give algebraicity of $v$ on this subfamily
+without inverting $u$.
+
 On $v=2\eta$, the normal equations instead give a polynomial in
 $u$. After unit factors are removed, its three-column normal factor
 has highest $\zeta$ coefficient
@@ -3567,20 +3744,31 @@ cannot be a nonzero constant in $K$.
 \end{lemma}
 \begin{proof}
 Extend the constant field algebraically and pass to the smooth
-projective curve of the resulting function field. If $v$ is
-nonconstant, there is a point above $v=2\eta$. The equation gives
+projective curve of the resulting function field. If $v$ is nonconstant, its equation gives
 \begin{equation}\label{r3:residue-identity}
  d\left(\frac{\zeta}{v+2}\right)
  =-\frac{(\eta+1)v}{(v-2\eta)(v+2)^2}\,dv.
 \end{equation}
-The right side of \eqref{r3:residue-identity} has residue
-$-\eta/[2(\eta+1)]$ at $v=2\eta$.
-Pullback multiplies it by the positive ramification index, whereas
-the exact differential on the left has residue zero. Hence $v$ is
-constant, and its equation gives the stated alternatives. A
-logarithmic differential has only simple poles, while a nonzero
-constant multiple of $d\zeta$ has pole order at least two above
-$\zeta=\infty$.
+A nonconstant rational function on a smooth projective curve
+maps onto the projective line, so there is a point above
+$v=2\eta$. The differential on the right of
+\eqref{r3:residue-identity}, considered first on the $v$-line, has
+residue $-\eta/[2(\eta+1)]$ there. If $v-2\eta$ has order $e>0$
+at a point of the covering curve, pullback multiplies this residue
+by $e$. It remains nonzero. On the other hand, in a local
+parameter the derivative of a Laurent series has no coefficient
+of order $-1$. The exact differential on the left therefore has
+residue zero at every point. This contradiction makes $v$
+constant. Its differential equation then reduces to
+$(v-2\eta)(v+2)=0$.
+
+For the logarithmic assertion, a nonzero algebraic function has
+the form $t^e$ times a unit at any point, so its logarithmic
+differential has at most a simple pole there. At a point above
+$\zeta=\infty$, write $\zeta$ as $t^{-r}$ times a unit with $r>0$.
+Then $d\zeta$ has pole order $r+1\ge2$. Equality of a logarithmic
+differential with a nonzero constant multiple of $d\zeta$ is
+impossible.
 \end{proof}
 
 \begin{proposition}[Exclusion of the ordinary boundary family]
@@ -3630,6 +3818,15 @@ of $(1,-1)$. Thus $\tau\in I$ on a nonempty base open set, contrary
 to saturation for a component dominant over the ratio plane.
 \end{proof}
 
+Dominance is used here only to pass to a nonempty open set of
+the base. An irreducible component dominating the ratio plane
+has its generic point over every such open set. Thus a unit
+coefficient matrix near $(1,-2)$ excludes the same putative
+component even if that matrix is singular at $(1,-1)$.
+The change of base point applies to the relative normal ideal
+on $v=-2$; it does not require transferring a fibre identity
+across a vanishing horizontal minor.
+
 \begin{proposition}[Finite fibres over the ratio plane]
 \label{r3:dominantfinite}
 If the state image is dominant over the ratio plane, its generic
@@ -3645,6 +3842,13 @@ Consequently the affine generic fibre is also proper. A proper affine
 variety over a field is finite; see
 Lemma~\ref{r3logic:propercriterion}.
 \end{proof}
+
+In particular, the estimate concerns the generic fibre over
+$\mathbb C(\eta,\zeta)$. Special fibres over lower dimensional
+subsets of the ratio plane may have larger algebraic zero sets;
+they do not alter the transcendence degree of $\mathbb C(Y)$
+over the ratio field. They will enter the proof only if the
+entire ratio image is a curve, which is the next case.
 
 \subsection{Fibres over an algebraic ratio curve}\label{r3:curves}
 
@@ -3670,6 +3874,15 @@ set where $d\eta\ne0$, differentiating this equation gives the
 curve compatibility relations. After clearing denominators, they
 belong to $\mathfrak p$ by analyticity and constrain the generic
 fibre of $Y$.
+
+The slope $\varsigma$ is therefore a rational function on the
+actual ratio curve. It is not an additional independent material
+parameter. In an elimination performed at a single ratio point,
+one can treat its value as a parameter; persistence along the
+curve also requires $\zeta'=\varsigma$ and the differentiated
+compatibility equations. This distinction is what will remove
+the exceptional direction families left by pointwise
+elimination.
 
 The smaller base permits a larger state fibre. An affine
 irreducible component of dimension $d\ge1$ has boundary of
@@ -3711,6 +3924,15 @@ $\zeta=\eta+1$, then the five conditions in
 \eqref{r3:characteristic-loci}. On their complement, $g_*$ is a
 unit, and $\mathcal P_0$ either vanishes or is a unit. This is the
 partition in Table~\ref{tab:ratio-branches}.
+
+Each row of the table is a condition in the function field of
+one irreducible curve, rather than a condition at an isolated
+point. A product vanishes in this field only if one of its factors
+vanishes identically. The rows are taken in order, so intersections
+are assigned to the first applicable row. After these rows have
+been removed, the factors in $g_*\mathcal P_0$ are units and may
+be used in rational reconstruction. The equations before those
+divisions are used in the earlier rows.
 
 \subsubsection{Characteristic ratio curves}
 
@@ -3763,23 +3985,24 @@ integrate, respectively, to
 \]
 Their common branch $\zeta=\eta+1$ is treated separately below.
 The undivided zero pair equations treat a persistent vanishing
-opposite pair. On the remaining chart,
-two compatibility equations form an
-affine system for two pair coordinates over three other pair
-coordinates. Where its two by two coefficient matrix is invertible,
-the first two coordinates are reconstructed, and the remaining
-compatibility equations give two coprime polynomials in the three
-base coordinates. Their common zero set has dimension at most
-one. On the singular matrix locus, consistency imposes a Cramer
-numerator in addition to its determinant. The determinant is
-irreducible and does not divide that numerator, again giving
-base dimension at most one. The third compatibility equation
-cuts the affine kernel line in finitely many points. If a column
-or the whole matrix vanishes, the compatible base is finite,
-and the remaining equation gives fibre dimension at most one.
-The determinant, Cramer numerator and residual compatibility
-polynomials on these matrix rank strata are given in
-Appendix~\ref{appr3fib:pencils}.
+opposite pair. On the remaining chart, two compatibility
+equations form an affine system for two pair coordinates over
+three other pair coordinates. Its three coefficient rank strata
+give the following dimension counts.
+
+At rank two, the first two coordinates are reconstructed.
+The remaining equations give two coprime polynomials in the
+three base coordinates, so their common zero set has dimension
+at most one. At rank one, consistency imposes a Cramer numerator
+as well as the determinant. The determinant is irreducible and
+does not divide that numerator, again giving base dimension at
+most one. The third compatibility equation cuts the affine
+kernel line in finitely many points and adds no fibre dimension.
+At rank zero, and on the zero-column loci where this last
+equation can degenerate, the compatible base is finite and the
+residual equations bound the remaining fibre dimension by one.
+Appendix~\ref{appr3fib:pencils} gives the determinants, Cramer
+numerators and residual equations on these strata.
 
 The last two conditions in
 \eqref{r3:characteristic-loci} give $\zeta=c$ and $\zeta=c\eta$.
@@ -3798,9 +4021,14 @@ zero opposite pair. On the remaining open set, three pair
 coordinates reconstruct the complete state rationally. Two
 necessary polynomials in those coordinates have coprime leading
 forms of degree five for every admissible triple of principal
-values and ratio. Their common zero set has dimension at most
-one. Appendix~\ref{r3:balancedline} gives the reconstruction and
-the leading forms, including the zero pair argument.
+values and ratio. A common factor of the two polynomials would have a leading
+homogeneous factor dividing both quintic forms, contrary to
+their coprimality. A common zero set of dimension at least two
+in these three coordinates would have a hypersurface component
+and hence a common irreducible factor. Its dimension is therefore
+at most one, and rational reconstruction transfers the bound to
+the state fibre. Appendix~\ref{r3:balancedline} gives the
+reconstruction, the leading forms and the zero pair argument.
 \end{proof}
 
 \subsubsection{Directions and amplitudes at infinity}
@@ -3822,6 +4050,16 @@ directions with finite projective amplitude fibres gives a finite
 boundary. Directions with a zero coordinate are treated by retaining
 the homogeneous equations on that coordinate support.
 
+A direction specifies the ratio within a pair, whereas an
+amplitude specifies its size relative to the other pairs. If all
+three pairs are nonzero, the amplitudes form an open subset of
+$\mathbb P^2$; with two pairs they form an open subset of
+$\mathbb P^1$, and with one pair there is no relative amplitude
+parameter. This separation avoids counting the common
+homogeneous multiplier as a boundary coordinate. It also shows
+why a direction bound alone is insufficient: even one fixed
+direction can carry an amplitude curve.
+
 The mixed equations are bilinear in pairs of directions. An
 invertible coefficient block determines a projective map between its
 two directions. With three invertible blocks, the direction fibre is
@@ -3834,8 +4072,10 @@ Appendix~\ref{appr3fib:support}.
 
 Projection of these exceptional equations gives finitely many plane
 polynomials. A factor depending only on $\eta$ is a unit. For a
-nonvertical irreducible factor $f$, tangency to $f=0$ gives
-$\varsigma=-f_\eta/f_\zeta$ at the generic point. Substituting this
+nonvertical irreducible factor $f$, characteristic zero gives
+separability in $\zeta$, so $f_\zeta$ is nonzero at the generic
+point of $f=0$. Tangency therefore gives
+$\varsigma=-f_\eta/f_\zeta$. Substituting this
 slope into the original equations and clearing denominators gives
 polynomials whose joint greatest common divisor with $f$ is $1$
 in $\mathbb Q(\eta)[\zeta]$, as proved in
@@ -3863,6 +4103,18 @@ by their first two curve derivatives, containing a unit on $g_*\ne0$
 (Appendix~\ref{appr3fib:support}). They therefore cannot persist
 on the ratio curve.
 
+For the amplitude argument, the passage to squared amplitudes is
+a finite map. The cubics become a linear system in those squares.
+When its rank is at least two, its projective kernel is at most
+a point, and taking square roots gives only finitely many
+amplitude points. At rank one, its kernel is a projective line.
+A positive dimensional intersection with the quartic equations
+would require a common line component after this finite
+substitution. The quartic expressions just displayed exclude
+that component on the two-pair supports and on the indicated
+three-pair rank strata. The coefficient ideals with curve
+derivatives handle the remaining persistent loci.
+
 On $m_1m_2m_3\ne0$, put $t_i=w_i/m_i$. One direction requires
 separate treatment:
 \[
@@ -3887,21 +4139,32 @@ B\'ezout's theorem makes their projective intersection finite.
 The finite squaring map transfers this conclusion to the original
 pair amplitudes.
 
-For full support directions other than the distinguished one, the
-affine change \eqref{r3:momentcoordinates} makes the equations linear
-in four auxiliary coordinates subject to one quadratic relation. The polynomial
-coefficient of that relation is given in \eqref{r3:momentquadratics}.
-The auxiliary vector is nonzero, since its vanishing forces the
-distinguished direction. The linear equations give the five-row
-matrix $M_*$ and the four-row matrix $M$ of
-Appendix~\ref{appr3:momentrepresentation}. Eliminating the direction
-parameter gives the two polynomials $\mathcal P_1,\mathcal P_2$ in
-$(\eta,\zeta,\varsigma)$ defined in Appendix~\ref{appr3:eliminants}.
-The first expresses the existence of a nonzero kernel for the linear
-equations; the second imposes the quadratic relation on that kernel.
-Compatibility requires a determinant root whose kernel line lies
-on the quadratic relation. The norm construction below expresses
-this condition after the direction parameter is eliminated.
+For full support directions other than the distinguished one,
+use the affine coordinates $(U,V,w_*)$ of
+\eqref{r3:momentcoordinates}. The distinguished direction is their
+origin. The original equations are linear in the auxiliary vector
+\[
+ \xi=(UV,U,V,Q_*(w_*))^{\mathsf T},
+\]
+where $Q_*$ is the polynomial in
+\eqref{r3:momentquadratics}. Its coordinates also satisfy
+\[
+ Q_*(w_*)\xi_2\xi_3-\xi_1\xi_4=0.
+\]
+The original relations imply that $\xi=0$ forces the
+distinguished direction, so $\xi\ne0$ on the present branch.
+The five linear equations give the matrix $M_*$; four of the
+equations give the square matrix $M$, as defined in
+Appendix~\ref{appr3:momentrepresentation}.
+
+The linear equations determine possible auxiliary vectors.
+The displayed quadratic relation then imposes the product
+condition satisfied by the original coordinates. Eliminating
+the direction parameter gives two necessary conditions:
+$\mathcal P_1=0$ for the linear equations and
+$\mathcal P_2=0$ for their compatibility with the quadratic
+relation. These polynomials are defined in
+Appendix~\ref{appr3:eliminants}.
 
 \subsubsection{The quadratic condition and the remaining directions}
 
@@ -3921,8 +4184,16 @@ coprime to its displayed tangency polynomial in
 $\mathbb Q(\eta)[\zeta]$ (Appendix~\ref{appr3fib:Bwall}).
 The corresponding B\'ezout identities exclude a persistent curve
 on $f=0$.
-On the latter curve, the original direction ideal on full support
-is the unit ideal over $\mathbb Q(\eta)$.
+
+Substituting the tangent slope
+$\varsigma=-f_\eta/f_\zeta$ in $\mathcal P_0$ and multiplying
+by $f_\zeta^2$ gives the displayed polynomial. A nonvertical
+irreducible curve contained in $f=0$ and satisfying
+$\mathcal P_0=0$ would therefore make both polynomials vanish
+in its function field, contrary to their B\'ezout identity.
+On the remaining curve $(\eta+1)\zeta=\eta$, the original
+full support direction ideal is the unit ideal over
+$\mathbb Q(\eta)$.
 
 For the distinguished direction,
 $\varsigma'=\varsigma L/(\eta\zeta)$. Differentiation of
@@ -3948,6 +4219,12 @@ the quadratic relation along the divisor gives a polynomial
 condition on $(\eta,\zeta,\varsigma)$, which must hold together
 with the condition for existence of the kernel.
 
+Vanishing of the affine leading coefficient places a root at
+infinity. Vanishing of the discriminant makes two roots
+coincide. The homogeneous determinant defines a divisor of
+length two in either case, with multiplicity. Forming the norm
+on this divisor includes both configurations.
+
 \begin{proposition}[Conditions for the remaining directions]
 \label{r3:directioneliminants}
 Let $\mathscr B$ be the algebraic ratio curve of a
@@ -3958,17 +4235,24 @@ distinguished direction, satisfies $\mathcal P_1=\mathcal P_2=0$
 in $\mathbb C(\mathscr B)$.
 \end{proposition}
 \begin{proof}
-The nonzero auxiliary vector is annihilated by $M_*$. Its five
-maximal minors, quadratic in the direction parameter, consequently
-have a common root. Their coefficient matrix has rank at most
-two. The identities in Appendix~\ref{appr3:eliminants} identify
-the ideal of its maximal minors with $(\mathcal P_1)$: after
-factoring out $\mathcal P_1$, the residual minors have a linear
-combination equal to $\varsigma^2(\varsigma-1)^2$ times a nonzero
-polynomial in $\eta$, hence a unit.
-Hence $\mathcal P_1=0$. The same identity makes the two constant
-columns of the transformed four-row matrix independent. Their
-six minor charts therefore cover the parameter base.
+The nonzero auxiliary vector is annihilated by $M_*$, so its
+five maximal minors have a common root in the projective
+direction parameter. Write each of these quadratic minors in
+the basis of the three homogeneous monomials of degree two.
+Evaluation at that root gives a nonzero vector annihilated by
+their coefficient matrix. The matrix consequently has rank at
+most two, and all its three by three minors vanish.
+
+The identities in Appendix~\ref{appr3:eliminants} give the
+ideal of these coefficient minors as $(\mathcal P_1)$.
+After $\mathcal P_1$ is factored out, the residual minors have
+a linear combination equal to
+$\varsigma^2(\varsigma-1)^2$ times a nonzero polynomial in
+$\eta$. This is a unit at the generic point of the present
+curve, so the vanishing minors imply $\mathcal P_1=0$.
+The same unit identities make the two constant columns of the
+transformed four-row matrix independent. Their six minor charts
+cover the parameter base.
 
 On each chart, Schur reduction leaves a two by two linear pencil.
 The coefficient ideals for an identically zero determinant and
@@ -3981,21 +4265,37 @@ and the matrix has rank three on its zero divisor. This divisor
 is finite flat of degree two, and its kernel is an invertible line
 on which the quadratic relation restricts.
 
-Construct its norm on the ambient regular parameter open set.
-The two adjugate-column resultants are nonzero, so this norm is a
-nonzero section and its zero set is a Cartier divisor.
-A compatible nonzero kernel vector satisfies the quadratic
-relation, hence makes the norm vanish. Each irreducible component
-of the norm divisor divides both resultants. Their common factor
-has support $\mathcal P_0\mathcal P_2=0$; since $\mathcal P_0$ is a
-unit, $\mathcal P_2=0$ on the ratio curve.
-The determinant is homogeneous in the two coordinates of the
-projective direction parameter, so its degree two divisor retains
-the point at infinity. In a local trivialization, the norm is the
-determinant of multiplication on the finite locally free algebra of
-this divisor.
+The Schur reduction uses an invertible two by two block from
+the constant columns. Eliminating that block does not change the
+kernel, and reduces its dimension to that of the two by two
+pencil. On the determinant divisor this pencil has rank one,
+because its rank zero locus has been excluded by the coefficient
+ideal. A nonzero entry gives a local generator of its kernel;
+on overlaps these generators differ by a unit. Thus the kernel
+is a line also at a multiple determinant root. The quadratic
+relation restricts to a section on this line. The local kernel
+generators and their unit transition factors define it on the
+entire determinant divisor.
+
+Construct the norm on the ambient regular parameter open set.
+Locally trivialize the kernel line and write the restricted
+quadratic relation as an element of the finite locally free
+algebra of the determinant divisor. Its norm is the determinant
+of multiplication by this element. Vanishing at a compatible
+root makes multiplication noninvertible in that root's local
+algebra, hence makes the norm zero. This statement also holds
+when that local algebra is nonreduced at a double root.
+
+The two adjugate columns give local kernel representatives.
+Their resultants are nonzero, so the norm is a nonzero section
+and defines a Cartier divisor. Every irreducible component of
+this divisor occurs in both resultants. Their common factor
+therefore bounds its support by
+$\mathcal P_0\mathcal P_2=0$. On the present open set
+$\mathcal P_0$ is a unit, leaving $\mathcal P_2=0$.
+The homogeneous determinant includes roots at infinity.
 Lemmas~\ref{r3schur:reduction} and~\ref{r3schur:norm} give the
-Schur reduction and the norm identity.
+Schur reduction and the polynomial identity for this norm.
 \end{proof}
 
 The conditions $\mathcal P_1=\mathcal P_2=0$ constrain a direction
@@ -4012,15 +4312,30 @@ and gives the polynomial $C_*$ of
 Appendix~\ref{appr3:contactcalculation}. Put
 $R=\operatorname{Res}_\varsigma(\mathcal P_1,\mathcal P_2)$ and
 $T=\operatorname{Res}_\varsigma(\mathcal P_1,C_*)$.
+
+Multiplying the first differentiated equation by
+$(\mathcal P_2)_\varsigma$ and the second by
+$(\mathcal P_1)_\varsigma$, then subtracting, cancels the
+$\varsigma'$ terms. The identity also holds where either partial
+derivative is zero. The actual curve thus supplies a common
+root in $\varsigma$ for each resultant pair and satisfies
+$R=T=0$. These differentiated conditions express persistence
+along the curve.
+
 Lemma~\ref{r3:contactelimination} gives a common factor $D_0$ and
 \[
  \gcd(R/D_0,T/D_0)=1\quad\text{in }\mathbb Q(\eta)[\zeta].
 \]
-A B\'ezout identity for these quotients has coefficients in
-$\mathbb Q(\eta)[\zeta]$. It remains valid on $\mathscr B$.
-If $D_0$ were nonzero there, $R=T=0$ would make both quotients
-zero and contradict that identity. Hence $D_0=0$, so one of its
-seven irreducible factors vanishes identically:
+The B\'ezout identity for these quotients has coefficients in
+$\mathbb Q(\eta)[\zeta]$. Clearing its coefficients gives an
+identity with a nonzero polynomial in $\eta$ on the right.
+That polynomial is a unit in $\mathbb C(\mathscr B)$, because
+$\eta$ is nonconstant. If $D_0$ were nonzero in this field,
+$R=T=0$ would make both quotients vanish, contradicting the
+identity. Hence $D_0=0$. Since the curve function field has
+no zero divisors, one of its seven irreducible factors vanishes
+identically:
+
 \begin{equation}\label{r3:exceptional-ratio-loci}
  \zeta=0,\quad\zeta=-1,\quad\zeta=-\eta,\quad
  \zeta=\eta,\quad\zeta=1,\quad\zeta=\eta+1,\quad
@@ -4034,6 +4349,10 @@ On $(\eta+1)\zeta=\eta$,
 $\varsigma=(\eta+1)^{-2}$ and direct substitution gives
 $\mathcal P_0=0$. These three cases are the earlier rows of
 Table~\ref{tab:ratio-branches}.
+
+Each alternative therefore contradicts a factor being a unit
+in $g_*\mathcal P_0$. No full support direction distinct from
+the distinguished one can persist on the current ratio curve.
 
 \begin{proposition}[Fibres over an algebraic ratio curve]
 \label{r3:curvefibre}
@@ -4080,7 +4399,6 @@ those in \eqref{intro:family0}--\eqref{intro:family5}.
 
 \subsection{Integrability of a principal plane field}
 
-
 \begin{proof}[Proof of Theorem~\ref{completion:zerocontact}]
 Suppose first that $h_1h_2h_3$ were nonzero at a point. After shrinking,
 it is nonzero on an open ball $U$. Lemma~\ref{fnd:muwall} says that
@@ -4119,8 +4437,6 @@ $h_i\equiv0$. Finally, the nowhere-zero one-form $\alpha_i=e_i^\flat$
 satisfies $\alpha_i\wedge d\alpha_i=h_i\,\mathrm{vol}_g$, so Frobenius
 gives the asserted local surfaces.
 \end{proof}
-
-
 
 \subsection{Constant principal values}
 \label{completion:classical-exits}
@@ -4413,7 +4729,6 @@ For example, the removable-axis part of $\mathcal F_3$ is
 Here $\delta$ is arbitrary. For $\mathcal F_5$, a regular interior axis
 requires $\beta=0$ and $k=\pm1$, giving an affine map.
 
-
 A classical germ fixes both its parameters and its source and target
 Euclidean coordinates. On the regular domain of its formula, the
 analytic identity theorem propagates equality with the
@@ -4566,7 +4881,6 @@ case no point of $\Omega\cap\partial V$ is possible. Then $V$ is
 nonempty, open and relatively closed in connected $\Omega$, so
 $V=\Omega$. This proves the proposition.
 \end{proof}
-
 
 \subsection{Sufficiency of the classical models}
 \label{sec:classical-sufficiency}
@@ -4765,7 +5079,6 @@ up to an additive constant.
 
 \subsection{Proof of the main theorem}
 
-
 \begin{proof}[Proof of Theorem~\ref{intro:main}]
 Fix a reference point and a connected inverse-function ball $U$ about it.
 Lemma~\ref{fnd:analyticity} makes $\chi$ and the pulled-back invariants
@@ -4789,7 +5102,6 @@ Proposition~\ref{completion:continuation} therefore supplies its regular
 Cartesian germ at the original point. This proves necessity.
 Proposition~\ref{completion:sufficiency} proves sufficiency.
 \end{proof}
-
 
 \appendix
 \section{The geometric differential system}
@@ -4860,7 +5172,6 @@ The determinant and substitution identities are
 \end{equation}
 The free derivative coordinates are those in \eqref{fnd:freejets}.
 
-
 For the first prolongation introduce $18$ variables $T_{i,r}$, $1\le i\le3$, $0\le r\le5$, in that order, and set
 \[
 \partial_i^1=\sum_{j,k}\mathcal Q_i^{p_{jk}}\partial_{p_{jk}}+\sum_rT_{i,r}\partial_{\tau_r}.
@@ -4905,7 +5216,6 @@ Substituting these functions for $U_{i,r}$ in $\partial_i^2$ gives
 the three fields $\mathcal Q_i$.
 
 Every solution satisfies $D_i\mathsf S=\mathcal Q_i(\mathsf S)$. Its coordinate weights are the $d_\ell$ defined in Section~\ref{sec:geometry}, and $\mathcal Q_i^\ell$ has weight $d_\ell+1$. All coefficient denominators divide powers of $P_{\mathrm{mat}}$ in \eqref{fnd:guard}.
-
 
 The residual equations and their differential ideal are specified below.
 
@@ -5019,7 +5329,6 @@ N=\frac{\Delta_a}{2}\operatorname{adj}(M_0)S_0+
 \frac{2\Delta_a^2}{\Delta_{ab}}\operatorname{adj}(M_1)S_1
 \end{equation}
 satisfies $NM=7\Delta_bh_1h_2\operatorname{Id}_2$. Thus $\boldsymbol u=N\boldsymbol r/(7\Delta_bh_1h_2)$.
-
 
 \subsection{The square system for constant ratios}
 
@@ -5354,7 +5663,6 @@ specialization is a nonzero polynomial of degree six for $a>0$. A
 common root $R$ therefore gives $P_{12}=0$. Continuity makes $z$
 locally constant, contradicting Lemma~\ref{fnd:constantratio}.
 
-
 \subsection{Equations for a dilation and a commuting rotation}\label{appn:commuting-equations}
 
 For the map \eqref{fnd:drmap}, the derivative in spherical source and cylindrical target orthonormal bases has columns
@@ -5380,7 +5688,6 @@ with real constants $\alpha_{C_f},\beta_{C_f},\alpha_B,\beta_B$.
 Contracting $\operatorname{div}C_f=F_f^{\top}\Delta f$ with $D,R$ and using $\Delta|f|^2=2\operatorname{tr}C_f+2f\cdot\Delta f$ gives the first equation in \eqref{fnd:doublelegendre}.
 
 Here $A_0=2(\operatorname{tr}C_f+\alpha_{C_f}-(\omega/k)\beta_{C_f})$ and $B_0=2(\operatorname{tr}C_f^{-1}+\alpha_B)$. The inverse norm equation follows from \eqref{fnd:inverseidentity} and $\Delta|f^{-1}|^2=2\operatorname{tr}C_f^{-1}+2f^{-1}\cdot\Delta f^{-1}$. The middle equation is the volume identity \eqref{fnd:drvolume}.
-
 
 \subsection{The two Legendre equations}\label{appn:legendreproof}
 \begin{lemma}\label{fnd:legendre}
@@ -5863,7 +6170,6 @@ irreducible component through the point not contained in $\tau=0$
 contains an algebraic curve through the point meeting $\tau\ne0$;
 normalizing and completing that curve produces such an arc.
 \end{remark}
-
 
 We use two facts about completed local rings. Initial forms whose common zero is the origin exclude
 nonconstant formal arcs when the remaining parameter belongs to the
@@ -6564,7 +6870,6 @@ gives $1\in(D_0,D_1,D_2,D_3)A\subset\mathfrak d$, as required.
 \end{proof}
 It follows that the rank defect cannot occur on $D_{\mathrm{amp}}\ne0$.
 
-
 On $\Lambda\ne0$, $\mathfrak t_2=0$, and exactly one nonzero
 amplitude, the maximal minor ideal contains
 \[
@@ -7148,7 +7453,6 @@ $32ky^2$ then gives $\mathcal I_\perp^4=0$. Thus the residual multiplication
 matrix surjects onto $\mathcal I_\perp^4/\mathcal I_\perp^5$ at the point. Its unit minor and one
 application of Nakayama give $\mathcal I_\perp^4\subset I$, hence $\tau^4\in I$.
 
-
 \subsubsection{Supercritical and inactive two-coordinate $\overline{\boldsymbol R}$ charts}
 
 The columns of $D$ have disjoint supports. Its rank is the number of nonempty coordinate groups. For two nonzero $\overline{\boldsymbol R}$ coordinates, the twelve exceptional configurations consist of three paired, six pure-axis and three mixed supports. In a mixed chart put $\overline p=(1,w,0,0,0,0)$ and $\overline{\boldsymbol R}=(0,t,1)$, with $wt\ne0$. Two coefficient minors have determinant $25/(4096\cdot49)$ and force $e_0^{\mathrm{alg}}=e_1^{\mathrm{alg}}=0$. The two remaining equations in the variables being eliminated have a unit cyclic resultant $1024a^2\kappa_0 ^2$.
@@ -7278,7 +7582,7 @@ affine, hence finite, and $\dim Y_{\mathrm{gen}}=0$ when $\dim\mathscr B=2$.
 \subsection{Relative identities with one nonzero \texorpdfstring{$\mathsf R$}{R} coordinate}
 \label{appr3whole:identities}
 
-Work in the relative local ring of the single-coordinate boundary. Put $k=a\kappa_0 $, $m=1+k$, $q=1+\kappa_0 $, and
+Work in the relative local ring of the single-coordinate boundary. Let $I$ be the ideal of necessary regularized equations in this ring. Put $k=a\kappa_0 $, $m=1+k$, $q=1+\kappa_0 $, and
 \[
  \alpha=\frac{\zeta -\eta }{\zeta (\eta +1)},\qquad
  \beta=\frac{\eta (\zeta -1)}{\zeta (\eta +1)}.
@@ -7307,6 +7611,12 @@ Let $I_{\mathrm{graph}}=(e_0^{\mathrm{alg}}-f_0,e_1^{\mathrm{alg}}-f_1,e_2^{\mat
 ideal. These functions are substituted into the compatibility relation
 polynomials.
 
+Write $\mathcal R_\nu$, $\mathcal H_n$ and $Q_j^{\mathrm{reg}}$ for the
+regularized representatives with respective factors
+$\kappa^8\delta^4$, $\kappa^{11}\delta^5$, and
+$\kappa^7\delta^3$ for $Q_0$ or $\kappa^8\delta^4$
+for $Q_1,Q_5,Q_6$.
+
 Away from $k+w^2=0$, put $c=(3k-w^2)/(k+w^2)$. The
 $28$ normalized relations belong to
 \[
@@ -7315,8 +7625,16 @@ $28$ normalized relations belong to
 In the quotient over $\mathbb Q(k,\kappa_0 ,\eta ,\zeta ,w)$, multiplication in the quotient gives
 $\overline p_{31}=\overline p_{32}=0$, $\delta^2=\kappa\delta=0$; 
 
-At the attachment $w^2=-k$, regard $k$ and $w$ as independent parameters. Let $C$ be the third even relation on the boundary
-graph. Modulo $s^2$ it is
+At the attachment $w^2=-k$, regard $k$ and $w$ as independent parameters. Let $C$ be the third even relation on the boundary graph. Its full
+polynomial is
+\[
+ \begin{aligned}
+ C={}&\frac{2k}{m^2}(x^3z+xz^3)
+       +\frac{10x^2-4xz-6z^2}{m}w^2\\
+     &+\frac{k}{m}(-6x^2-4xz+10z^2).
+ \end{aligned}
+\]
+Modulo $s^2$ it is
 \[
 \begin{aligned}
  C={}&-\frac{4k}{m^2}x^4+\frac{8k}{m^2}x^3s\\
@@ -7362,6 +7680,52 @@ then gives equality with the necessary ideal of compatibility relations. Finally
 The ideal inclusion applies to formal arcs over the base and $w$.
 
 \paragraph{The conic and its derivative relations.}
+The partial gauge with active coordinate $\widehat p_{21}$ is
+\[
+ \mathcal D_{21}
+   =\widehat p_{21}\widehat E_2
+      -c_2^{\mathrm{diag}}R_2\partial_{\mathsf R_2}.
+\]
+By the definition of $\widehat E_2$ in
+Appendix~\ref{appr3:sources},
+\[
+ \mathcal D_{21}Q_6
+ =\widehat p_{21}\mathcal V_2Q_6
+  -(\widehat p_{21}g_2Q_0+c_2^{\mathrm{diag}}R_2)
+           \partial_{\mathsf R_2}Q_6.
+\]
+It vanishes on the actual state image, since $Q_0,R_2,Q_6$
+belong to its invariant ideal. Let $\mathcal G_{21}$ be the
+polynomial extension of $\kappa^{13}\delta^6\mathcal D_{21}Q_6$
+under the incidence substitution. For a part of ordinary degree
+$d$ and $\mathsf R$ degree $d_R$, the exceptional factors are
+$\kappa^{13-2d-d_R}\delta^{6-d}$. The two negative
+$\kappa$ exponents are $-1,-2$, and their substituted numerators
+are divisible by $\kappa,\kappa^2$, respectively. After these
+exact divisions the polynomial satisfies
+\[
+ \mathcal G_{21}\in(t,\kappa).
+\]
+
+On the graph $I_{\mathrm{graph}}$ with $t=\kappa=0$, all
+$\mathcal R_\nu,Q_0^{\mathrm{reg}},\mathcal H_n$ vanish, and
+the even equations restrict to
+\[
+ \begin{aligned}
+ Q_1^{\mathrm{reg}}&=s^2
+       \left(-\frac{2xz}{m}-\frac{6w^2}{k}+26\right),\\
+ Q_5^{\mathrm{reg}}&=s^2
+       \left(-\frac{2kxz}{m}+26w^2-6k\right),\\
+ Q_6^{\mathrm{reg}}&=C.
+ \end{aligned}
+\]
+Consequently these sources and $\mathcal G_{21}$ belong to
+\[
+ \mathcal J_{\mathrm{conic}}
+       =(I_{\mathrm{graph}},C,s^2,t,\kappa).
+\]
+Here $\eta,\zeta$ are retained in the coefficient ring.
+
 For the conic $x^2=2m(k+w^2)/k$, use the equation $C=0$ to
 lift $x$ to the dual algebra with $s^2=0$. If $x_s$ denotes its
 first coefficient, it is determined by
@@ -7378,20 +7742,180 @@ two homogeneous parts of the differentiated equations of $\mathsf R$ degrees thr
 back to exact multiples of $\kappa^2$ and $\kappa$, respectively.
 For the first field its denominator is $\overline p_{13}=1$; for the second
 it is $\overline p_{21}=z$, a unit on the conic chart in question. 
-At $w^2=k$, $x^2=4m$, the derivative matrix in two normal directions is
+At the cyclic ratio section, take the coefficient classes of
+\[
+ \mathcal R_2,\mathcal R_3,Q_0^{\mathrm{reg}},\mathcal G_{21},
+ \mathcal H_{14},Q_1^{\mathrm{reg}},Q_5^{\mathrm{reg}},Q_6^{\mathrm{reg}}
+\]
+in $\mathcal J_{\mathrm{conic}}/\mathfrak m\mathcal J_{\mathrm{conic}}$,
+relative to the ordered generators
+\[
+ (e_0^{\mathrm{alg}}-f_0,e_1^{\mathrm{alg}}-f_1,
+  e_2^{\mathrm{alg}}-f_2,\delta-d,C,s^2,t,\kappa).
+\]
+Here $\mathfrak m$ is the maximal ideal at the conic point. The
+norm of the determinant of this eight-column coefficient matrix
+over $x^2=2m(k+w^2)/k$ is
+\[
+ -\frac{9\kappa_0^2q^2w^2m^7
+          (w^2-k)^4(w^2+k)^{11}}{98k^{11}}.
+\]
+It is nonzero for $w(w^2-k)(w^2+k)\ne0$ at both roots.
+The selected relations belong to $\mathcal J_{\mathrm{conic}}$,
+and their classes span this quotient. Nakayama's lemma gives
+$\mathcal J_{\mathrm{conic}}\subset I$ in the relative local
+ring. Since $\kappa\in\mathcal J_{\mathrm{conic}}$, this gives
+$\tau\in I$. The attachment $w^2=-k$ was treated by $J_{10}$.
+
+At $w^2=k$, $x^2=4m$, the coefficient matrix of the 28
+complete relations in the eight generators of
+$\mathcal J_{\mathrm{conic}}$ has rank six. Its kernel has dimension
+two. The two full differentiated relations of $Q_6$, restricted
+to a basis of this kernel, have coefficient matrix
 \[
  \begin{pmatrix}-640kw&-16kw\\-384kx&0\end{pmatrix}.
 \]
-Its determinant is $-6144k^2wx$. Its norm over the four roots is nonzero.
+Its determinant $-6144k^2wx$ is nonzero at all four roots.
+The augmented normal matrix therefore has rank eight.
+These relations belong to $\mathcal J_{\mathrm{conic}}$, so
+Nakayama's lemma gives $\mathcal J_{\mathrm{conic}}\subset I$ in
+the local ring at this wall. In particular, $\tau\in I$.
 
+\paragraph{The conic endpoint.}\label{appr3whole:endpoint}
+Consider the point
+\[
+ \eta=1,\qquad \zeta=-1,\qquad
+ x=x_b,\qquad z=-x_b,\qquad x_b^2=2m,
+\]
+with
+\[
+ w=e_0^{\mathrm{alg}}=e_1^{\mathrm{alg}}=\delta=t=\kappa=0,
+ \qquad e_2^{\mathrm{alg}}=2x_b.
+\]
+In the algebraic local ring at this point we prove
+\[
+ \kappa\delta\in I,\qquad \tau=\kappa^2\delta\in I.
+\]
+\begin{proof}
+The complete regularized sources have the relative inclusions
+\[
+ \mathcal R_2,\mathcal R_3,Q_0^{\mathrm{reg}},
+       \mathcal H_6,\mathcal H_{14},\mathcal H_{16}
+       \in(w,e_0^{\mathrm{alg}},e_1^{\mathrm{alg}},\delta).
+\]
+Use the six equations
+\[
+ \mathcal R_2,\mathcal R_3,Q_0^{\mathrm{reg}},
+ Q_1^{\mathrm{reg}},Q_6^{\mathrm{reg}},\mathcal G_{21}
+\]
+as implicit equations for
+$(x,e_0^{\mathrm{alg}},e_1^{\mathrm{alg}},\delta,t,\kappa)$,
+with $s=x+z$, $v_{\mathrm{end}}=e_2^{\mathrm{alg}}-f_2$ and $w$
+fixed. Their Jacobian determinant at the point is
+\[
+ \frac{36}{7}k^2qm^2x_b\ne0.
+\]
+Thus the quotient of the completed local ring by these six
+equations is
+\[
+ \mathbb C[[v_{\mathrm{end}},s,w,\eta-1,\zeta+1]].
+\]
+A tilde denotes restriction to this implicit graph. Set
+\[
+ \begin{aligned}
+ \mathcal B_{\mathrm{end}}
+   &=Q_0^{\mathrm{reg}}
+      +\frac{27}{49mq}\mathcal H_6
+      -\frac{12}{49\kappa_0m}\mathcal H_{14}
+      +\frac{39x_b}{98m}\mathcal H_{16},\\
+ \mathcal F_{\mathrm{end}}
+   &=Q_1^{\mathrm{reg}}-\frac1kQ_5^{\mathrm{reg}}.
+ \end{aligned}
+\]
+For the first three implicit equations, the Jacobian in
+$(e_0^{\mathrm{alg}},e_1^{\mathrm{alg}},\delta)$ is $mq/3584$.
+Their solution at $w=0$ is
+$e_0^{\mathrm{alg}}=e_1^{\mathrm{alg}}=\delta=0$.
+The relative inclusions above and implicit uniqueness give
+\[
+ \widetilde\delta\in(w),\qquad
+ \widetilde{\mathcal B}_{\mathrm{end}}\in(w).
+\]
+
+Next restrict to $v_{\mathrm{end}}=s^2=0$.
+The derivative of $C$ in $x$ at fixed $s$ has value
+$-16kx_b/m\ne0$. Solving $C=0$, putting
+$e_i^{\mathrm{alg}}=f_i$, $\delta=d$, $t=\kappa=0$,
+gives a solution of the six implicit equations over this
+quotient ring, by their $\mathcal J_{\mathrm{conic}}$
+memberships. Uniqueness of the implicit solution gives
+\[
+ \widetilde\kappa,
+ \widetilde{\mathcal B}_{\mathrm{end}},
+ \widetilde{\mathcal F}_{\mathrm{end}}
+       \in(v_{\mathrm{end}},s^2).
+\]
+Multiplication by $w$ is injective modulo
+$(v_{\mathrm{end}},s^2)$, since this quotient is free with
+basis $1,s$ over $\mathbb C[[w,\eta-1,\zeta+1]]$.
+Hence
+\[
+ (w)\cap(v_{\mathrm{end}},s^2)
+       =w(v_{\mathrm{end}},s^2).
+\]
+There is a matrix of formal power series
+$\mathsf A_{\mathrm{end}}$ such that
+\[
+ \begin{pmatrix}
+   \widetilde{\mathcal B}_{\mathrm{end}}\\
+   w\widetilde{\mathcal F}_{\mathrm{end}}
+ \end{pmatrix}
+   =w\mathsf A_{\mathrm{end}}
+       \begin{pmatrix}v_{\mathrm{end}}\\s^2\end{pmatrix}.
+\]
+Both source combinations have zero state differential at
+the endpoint. Restricting their Hessians to the tangent space
+of the implicit graph gives the quadratic terms, with the
+ratio parameters evaluated at their center,
+\[
+ \begin{aligned}
+  \widetilde{\mathcal B}_{\mathrm{end}}^{(2)}
+     &=-\frac{3x_b}{224m}v_{\mathrm{end}}w,\\
+  \widetilde{\mathcal F}_{\mathrm{end}}^{(2)}
+     &=\frac18v_{\mathrm{end}}^2
+         +\frac72v_{\mathrm{end}}s+32s^2.
+ \end{aligned}
+\]
+Thus $(\mathsf A_{\mathrm{end}})_{11}(0)=-3x_b/(224m)$,
+$(\mathsf A_{\mathrm{end}})_{21}(0)=0$ and
+$(\mathsf A_{\mathrm{end}})_{22}(0)=32$. It follows that
+\[
+ \det\mathsf A_{\mathrm{end}}(0)
+       =-\frac{3x_b}{7m}\ne0.
+\]
+Inverting this matrix gives
+\[
+ w(v_{\mathrm{end}},s^2)
+   =\bigl(\widetilde{\mathcal B}_{\mathrm{end}},
+             w\widetilde{\mathcal F}_{\mathrm{end}}\bigr).
+\]
+The two memberships for $\widetilde\kappa$ and
+$\widetilde\delta$ imply
+$\widetilde\kappa\widetilde\delta\in
+ (\widetilde{\mathcal B}_{\mathrm{end}},
+  \widetilde{\mathcal F}_{\mathrm{end}})$.
+Lifting through the quotient by the six implicit equations
+puts $\kappa\delta$ in the completed necessary ideal.
+Faithful flatness of completion contracts this membership
+to the algebraic local ring
+\cite[Lemma~10.97.3, Tag~00MC]{StacksProject}.
+Multiplication by $\kappa$ gives $\tau\in I$.
+Since $kmq\ne0$ and $x_b^2=2m$, the two determinants
+are nonzero at either root $x_b$.
+\end{proof}
 
 \paragraph{The horizontal conormal matrix.}
-Put $K=\mathbb Q(k,\kappa_0,\eta,\zeta)$ and
-\[
- \alpha=\frac{\zeta-\eta}{\zeta(\eta+1)},\qquad
- \beta=\frac{\eta(\zeta-1)}{\zeta(\eta+1)},\qquad
-\]
-We use the incidence chart
+Put $K=\mathbb Q(k,\kappa_0,\eta,\zeta)$. Use the incidence chart
 \[
 \begin{aligned}
  \overline p&=\left(1,y,z,w,
@@ -7408,11 +7932,7 @@ $F$ we substitute
    =\left(\frac{\overline p}{\kappa^2\delta},
           \frac{\overline{\boldsymbol R}}{\kappa^3\delta}\right).
 \]
-Write $\mathcal R_\nu$, $\mathcal H_n$ and $Q_j^{\mathrm{reg}}$ for its
-regularized representatives with respective factors
-$\kappa^8\delta^4$, $\kappa^{11}\delta^5$, and
-$\kappa^7\delta^3$ for $Q_0$ or $\kappa^8\delta^4$
-for $Q_1,Q_5,Q_6$.
+
 The representatives are determined by the incidence identities
 $L\overline{\boldsymbol R}=\kappa(e_0^{\mathrm{alg}},e_1^{\mathrm{alg}},e_2^{\mathrm{alg}})^\top$ modulo $(I)$:
 the $(3,1)$ part of $R_\nu$ is replaced by $(DC)_{\nu,*}(e_0^{\mathrm{alg}},e_1^{\mathrm{alg}},e_2^{\mathrm{alg}})^\top$,
@@ -7884,7 +8404,6 @@ matrices are invertible on a nonempty base open set.
 
 We exclude the additional $\tau$ hypersurface over an open set of the ratio base.  Fix positive, pairwise distinct principal values and initially order them as $1<a<b$.  The conclusion holds over a
 nonempty open set of the two base variables for every such fixed triple of principal values.
-
 
 Use the $37$ necessary relations described above, with normal
 variables ordered as $(\overline p_{13},\overline p_{21},\overline p_{23},\overline p_{31},n_\perp,\tau)$.  Put
@@ -8566,7 +9085,6 @@ quadratic coefficient
  \end{aligned}
 \]
 
-
 \paragraph{The collision hypersurface.}
 On \(\Psi=0,T\ne2\), three resultant coefficients
 \(P_1,P_2,P_3\) satisfy the polynomial identity
@@ -8941,7 +9459,6 @@ polynomials are $T_0,T_1,T_2$, the polynomial identity is
 For the six factors of highest degree, primitive integer representatives
 of these polynomials and reductions preserving their degrees
 establish this coprimality in characteristic zero.
-
 
 For fixed directions of two nonzero pairs, quartic combinations give
 $\pm4x^2y^2$. Their twelve axis configurations are excluded by unit
@@ -9343,7 +9860,6 @@ reconstruction transfers the dimension bound to all nine fibre
 coordinates of the algebraic closure, as required by
 Lemma~\ref{r3short:rank}.
 
-
 At the projective boundary, each nonzero pair $(w_i,m_i)$ has direction
 $(w_i:m_i)\in\mathbb P^1$. After representatives of the three
 directions are chosen, their scalar amplitudes are defined up to a
@@ -9389,7 +9905,6 @@ coefficient extraction and the translation identity are given in
 Appendix~\ref{appr3:momentrepresentation}, equations
 \eqref{r3:momentextraction}--\eqref{r3:momentreconstruction}.
 The row factors in these formulas determine the matrices uniquely.
-
 
 On an algebraic ratio curve with nonconstant $\eta$, use
 $\varsigma=d\zeta/d\eta$, $N=d\varsigma/d\eta$ and
@@ -9571,7 +10086,6 @@ $\varepsilon_j$ is a unit in the previous localization and $\gcd(J_1,J_2)=1$.
 The factor $\mathcal P_0$ corresponds to the branch treated by the
 direction equations in Appendix~\ref{appr3fib:Bwall}.
 The norm argument below gives the necessary condition $\mathcal P_0\mathcal P_2=0$.
-
 
 The coefficient identities for the lower rank and identically zero
 determinant cases introduce a second nonzero polynomial $\delta(\eta)$.
@@ -9820,7 +10334,6 @@ The fixed Sylvester degrees are $(11,14,25)$ for $(\mathcal P_1,\mathcal P_2,C_*
 D_0={}&\zeta ^{12}(\zeta +1)^{20}(\zeta +\eta )^{20}(\zeta -\eta )^{25}(\zeta -1)^{25}\\
  &\cdot(\zeta -\eta -1)^{26}((\eta +1)\zeta -\eta )^6.
 \end{aligned}\end{equation}
-
 
 \begin{lemma}[Elimination of the slope]
 \label{r3:contactelimination}
@@ -11101,8 +11614,6 @@ Set $H_t(y)=\Psi_{-t}(\Phi_t(y))$.  Differentiation gives
 bounded by $C(1+t)e^{-(1-3\delta)t}|y|^3$, uniformly in the initial value.
 Thus $H_t$ converges uniformly holomorphically; its limit is
 $H(y)=y+O(|y|^3)$ and conjugates the two flows.  This proves the analytic normal form.
-
-
 
 \section{Similarity identities and dilation equations}
 \label{app:similarity-dilation}

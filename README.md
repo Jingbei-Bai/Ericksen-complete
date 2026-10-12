@@ -17,8 +17,8 @@ VERIFICATION.json
 SHA256SUMS.txt
 ```
 
-`paper/main.pdf` is the complete preprint (204 pages). Supplementary
-calculations S1-S9 follow Appendix E, beginning on page 162. The document
+`paper/main.pdf` is the complete preprint (210 pages). Supplementary
+calculations S1-S9 follow Appendix E, beginning on page 168. The document
 has one abstract and one table of contents, and all cross-references stay
 within the same PDF. Its complete LaTeX sources and three vector figure
 backgrounds are in the same directory. `supplement.tex` is included by
@@ -89,21 +89,38 @@ Check the indices against the full sources with:
 
 ## Completed runs and file integrity
 
-| Calculation | Actual mathematical executions | Required generated-data copies |
+| Calculation | Mathematical tasks covered by the recorded runs | Generated-data copies |
 |---|---:|---:|
 | Ranks 0, 1 and 2 | 63 / 63 passed | 0 |
-| Rank 3 | 337 / 337 passed | 129 / 129 completed |
+| Existing Rank 3 calculations | 337 / 337 passed | 129 / 129 completed |
+| Added conic endpoint calculations | 9 / 9 passed | 9 / 9 completed |
 
-Both runs started in clean work directories. Rank 3 includes full exact
-integer interpolation at 2039 and 965 nodes, with both complete
-independent readers passing. All retained mathematical sources, inputs,
-arguments and execution programs match the versions used in those runs.
+The existing packages were executed in clean work directories. Their
+mathematical sources, inputs, arguments and execution programs are unchanged.
+Rank 3 includes full exact integer interpolation at 2039 and 965 nodes,
+with both complete independent readers passing.
+
+The added Appendix C.9 calculations were run from another empty work
+directory together with their entire dependency closure: 23 mathematical
+executions and 19 generated-data copies, all completed. The current Rank3
+task graph contains 484 tasks. The verification combines the existing
+complete run and this clean endpoint dependency run.
+
+To reproduce the new part alone:
+
+```sh
+./sage-environment/bin/python Rank3/run.py --proof C9_ENDPOINT --work-dir ./rebuild-endpoint --workers 2
+```
+
+The exact outputs and both coefficient matrices are in
+`Rank3/results/conic_endpoint/`. The manuscript proves the local ideal
+implication from these identities in Appendix C.9.
 
 `VERIFICATION.json` contains the completed-run evidence, environment
 versions, manuscript hashes and directory hashes. The directory hash is
 SHA-256 of the sorted sequence of relative POSIX paths, a NUL separator,
-each file's SHA-256 and a newline. This packaging revision changes the
-directory layout and documentation; it does not add a new computation run.
+each file's SHA-256 and a newline. This revision integrates the expanded Section 8 and adds the
+recomputed relative conic endpoint calculations.
 
 Verify the extracted files from the release directory:
 

@@ -8,6 +8,34 @@
   },
   "files": [
     {
+      "archive_path": "PROOF_MAP.json",
+      "work_path": "PROOF_MAP.json",
+      "kind": "documentation",
+      "bytes": 174819,
+      "sha256": "82b8297944fe592e0edab7d26c5a8ab816b39a20e90b4c325b7e471368c47186"
+    },
+    {
+      "archive_path": "PROOF_MAP.md",
+      "work_path": "PROOF_MAP.md",
+      "kind": "documentation",
+      "bytes": 3735,
+      "sha256": "e439322bdb929c6ee7d7b3031ec40cdab2d79e7bda5e7c3f0c225340db047ca2"
+    },
+    {
+      "archive_path": "README.txt",
+      "work_path": "README.txt",
+      "kind": "documentation",
+      "bytes": 1683,
+      "sha256": "940439c0847d42c69be0768a5e5e617cc77e9a0981f77d8f229e290fd2cb1239"
+    },
+    {
+      "archive_path": "SYMBOLS.md",
+      "work_path": "SYMBOLS.md",
+      "kind": "documentation",
+      "bytes": 592,
+      "sha256": "86dc6bb54fd6443fa13ee20d27fa64d9d05fb1622da98f8fd786550e5549d1bf"
+    },
+    {
       "archive_path": "check_environment.py",
       "work_path": "check_environment.py",
       "kind": "driver",
@@ -237,27 +265,6 @@
       "kind": "driver",
       "bytes": 5939,
       "sha256": "7a6c9355d6ea60b9aa2a11470dc508d0da41822a8539a7f92c39d75e9e5b8cda"
-    },
-    {
-      "archive_path": "PROOF_MAP.json",
-      "work_path": "PROOF_MAP.json",
-      "kind": "documentation",
-      "bytes": 174821,
-      "sha256": "b0ab747d742fc3d7d2d3c248742de5079fa3ad0a635fab658c088aa00589a1a4"
-    },
-    {
-      "archive_path": "PROOF_MAP.md",
-      "work_path": "PROOF_MAP.md",
-      "kind": "documentation",
-      "bytes": 3718,
-      "sha256": "22393e70f7d46bcffbf5c00d7606d9f8c2d3eed5727c9f7370179496545eab07"
-    },
-    {
-      "archive_path": "README.txt",
-      "work_path": "README.txt",
-      "kind": "documentation",
-      "bytes": 1683,
-      "sha256": "940439c0847d42c69be0768a5e5e617cc77e9a0981f77d8f229e290fd2cb1239"
     },
     {
       "archive_path": "run.py",
@@ -907,6 +914,58 @@
       "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; tr_vertical_phase_independent_reader.py"
     },
     {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_Newton_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_Newton_reader.py",
+      "kind": "source",
+      "bytes": 1867,
+      "sha256": "dc682672058ece54dd059c3ec2644c9a77371b15ceaaedd2cac715426e5a9a24",
+      "required_by": [
+        "isometries:trs_B_infinity_L0_Newton_reader:round11/trs_B_infinity_L0_Newton_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_B_infinity_L0_Newton_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_leaders.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_leaders.py",
+      "kind": "source",
+      "bytes": 3453,
+      "sha256": "ce2b16e15c2f4c3ca825ea606e810d52dfa6c6da596f9989e8f518d1f9fe02f6",
+      "required_by": [
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:--wall-order:2",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:--wall-order:3",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:1",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:2",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:3"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_B_infinity_L0_leaders.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_wall_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_wall_reader.py",
+      "kind": "source",
+      "bytes": 4449,
+      "sha256": "1190966179eda1a2db635665ead60f7a0136bcf423466723dd3e31ff28429406",
+      "required_by": [
+        "isometries:trs_B_infinity_L0_wall_reader:round11/trs_B_infinity_L0_wall_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_B_infinity_L0_wall_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_zero_angle_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_zero_angle_reader.py",
+      "kind": "source",
+      "bytes": 2931,
+      "sha256": "3d26200f54d5f783f9841d7e111a0082dc6dabdefcb83332f11a8dfbf55cda29",
+      "required_by": [
+        "isometries:trs_B_infinity_zero_angle_reader:round11/trs_B_infinity_zero_angle_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_B_infinity_zero_angle_reader.py"
+    },
+    {
       "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_double_infinity_reader.py",
       "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_double_infinity_reader.py",
       "kind": "source",
@@ -1013,58 +1072,6 @@
       ],
       "mathematical_group": "translation_rotation",
       "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_angle_wall_source_reader.py"
-    },
-    {
-      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_leaders.py",
-      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_leaders.py",
-      "kind": "source",
-      "bytes": 3453,
-      "sha256": "ce2b16e15c2f4c3ca825ea606e810d52dfa6c6da596f9989e8f518d1f9fe02f6",
-      "required_by": [
-        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:--wall-order:2",
-        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:--wall-order:3",
-        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:1",
-        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:2",
-        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:3"
-      ],
-      "mathematical_group": "translation_rotation",
-      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_B_infinity_L0_leaders.py"
-    },
-    {
-      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_Newton_reader.py",
-      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_Newton_reader.py",
-      "kind": "source",
-      "bytes": 1867,
-      "sha256": "dc682672058ece54dd059c3ec2644c9a77371b15ceaaedd2cac715426e5a9a24",
-      "required_by": [
-        "isometries:trs_B_infinity_L0_Newton_reader:round11/trs_B_infinity_L0_Newton_reader.py"
-      ],
-      "mathematical_group": "translation_rotation",
-      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_B_infinity_L0_Newton_reader.py"
-    },
-    {
-      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_wall_reader.py",
-      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_wall_reader.py",
-      "kind": "source",
-      "bytes": 4449,
-      "sha256": "1190966179eda1a2db635665ead60f7a0136bcf423466723dd3e31ff28429406",
-      "required_by": [
-        "isometries:trs_B_infinity_L0_wall_reader:round11/trs_B_infinity_L0_wall_reader.py"
-      ],
-      "mathematical_group": "translation_rotation",
-      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_B_infinity_L0_wall_reader.py"
-    },
-    {
-      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_zero_angle_reader.py",
-      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_zero_angle_reader.py",
-      "kind": "source",
-      "bytes": 2931,
-      "sha256": "3d26200f54d5f783f9841d7e111a0082dc6dabdefcb83332f11a8dfbf55cda29",
-      "required_by": [
-        "isometries:trs_B_infinity_zero_angle_reader:round11/trs_B_infinity_zero_angle_reader.py"
-      ],
-      "mathematical_group": "translation_rotation",
-      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_B_infinity_zero_angle_reader.py"
     },
     {
       "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_newton_face_positive_transfer_reader.py",
@@ -1371,6 +1378,18 @@
       "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; tr_pure_rotation_B_infinity_leaders.py"
     },
     {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_B_infinity_L0_leaders.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_B_infinity_L0_leaders.py",
+      "kind": "source",
+      "bytes": 3453,
+      "sha256": "ce2b16e15c2f4c3ca825ea606e810d52dfa6c6da596f9989e8f518d1f9fe02f6",
+      "required_by": [
+        "isometries:trs_B_infinity_L0_Newton_reader:round11/trs_B_infinity_L0_Newton_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_B_infinity_L0_leaders.py"
+    },
+    {
       "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_algebra_frobenius_infinity_leading.py",
       "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_algebra_frobenius_infinity_leading.py",
       "kind": "source",
@@ -1395,18 +1414,6 @@
       ],
       "mathematical_group": "translation_rotation",
       "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_algebra_newton_blowup.py"
-    },
-    {
-      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_B_infinity_L0_leaders.py",
-      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_B_infinity_L0_leaders.py",
-      "kind": "source",
-      "bytes": 3453,
-      "sha256": "ce2b16e15c2f4c3ca825ea606e810d52dfa6c6da596f9989e8f518d1f9fe02f6",
-      "required_by": [
-        "isometries:trs_B_infinity_L0_Newton_reader:round11/trs_B_infinity_L0_Newton_reader.py"
-      ],
-      "mathematical_group": "translation_rotation",
-      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_B_infinity_L0_leaders.py"
     },
     {
       "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
@@ -1481,13 +1488,6 @@
       "mathematical_reason": "Two translations and finite connection fibres; tt_independent.py"
     },
     {
-      "archive_path": "SYMBOLS.md",
-      "work_path": "SYMBOLS.md",
-      "kind": "documentation",
-      "bytes": 592,
-      "sha256": "86dc6bb54fd6443fa13ee20d27fa64d9d05fb1622da98f8fd786550e5549d1bf"
-    },
-    {
       "archive_path": "tasks.json",
       "work_path": "tasks.json",
       "kind": "documentation",
@@ -1496,5 +1496,5 @@
     }
   ],
   "registered_tasks": 63,
-  "paper_sha256": "385fbcc35927532130f2e5683d8f7492af0564be92b5cc583eac370504feaa79"
+  "paper_sha256": "7dfd41a5f5d96263f46c73a6ce945a4d2be87223d52063b5ec3642fdfbb1e806"
 }

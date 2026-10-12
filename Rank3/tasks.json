@@ -6929,6 +6929,241 @@
         "rank3_sources:fresh_joint_sources"
       ],
       "action": "run"
+    },
+    {
+      "id": "conic_endpoint:input:independent_delta_subcritical_Q0_full_source",
+      "group": "conic_endpoint",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/round10/independent_delta_subcritical_Q0_full_source.sobj",
+      "to": "reproduction/conic_endpoint/source_inputs/independent_delta_subcritical_Q0_full_source.sobj",
+      "arguments": [],
+      "depends_on": [
+        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_Q0_full_source"
+      ]
+    },
+    {
+      "id": "conic_endpoint:input:independent_delta_subcritical_even_full_source",
+      "group": "conic_endpoint",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/round10/independent_delta_subcritical_even_full_source.sobj",
+      "to": "reproduction/conic_endpoint/source_inputs/independent_delta_subcritical_even_full_source.sobj",
+      "arguments": [],
+      "depends_on": [
+        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_even_full_source"
+      ]
+    },
+    {
+      "id": "conic_endpoint:input:independent_ratio_global_R_derivative_degreefall",
+      "group": "conic_endpoint",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/round10/independent_ratio_global_R_derivative_degreefall.sobj",
+      "to": "reproduction/conic_endpoint/source_inputs/independent_ratio_global_R_derivative_degreefall.sobj",
+      "arguments": [],
+      "depends_on": [
+        "rank3_current_proof:complete_global_source_views"
+      ]
+    },
+    {
+      "id": "conic_endpoint:input:independent_delta_subcritical_H_initials",
+      "group": "conic_endpoint",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/round10/independent_delta_subcritical_H_initials.sobj",
+      "to": "reproduction/conic_endpoint/source_inputs/independent_delta_subcritical_H_initials.sobj",
+      "arguments": [],
+      "depends_on": [
+        "generated_alias:round10/independent_delta_subcritical_H_initials.sobj"
+      ]
+    },
+    {
+      "id": "conic_endpoint:input:independent_partial_D_Newton_gauges_reader",
+      "group": "conic_endpoint",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/round10/independent_partial_D_Newton_gauges_reader.sobj",
+      "to": "reproduction/conic_endpoint/source_inputs/independent_partial_D_Newton_gauges_reader.sobj",
+      "arguments": [],
+      "depends_on": [
+        "generated_alias:round10/independent_partial_D_Newton_gauges_reader.sobj"
+      ]
+    },
+    {
+      "id": "conic_endpoint:input:independent_critical_single_RR3_normal",
+      "group": "conic_endpoint",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/round10/independent_critical_single_RR3_normal.sobj",
+      "to": "reproduction/conic_endpoint/source_inputs/independent_critical_single_RR3_normal.sobj",
+      "arguments": [],
+      "depends_on": [
+        "generated_alias:round10/independent_critical_single_RR3_normal.sobj"
+      ]
+    },
+    {
+      "id": "conic_endpoint:input:independent_subcritical_single_RR_full_regular_chart_H1",
+      "group": "conic_endpoint",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/full_recompute_20261009/isometries/rank3_coverage/replay/round10/independent_subcritical_single_RR_full_regular_chart_H1.sobj",
+      "to": "reproduction/conic_endpoint/source_inputs/independent_subcritical_single_RR_full_regular_chart_H1.sobj",
+      "arguments": [],
+      "depends_on": [
+        "rank3_coverage:subcritical_single_full_regular_chart_H1:subcritical_single_full_regular_chart_H1:1"
+      ]
+    },
+    {
+      "id": "conic_endpoint:input:independent_subcritical_single_RR_full_complete_E_chart_H1",
+      "group": "conic_endpoint",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/full_recompute_20261009/isometries/rank3_coverage/replay/round10/independent_subcritical_single_RR_full_complete_E_chart_H1.sobj",
+      "to": "reproduction/conic_endpoint/source_inputs/independent_subcritical_single_RR_full_complete_E_chart_H1.sobj",
+      "arguments": [],
+      "depends_on": [
+        "rank3_coverage:subcritical_single_full_complete_E_chart_H1:subcritical_single_full_complete_E_chart_H1"
+      ]
+    },
+    {
+      "id": "conic_endpoint:input:independent_ratio_p_boundary_second_gauge",
+      "group": "conic_endpoint",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/round10/independent_ratio_p_boundary_second_gauge.sobj",
+      "to": "reproduction/conic_endpoint/source_inputs/independent_ratio_p_boundary_second_gauge.sobj",
+      "arguments": [],
+      "depends_on": [
+        "rank3_current_proof:complete_global_source_views"
+      ]
+    },
+    {
+      "id": "conic_endpoint:generic_regularity",
+      "group": "conic_endpoint",
+      "source_member": "reproduction/conic_endpoint/verify_generic_regularity.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "conic_endpoint:input:independent_delta_subcritical_Q0_full_source",
+        "conic_endpoint:input:independent_delta_subcritical_even_full_source",
+        "conic_endpoint:input:independent_delta_subcritical_H_initials",
+        "conic_endpoint:input:independent_ratio_global_R_derivative_degreefall"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "conic_endpoint:coefficient_units",
+      "group": "conic_endpoint",
+      "source_member": "reproduction/conic_endpoint/verify_whole_coefficient_units.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "conic_endpoint:input:independent_delta_subcritical_Q0_full_source",
+        "conic_endpoint:input:independent_delta_subcritical_even_full_source",
+        "conic_endpoint:input:independent_delta_subcritical_H_initials",
+        "conic_endpoint:input:independent_ratio_global_R_derivative_degreefall"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "conic_endpoint:relative_boundary",
+      "group": "conic_endpoint",
+      "source_member": "reproduction/conic_endpoint/verify_relative_boundary.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "conic_endpoint:input:independent_delta_subcritical_Q0_full_source",
+        "conic_endpoint:input:independent_delta_subcritical_even_full_source",
+        "conic_endpoint:input:independent_delta_subcritical_H_initials",
+        "conic_endpoint:input:independent_ratio_global_R_derivative_degreefall"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "conic_endpoint:gauge_binding",
+      "group": "conic_endpoint",
+      "source_member": "reproduction/conic_endpoint/verify_manuscript_gauge_binding.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "conic_endpoint:input:independent_partial_D_Newton_gauges_reader",
+        "conic_endpoint:input:independent_ratio_p_boundary_second_gauge"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "conic_endpoint:rebuild_G21",
+      "group": "conic_endpoint",
+      "source_member": "reproduction/conic_endpoint/rebuild_generic_G_p21_Q6.py",
+      "wrapper_member": null,
+      "arguments": [
+        "--source-directory",
+        "@WORKROOT@/reproduction/conic_endpoint/source_inputs",
+        "--output-directory",
+        "@WORKROOT@/reproduction/conic_endpoint"
+      ],
+      "depends_on": [
+        "conic_endpoint:input:independent_partial_D_Newton_gauges_reader",
+        "conic_endpoint:input:independent_delta_subcritical_even_full_source",
+        "conic_endpoint:input:independent_subcritical_single_RR_full_complete_E_chart_H1",
+        "conic_endpoint:gauge_binding"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "conic_endpoint:G21_conic_membership",
+      "group": "conic_endpoint",
+      "source_member": "reproduction/conic_endpoint/verify_new_generic_G_J8.py",
+      "wrapper_member": null,
+      "arguments": [
+        "--source-directory",
+        "@WORKROOT@/reproduction/conic_endpoint/source_inputs",
+        "--output-directory",
+        "@WORKROOT@/reproduction/conic_endpoint"
+      ],
+      "depends_on": [
+        "conic_endpoint:input:independent_critical_single_RR3_normal",
+        "conic_endpoint:rebuild_G21",
+        "conic_endpoint:relative_boundary"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "conic_endpoint:implicit_graph",
+      "group": "conic_endpoint",
+      "source_member": "reproduction/conic_endpoint/verify_endpoint_unit_and_obstructions.py",
+      "wrapper_member": null,
+      "arguments": [
+        "--source-directory",
+        "@WORKROOT@/reproduction/conic_endpoint/source_inputs",
+        "--output-directory",
+        "@WORKROOT@/reproduction/conic_endpoint"
+      ],
+      "depends_on": [
+        "conic_endpoint:input:independent_subcritical_single_RR_full_regular_chart_H1",
+        "conic_endpoint:input:independent_subcritical_single_RR_full_complete_E_chart_H1",
+        "conic_endpoint:rebuild_G21",
+        "conic_endpoint:whole_J3"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "conic_endpoint:open_conic_minor",
+      "group": "conic_endpoint",
+      "source_member": "reproduction/conic_endpoint/verify_conic_open_minor.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "conic_endpoint:input:independent_subcritical_single_RR_full_regular_chart_H1",
+        "conic_endpoint:rebuild_G21",
+        "conic_endpoint:relative_boundary"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "conic_endpoint:whole_J3",
+      "group": "conic_endpoint",
+      "source_member": "reproduction/conic_endpoint/subcritical_single_endpoint_whole_J3_reader.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "action": "run",
+      "depends_on": [
+        "conic_endpoint:input:independent_delta_subcritical_Q0_full_source",
+        "conic_endpoint:input:independent_ratio_global_R_derivative_degreefall",
+        "conic_endpoint:generic_regularity"
+      ]
     }
   ],
   "scope": "Rank-three primary proof certificates and complete source/provenance prerequisites.",

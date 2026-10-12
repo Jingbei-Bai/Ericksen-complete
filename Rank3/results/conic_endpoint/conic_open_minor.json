@@ -1,0 +1,28 @@
+{
+  "status": "OPEN_CONIC_RELATIVE_NORMAL_MINOR_CONFIRMED",
+  "sources": [
+    "R2",
+    "R3",
+    "Q0",
+    "G(p21,Q6)",
+    "H14",
+    "Q1",
+    "Q5",
+    "Q6"
+  ],
+  "normal_generators": [
+    "e0-f0",
+    "e1-f1",
+    "e2-f2",
+    "delta-d",
+    "C",
+    "s^2",
+    "t",
+    "kappa"
+  ],
+  "determinant": "(3/14) * k^-5 * w * r * (r + 1) * (k + 1)^3 * (w^2 - k)^2 * (w^2 + k)^5 * xb",
+  "norm": "(-9/98) * k^-11 * w^2 * r^2 * (r + 1)^2 * (k + 1)^7 * (w^2 - k)^4 * (w^2 + k)^11",
+  "nonzero_locus": "w*(w^2-k)*(w^2+k) != 0",
+  "fresh_sources_used": true,
+  "seconds": 26.960730308000166
+}
