@@ -12,15 +12,15 @@
       "archive_path": "PROOF_MAP.json",
       "work_path": "PROOF_MAP.json",
       "kind": "documentation",
-      "bytes": 1122281,
-      "sha256": "9d59d1d9c90655a7519e36e321ffd94bd5bc01bda9cba7668e4f92d5966ea675"
+      "bytes": 1122280,
+      "sha256": "b7f9306c0b3ba307f1dca581b22d7797ea69c3e810dddd1410f465448a920b05"
     },
     {
       "archive_path": "PROOF_MAP.md",
       "work_path": "PROOF_MAP.md",
       "kind": "documentation",
       "bytes": 18787,
-      "sha256": "1c1789509c014fead7c4aeb61066d9c311b83baf12e1037bdef01b9b0702e06a"
+      "sha256": "5eca53d18bb9f851bc42804670ca2b47bfd806e53139f5466fc906ce1c2a3c52"
     },
     {
       "archive_path": "README.md",
@@ -6878,7 +6878,7 @@
       "sha256": "b04539083448ee05665858dbec2fa74080224cbdaf6fd076a0fe6f9e28a247e9"
     }
   ],
-  "paper_sha256": "7dfd41a5f5d96263f46c73a6ce945a4d2be87223d52063b5ec3642fdfbb1e806",
+  "paper_sha256": "3d162e251102c7f97a2144784e9d7e101822f310ae45254118b68e0e420db7f9",
   "recorded_outputs": [
     {
       "path": "results/conic_endpoint/subcritical_single_endpoint_whole_J3_reader.json",
