@@ -2,7 +2,7 @@
   "schema": "ericksen.verified-release.v3",
   "release_date": "2026-10-12",
   "status": "PASS",
-  "verified_utc": "2026-10-12T15:52:41.674825+00:00",
+  "verified_utc": "2026-10-12T15:59:37.279389+00:00",
   "environment": {
     "sage": "10.9",
     "python": "3.12.14",
@@ -11,7 +11,7 @@
     "lock_sha256": "db651778e9a788477213181183fab4bd5ec7e4c36f982477b34167d385555a56"
   },
   "paper": {
-    "main_tex_sha256": "c0c8f5d5f089b8aafdae77312d80199cf9eb875c6ce1c73b85b4124184e68a9b",
+    "main_tex_sha256": "fe8e6f6574d87e6d3c2445e8766ac1dd3b8a51b11ac6710ad4b0e7b2b9e3150c",
     "supplement_tex_sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
     "pages": {
       "main.pdf": 204
@@ -30,8 +30,7 @@
       "weights": "1 < gamma < 2",
       "new_mathematical_symbols": 0
     },
-    "computational_repository": "https://github.com/Jingbei-Bai/Ericksen-complete",
-    "repository_visibility": "private"
+    "computational_repository": "https://github.com/Jingbei-Bai/Ericksen-complete"
   },
   "packages": {
     "rank012": {
@@ -58,13 +57,13 @@
         "indexed_roots": 63,
         "registered_tasks": 63,
         "dependency_closure": 63,
-        "paper_sha256": "c0c8f5d5f089b8aafdae77312d80199cf9eb875c6ce1c73b85b4124184e68a9b",
+        "paper_sha256": "fe8e6f6574d87e6d3c2445e8766ac1dd3b8a51b11ac6710ad4b0e7b2b9e3150c",
         "formula_inputs": 1
       },
       "format": "directory",
       "files": 124,
       "uncompressed_bytes": 1236889,
-      "directory_tree_sha256": "efd8b9c7c0bfb45c2994fae0ef53513c688c5618934d1af4f6bc65dd39ed84ac"
+      "directory_tree_sha256": "7671e7ec703faa50f182a0e78d8f94366052865f830eb4abc21b99b4ebe912c5"
     },
     "rank3": {
       "status": "PASS",
@@ -90,13 +89,13 @@
         "indexed_roots": 267,
         "registered_tasks": 466,
         "dependency_closure": 466,
-        "paper_sha256": "c0c8f5d5f089b8aafdae77312d80199cf9eb875c6ce1c73b85b4124184e68a9b",
+        "paper_sha256": "fe8e6f6574d87e6d3c2445e8766ac1dd3b8a51b11ac6710ad4b0e7b2b9e3150c",
         "formula_inputs": 1
       },
       "format": "directory",
       "files": 567,
       "uncompressed_bytes": 373229346,
-      "directory_tree_sha256": "4e3e24785ab62b8ebb65c1b6597decca32ab7933014041f55a167d3ee4b382d3"
+      "directory_tree_sha256": "063c771e7d824d66687d21da6f66eae64a74e6d4a1a0c2000c36050a8e07f517"
     }
   },
   "all_original_readers_rerun_unmodified": true,
@@ -10029,12 +10028,12 @@
       "bytes": 1946
     },
     "paper/main.pdf": {
-      "sha256": "f975d4d9c3febe68980d3cae9f969f41ff6732b770b1c4fa151467453a80312d",
-      "bytes": 1418318
+      "sha256": "760d36925d1760625741250397c651ce10f8b82da92246d810e5831841ece228",
+      "bytes": 1418287
     },
     "paper/main.tex": {
-      "sha256": "c0c8f5d5f089b8aafdae77312d80199cf9eb875c6ce1c73b85b4124184e68a9b",
-      "bytes": 571239
+      "sha256": "fe8e6f6574d87e6d3c2445e8766ac1dd3b8a51b11ac6710ad4b0e7b2b9e3150c",
+      "bytes": 571202
     },
     "paper/supplement.tex": {
       "sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
@@ -10113,7 +10112,7 @@
       "bytes": 71505
     },
     "Rank012/MANIFEST.json": {
-      "sha256": "aeaf63f576b718440e9fdb92898701f9be4f2f793766bebeb93b01b0fb2a451e",
+      "sha256": "a5e42f4e80ac60cfe15e7abaedf2ddaa1ad9a7cf898fbc5eb5ad96741a8082aa",
       "bytes": 93895
     },
     "Rank012/paper_index.py": {
@@ -10121,7 +10120,7 @@
       "bytes": 5939
     },
     "Rank012/PROOF_MAP.json": {
-      "sha256": "f28550285e102251bd893310e0854237f7bddc412eb248576eb82069933bb153",
+      "sha256": "9d7c61da50bf4afd17bf3215fb27f36b9286276dfcb6cbb926b08ab24c38474c",
       "bytes": 174821
     },
     "Rank012/PROOF_MAP.md": {
@@ -11465,7 +11464,7 @@
       "bytes": 7799
     },
     "Rank3/MANIFEST.json": {
-      "sha256": "235d2e413c0015bb763be807bf5dfdf0c2dcd72d5dabfe448698dc4e0a3225f6",
+      "sha256": "7cb204c9d5ea02dd29b977aea321ef6667c48261810527df78166f9cf4adc5f0",
       "bytes": 410628
     },
     "Rank3/paper_index.py": {
@@ -11473,7 +11472,7 @@
       "bytes": 5939
     },
     "Rank3/PROOF_MAP.json": {
-      "sha256": "45117b1fd5b6df83c916df35f8b56ac5623eb7923fae999bff2b1804d939e954",
+      "sha256": "46f01d7e664dbe299a2cd08c2265025dda5260d26e1533dbdd411c7d0a6864e3",
       "bytes": 1038545
     },
     "Rank3/PROOF_MAP.md": {
