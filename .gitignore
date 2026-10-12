@@ -1,0 +1,9 @@
+sage-environment/
+rebuild-*/
+__pycache__/
+*.py[cod]
+paper/*.aux
+paper/*.log
+paper/*.toc
+paper/*.out
+paper/*.synctex.gz

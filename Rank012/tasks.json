@@ -1,0 +1,882 @@
+{
+  "schema": "portable_exact_math_jobs/v1",
+  "jobs": [
+    {
+      "id": "foundations:rebuild_state17",
+      "group": "foundations",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/foundations/rebuild_state17.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [],
+      "action": "run"
+    },
+    {
+      "id": "foundations:check_geometric_lowrank",
+      "group": "foundations",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/foundations/check_geometric_lowrank.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "foundations:check_normalization",
+      "group": "foundations",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/foundations/check_normalization.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "foundations:check_geometric_lowrank",
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "foundations:check_mu_wall",
+      "group": "foundations",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/foundations/check_mu_wall.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "foundations:check_normalization",
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "foundations:sufficiency_check",
+      "group": "foundations",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/classical/sufficiency_check.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "foundations:check_mu_wall"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj",
+      "group": "dilation",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/dilation/run_fresh_rebuild.py",
+      "wrapper_member": null,
+      "arguments": [
+        "research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "direct_checkers:elementary_exact",
+      "group": "direct_checkers",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/dilation/elementary_exact.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "direct_checkers:inverse_jet_exact",
+      "group": "direct_checkers",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/dilation/inverse_jet_exact.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "direct_checkers:tt_independent",
+      "group": "direct_checkers",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/tt_independent.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "direct_checkers:elementary_independent",
+      "group": "direct_checkers",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/elementary_independent.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "direct_checkers:cylinder_arbitrary_linear",
+      "group": "direct_checkers",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/cylinder_arbitrary_linear.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "direct_checkers:axis_pull_fresh",
+      "group": "direct_checkers",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/axis_pull_fresh.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:rr_null_physical_late_sources:round21/rr_null_physical_late_sources.py:1"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:tr_infinite_angle_B_frobenius:round11/tr_infinite_angle_B_frobenius.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_infinite_angle_B_frobenius.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/tr_infinite_angle_B_frobenius.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:tr_pure_rotation_frobenius:round11/tr_pure_rotation_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:tr_infinite_angle_whole_reader:round11/tr_infinite_angle_whole_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_infinite_angle_whole_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/tr_infinite_angle_whole_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:tr_infinite_angle_B_frobenius:round11/tr_infinite_angle_B_frobenius.py",
+        "isometries:tr_pure_rotation_frobenius:round11/tr_pure_rotation_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:tr_pure_rotation_B_infinity_L0_Newton_reader:round11/tr_pure_rotation_B_infinity_L0_Newton_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_pure_rotation_B_infinity_L0_Newton_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/tr_pure_rotation_B_infinity_L0_Newton_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:tr_pure_rotation_frobenius:round11/tr_pure_rotation_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:tr_pure_rotation_B_infinity_wall_reader:round11/tr_pure_rotation_B_infinity_wall_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_pure_rotation_B_infinity_wall_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/tr_pure_rotation_B_infinity_wall_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:tr_pure_rotation_frobenius:round11/tr_pure_rotation_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:tr_pure_rotation_frobenius:round11/tr_pure_rotation_frobenius.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_pure_rotation_frobenius.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/tr_pure_rotation_frobenius.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_algebra_first_order_shape:round11/trs_algebra_first_order_shape.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:tr_vertical_phase_independent_reader:round11/tr_vertical_phase_independent_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_vertical_phase_independent_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/tr_vertical_phase_independent_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:tr_pure_rotation_frobenius:round11/tr_pure_rotation_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_B_infinity_L0_Newton_reader:round11/trs_B_infinity_L0_Newton_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_Newton_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_B_infinity_L0_Newton_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_algebra_regular_frobenius:round11/trs_algebra_regular_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:--wall-order:2",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_leaders.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_B_infinity_L0_leaders.py",
+        "--wall-order",
+        "2"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_algebra_regular_frobenius:round11/trs_algebra_regular_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:--wall-order:3",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_leaders.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_B_infinity_L0_leaders.py",
+        "--wall-order",
+        "3"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_algebra_regular_frobenius:round11/trs_algebra_regular_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:1",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_leaders.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_B_infinity_L0_leaders.py",
+        "1"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_algebra_regular_frobenius:round11/trs_algebra_regular_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:2",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_leaders.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_B_infinity_L0_leaders.py",
+        "2"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_algebra_regular_frobenius:round11/trs_algebra_regular_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:3",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_leaders.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_B_infinity_L0_leaders.py",
+        "3"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_algebra_regular_frobenius:round11/trs_algebra_regular_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_B_infinity_L0_wall_reader:round11/trs_B_infinity_L0_wall_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_wall_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_B_infinity_L0_wall_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:--wall-order:2",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:--wall-order:3",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:1",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:2",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:3",
+        "isometries:trs_algebra_regular_frobenius:round11/trs_algebra_regular_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_B_infinity_zero_angle_reader:round11/trs_B_infinity_zero_angle_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_zero_angle_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_B_infinity_zero_angle_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_B_infinity_L0_Newton_reader:round11/trs_B_infinity_L0_Newton_reader.py",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:1",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:2",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:3",
+        "isometries:trs_B_infinity_L0_wall_reader:round11/trs_B_infinity_L0_wall_reader.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_algebra_double_infinity_reader:round11/trs_algebra_double_infinity_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_double_infinity_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_algebra_double_infinity_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_algebra_regular_frobenius:round11/trs_algebra_regular_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_algebra_finite_angle_infinity_reader:round11/trs_algebra_finite_angle_infinity_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_finite_angle_infinity_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_algebra_finite_angle_infinity_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_algebra_regular_frobenius:round11/trs_algebra_regular_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_algebra_first_order_shape:round11/trs_algebra_first_order_shape.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_first_order_shape.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_algebra_first_order_shape.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_algebra_first_order_source_reader:round11/trs_algebra_first_order_source_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_first_order_source_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_algebra_first_order_source_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_algebra_first_order_shape:round11/trs_algebra_first_order_shape.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_algebra_harmonic_eta_identity:round11/trs_algebra_harmonic_eta_identity.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_harmonic_eta_identity.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_algebra_harmonic_eta_identity.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_algebra_newton_full_source_reader:round11/trs_algebra_newton_full_source_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_newton_full_source_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_algebra_newton_full_source_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_algebra_regular_frobenius:round11/trs_algebra_regular_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_algebra_regular_frobenius:round11/trs_algebra_regular_frobenius.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_regular_frobenius.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_algebra_regular_frobenius.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_algebra_first_order_shape:round11/trs_algebra_first_order_shape.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_angle_wall_asymptotic_probe:round11/trs_angle_wall_asymptotic_probe.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_angle_wall_asymptotic_probe.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_angle_wall_asymptotic_probe.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_angle_wall_source_reader:round11/trs_angle_wall_source_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_angle_wall_source_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_angle_wall_source_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_algebra_first_order_shape:round11/trs_algebra_first_order_shape.py",
+        "isometries:trs_angle_wall_asymptotic_probe:round11/trs_angle_wall_asymptotic_probe.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_newton_face_positive_transfer_reader:round11/trs_newton_face_positive_transfer_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_newton_face_positive_transfer_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_newton_face_positive_transfer_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:tr_infinite_angle_whole_reader:round11/tr_infinite_angle_whole_reader.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_null_angle_independent_reader:round11/trs_null_angle_independent_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_null_angle_independent_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_null_angle_independent_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_algebra_regular_frobenius:round11/trs_algebra_regular_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_vertical_phase_independent_reader:round11/trs_vertical_phase_independent_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_vertical_phase_independent_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_vertical_phase_independent_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:trs_algebra_regular_frobenius:round11/trs_algebra_regular_frobenius.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:trs_zero_radial_phase_reader:round11/trs_zero_radial_phase_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_zero_radial_phase_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round11/trs_zero_radial_phase_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_deformation_fixed_pressure_reader:round20/rr_deformation_fixed_pressure_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round20/rr_deformation_fixed_pressure_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round20/rr_deformation_fixed_pressure_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:rr_deformation_second_order:round20/rr_deformation_second_order.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_deformation_protected_reduction_reader:round20/rr_deformation_protected_reduction_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round20/rr_deformation_protected_reduction_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round20/rr_deformation_protected_reduction_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:rr_deformation_second_order:round20/rr_deformation_second_order.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_deformation_second_order:round20/rr_deformation_second_order.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round20/rr_deformation_second_order.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round20/rr_deformation_second_order.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_deformation_zero_twist_reader:round20/rr_deformation_zero_twist_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round20/rr_deformation_zero_twist_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round20/rr_deformation_zero_twist_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_cartesian_direction_pencil_reflection_reader:round21/rr_cartesian_direction_pencil_reflection_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_cartesian_direction_pencil_reflection_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_cartesian_direction_pencil_reflection_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:rr_null_physical_protected_graph:round21/rr_null_physical_protected_graph.py:-1"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_cartesian_twelve_symbol_reader:round21/rr_cartesian_twelve_symbol_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_cartesian_twelve_symbol_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_cartesian_twelve_symbol_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_global_axis_analytic_protection_reader:round21/rr_global_axis_analytic_protection_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_global_axis_analytic_protection_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_global_axis_analytic_protection_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "direct_checkers:axis_pull_fresh"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_global_pencil_positive_independent_reader:round21/rr_global_pencil_positive_independent_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_global_pencil_positive_independent_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_global_pencil_positive_independent_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:rr_null_physical_late_sources:round21/rr_null_physical_late_sources.py:1",
+        "isometries:rr_null_physical_protected_graph:round21/rr_null_physical_protected_graph.py:1"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_null_physical_axis_binary_tps:round21/rr_null_physical_axis_binary_tps.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_binary_tps.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_null_physical_axis_binary_tps.py"
+      ],
+      "depends_on": [
+        "direct_checkers:axis_pull_fresh",
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_null_physical_axis_material_wall_reader:round21/rr_null_physical_axis_material_wall_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_material_wall_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_null_physical_axis_material_wall_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:rr_null_physical_axis_symmetric_resultant:round21/rr_null_physical_axis_symmetric_resultant.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_null_physical_axis_raw_checkpoint_reader:round21/rr_null_physical_axis_raw_checkpoint_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_raw_checkpoint_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_null_physical_axis_raw_checkpoint_reader.py"
+      ],
+      "depends_on": [
+        "direct_checkers:axis_pull_fresh",
+        "foundations:rebuild_state17",
+        "isometries:rr_null_physical_late_sources:round21/rr_null_physical_late_sources.py:1"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_null_physical_axis_resultant_sign_probe:round21/rr_null_physical_axis_resultant_sign_probe.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_resultant_sign_probe.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_null_physical_axis_resultant_sign_probe.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:rr_null_physical_axis_binary_tps:round21/rr_null_physical_axis_binary_tps.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_null_physical_axis_symmetric_resultant:round21/rr_null_physical_axis_symmetric_resultant.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_symmetric_resultant.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_null_physical_axis_symmetric_resultant.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:rr_null_physical_axis_resultant_sign_probe:round21/rr_null_physical_axis_resultant_sign_probe.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_null_physical_axis_tps_source_reader:round21/rr_null_physical_axis_tps_source_reader.py",
+      "group": "isometries",
+      "source_member": "reproduction/reader324_full_dag_runtime_v2.py",
+      "arguments": [
+        "--bundle-root",
+        "@WORKROOT@",
+        "--output-dir",
+        "@RUNROOT@/original_axis",
+        "--backend",
+        "dag",
+        "--rss-limit-mib",
+        "8192"
+      ],
+      "depends_on": [
+        "direct_checkers:axis_pull_fresh",
+        "foundations:rebuild_state17",
+        "isometries:rr_null_physical_axis_binary_tps:round21/rr_null_physical_axis_binary_tps.py"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_null_physical_hessian_graph:round21/rr_null_physical_hessian_graph.py:-1",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_hessian_graph.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_null_physical_hessian_graph.py",
+        "-1"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_null_physical_hessian_graph:round21/rr_null_physical_hessian_graph.py:1",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_hessian_graph.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_null_physical_hessian_graph.py",
+        "1"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_null_physical_late_sources:round21/rr_null_physical_late_sources.py:-1",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_late_sources.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_null_physical_late_sources.py",
+        "-1"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:rr_null_physical_late_sources:round21/rr_null_physical_late_sources.py:1",
+        "isometries:rr_null_physical_protected_graph:round21/rr_null_physical_protected_graph.py:-1"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_null_physical_late_sources:round21/rr_null_physical_late_sources.py:1",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_late_sources.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_null_physical_late_sources.py",
+        "1"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:rr_null_physical_protected_graph:round21/rr_null_physical_protected_graph.py:1"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_null_physical_protected_graph:round21/rr_null_physical_protected_graph.py:-1",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_protected_graph.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_null_physical_protected_graph.py",
+        "-1"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:rr_null_physical_hessian_graph:round21/rr_null_physical_hessian_graph.py:-1"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_null_physical_protected_graph:round21/rr_null_physical_protected_graph.py:1",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_protected_graph.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_null_physical_protected_graph.py",
+        "1"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:rr_null_physical_hessian_graph:round21/rr_null_physical_hessian_graph.py:1"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_null_physical_source_bridge_reader:round21/rr_null_physical_source_bridge_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_source_bridge_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_null_physical_source_bridge_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:rr_cartesian_twelve_symbol_reader:round21/rr_cartesian_twelve_symbol_reader.py",
+        "isometries:rr_null_physical_hessian_graph:round21/rr_null_physical_hessian_graph.py:-1",
+        "isometries:rr_null_physical_hessian_graph:round21/rr_null_physical_hessian_graph.py:1",
+        "isometries:rr_null_physical_late_sources:round21/rr_null_physical_late_sources.py:-1",
+        "isometries:rr_null_physical_late_sources:round21/rr_null_physical_late_sources.py:1",
+        "isometries:rr_null_physical_protected_graph:round21/rr_null_physical_protected_graph.py:-1",
+        "isometries:rr_null_physical_protected_graph:round21/rr_null_physical_protected_graph.py:1"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:rr_null_physical_target_reflection_reader:round21/rr_null_physical_target_reflection_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_target_reflection_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round21/rr_null_physical_target_reflection_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "isometries:rr_null_physical_late_sources:round21/rr_null_physical_late_sources.py:-1",
+        "isometries:rr_null_physical_late_sources:round21/rr_null_physical_late_sources.py:1"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "isometries:ss_pitch_stable_carrier_reader:round22/ss_pitch_stable_carrier_reader.py",
+      "group": "isometries",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round22/ss_pitch_stable_carrier_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "arguments": [
+        "round22/ss_pitch_stable_carrier_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "foundations:mu_newton_check",
+      "group": "foundations",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/foundations/mu_newton_check.py",
+      "wrapper_member": null,
+      "arguments": [],
+      "depends_on": [
+        "foundations:check_mu_wall"
+      ],
+      "action": "run"
+    }
+  ]
+}

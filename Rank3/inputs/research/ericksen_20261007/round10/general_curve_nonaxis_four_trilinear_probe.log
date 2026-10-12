@@ -1,0 +1,5 @@
+REVIEWER RECONSTRUCTION: exact generic QQ(H,Z,S) ideal equivalence only; not a historical log or a uniform base-ring containment certificate.
+BASIS
+(2*H*Z*S)*t2 + (-2*H*Z)*t3 + (H*S^2 - H*S - Z*S + Z)
+(2*H*Z*S - 2*Z^2)*t1 + (2*H*Z)*t3 + (-H*S^2 + H*S + Z*S - Z)
+(4*H^2*Z^2 - 4*H*Z^3 + 4*H*Z^2)*t3^2 + (-2*H^2*Z*S^2 + 4*H^2*Z*S - 4*H*Z^2 - 2*H*Z*S^2 + 4*H*Z*S + 2*Z^3 - 2*Z^2)*t3 + (-H^2*S^3 + H^2*S^2 + 2*H*Z*S^2 - 2*H*Z*S - H*S^3 + H*S^2 - Z^2*S + Z^2 + Z*S^2 - Z*S)

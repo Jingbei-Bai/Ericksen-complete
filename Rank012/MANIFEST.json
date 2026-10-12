@@ -1,0 +1,1500 @@
+{
+  "schema": "ericksen.portable-calculation-manifest.v1",
+  "package": "Rank012",
+  "environment": {
+    "sage": "10.9",
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "files": [
+    {
+      "archive_path": "check_environment.py",
+      "work_path": "check_environment.py",
+      "kind": "driver",
+      "bytes": 2879,
+      "sha256": "bd1601143ccb69d01e88769252258694e7a4efdf23dc672898a27fc0d89e423b"
+    },
+    {
+      "archive_path": "environment-linux-64.lock",
+      "work_path": "environment-linux-64.lock",
+      "kind": "documentation",
+      "bytes": 45315,
+      "sha256": "db651778e9a788477213181183fab4bd5ec7e4c36f982477b34167d385555a56"
+    },
+    {
+      "archive_path": "inputs/paper/main.tex",
+      "work_path": "paper/main.tex",
+      "kind": "input",
+      "bytes": 4215,
+      "sha256": "6fac6f23ae36ef04cdfc97de6de7b10f9b782f0aae89534f6031c7e6b8d39430",
+      "required_by": [
+        "foundations:check_mu_wall",
+        "foundations:mu_newton_check",
+        "foundations:sufficiency_check"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "Eight cubic coefficients are mathematical inputs. Three original Newton display equations preserve the existing label checks. Classical sufficiency reads only its provenance hash; no complete paper is included.",
+      "original_tex_sha256": "554bc182c6d7365e3834a8df05bfa0b3d39e980671db9043873ab05300f33e05",
+      "equation_numbers": [
+        "B.11",
+        "B.12",
+        "B.13",
+        "B.24",
+        "B.25",
+        "B.26",
+        "B.27",
+        "B.28",
+        "B.29",
+        "B.30",
+        "B.31"
+      ]
+    },
+    {
+      "archive_path": "inputs/research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_infinite_angle_leading_polynomials.sobj",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_infinite_angle_leading_polynomials.sobj",
+      "kind": "input",
+      "bytes": 6841,
+      "sha256": "f7371914bd146441bc87fedfa0a9e10a3cf81d60a8431686c967cbad0d2e29fe",
+      "required_by": [
+        "isometries:tr_infinite_angle_whole_reader:round11/tr_infinite_angle_whole_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "Unscaled balanced-angle pair compared with the primitive pair."
+    },
+    {
+      "archive_path": "inputs/research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_infinite_angle_newton_support.sobj",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_infinite_angle_newton_support.sobj",
+      "kind": "input",
+      "bytes": 14979,
+      "sha256": "cb5c681619172f0f9bd313ef92e0c0fcb2af95b2b272af9413fd079ea849e177",
+      "required_by": [
+        "isometries:tr_infinite_angle_whole_reader:round11/tr_infinite_angle_whole_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "Complete finite Newton profiles, independently recomputed from every full Frobenius numerator and denominator."
+    },
+    {
+      "archive_path": "inputs/research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_infinite_angle_primitive_polynomials.sobj",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_infinite_angle_primitive_polynomials.sobj",
+      "kind": "input",
+      "bytes": 3193,
+      "sha256": "04591264a2cdaa90119c391b82ff203ab38951f1b647c20b17cdc96ee2b308a7",
+      "required_by": [
+        "isometries:tr_infinite_angle_whole_reader:round11/tr_infinite_angle_whole_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "Balanced-angle polynomials compared directly with the reconstructed full-source leaders and used in the fresh resultant."
+    },
+    {
+      "archive_path": "inputs/research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_infinite_angle_top_resultant_real_0.sobj",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_infinite_angle_top_resultant_real_0.sobj",
+      "kind": "input",
+      "bytes": 3388,
+      "sha256": "a8914e13db21eb98f1f9b05f2f8eae45b88b39fdec72bc33dcbd805c15e85467",
+      "required_by": [
+        "isometries:tr_infinite_angle_whole_reader:round11/tr_infinite_angle_whole_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "First complex top resultant factor and its exact positive-square real/imaginary identity."
+    },
+    {
+      "archive_path": "inputs/research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_infinite_angle_top_resultant_real_1.sobj",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_infinite_angle_top_resultant_real_1.sobj",
+      "kind": "input",
+      "bytes": 3634,
+      "sha256": "fe63ed4a27fb819866806169c0276bcf13b9df8721ab91451b58bf7377ca0e27",
+      "required_by": [
+        "isometries:tr_infinite_angle_whole_reader:round11/tr_infinite_angle_whole_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "Second top resultant factor and real/imaginary resultant, independently recomputed and proved positive."
+    },
+    {
+      "archive_path": "inputs/research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_pure_rotation_B_infinity_leaders_Lweight1.sobj",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_pure_rotation_B_infinity_leaders_Lweight1.sobj",
+      "kind": "input",
+      "bytes": 6278,
+      "sha256": "63d981e664c9d6222daef9e7e1c87a2a102e3516b7ce4260f3eb4acf75690253",
+      "required_by": [
+        "isometries:tr_pure_rotation_B_infinity_wall_reader:round11/tr_pure_rotation_B_infinity_wall_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "Finite near-wall leading coefficients linked to the full pure-rotation rational source."
+    },
+    {
+      "archive_path": "inputs/research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_pure_rotation_B_infinity_wall_shift_2.sobj",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_pure_rotation_B_infinity_wall_shift_2.sobj",
+      "kind": "input",
+      "bytes": 17233,
+      "sha256": "41e6862ca9599a336ee3f3b6bbf65a0f822bd0a3c7ce7550e438d3d585efdb8b",
+      "required_by": [
+        "isometries:tr_pure_rotation_B_infinity_wall_reader:round11/tr_pure_rotation_B_infinity_wall_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "Order-two determinant-wall shifts for exact local quotient identities."
+    },
+    {
+      "archive_path": "inputs/research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_pure_rotation_B_infinity_wall_shift_3.sobj",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/tr_pure_rotation_B_infinity_wall_shift_3.sobj",
+      "kind": "input",
+      "bytes": 17503,
+      "sha256": "e851dc5004a522a860f78095c7dfaf84cd3410642ed39139a78d336518b840ac",
+      "required_by": [
+        "isometries:tr_pure_rotation_B_infinity_wall_reader:round11/tr_pure_rotation_B_infinity_wall_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "Order-three determinant-wall shifts needed in the whole local-ideal comparison."
+    },
+    {
+      "archive_path": "inputs/research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/trs_algebra_frobenius_infinity_leading.sobj",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/trs_algebra_frobenius_infinity_leading.sobj",
+      "kind": "input",
+      "bytes": 4698,
+      "sha256": "fa92113caf4c70ea0c096f859147c9b4eb4eae40d9f2a07112b638876c81eca5",
+      "required_by": [
+        "isometries:trs_algebra_finite_angle_infinity_reader:round11/trs_algebra_finite_angle_infinity_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "Full-parameter finite-angle B-infinity source coefficients checked against complete Frobenius sources."
+    },
+    {
+      "archive_path": "inputs/research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/trs_algebra_newton_blowup_1.sobj",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/trs_algebra_newton_blowup_1.sobj",
+      "kind": "input",
+      "bytes": 282666,
+      "sha256": "cfb0411628456f395ec8d1fa481b1b20fa3b0621dab2c865a21d63744538798f",
+      "required_by": [
+        "isometries:trs_algebra_finite_angle_infinity_reader:round11/trs_algebra_finite_angle_infinity_reader.py",
+        "isometries:trs_algebra_newton_full_source_reader:round11/trs_algebra_newton_full_source_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "Exact common-center Newton coordinate pullback, checked against the full source by the finite-angle and full-source readers."
+    },
+    {
+      "archive_path": "inputs/research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/trs_algebra_newton_face_polynomials.sobj",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/trs_algebra_newton_face_polynomials.sobj",
+      "kind": "input",
+      "bytes": 2512,
+      "sha256": "3a3f5c5ec2d0f819fd6ab1f9e4e480cc1fac281d5531c3cb1d017ecd8b740019",
+      "required_by": [
+        "isometries:trs_algebra_finite_angle_infinity_reader:round11/trs_algebra_finite_angle_infinity_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "Common-face polynomials in the finite-angle incoming branch."
+    },
+    {
+      "archive_path": "inputs/research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/trs_algebra_newton_face_resultant.sobj",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/trs_algebra_newton_face_resultant.sobj",
+      "kind": "input",
+      "bytes": 15385,
+      "sha256": "ecb5dc403f7da845314643b6cd5373c25679ce29e4763181947eb44e888f09e2",
+      "required_by": [
+        "isometries:trs_newton_face_positive_transfer_reader:round11/trs_newton_face_positive_transfer_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "Face resultant identified with the already recomputed pure-rotation positive factors."
+    },
+    {
+      "archive_path": "inputs/research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/trs_vertical_phase_even.sobj",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/trs_vertical_phase_even.sobj",
+      "kind": "input",
+      "bytes": 6301,
+      "sha256": "b17c6c8bd35a18c323355d2be78be6de78ccddbfadf26abc3f4a2572c7c3859a",
+      "required_by": [
+        "isometries:trs_vertical_phase_independent_reader:round11/trs_vertical_phase_independent_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "Finite-B to finite-L even source polynomial, checked against the complete Frobenius numerator."
+    },
+    {
+      "archive_path": "inputs/research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/trs_vertical_phase_resultant.sobj",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round11/trs_vertical_phase_resultant.sobj",
+      "kind": "input",
+      "bytes": 18848,
+      "sha256": "f6ed986e53b9a1ce0e862b182454b4208a23df4f3db70c161d7f92a4108f77ee",
+      "required_by": [
+        "isometries:trs_vertical_phase_independent_reader:round11/trs_vertical_phase_independent_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "Vertical phase resultant and its exact factor/source relations."
+    },
+    {
+      "archive_path": "inputs/research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round21/rr_cartesian_direction_paired_pencil.sobj",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/inputs/round21/rr_cartesian_direction_paired_pencil.sobj",
+      "kind": "input",
+      "bytes": 71505,
+      "sha256": "2c719239544d8093c60fb0f85872fbdea3e728c49dfc8e00c9877b3f8e3220a9",
+      "required_by": [
+        "isometries:rr_cartesian_direction_pencil_reflection_reader:round21/rr_cartesian_direction_pencil_reflection_reader.py",
+        "isometries:rr_global_pencil_positive_independent_reader:round21/rr_global_pencil_positive_independent_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "P,D,J compared with direct protected-H reconstruction on both target sheets; extreme coefficients enter the fresh positive identity."
+    },
+    {
+      "archive_path": "paper_index.py",
+      "work_path": "paper_index.py",
+      "kind": "driver",
+      "bytes": 5939,
+      "sha256": "7a6c9355d6ea60b9aa2a11470dc508d0da41822a8539a7f92c39d75e9e5b8cda"
+    },
+    {
+      "archive_path": "PROOF_MAP.json",
+      "work_path": "PROOF_MAP.json",
+      "kind": "documentation",
+      "bytes": 174821,
+      "sha256": "0ff5dc182065dd9ad3d35c1f62556bb1c08ce095b95c3827853f61ca3f795b08"
+    },
+    {
+      "archive_path": "PROOF_MAP.md",
+      "work_path": "PROOF_MAP.md",
+      "kind": "documentation",
+      "bytes": 3718,
+      "sha256": "22393e70f7d46bcffbf5c00d7606d9f8c2d3eed5727c9f7370179496545eab07"
+    },
+    {
+      "archive_path": "README.txt",
+      "work_path": "README.txt",
+      "kind": "documentation",
+      "bytes": 1683,
+      "sha256": "940439c0847d42c69be0768a5e5e617cc77e9a0981f77d8f229e290fd2cb1239"
+    },
+    {
+      "archive_path": "run.py",
+      "work_path": "run.py",
+      "kind": "driver",
+      "bytes": 16988,
+      "sha256": "763f6e72ff468b5df29f1529f23b25f932f004a8fc030dedbf06935ac4c45392"
+    },
+    {
+      "archive_path": "runtime/external_resource_supervisor.py",
+      "work_path": "external_resource_supervisor.py",
+      "kind": "runtime",
+      "bytes": 4713,
+      "sha256": "4055ef7327233ddfa40c5260beab241c5be494c49efde01e66819a0b03ed0fd6"
+    },
+    {
+      "archive_path": "runtime/run_calculations.py",
+      "work_path": "run_calculations.py",
+      "kind": "runtime",
+      "bytes": 9055,
+      "sha256": "b4bc053a146d61225afb14dd21c66d9c8dd5e77a137a9ce7e01804ea2d4387fb"
+    },
+    {
+      "archive_path": "runtime/runtime_execution.py",
+      "work_path": "runtime_execution.py",
+      "kind": "runtime",
+      "bytes": 588,
+      "sha256": "79e2688131c1d51eee3a64ee9f8da1295aaea2458bd093890cb99df2c112ae05"
+    },
+    {
+      "archive_path": "runtime/runtime_support/sitecustomize.py",
+      "work_path": "runtime_support/sitecustomize.py",
+      "kind": "runtime",
+      "bytes": 392,
+      "sha256": "0928e840249edb2651a0aa63f7ae2490cfb53d419e18ee4ed0e2a5271556e3ea"
+    },
+    {
+      "archive_path": "sources/reproduction/reader324_full_dag_backend_v2.py",
+      "work_path": "reproduction/reader324_full_dag_backend_v2.py",
+      "kind": "source",
+      "bytes": 15450,
+      "sha256": "860d793902b4e9a48c540027a59d07d61d616ff4dcb2849a4e47e39a91be200a",
+      "required_by": [
+        "isometries:rr_null_physical_axis_tps_source_reader:round21/rr_null_physical_axis_tps_source_reader.py"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; reader324_full_dag_backend_v2.py"
+    },
+    {
+      "archive_path": "sources/reproduction/reader324_full_dag_runtime_v2.py",
+      "work_path": "reproduction/reader324_full_dag_runtime_v2.py",
+      "kind": "source",
+      "bytes": 15021,
+      "sha256": "cd8e8a4bdd94f9b6e44453a1671ad7cec77f6352ce53a4b19228edbe378c6cbd",
+      "required_by": [
+        "isometries:rr_null_physical_axis_tps_source_reader:round21/rr_null_physical_axis_tps_source_reader.py"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; reader324_full_dag_runtime_v2.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/classical/sufficiency_check.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/classical/sufficiency_check.py",
+      "kind": "source",
+      "bytes": 9758,
+      "sha256": "368e32264613be39ccd912f7520796dfc1f2d97df88b81fb127e8cb4ad2f067f",
+      "required_by": [
+        "foundations:sufficiency_check"
+      ],
+      "mathematical_group": "classical",
+      "mathematical_reason": "Exact Jacobians, strain tensors and constitutive-independent local pressures of the six classical families; sufficiency_check.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/boundary_printed_check.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/boundary_printed_check.py",
+      "kind": "source",
+      "bytes": 7470,
+      "sha256": "ecc0c7d3aa226325d3921ced430cd5616eaeeb1bbdae305f64dc364b6868679c",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Exact printed normal, forcing, quadratic and endpoint determinants against freshly regenerated source equations."
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/carrier_printed_check.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/carrier_printed_check.py",
+      "kind": "source",
+      "bytes": 3242,
+      "sha256": "0d1fbf77fc3197e3b44042a39313dad12523399a2754d9a8c02eac7dc77befb8",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Exact printed carrier minors, kernels, characteristic polynomial and spectral projector in every dilation chart."
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/elementary_exact.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/elementary_exact.py",
+      "kind": "source",
+      "bytes": 4615,
+      "sha256": "8f2f378af0d24ad34b4d1ba8f44388ba6f7382c6666ae126f32a3ec31c2c0caf",
+      "required_by": [
+        "direct_checkers:elementary_exact"
+      ],
+      "mathematical_group": "similarity",
+      "mathematical_reason": "Common similarities, inverse equivalence and pressure forms; elementary_exact.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/inverse_jet_exact.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/inverse_jet_exact.py",
+      "kind": "source",
+      "bytes": 2165,
+      "sha256": "1646115dab1f89d6db13d295b6d2c6ea27b4872606bfb506f735f0dd15bac6ae",
+      "required_by": [
+        "direct_checkers:inverse_jet_exact"
+      ],
+      "mathematical_group": "similarity",
+      "mathematical_reason": "Common similarities, inverse equivalence and pressure forms; inverse_jet_exact.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_axis_infinity_leading.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_axis_infinity_leading.py",
+      "kind": "source",
+      "bytes": 3433,
+      "sha256": "e14703b1ea5a577eece337eadc43940b161c798b5adf39fc2537fc523b4779d9",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_axis_infinity_leading.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_axis_jet_bound_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_axis_jet_bound_reader.py",
+      "kind": "source",
+      "bytes": 2753,
+      "sha256": "bb016ac5d1464f52fad459e7cc9ab5d757b105c1d8bdac518778dcb02ec055a7",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_axis_jet_bound_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_axis_plane_forcing_schur.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_axis_plane_forcing_schur.py",
+      "kind": "source",
+      "bytes": 2566,
+      "sha256": "8ee9824029bc20308b3fa3af2d00fb7c64770ff6682c2232f249cb1d821c436b",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_axis_plane_forcing_schur.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_axis_plane_normal_sources.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_axis_plane_normal_sources.py",
+      "kind": "source",
+      "bytes": 4500,
+      "sha256": "e98fc3b86b7dea685e128d7bfd0d1d37d304ef6dd927b110a500d36403099937",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_axis_plane_normal_sources.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_axis_plane_quadratic_schur.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_axis_plane_quadratic_schur.py",
+      "kind": "source",
+      "bytes": 5810,
+      "sha256": "6ef410df8598b0f52d6ff3f7c84b8348a8e94c396cfbd923b04b85c306350a2d",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_axis_plane_quadratic_schur.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_fiber_leading_compression.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_fiber_leading_compression.py",
+      "kind": "source",
+      "bytes": 1259,
+      "sha256": "2ea56416feaa3b7e0979677b57a5d3b6f2d07a891d29bc17ff1231143149afe7",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_fiber_leading_compression.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_first_jet_minor_atlas.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_first_jet_minor_atlas.py",
+      "kind": "source",
+      "bytes": 1079,
+      "sha256": "20662ff22cb89d901cd2b0b46d6204a51a76c20ef3d2fed5a80d5a2573349312",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_first_jet_minor_atlas.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_first_jet_reduction.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_first_jet_reduction.py",
+      "kind": "source",
+      "bytes": 3526,
+      "sha256": "e947aeda01e97104e4b88b0bf26705e87c6be34f741b4fbf4d7e8b65bb00a93c",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_first_jet_reduction.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_invariant_linear_chart.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_invariant_linear_chart.py",
+      "kind": "source",
+      "bytes": 1534,
+      "sha256": "ed9420160816b234d80307ed1159b3210f3e65f9176a1da96366a1fb49b9ef49",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_invariant_linear_chart.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_endpoint_uniform_quartic.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_endpoint_uniform_quartic.py",
+      "kind": "source",
+      "bytes": 5856,
+      "sha256": "242bf7ee5960e2d6d21fd2f4aceb1e132595f075a2cf8c39f3e3a4581c5ebdd6",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_middle_endpoint_uniform_quartic.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_endpoint_whole_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_endpoint_whole_reader.py",
+      "kind": "source",
+      "bytes": 3108,
+      "sha256": "de0d7c7e044241c40494c07f5309be589790283514472521630eef45c0f7eddd",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_middle_endpoint_whole_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_null_cubic_face.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_null_cubic_face.py",
+      "kind": "source",
+      "bytes": 4369,
+      "sha256": "3eebb6a0853dff1227f705d1c073ceba5eeeb6fac694e8707ad022f9d0bfb40f",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_middle_null_cubic_face.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_null_cubic_solution.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_null_cubic_solution.py",
+      "kind": "source",
+      "bytes": 1547,
+      "sha256": "8adcc88b4ea50b3382a19e0504331a236f586e89b27858751d72441bb9e60568",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_middle_null_cubic_solution.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_null_cubic_unprojected.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_null_cubic_unprojected.py",
+      "kind": "source",
+      "bytes": 768,
+      "sha256": "157754088c96f4f9df934a54cfc1f21e52b41ef188340dc4bf4d19d9ba32e9dd",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_middle_null_cubic_unprojected.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_null_endpoint_cubic.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_null_endpoint_cubic.py",
+      "kind": "source",
+      "bytes": 5615,
+      "sha256": "7d4b35f2ca4ef13c5782aa187aa4a8dd0a4cdeb914939da92d24f1f21f6d93d9",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_middle_null_endpoint_cubic.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_null_endpoint_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_null_endpoint_reader.py",
+      "kind": "source",
+      "bytes": 1626,
+      "sha256": "93cf1109405f3b2b4fa144e44b4fc346f2f47bf0d7f205a58ec8e4e70151fa20",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_middle_null_endpoint_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_null_quartic_face.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_null_quartic_face.py",
+      "kind": "source",
+      "bytes": 5125,
+      "sha256": "efec99804ad816aa70894075b2763542f5ed34e1af1868633cd334fc37d925b5",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_middle_null_quartic_face.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_resonant_independent_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_resonant_independent_reader.py",
+      "kind": "source",
+      "bytes": 2301,
+      "sha256": "3ce2935c28a5db8d2952057c6df59d3f4430b5fc123366738fc32e748ce297d4",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_middle_resonant_independent_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_resonant_whole_coefficient_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_middle_resonant_whole_coefficient_reader.py",
+      "kind": "source",
+      "bytes": 3198,
+      "sha256": "adbfe8e08718562891a8222e9cc07fe4ef85eef8838de7cf68bfdab6073209b0",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_middle_resonant_whole_coefficient_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_observation_boundary_rank.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_observation_boundary_rank.py",
+      "kind": "source",
+      "bytes": 1525,
+      "sha256": "c3e3a375d759b816263ddca64aae1d6fd8152f3c3df19f0d88299b2faa2b6010",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_observation_boundary_rank.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_observation_transport_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_observation_transport_reader.py",
+      "kind": "source",
+      "bytes": 1906,
+      "sha256": "230260a5ea9f3f99bf883105a399e33b95cdb4ff7d00e667f342dc9ecd8e0bf4",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_observation_transport_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_onezero_fiber_leading.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_onezero_fiber_leading.py",
+      "kind": "source",
+      "bytes": 2662,
+      "sha256": "1d22bb6c50fea2777a101044c80e9931602a01e32b67dc5cc1766fbe2a01e9bc",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_onezero_fiber_leading.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_phase_fiber_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_phase_fiber_reader.py",
+      "kind": "source",
+      "bytes": 2031,
+      "sha256": "408b4bd2c8c6ec9fc87af9fa137d5054f9988ba43a5b203ed5695354effb6a86",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_phase_fiber_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_second_jet_reduction.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round12/homothety_second_jet_reduction.py",
+      "kind": "source",
+      "bytes": 2211,
+      "sha256": "eb6f432b68381a4fddf413dccb20c01a18d0e2168e1beb9a88d1b148f35c2218",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; homothety_second_jet_reduction.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round23/dilation_global_axis_pressure_sources.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round23/dilation_global_axis_pressure_sources.py",
+      "kind": "source",
+      "bytes": 1868,
+      "sha256": "ae0fb16f7e243219273ae03d8096950ac9e035916350bc95680527915ac52b60",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; dilation_global_axis_pressure_sources.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round23/dilation_pure_short_source_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round23/dilation_pure_short_source_reader.py",
+      "kind": "source",
+      "bytes": 3895,
+      "sha256": "c17f18703a33659c0e4bbb11c06f34b8b9e96c93c83bd7fd188afca441d79bd3",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; dilation_pure_short_source_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round23/dilation_state_boundary_source_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round23/dilation_state_boundary_source_reader.py",
+      "kind": "source",
+      "bytes": 3710,
+      "sha256": "52cebebd969cef55bd106da0f69f368019c1bbc0a94b4220464a6493099fe7c8",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; dilation_state_boundary_source_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round23/dilation_state_column_linear_module.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round23/dilation_state_column_linear_module.py",
+      "kind": "source",
+      "bytes": 4960,
+      "sha256": "d07cf173ac617840f15f2a6baa946d8a69b89d582379939ecb0058f0c1e3b36e",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; dilation_state_column_linear_module.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round23/dilation_state_homothety_boundary_carrier.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/rebuild/round23/dilation_state_homothety_boundary_carrier.py",
+      "kind": "source",
+      "bytes": 5206,
+      "sha256": "31f9a0677aa3620c5cd31bbc4c58860a4cde626ac8f4b303210b51b70c2a9f9f",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; dilation_state_homothety_boundary_carrier.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/dilation/run_fresh_rebuild.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/dilation/run_fresh_rebuild.py",
+      "kind": "source",
+      "bytes": 3882,
+      "sha256": "63d085a59b1b79bfa13c54db259de72078a26b3faf6c8925fec56e271a54d9a6",
+      "required_by": [
+        "dilation:run_fresh_rebuild:research/ericksen_20261007/full_recompute_20261009/foundations/generic_degree5_sparse_prepared.sobj"
+      ],
+      "mathematical_group": "dilation",
+      "mathematical_reason": "Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates; run_fresh_rebuild.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/foundations/check_geometric_lowrank.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/foundations/check_geometric_lowrank.py",
+      "kind": "source",
+      "bytes": 9335,
+      "sha256": "ecdd884f0453bdfcbdcf26ed0c10367460508147213d2b55de3700fc721ab5f0",
+      "required_by": [
+        "foundations:check_geometric_lowrank"
+      ],
+      "mathematical_group": "low_rank",
+      "mathematical_reason": "Rank zero and one: two generators, nonabelian and commuting cases; check_geometric_lowrank.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/foundations/check_mu_wall.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/foundations/check_mu_wall.py",
+      "kind": "source",
+      "bytes": 7434,
+      "sha256": "49ce1c98fc6d8fc4e583946628ceee8e2036f0ab694e1b741d5c2dfab336edc9",
+      "required_by": [
+        "foundations:check_mu_wall"
+      ],
+      "mathematical_group": "mu_wall",
+      "mathematical_reason": "Vanishing reconstruction coefficient and all three Laurent roots; check_mu_wall.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/foundations/check_normalization.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/foundations/check_normalization.py",
+      "kind": "source",
+      "bytes": 3469,
+      "sha256": "d2ba7e1fd250c39cd4f9e9245caa53bf7dc61629589b3d362116d1721464c14b",
+      "required_by": [
+        "foundations:check_normalization"
+      ],
+      "mathematical_group": "normalization",
+      "mathematical_reason": "Weighted normalization, constant ratios, protected reconstruction; check_normalization.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/foundations/mu_newton_check.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/foundations/mu_newton_check.py",
+      "kind": "source",
+      "bytes": 6499,
+      "sha256": "1d2b9f3cc9ba4a0c7923752481671987f11aeb377de7e3d0d5621ebb77989b34",
+      "required_by": [
+        "foundations:mu_newton_check"
+      ],
+      "mathematical_group": "mu_wall",
+      "mathematical_reason": "Vanishing reconstruction coefficient and all three Laurent roots; mu_newton_check.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/foundations/rebuild_state17.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/foundations/rebuild_state17.py",
+      "kind": "source",
+      "bytes": 8820,
+      "sha256": "92a4da54ae67f272d856a90bb8d47d48ca7acdf6fa9b71d319723832a634222b",
+      "required_by": [
+        "foundations:rebuild_state17"
+      ],
+      "mathematical_group": "finite_state",
+      "mathematical_reason": "Finite frame system, cubic and quartic compatibility, weights; rebuild_state17.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/axis_pull_fresh.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/axis_pull_fresh.py",
+      "kind": "source",
+      "bytes": 2845,
+      "sha256": "c09273e3ffa64543a4d252777b18f3921fbc0ac6ac6582b625eee221231ea444",
+      "required_by": [
+        "direct_checkers:axis_pull_fresh"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; axis_pull_fresh.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/cylinder_arbitrary_linear.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/cylinder_arbitrary_linear.py",
+      "kind": "source",
+      "bytes": 2081,
+      "sha256": "b692d8a39af6daf4d49fc439c60b273641680d9f67f48ec340a0fa02ff5fc4cf",
+      "required_by": [
+        "direct_checkers:cylinder_arbitrary_linear"
+      ],
+      "mathematical_group": "rotation_linearization",
+      "mathematical_reason": "Cylindrical rotation states and full fixed-pressure second-order obstruction; cylinder_arbitrary_linear.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/elementary_independent.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/elementary_independent.py",
+      "kind": "source",
+      "bytes": 4447,
+      "sha256": "b20bf636865b0d206a077ce79222e0bf5177e97229c4f1b6ddf93ed481644eb5",
+      "required_by": [
+        "direct_checkers:elementary_independent"
+      ],
+      "mathematical_group": "similarity",
+      "mathematical_reason": "Common similarities, inverse equivalence and pressure forms; elementary_independent.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_infinite_angle_B_frobenius.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_infinite_angle_B_frobenius.py",
+      "kind": "source",
+      "bytes": 867,
+      "sha256": "a2f1071ba8ff15badf234809cad7c2096068063e970ff6f4e9c1d5569457db3a",
+      "required_by": [
+        "isometries:tr_infinite_angle_B_frobenius:round11/tr_infinite_angle_B_frobenius.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; tr_infinite_angle_B_frobenius.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_infinite_angle_whole_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_infinite_angle_whole_reader.py",
+      "kind": "source",
+      "bytes": 7548,
+      "sha256": "be39f82b3835ba282f3c5a365bbe76cdef88a240c8e95d1cd975923b6981ae2d",
+      "required_by": [
+        "isometries:tr_infinite_angle_whole_reader:round11/tr_infinite_angle_whole_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; tr_infinite_angle_whole_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_pure_rotation_B_infinity_L0_Newton_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_pure_rotation_B_infinity_L0_Newton_reader.py",
+      "kind": "source",
+      "bytes": 3203,
+      "sha256": "1ddca63080d57e85364932c884da121a70f6c0f9da3b6e32858b535ad5ce348c",
+      "required_by": [
+        "isometries:tr_pure_rotation_B_infinity_L0_Newton_reader:round11/tr_pure_rotation_B_infinity_L0_Newton_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; tr_pure_rotation_B_infinity_L0_Newton_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_pure_rotation_B_infinity_wall_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_pure_rotation_B_infinity_wall_reader.py",
+      "kind": "source",
+      "bytes": 3561,
+      "sha256": "394c33325766420f8a473e21db15baa3268fae1ab444d9395b9d04a90f67b28b",
+      "required_by": [
+        "isometries:tr_pure_rotation_B_infinity_wall_reader:round11/tr_pure_rotation_B_infinity_wall_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; tr_pure_rotation_B_infinity_wall_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_pure_rotation_frobenius.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_pure_rotation_frobenius.py",
+      "kind": "source",
+      "bytes": 3559,
+      "sha256": "06df365620d957a8ca76d7fb0be89a3ad3b0c005739d90c09934e3ec1111ab91",
+      "required_by": [
+        "isometries:tr_pure_rotation_frobenius:round11/tr_pure_rotation_frobenius.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; tr_pure_rotation_frobenius.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_vertical_phase_independent_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/tr_vertical_phase_independent_reader.py",
+      "kind": "source",
+      "bytes": 2380,
+      "sha256": "1f0ab2d30f8506f26e4f67c091c7136cba92548b6f949454925069297139ea10",
+      "required_by": [
+        "isometries:tr_vertical_phase_independent_reader:round11/tr_vertical_phase_independent_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; tr_vertical_phase_independent_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_double_infinity_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_double_infinity_reader.py",
+      "kind": "source",
+      "bytes": 2628,
+      "sha256": "bb781ca46a4dacd5659d0174335091089a6f66edd87a287eb558c37b92b56f4e",
+      "required_by": [
+        "isometries:trs_algebra_double_infinity_reader:round11/trs_algebra_double_infinity_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_algebra_double_infinity_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_finite_angle_infinity_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_finite_angle_infinity_reader.py",
+      "kind": "source",
+      "bytes": 3881,
+      "sha256": "af60ea3a03b1fdabeeb79749fd7f6931bfc40b0cce4d5da72621c87049de4083",
+      "required_by": [
+        "isometries:trs_algebra_finite_angle_infinity_reader:round11/trs_algebra_finite_angle_infinity_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_algebra_finite_angle_infinity_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_first_order_shape.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_first_order_shape.py",
+      "kind": "source",
+      "bytes": 3601,
+      "sha256": "3bf75e2f4e5a236719d82550356dfac02874b05046da8170180b0b001feaabd3",
+      "required_by": [
+        "isometries:trs_algebra_first_order_shape:round11/trs_algebra_first_order_shape.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_algebra_first_order_shape.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_first_order_source_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_first_order_source_reader.py",
+      "kind": "source",
+      "bytes": 3427,
+      "sha256": "dba0f7429d222975f0f90649d6961704909304631027d11aa8a158e2993be912",
+      "required_by": [
+        "isometries:trs_algebra_first_order_source_reader:round11/trs_algebra_first_order_source_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_algebra_first_order_source_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_harmonic_eta_identity.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_harmonic_eta_identity.py",
+      "kind": "source",
+      "bytes": 4203,
+      "sha256": "0b29dd1d26a8e82c383c67cb83412256dac3322442b4fc65bf3d4a0c517863e4",
+      "required_by": [
+        "isometries:trs_algebra_harmonic_eta_identity:round11/trs_algebra_harmonic_eta_identity.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_algebra_harmonic_eta_identity.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_newton_full_source_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_newton_full_source_reader.py",
+      "kind": "source",
+      "bytes": 1203,
+      "sha256": "da4a819091e98e5623f2bcd6575f9d0e8789ef814d8990cd254fcb102d37a7b9",
+      "required_by": [
+        "isometries:trs_algebra_newton_full_source_reader:round11/trs_algebra_newton_full_source_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_algebra_newton_full_source_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_regular_frobenius.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_regular_frobenius.py",
+      "kind": "source",
+      "bytes": 4228,
+      "sha256": "9370d88be54e61df5ac790a094500b3319b9db53d16afc3b3ecadc55df8bd940",
+      "required_by": [
+        "isometries:trs_algebra_regular_frobenius:round11/trs_algebra_regular_frobenius.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_algebra_regular_frobenius.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_angle_wall_asymptotic_probe.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_angle_wall_asymptotic_probe.py",
+      "kind": "source",
+      "bytes": 3829,
+      "sha256": "182e4ec0994b4d8684fe4cb0f297b381269cbe00fe2a3e0ea05d28908467b833",
+      "required_by": [
+        "isometries:trs_angle_wall_asymptotic_probe:round11/trs_angle_wall_asymptotic_probe.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_angle_wall_asymptotic_probe.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_angle_wall_source_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_angle_wall_source_reader.py",
+      "kind": "source",
+      "bytes": 3709,
+      "sha256": "09326529fec237d88abbaea562c9380cd817e676a5ea6a4a430e6e179eefe1b8",
+      "required_by": [
+        "isometries:trs_angle_wall_source_reader:round11/trs_angle_wall_source_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_angle_wall_source_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_leaders.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_leaders.py",
+      "kind": "source",
+      "bytes": 3453,
+      "sha256": "ce2b16e15c2f4c3ca825ea606e810d52dfa6c6da596f9989e8f518d1f9fe02f6",
+      "required_by": [
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:--wall-order:2",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:--wall-order:3",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:1",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:2",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:3"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_B_infinity_L0_leaders.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_Newton_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_Newton_reader.py",
+      "kind": "source",
+      "bytes": 1867,
+      "sha256": "dc682672058ece54dd059c3ec2644c9a77371b15ceaaedd2cac715426e5a9a24",
+      "required_by": [
+        "isometries:trs_B_infinity_L0_Newton_reader:round11/trs_B_infinity_L0_Newton_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_B_infinity_L0_Newton_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_wall_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_wall_reader.py",
+      "kind": "source",
+      "bytes": 4449,
+      "sha256": "1190966179eda1a2db635665ead60f7a0136bcf423466723dd3e31ff28429406",
+      "required_by": [
+        "isometries:trs_B_infinity_L0_wall_reader:round11/trs_B_infinity_L0_wall_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_B_infinity_L0_wall_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_zero_angle_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_zero_angle_reader.py",
+      "kind": "source",
+      "bytes": 2931,
+      "sha256": "3d26200f54d5f783f9841d7e111a0082dc6dabdefcb83332f11a8dfbf55cda29",
+      "required_by": [
+        "isometries:trs_B_infinity_zero_angle_reader:round11/trs_B_infinity_zero_angle_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_B_infinity_zero_angle_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_newton_face_positive_transfer_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_newton_face_positive_transfer_reader.py",
+      "kind": "source",
+      "bytes": 1190,
+      "sha256": "dcb525cdcb14492ce7b863877844cc4f175717e53cf586c2520d04663e412b75",
+      "required_by": [
+        "isometries:trs_newton_face_positive_transfer_reader:round11/trs_newton_face_positive_transfer_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_newton_face_positive_transfer_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_null_angle_independent_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_null_angle_independent_reader.py",
+      "kind": "source",
+      "bytes": 2732,
+      "sha256": "6ecdb3c8f7fb3375ef82d41a00538d0a6b8fc613d7e86c07e7ca5fb1b7b6f301",
+      "required_by": [
+        "isometries:trs_null_angle_independent_reader:round11/trs_null_angle_independent_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_null_angle_independent_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_vertical_phase_independent_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_vertical_phase_independent_reader.py",
+      "kind": "source",
+      "bytes": 4132,
+      "sha256": "44e9331c4617f4905e33f4329208ba566a9c76fcdf41a5e61c47c0324ee03705",
+      "required_by": [
+        "isometries:trs_vertical_phase_independent_reader:round11/trs_vertical_phase_independent_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_vertical_phase_independent_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_zero_radial_phase_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_zero_radial_phase_reader.py",
+      "kind": "source",
+      "bytes": 1887,
+      "sha256": "11d9f6f70ee45b12425db1339dc2162b76bc11430f53c9f4896017d35a52373b",
+      "required_by": [
+        "isometries:trs_zero_radial_phase_reader:round11/trs_zero_radial_phase_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_zero_radial_phase_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round20/rr_deformation_fixed_pressure_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round20/rr_deformation_fixed_pressure_reader.py",
+      "kind": "source",
+      "bytes": 1839,
+      "sha256": "9cf40d20e60df80b89f4241fd1a2fb3f0077dc60f5727d477ef6a99e1d1e76b7",
+      "required_by": [
+        "isometries:rr_deformation_fixed_pressure_reader:round20/rr_deformation_fixed_pressure_reader.py"
+      ],
+      "mathematical_group": "rotation_linearization",
+      "mathematical_reason": "Cylindrical rotation states and full fixed-pressure second-order obstruction; rr_deformation_fixed_pressure_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round20/rr_deformation_protected_reduction_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round20/rr_deformation_protected_reduction_reader.py",
+      "kind": "source",
+      "bytes": 3343,
+      "sha256": "8d9e039adc36770db548cbf7386a3a7d16bc72dfad75e93c25e15069e7c47e2f",
+      "required_by": [
+        "isometries:rr_deformation_protected_reduction_reader:round20/rr_deformation_protected_reduction_reader.py"
+      ],
+      "mathematical_group": "rotation_linearization",
+      "mathematical_reason": "Cylindrical rotation states and full fixed-pressure second-order obstruction; rr_deformation_protected_reduction_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round20/rr_deformation_second_order.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round20/rr_deformation_second_order.py",
+      "kind": "source",
+      "bytes": 5239,
+      "sha256": "2e2fb8119a42a40bd452155c557a69b1b2c5c68d69c5b6f4a0f0e7cd5df39d81",
+      "required_by": [
+        "isometries:rr_deformation_second_order:round20/rr_deformation_second_order.py"
+      ],
+      "mathematical_group": "rotation_linearization",
+      "mathematical_reason": "Cylindrical rotation states and full fixed-pressure second-order obstruction; rr_deformation_second_order.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round20/rr_deformation_zero_twist_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round20/rr_deformation_zero_twist_reader.py",
+      "kind": "source",
+      "bytes": 3619,
+      "sha256": "732f4c3a64f90c857678b975bf3d55ce46cf5d9d8190db0c2541d525afeaafa9",
+      "required_by": [
+        "isometries:rr_deformation_zero_twist_reader:round20/rr_deformation_zero_twist_reader.py"
+      ],
+      "mathematical_group": "rotation_linearization",
+      "mathematical_reason": "Cylindrical rotation states and full fixed-pressure second-order obstruction; rr_deformation_zero_twist_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_cartesian_direction_pencil_reflection_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_cartesian_direction_pencil_reflection_reader.py",
+      "kind": "source",
+      "bytes": 1937,
+      "sha256": "5d837f5ad590c9c6e2f31031538ad3b5d0de39550493a4b27235e274d2ed9746",
+      "required_by": [
+        "isometries:rr_cartesian_direction_pencil_reflection_reader:round21/rr_cartesian_direction_pencil_reflection_reader.py"
+      ],
+      "mathematical_group": "rotation_pencil",
+      "mathematical_reason": "Rotation: direction/paired pencil and all-parameter positive identity; rr_cartesian_direction_pencil_reflection_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_cartesian_twelve_symbol_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_cartesian_twelve_symbol_reader.py",
+      "kind": "source",
+      "bytes": 3087,
+      "sha256": "c102854670c5daecbac6e7584c921f8fa131f70a36b93ace2635612631b27071",
+      "required_by": [
+        "isometries:rr_cartesian_twelve_symbol_reader:round21/rr_cartesian_twelve_symbol_reader.py"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; rr_cartesian_twelve_symbol_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_global_axis_analytic_protection_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_global_axis_analytic_protection_reader.py",
+      "kind": "source",
+      "bytes": 2739,
+      "sha256": "81639334cd0a2ab388c626fcf19da27ff3847adb9ffde004ea05c2a214673603",
+      "required_by": [
+        "isometries:rr_global_axis_analytic_protection_reader:round21/rr_global_axis_analytic_protection_reader.py"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; rr_global_axis_analytic_protection_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_global_pencil_positive_independent_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_global_pencil_positive_independent_reader.py",
+      "kind": "source",
+      "bytes": 4168,
+      "sha256": "ca35bc2427ae0171080bba6d635fdf15da820ff82bef2acf1337b89cf17b887d",
+      "required_by": [
+        "isometries:rr_global_pencil_positive_independent_reader:round21/rr_global_pencil_positive_independent_reader.py"
+      ],
+      "mathematical_group": "rotation_pencil",
+      "mathematical_reason": "Rotation: direction/paired pencil and all-parameter positive identity; rr_global_pencil_positive_independent_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_binary_tps.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_binary_tps.py",
+      "kind": "source",
+      "bytes": 4739,
+      "sha256": "f2e45cf72859ddb34b311043bc4d8bfe3fb60c2c186035cc11ff2800b8130f97",
+      "required_by": [
+        "isometries:rr_null_physical_axis_binary_tps:round21/rr_null_physical_axis_binary_tps.py"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; rr_null_physical_axis_binary_tps.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_material_wall_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_material_wall_reader.py",
+      "kind": "source",
+      "bytes": 2274,
+      "sha256": "2820b0b7766729247764c72b5011f4d8f58c3c99dc40fbe2d580ac3be08beea4",
+      "required_by": [
+        "isometries:rr_null_physical_axis_material_wall_reader:round21/rr_null_physical_axis_material_wall_reader.py"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; rr_null_physical_axis_material_wall_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_raw_checkpoint_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_raw_checkpoint_reader.py",
+      "kind": "source",
+      "bytes": 2838,
+      "sha256": "7b46430949a435110fcafa0fe7c8392f94a5cb4ec43ab1b8ed4a71e62d015a08",
+      "required_by": [
+        "isometries:rr_null_physical_axis_raw_checkpoint_reader:round21/rr_null_physical_axis_raw_checkpoint_reader.py"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; rr_null_physical_axis_raw_checkpoint_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_resultant_sign_probe.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_resultant_sign_probe.py",
+      "kind": "source",
+      "bytes": 1229,
+      "sha256": "7683d15f50b2cc38c6737bf85d966630b6c13d781eae4e9946155b07e1bfb967",
+      "required_by": [
+        "isometries:rr_null_physical_axis_resultant_sign_probe:round21/rr_null_physical_axis_resultant_sign_probe.py"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; rr_null_physical_axis_resultant_sign_probe.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_symmetric_resultant.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_symmetric_resultant.py",
+      "kind": "source",
+      "bytes": 2200,
+      "sha256": "a18d87f593507d5fb659ca725ece3479851a53dc9e4123aead59d685ea25a903",
+      "required_by": [
+        "isometries:rr_null_physical_axis_symmetric_resultant:round21/rr_null_physical_axis_symmetric_resultant.py"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; rr_null_physical_axis_symmetric_resultant.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_tps_source_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_axis_tps_source_reader.py",
+      "kind": "source",
+      "bytes": 3479,
+      "sha256": "ae8706b3814c6fc775571ff730e9c6837f8e9ba904f4843d26a365fcb4b16a5a",
+      "required_by": [
+        "isometries:rr_null_physical_axis_tps_source_reader:round21/rr_null_physical_axis_tps_source_reader.py"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; rr_null_physical_axis_tps_source_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_hessian_graph.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_hessian_graph.py",
+      "kind": "source",
+      "bytes": 4560,
+      "sha256": "cfc983931a0ae130a4a1cd0389135a9b0accade9ad20be83343ef840d9e4478e",
+      "required_by": [
+        "isometries:rr_null_physical_hessian_graph:round21/rr_null_physical_hessian_graph.py:-1",
+        "isometries:rr_null_physical_hessian_graph:round21/rr_null_physical_hessian_graph.py:1"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; rr_null_physical_hessian_graph.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_late_sources.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_late_sources.py",
+      "kind": "source",
+      "bytes": 5816,
+      "sha256": "3527b7db0044562211afc8ac6ab91bec0b9c816c67315b1ae3f99aa9ea836799",
+      "required_by": [
+        "isometries:rr_null_physical_late_sources:round21/rr_null_physical_late_sources.py:-1",
+        "isometries:rr_null_physical_late_sources:round21/rr_null_physical_late_sources.py:1"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; rr_null_physical_late_sources.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_protected_graph.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_protected_graph.py",
+      "kind": "source",
+      "bytes": 3048,
+      "sha256": "0849f76c8975bfcf55a5688eed0812142717d9b6cee1e912b571bb0fd5e4655d",
+      "required_by": [
+        "isometries:rr_null_physical_protected_graph:round21/rr_null_physical_protected_graph.py:-1",
+        "isometries:rr_null_physical_protected_graph:round21/rr_null_physical_protected_graph.py:1"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; rr_null_physical_protected_graph.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_source_bridge_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_source_bridge_reader.py",
+      "kind": "source",
+      "bytes": 2817,
+      "sha256": "c93dd707231367b884458cc4938f6d053b5899f8bd35c1d812641d7d5baa4f3f",
+      "required_by": [
+        "isometries:rr_null_physical_source_bridge_reader:round21/rr_null_physical_source_bridge_reader.py"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; rr_null_physical_source_bridge_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_target_reflection_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round21/rr_null_physical_target_reflection_reader.py",
+      "kind": "source",
+      "bytes": 1039,
+      "sha256": "c219b9199da373af92d734082c9cdd472d50d9a4140c2dae437b5de80691ed4b",
+      "required_by": [
+        "isometries:rr_null_physical_target_reflection_reader:round21/rr_null_physical_target_reflection_reader.py"
+      ],
+      "mathematical_group": "rotation_infinity",
+      "mathematical_reason": "Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall; rr_null_physical_target_reflection_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round22/ss_pitch_stable_carrier_reader.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round22/ss_pitch_stable_carrier_reader.py",
+      "kind": "source",
+      "bytes": 4645,
+      "sha256": "8587b2a33068faa62481ef76060941226ce9a46fc1df478d84c11b1729590115",
+      "required_by": [
+        "isometries:ss_pitch_stable_carrier_reader:round22/ss_pitch_stable_carrier_reader.py"
+      ],
+      "mathematical_group": "screw",
+      "mathematical_reason": "Screw pair: longitudinal pressure data, pitch carrier and stable axial orbit; ss_pitch_stable_carrier_reader.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/tr_pure_rotation_B_infinity_leaders.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/tr_pure_rotation_B_infinity_leaders.py",
+      "kind": "source",
+      "bytes": 2686,
+      "sha256": "0ec109e86e51bb70f1e76621d992c0e4132e1d8ddd7457158fe59714b886add9",
+      "required_by": [
+        "isometries:tr_infinite_angle_whole_reader:round11/tr_infinite_angle_whole_reader.py",
+        "isometries:tr_pure_rotation_B_infinity_L0_Newton_reader:round11/tr_pure_rotation_B_infinity_L0_Newton_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; tr_pure_rotation_B_infinity_leaders.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_algebra_frobenius_infinity_leading.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_algebra_frobenius_infinity_leading.py",
+      "kind": "source",
+      "bytes": 3841,
+      "sha256": "5ea22e0461ca4695b4ac93453b4eb8efe1d2d14fbf0c287a74a9858bb8eef33c",
+      "required_by": [
+        "isometries:trs_algebra_double_infinity_reader:round11/trs_algebra_double_infinity_reader.py",
+        "isometries:trs_algebra_finite_angle_infinity_reader:round11/trs_algebra_finite_angle_infinity_reader.py",
+        "isometries:trs_null_angle_independent_reader:round11/trs_null_angle_independent_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_algebra_frobenius_infinity_leading.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_algebra_newton_blowup.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_algebra_newton_blowup.py",
+      "kind": "source",
+      "bytes": 4865,
+      "sha256": "7ef551ac27788f549fedeb7f9241c19c18c23dad1ddcdfa21d5d737b4e9cdf02",
+      "required_by": [
+        "isometries:trs_algebra_newton_full_source_reader:round11/trs_algebra_newton_full_source_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_algebra_newton_blowup.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_B_infinity_L0_leaders.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_B_infinity_L0_leaders.py",
+      "kind": "source",
+      "bytes": 3453,
+      "sha256": "ce2b16e15c2f4c3ca825ea606e810d52dfa6c6da596f9989e8f518d1f9fe02f6",
+      "required_by": [
+        "isometries:trs_B_infinity_L0_Newton_reader:round11/trs_B_infinity_L0_Newton_reader.py"
+      ],
+      "mathematical_group": "translation_rotation",
+      "mathematical_reason": "Translation and rotation or screw: source equations, phase fibres and all infinity strata; trs_B_infinity_L0_leaders.py"
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py",
+      "kind": "source",
+      "bytes": 3072,
+      "sha256": "ad7ab525b8a038f775e5a4834dfaa1b4d1bff856e90ec2a7e447f3dc71eba1a5",
+      "required_by": [
+        "isometries:rr_cartesian_direction_pencil_reflection_reader:round21/rr_cartesian_direction_pencil_reflection_reader.py",
+        "isometries:rr_cartesian_twelve_symbol_reader:round21/rr_cartesian_twelve_symbol_reader.py",
+        "isometries:rr_deformation_fixed_pressure_reader:round20/rr_deformation_fixed_pressure_reader.py",
+        "isometries:rr_deformation_protected_reduction_reader:round20/rr_deformation_protected_reduction_reader.py",
+        "isometries:rr_deformation_second_order:round20/rr_deformation_second_order.py",
+        "isometries:rr_deformation_zero_twist_reader:round20/rr_deformation_zero_twist_reader.py",
+        "isometries:rr_global_axis_analytic_protection_reader:round21/rr_global_axis_analytic_protection_reader.py",
+        "isometries:rr_global_pencil_positive_independent_reader:round21/rr_global_pencil_positive_independent_reader.py",
+        "isometries:rr_null_physical_axis_binary_tps:round21/rr_null_physical_axis_binary_tps.py",
+        "isometries:rr_null_physical_axis_material_wall_reader:round21/rr_null_physical_axis_material_wall_reader.py",
+        "isometries:rr_null_physical_axis_raw_checkpoint_reader:round21/rr_null_physical_axis_raw_checkpoint_reader.py",
+        "isometries:rr_null_physical_axis_resultant_sign_probe:round21/rr_null_physical_axis_resultant_sign_probe.py",
+        "isometries:rr_null_physical_axis_symmetric_resultant:round21/rr_null_physical_axis_symmetric_resultant.py",
+        "isometries:rr_null_physical_hessian_graph:round21/rr_null_physical_hessian_graph.py:-1",
+        "isometries:rr_null_physical_hessian_graph:round21/rr_null_physical_hessian_graph.py:1",
+        "isometries:rr_null_physical_late_sources:round21/rr_null_physical_late_sources.py:-1",
+        "isometries:rr_null_physical_late_sources:round21/rr_null_physical_late_sources.py:1",
+        "isometries:rr_null_physical_protected_graph:round21/rr_null_physical_protected_graph.py:-1",
+        "isometries:rr_null_physical_protected_graph:round21/rr_null_physical_protected_graph.py:1",
+        "isometries:rr_null_physical_source_bridge_reader:round21/rr_null_physical_source_bridge_reader.py",
+        "isometries:rr_null_physical_target_reflection_reader:round21/rr_null_physical_target_reflection_reader.py",
+        "isometries:ss_pitch_stable_carrier_reader:round22/ss_pitch_stable_carrier_reader.py",
+        "isometries:tr_infinite_angle_B_frobenius:round11/tr_infinite_angle_B_frobenius.py",
+        "isometries:tr_infinite_angle_whole_reader:round11/tr_infinite_angle_whole_reader.py",
+        "isometries:tr_pure_rotation_B_infinity_L0_Newton_reader:round11/tr_pure_rotation_B_infinity_L0_Newton_reader.py",
+        "isometries:tr_pure_rotation_B_infinity_wall_reader:round11/tr_pure_rotation_B_infinity_wall_reader.py",
+        "isometries:tr_pure_rotation_frobenius:round11/tr_pure_rotation_frobenius.py",
+        "isometries:tr_vertical_phase_independent_reader:round11/tr_vertical_phase_independent_reader.py",
+        "isometries:trs_B_infinity_L0_Newton_reader:round11/trs_B_infinity_L0_Newton_reader.py",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:--wall-order:2",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:--wall-order:3",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:1",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:2",
+        "isometries:trs_B_infinity_L0_leaders:round11/trs_B_infinity_L0_leaders.py:3",
+        "isometries:trs_B_infinity_L0_wall_reader:round11/trs_B_infinity_L0_wall_reader.py",
+        "isometries:trs_B_infinity_zero_angle_reader:round11/trs_B_infinity_zero_angle_reader.py",
+        "isometries:trs_algebra_double_infinity_reader:round11/trs_algebra_double_infinity_reader.py",
+        "isometries:trs_algebra_finite_angle_infinity_reader:round11/trs_algebra_finite_angle_infinity_reader.py",
+        "isometries:trs_algebra_first_order_shape:round11/trs_algebra_first_order_shape.py",
+        "isometries:trs_algebra_first_order_source_reader:round11/trs_algebra_first_order_source_reader.py",
+        "isometries:trs_algebra_harmonic_eta_identity:round11/trs_algebra_harmonic_eta_identity.py",
+        "isometries:trs_algebra_newton_full_source_reader:round11/trs_algebra_newton_full_source_reader.py",
+        "isometries:trs_algebra_regular_frobenius:round11/trs_algebra_regular_frobenius.py",
+        "isometries:trs_angle_wall_asymptotic_probe:round11/trs_angle_wall_asymptotic_probe.py",
+        "isometries:trs_angle_wall_source_reader:round11/trs_angle_wall_source_reader.py",
+        "isometries:trs_newton_face_positive_transfer_reader:round11/trs_newton_face_positive_transfer_reader.py",
+        "isometries:trs_null_angle_independent_reader:round11/trs_null_angle_independent_reader.py",
+        "isometries:trs_vertical_phase_independent_reader:round11/trs_vertical_phase_independent_reader.py",
+        "isometries:trs_zero_radial_phase_reader:round11/trs_zero_radial_phase_reader.py"
+      ],
+      "mathematical_group": null,
+      "mathematical_reason": "Run a historical exact source in an isolated output tree, recording every load."
+    },
+    {
+      "archive_path": "sources/research/ericksen_20261007/full_recompute_20261009/isometries/tt_independent.py",
+      "work_path": "research/ericksen_20261007/full_recompute_20261009/isometries/tt_independent.py",
+      "kind": "source",
+      "bytes": 2981,
+      "sha256": "51fb668f33f7bcfa304543d4568336dc775b354d592963f399ca2140121a3325",
+      "required_by": [
+        "direct_checkers:tt_independent"
+      ],
+      "mathematical_group": "translation",
+      "mathematical_reason": "Two translations and finite connection fibres; tt_independent.py"
+    },
+    {
+      "archive_path": "SYMBOLS.md",
+      "work_path": "SYMBOLS.md",
+      "kind": "documentation",
+      "bytes": 592,
+      "sha256": "86dc6bb54fd6443fa13ee20d27fa64d9d05fb1622da98f8fd786550e5549d1bf"
+    },
+    {
+      "archive_path": "tasks.json",
+      "work_path": "tasks.json",
+      "kind": "documentation",
+      "bytes": 40631,
+      "sha256": "f2332ec729efc511534aa4bb147f0b73e317ba510453f9ecfa09e2be6d2d2b8b"
+    }
+  ],
+  "registered_tasks": 63,
+  "paper_sha256": "d5ad1c2d41f5505e16524ebc4c9c01d19dcc6e64d22a4b42370cabb919ad1125"
+}

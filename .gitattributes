@@ -1,0 +1,4 @@
+# Preserve the exact bytes covered by SHA256SUMS.txt.
+* -text
+*.pdf binary
+*.sobj binary
