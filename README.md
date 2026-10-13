@@ -7,14 +7,23 @@
 [Read the paper](A%20local%20solution%20of%20Ericksen%27s%20problem.pdf) ·
 [LaTeX sources](tex/) · [Ranks 0–2](Rank012/) · [Rank 3](Rank3/)
 
-![Ericksen's problem: a fixed deformation, with pressure and boundary traction depending on the strain energy.](assets/ericksen_problem.png)
+![Universal deformation: schematic representatives of all six classical families, F0 through F5.](assets/ericksen_problem.png)
 
 Ericksen's problem asks for all universal deformations of homogeneous
 incompressible isotropic hyperelastic solids. A universal deformation can
 be maintained in equilibrium without body forces for every isotropic
 strain energy; the pressure and surface traction may depend on the
-constitutive law. The illustration uses a classical volume preserving bend
-to express this distinction.
+constitutive law. The illustration shows representatives of the six
+classical families $\mathcal F_0,\ldots,\mathcal F_5$ defined in Section 2.2:
+homogeneous deformation, bending, straightening, inflation and torsion,
+spherical shell deformation, and logarithmic cylindrical deformation.
+
+The geometry is drawn from these maps by the
+[Python renderer](assets/build_problem_figure.py), using the same physical
+scale for the reference and current configurations within each panel.
+The [geometry record](assets/geometry_checks.json) gives the selected
+parameters, domains and exact signed Jacobians. A
+[vector PDF](assets/ericksen_problem.pdf) is also included.
 
 The paper proves local completeness of the six classical families for
 orientation preserving $C^3$ universal deformations, including their
@@ -43,7 +52,7 @@ argument to the classical classifications and continuation results.
 | [tex/](tex/) | `main.tex`, the integrated `supplement.tex`, and all three required figure backgrounds. |
 | [Rank012/](Rank012/) | SageMath sources and required inputs for ranks zero, one and two. |
 | [Rank3/](Rank3/) | SageMath sources and required inputs for rank three. |
-| [assets/](assets/) | README illustrations, the TeX proof diagram and its build script. |
+| [assets/](assets/) | README figures and their Python and TeX sources. |
 | [VERIFICATION.json](VERIFICATION.json) | Recorded executions, fixed environment, manuscript hashes and file inventory. |
 | [SHA256SUMS.txt](SHA256SUMS.txt) | SHA-256 checksums for the distributed files. |
 

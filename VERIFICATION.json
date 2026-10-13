@@ -2,7 +2,7 @@
   "schema": "ericksen.verified-release.v5",
   "release_date": "2026-10-12",
   "status": "PASS",
-  "verified_utc": "2026-10-13T01:23:39.259923+00:00",
+  "verified_utc": "2026-10-13T01:53:26.036717+00:00",
   "environment": {
     "sage": "10.9",
     "python": "3.12.14",
@@ -10641,8 +10641,8 @@
       "bytes": 1445481
     },
     "README.md": {
-      "sha256": "0ff84e820c7d0579be36a8741e5024116443200d2724b23d5806eda31719e0a0",
-      "bytes": 6452
+      "sha256": "27be4fd99f40a3f2668ee4aaeb2e44813956d0050a21ab2746dc4cc430c875fd",
+      "bytes": 6009
     },
     "Rank012/MANIFEST.json": {
       "sha256": "f60235ac042ecd4889503ed1c7ad8837089f374921380e05bfa43db3832c36bf",
@@ -13500,17 +13500,25 @@
       "sha256": "b04539083448ee05665858dbec2fa74080224cbdaf6fd076a0fe6f9e28a247e9",
       "bytes": 381901
     },
+    "assets/build_problem_figure.py": {
+      "sha256": "580d866520d795a8ebc6cfbd6088aa7a786e65eb4fb17e6b8ab7433f524ee77d",
+      "bytes": 14620
+    },
     "assets/build_proof_figure.py": {
       "sha256": "aa53a679426386d2b22f55b996e3f2071fad83ab39e6a00e844e05689fd2a762",
       "bytes": 1329
     },
-    "assets/ericksen_problem.png": {
-      "sha256": "32864734bc74e7a3a89995f177dab2656f5487687f81fe92ed0d8b7eeec48976",
-      "bytes": 1546585
+    "assets/ericksen_problem.pdf": {
+      "sha256": "398815074bb8a0c37daeadd27b9ed1cb13c21a494cf85e26a7d664f749d2ef1a",
+      "bytes": 1136003
     },
-    "assets/ericksen_problem_prompt.txt": {
-      "sha256": "560e4a545ba5dd868fb427e6702aded8a5d9ae8d020929546d330aa5121e8d80",
-      "bytes": 2151
+    "assets/ericksen_problem.png": {
+      "sha256": "60aa40f9243462b5e8959dddef87666fd0ec0ab21bbc0fb341b9f8556c823944",
+      "bytes": 1129159
+    },
+    "assets/geometry_checks.json": {
+      "sha256": "dbe1ba425d2af35c5c38e7c53d40e11ee991e7ccd93f3d5bc3cbe168bc9e6b60",
+      "bytes": 6276
     },
     "assets/proof_structure.pdf": {
       "sha256": "1f9603a8c029ff77694771865614042caadf6a407c8e3a787cdaedc2730a50f5",
@@ -13555,13 +13563,23 @@
     "endpoint_calculations_rebuilt_from_empty_work_directory": true,
     "existing_mathematical_sources_inputs_arguments_and_wrappers_unchanged": true,
     "manuscript_included": true,
-    "repository_layout_updated_utc": "2026-10-13T01:23:39.259923+00:00",
+    "repository_layout_updated_utc": "2026-10-13T01:53:26.036717+00:00",
     "rank3_presentation": "single calculation package and unified proof index",
     "protected_source_and_input_files_checked": 689,
     "readme_figures": {
       "problem": "assets/ericksen_problem.png",
-      "problem_mode": "built-in image generation",
-      "problem_prompt": "assets/ericksen_problem_prompt.txt",
+      "problem_mode": "Python geometry from the exact deformation maps in Section 2.2",
+      "problem_source": "assets/build_problem_figure.py",
+      "problem_pdf": "assets/ericksen_problem.pdf",
+      "problem_geometry_checks": "assets/geometry_checks.json",
+      "problem_labels": [
+        "intro:family0",
+        "intro:family1",
+        "intro:family2",
+        "intro:family3",
+        "intro:family4",
+        "intro:family5"
+      ],
       "proof": "assets/proof_structure.png",
       "proof_source": "assets/proof_structure.tex",
       "proof_builder": "assets/build_proof_figure.py"

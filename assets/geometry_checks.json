@@ -1,0 +1,282 @@
+{
+  "status": "PASS",
+  "source": "assets/build_problem_figure.py",
+  "source_sha256": "580d866520d795a8ebc6cfbd6088aa7a786e65eb4fb17e6b8ab7433f524ee77d",
+  "paper_section": "2.2",
+  "geometry": "images of the same parameter-domain faces under the exact Cartesian maps",
+  "problem_statement": [
+    "Determine all universal deformations of homogeneous incompressible isotropic hyperelastic solids in three dimensions.",
+    "For every isotropic strain energy, the deformation can be maintained in equilibrium without body forces;",
+    "the pressure and surface traction are allowed to depend on the constitutive law."
+  ],
+  "versions": {
+    "numpy": "2.5.3",
+    "sympy": "1.14.0",
+    "matplotlib": "3.11.2"
+  },
+  "families": [
+    {
+      "family": "F0",
+      "paper_label": "intro:family0",
+      "equation": "2.3",
+      "name": "Homogeneous deformation",
+      "reference_coordinates": "(X,Y,Z)",
+      "reference_cartesian_map": [
+        "u",
+        "v",
+        "w"
+      ],
+      "current_cartesian_map": [
+        "u + 9*v/20",
+        "v",
+        "w"
+      ],
+      "parameters": {
+        "L": [
+          [
+            "1",
+            "9/20",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "reference_domain": [
+        [
+          "-3/5",
+          "3/5"
+        ],
+        [
+          "-3/5",
+          "3/5"
+        ],
+        [
+          "-9/20",
+          "9/20"
+        ]
+      ],
+      "signed_cartesian_jacobian": "1",
+      "reference_and_current_volume": "162/125"
+    },
+    {
+      "family": "F1",
+      "paper_label": "intro:family1",
+      "equation": "2.4",
+      "name": "Bending of a rectangular block",
+      "reference_coordinates": "(X,Y,Z)",
+      "reference_cartesian_map": [
+        "u",
+        "v",
+        "w"
+      ],
+      "current_cartesian_map": [
+        "sqrt(2*u + 1)*cos(v)",
+        "sqrt(2*u + 1)*sin(v)",
+        "w"
+      ],
+      "parameters": {
+        "alpha": "1",
+        "beta": "1",
+        "d": "1",
+        "gamma": "0"
+      },
+      "reference_domain": [
+        [
+          "0",
+          "3/5"
+        ],
+        [
+          "-11/10",
+          "11/10"
+        ],
+        [
+          "-9/20",
+          "9/20"
+        ]
+      ],
+      "signed_cartesian_jacobian": "1",
+      "reference_and_current_volume": "297/250"
+    },
+    {
+      "family": "F2",
+      "paper_label": "intro:family2",
+      "equation": "2.5",
+      "name": "Straightening of a cylindrical sector",
+      "reference_coordinates": "(R,Theta,Z)",
+      "reference_cartesian_map": [
+        "u*cos(v)",
+        "u*sin(v)",
+        "w"
+      ],
+      "current_cartesian_map": [
+        "u**2/2 - 1/2",
+        "v",
+        "w"
+      ],
+      "parameters": {
+        "alpha": "1",
+        "beta": "1",
+        "x0": "-1/2",
+        "gamma": "0"
+      },
+      "reference_domain": [
+        [
+          "1",
+          "sqrt(55)/5"
+        ],
+        [
+          "-11/10",
+          "11/10"
+        ],
+        [
+          "-9/20",
+          "9/20"
+        ]
+      ],
+      "signed_cartesian_jacobian": "1",
+      "reference_and_current_volume": "297/250"
+    },
+    {
+      "family": "F3",
+      "paper_label": "intro:family3",
+      "equation": "2.6",
+      "name": "Inflation and torsion",
+      "reference_coordinates": "(R,Theta,Z)",
+      "reference_cartesian_map": [
+        "u*cos(v)",
+        "u*sin(v)",
+        "w"
+      ],
+      "current_cartesian_map": [
+        "sqrt(4*u**2/5 + 2/5)*cos(v + 3*w/5)",
+        "sqrt(4*u**2/5 + 2/5)*sin(v + 3*w/5)",
+        "5*w/4"
+      ],
+      "parameters": {
+        "A": "4/5",
+        "B0": "2/5",
+        "k": "1",
+        "delta": "3/5",
+        "kappa": "0",
+        "gamma": "5/4"
+      },
+      "reference_domain": [
+        [
+          "7/10",
+          "11/10"
+        ],
+        [
+          "1/4",
+          "5"
+        ],
+        [
+          "-11/20",
+          "11/20"
+        ]
+      ],
+      "signed_cartesian_jacobian": "1",
+      "reference_and_current_volume": "1881/1000"
+    },
+    {
+      "family": "F4",
+      "paper_label": "intro:family4",
+      "equation": "2.7",
+      "name": "Spherical shell deformation",
+      "reference_coordinates": "(R,Theta,Phi)",
+      "reference_cartesian_map": [
+        "u*sin(w)*cos(v)",
+        "u*sin(v)*sin(w)",
+        "u*cos(w)"
+      ],
+      "current_cartesian_map": [
+        "(u**3 + 3/5)**(1/3)*sin(w)*cos(v)",
+        "(u**3 + 3/5)**(1/3)*sin(v)*sin(w)",
+        "(u**3 + 3/5)**(1/3)*cos(w)"
+      ],
+      "parameters": {
+        "epsilon": "1",
+        "Q": "I",
+        "B0": "3/5"
+      },
+      "reference_domain": [
+        [
+          "16/25",
+          "1"
+        ],
+        [
+          "0",
+          "pi"
+        ],
+        [
+          "0",
+          "pi"
+        ]
+      ],
+      "signed_cartesian_jacobian": "1",
+      "reference_and_current_volume": "7686*pi/15625"
+    },
+    {
+      "family": "F5",
+      "paper_label": "intro:family5",
+      "equation": "2.8",
+      "name": "Logarithmic cylindrical deformation",
+      "reference_coordinates": "(R,Theta,Z)",
+      "reference_cartesian_map": [
+        "u*cos(v)",
+        "u*sin(v)",
+        "w"
+      ],
+      "current_cartesian_map": [
+        "6*u*cos(v + 7*log(u)/5)/5",
+        "6*u*sin(v + 7*log(u)/5)/5",
+        "25*w/36"
+      ],
+      "parameters": {
+        "alpha": "6/5",
+        "beta": "7/5",
+        "k": "1",
+        "gamma": "25/36"
+      },
+      "reference_domain": [
+        [
+          "13/20",
+          "11/10"
+        ],
+        [
+          "1/4",
+          "5"
+        ],
+        [
+          "-1/2",
+          "1/2"
+        ]
+      ],
+      "signed_cartesian_jacobian": "1",
+      "reference_and_current_volume": "1197/640"
+    }
+  ],
+  "fitted_pair_zooms": {
+    "F0": 1.093348265148946,
+    "F1": 1.3,
+    "F2": 1.3,
+    "F3": 1.3,
+    "F4": 1.3,
+    "F5": 1.3
+  },
+  "cross_checks": {
+    "F1_and_F2_inverse_coordinate_examples": true,
+    "F3_radial_coordinate_independent_of_height": true,
+    "F5_planar_coordinates_independent_of_height": true,
+    "all_projected_mesh_vertices_inside_frames": true,
+    "same_axis_scale_camera_and_zoom_within_each_pair": true
+  }
+}
