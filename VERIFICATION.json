@@ -62,7 +62,9 @@
       "old_label_numbers_unchanged": true,
       "appendices_and_supplement_unchanged": true,
       "compiled_twice": true
-    }
+    },
+    "included_in_repository": false,
+    "distribution": "separate"
   },
   "packages": {
     "rank012": {
@@ -94,8 +96,8 @@
       },
       "format": "directory",
       "files": 124,
-      "uncompressed_bytes": 1236904,
-      "directory_tree_sha256": "d8198641d8ad3782438ee259794d7bce1bd634fda61f9a4239f8905d2c8a17f7"
+      "uncompressed_bytes": 1236984,
+      "directory_tree_sha256": "59813ef45f607ad1b791ba61e76bd6ed9878f30d1ae5e21837f3a2fcd6781ea6"
     },
     "rank3": {
       "status": "PASS",
@@ -125,8 +127,8 @@
       },
       "format": "directory",
       "files": 590,
-      "uncompressed_bytes": 380792404,
-      "directory_tree_sha256": "c1a4b51ddc211b0da21ac446ecc89b4cbd82ecad62bf27dcd452b898fed7ca47",
+      "uncompressed_bytes": 380792484,
+      "directory_tree_sha256": "ed4ae6934480413eae81f3b9c3341ddc803caf5b7289c6609a2812a863fc9a40",
       "existing_complete_run": {
         "registered_tasks": 466,
         "actual_mathematical_executions": 337,
@@ -10649,30 +10651,6 @@
     }
   },
   "files": {
-    "paper/figures/rank_mechanism_geometry.pdf": {
-      "sha256": "13f6c2b57642ed82d2b11109723920fa4389e4f3ba6bcf4a07c4675b76da6c88",
-      "bytes": 2065
-    },
-    "paper/figures/rank_three_dimension_geometry.pdf": {
-      "sha256": "36b7f467ee7afa78daa9ba509b465a626d73314a4fed6be00635f0e5dcacc009",
-      "bytes": 1944
-    },
-    "paper/figures/state_relations_geometry.pdf": {
-      "sha256": "d5af67fe96645d9d4f9f8e2c946a28efebf879b58446ecc3234b938ed5f8e5f6",
-      "bytes": 1946
-    },
-    "paper/main.pdf": {
-      "sha256": "540f2c37380adafdd716394178e1f0c08f7c975386c9105d301d5f1568cd0fa1",
-      "bytes": 1444588
-    },
-    "paper/main.tex": {
-      "sha256": "538231430c3f36fba3465c4c36cb658be89f7f375844ab9df71db643a2e51fba",
-      "bytes": 596107
-    },
-    "paper/supplement.tex": {
-      "sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
-      "bytes": 120297
-    },
     "Rank012/check_environment.py": {
       "sha256": "bd1601143ccb69d01e88769252258694e7a4efdf23dc672898a27fc0d89e423b",
       "bytes": 2879
@@ -10746,7 +10724,7 @@
       "bytes": 71505
     },
     "Rank012/MANIFEST.json": {
-      "sha256": "7b6f78b8f7f64cbcb3f07048ce887104c716e6a557d4d5055e196d4d0961cfb3",
+      "sha256": "c0a5ffa6a32554de6dc9587dd6e522893200407dd0f5e3446614ced1911f73d5",
       "bytes": 93895
     },
     "Rank012/paper_index.py": {
@@ -10754,16 +10732,16 @@
       "bytes": 5939
     },
     "Rank012/PROOF_MAP.json": {
-      "sha256": "7f914d7ccb0da14761a50906d62f1c4b620eac6a57840629c0896ffa69e9a712",
-      "bytes": 174819
+      "sha256": "2d96a946d6d86801ae3811f930629b31775787efc23c3fb9eeda537b7102817b",
+      "bytes": 174890
     },
     "Rank012/PROOF_MAP.md": {
-      "sha256": "3f37b4b52582b7d3a517f023bd56f26e648fac7124919162f6bf915236fd298f",
-      "bytes": 3735
+      "sha256": "4e5ae65baf2746bdd25066e5d8352ff5f1f4219dae0e5fb2aabba77e774214e7",
+      "bytes": 3745
     },
     "Rank012/README.txt": {
-      "sha256": "940439c0847d42c69be0768a5e5e617cc77e9a0981f77d8f229e290fd2cb1239",
-      "bytes": 1683
+      "sha256": "b67beeed46aa4b85bf614d6d790ff347d5107731f9f5dcdb460c34e5d3d16a67",
+      "bytes": 1682
     },
     "Rank012/run.py": {
       "sha256": "763f6e72ff468b5df29f1529f23b25f932f004a8fc030dedbf06935ac4c45392",
@@ -12098,7 +12076,7 @@
       "bytes": 7799
     },
     "Rank3/MANIFEST.json": {
-      "sha256": "55a1d9e575775bc51942369d37797a57312f518cb0e2fae3e8522eaa909325a8",
+      "sha256": "044e936dc253caba1d61d96fef03d815d576657e0f6d873958465ea65b1e26a0",
       "bytes": 422035
     },
     "Rank3/paper_index.py": {
@@ -12106,16 +12084,16 @@
       "bytes": 5939
     },
     "Rank3/PROOF_MAP.json": {
-      "sha256": "4103eb8a82499659efe3932705e470f51d7574415fda20b0d1da8303bfb40478",
-      "bytes": 1122282
+      "sha256": "a4e888b48ad333228e23a1a8b3055f1dee3d64abcb28188f98280fe0b7a5c684",
+      "bytes": 1122353
     },
     "Rank3/PROOF_MAP.md": {
-      "sha256": "3120f83b592dfd60713b3461be32184739a1a5d525fc3883a94730140ef98fc6",
-      "bytes": 18787
+      "sha256": "1a0fd2df9bb1172bb692fd1af3877be0711d5e5ca362eef4311922984cb6cf53",
+      "bytes": 18797
     },
     "Rank3/README.md": {
-      "sha256": "509365426013a26bfcd09c1b1f9df2514d5df7984460c91e091e40e822b9d192",
-      "bytes": 3483
+      "sha256": "e89c4cff1e5fc35590d3986b8b3c7877859f4bd1f9df012328bdb108c9c0440e",
+      "bytes": 3482
     },
     "Rank3/run.py": {
       "sha256": "b3e4c8ce04bd3d1bedffcd2dd3d2fcb6abe495dba5b63f089134f06973c89f2d",
@@ -13438,16 +13416,16 @@
       "bytes": 381901
     },
     "README.md": {
-      "sha256": "a714e2372821cc1f6417b5b41e8a1946e4b4efbc8dfd0e5da132e28819f4ced6",
-      "bytes": 5511
+      "sha256": "f0b36d644eb9b42ff85851bc355d1453f371918e580c827fa2e0204120b2996d",
+      "bytes": 4600
     },
     ".gitattributes": {
       "sha256": "8781d16f00760c69157a8be423f04a94893c9ec3d644241a18d5fef66fc42373",
       "bytes": 89
     },
     ".gitignore": {
-      "sha256": "2e8adcbb855b1c530a20cba79a397d417f12592ca417520c7260d14ed1e32624",
-      "bytes": 119
+      "sha256": "7c9e066b82fbd7e21fb1bf398b3f4e2bc9d40acd0eeb11a878f9595566d20f6b",
+      "bytes": 52
     },
     "Rank3/results/conic_endpoint/conic_normal_matrix.json": {
       "sha256": "606b856e3358b5da232c2bd9a3dba53f4dc54f265e7a0e629ac7291abc52fb48",
@@ -13543,13 +13521,15 @@
     }
   },
   "packaging": {
-    "format": "one ZIP with unpacked calculation directories",
+    "format": "unpacked calculation directories",
     "nested_archives": 0,
     "readme_language": "English",
     "mathematical_runs_repeated_for_layout_revision": false,
     "directory_tree_hash_definition": "SHA256(sorted relative POSIX path + NUL + file SHA256 + newline)",
     "all_mathematical_sources_inputs_arguments_and_wrappers_byte_identical": true,
     "endpoint_calculations_rebuilt_from_empty_work_directory": true,
-    "existing_mathematical_sources_inputs_arguments_and_wrappers_unchanged": true
+    "existing_mathematical_sources_inputs_arguments_and_wrappers_unchanged": true,
+    "manuscript_included": false,
+    "repository_layout_updated_utc": "2026-10-13T00:18:09.818487+00:00"
   }
 }

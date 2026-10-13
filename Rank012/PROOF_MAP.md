@@ -1,6 +1,6 @@
 # Manuscript and calculation index
 
-The mathematical parts below refer to the accompanying manuscript. Source identities, coefficient rings, complete prerequisites and recorded outputs are in PROOF_MAP.json.
+The mathematical parts below refer to the separately distributed manuscript. Source identities, coefficient rings, complete prerequisites and recorded outputs are in PROOF_MAP.json.
 
 | Part | Manuscript location | Mathematical calculation |
 |---|---|---|

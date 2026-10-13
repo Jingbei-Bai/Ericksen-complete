@@ -11,22 +11,22 @@
       "archive_path": "PROOF_MAP.json",
       "work_path": "PROOF_MAP.json",
       "kind": "documentation",
-      "bytes": 174819,
-      "sha256": "7f914d7ccb0da14761a50906d62f1c4b620eac6a57840629c0896ffa69e9a712"
+      "bytes": 174890,
+      "sha256": "2d96a946d6d86801ae3811f930629b31775787efc23c3fb9eeda537b7102817b"
     },
     {
       "archive_path": "PROOF_MAP.md",
       "work_path": "PROOF_MAP.md",
       "kind": "documentation",
-      "bytes": 3735,
-      "sha256": "3f37b4b52582b7d3a517f023bd56f26e648fac7124919162f6bf915236fd298f"
+      "bytes": 3745,
+      "sha256": "4e5ae65baf2746bdd25066e5d8352ff5f1f4219dae0e5fb2aabba77e774214e7"
     },
     {
       "archive_path": "README.txt",
       "work_path": "README.txt",
       "kind": "documentation",
-      "bytes": 1683,
-      "sha256": "940439c0847d42c69be0768a5e5e617cc77e9a0981f77d8f229e290fd2cb1239"
+      "bytes": 1682,
+      "sha256": "b67beeed46aa4b85bf614d6d790ff347d5107731f9f5dcdb460c34e5d3d16a67"
     },
     {
       "archive_path": "SYMBOLS.md",

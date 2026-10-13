@@ -1,29 +1,18 @@
-# Ericksen's classification problem: manuscript and SageMath calculations
+# SageMath calculations for Ericksen's classification problem
 
 Release date: 12 October 2026.
 
-Clone the repository or extract the release archive. Its contents are ready to use:
+Clone this repository to reproduce the calculations. It contains:
 
 ```text
 README.md
-paper/
-    main.pdf
-    main.tex
-    supplement.tex
-    figures/
 Rank012/
 Rank3/
 VERIFICATION.json
 SHA256SUMS.txt
 ```
 
-`paper/main.pdf` is the complete preprint (210 pages). Supplementary
-calculations S1-S9 follow Appendix E, beginning on page 168. The document
-has one abstract and one table of contents, and all cross-references stay
-within the same PDF. Its complete LaTeX sources and three vector figure
-backgrounds are in the same directory. `supplement.tex` is included by
-`main.tex`; it is not a separate document. The revised Section 8 is
-integrated into `main.tex`.
+The manuscript PDF and complete LaTeX sources are distributed separately.
 
 `Rank012/` contains the calculations for ranks zero, one and two.
 `Rank3/` contains the calculations for rank three. Each directory includes
@@ -72,20 +61,20 @@ Each calculation directory contains:
 - `tasks.json`: the registered tasks and dependency graph.
 - `MANIFEST.json`: file hashes and the tasks requiring each source or input.
 
-The `.tex` files under `inputs/paper/` are formula excerpts used by the
-programs. The complete sources are `paper/main.tex` and
-`paper/supplement.tex`. The supplement records the important matrices,
-determinants, local ideals, resultants and intersection orders, including
-all 425 auxiliary expressions and 20 entries of the moment matrix.
-One required 468-byte coefficient input in `Rank3/inputs/` has a `.log`
-extension.
+The `.tex` files under `inputs/paper/` are exact formula excerpts used by
+the programs. They are included as calculation inputs. One required
+468-byte coefficient input in `Rank3/inputs/` has a `.log` extension.
 
-Check the indices against the full sources with:
+Check the calculation indices and their required files with:
 
 ```sh
-./sage-environment/bin/python Rank012/paper_index.py --paper paper/main.tex --supplement paper/supplement.tex
-./sage-environment/bin/python Rank3/paper_index.py --paper paper/main.tex --supplement paper/supplement.tex
+./sage-environment/bin/python Rank012/paper_index.py
+./sage-environment/bin/python Rank3/paper_index.py
 ```
+
+To compare the indices with the separately distributed manuscript sources,
+add `--paper /path/to/main.tex --supplement /path/to/supplement.tex` to
+either command. `PROOF_MAP.json` records the manuscript version by SHA-256.
 
 ## Completed runs and file integrity
 
@@ -119,23 +108,11 @@ implication from these identities in Appendix C.9.
 `VERIFICATION.json` contains the completed-run evidence, environment
 versions, manuscript hashes and directory hashes. The directory hash is
 SHA-256 of the sorted sequence of relative POSIX paths, a NUL separator,
-each file's SHA-256 and a newline. This revision integrates the expanded Section 8 and adds the
-recomputed relative conic endpoint calculations.
+each file's SHA-256 and a newline. The manuscript hashes identify the
+separately distributed version used by the calculation indices.
 
-Verify the extracted files from the release directory:
+Verify the files from the repository root:
 
 ```sh
 sha256sum --check SHA256SUMS.txt
 ```
-
-## Compile the complete preprint
-
-Use pdfLaTeX with TeX Live 2025. From `paper/`, run the following command
-three times:
-
-```sh
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-```
-
-This compiles the paper and supplementary calculations together. All
-formulas retain their original section and equation numbers.

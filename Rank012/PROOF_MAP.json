@@ -3,7 +3,9 @@
   "package": "rank012",
   "paper": {
     "source": "main.tex",
-    "sha256": "538231430c3f36fba3465c4c36cb658be89f7f375844ab9df71db643a2e51fba"
+    "sha256": "538231430c3f36fba3465c4c36cb658be89f7f375844ab9df71db643a2e51fba",
+    "included_in_repository": false,
+    "distribution": "separate"
   },
   "tasks": "tasks.json",
   "tasks_sha256": "f2332ec729efc511534aa4bb147f0b73e317ba510453f9ecfa09e2be6d2d2b8b",
