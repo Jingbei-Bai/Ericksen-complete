@@ -1,29 +1,63 @@
-# SageMath calculations for Ericksen's problem
+# A local solution of Ericksen's problem
 
-Release date: 12 October 2026.
+**Jingbei Bai** · Xingjian College, Tsinghua University
 
-Clone this repository to reproduce the calculations. It contains:
+[bjb23@mails.tsinghua.edu.cn](mailto:bjb23@mails.tsinghua.edu.cn)
 
-```text
-README.md
-Rank012/
-Rank3/
-VERIFICATION.json
-SHA256SUMS.txt
-```
+[Read the paper](A%20local%20solution%20of%20Ericksen%27s%20problem.pdf) ·
+[LaTeX sources](tex/) · [Ranks 0–2](Rank012/) · [Rank 3](Rank3/)
 
-The manuscript PDF and complete LaTeX sources are distributed separately.
+![Ericksen's problem: a fixed deformation, with pressure and boundary traction depending on the strain energy.](assets/ericksen_problem.png)
 
-`Rank012/` contains the calculations for ranks zero, one and two.
-`Rank3/` contains the calculations for rank three. Each directory includes
-all required programs, inputs, execution support, the task graph,
-the environment lock and the manuscript index.
+Ericksen's problem asks for all universal deformations of homogeneous
+incompressible isotropic hyperelastic solids. A universal deformation can
+be maintained in equilibrium without body forces for every isotropic
+strain energy; the pressure and surface traction may depend on the
+constitutive law. The illustration uses a classical volume preserving bend
+to express this distinction.
+
+The paper proves local completeness of the six classical families for
+orientation preserving $C^3$ universal deformations, including their
+regular Cartesian continuations. Its principal step concerns three
+distinct constant principal stretches: one principal direction is locally
+normal to a family of surfaces. Analyticity and the earlier classifications
+then yield the full local classification.
+
+## Proof structure
+
+![Proof structure: the four state ranks, principal plane integrability, classical classifications, and analytic continuation.](assets/proof_structure.png)
+
+Here $h_i$ is the abnormality of the $i$th principal direction,
+$\mathsf X$ is the normalized state map, and $Y$ is the Zariski closure
+of its image. Ranks zero, one and two are excluded through common
+Euclidean similarities and the frame equations. At rank three,
+projection onto the two abnormality ratios gives an algebraic dimension
+bound that contradicts the rank of the state map. Section 9 joins this
+argument to the classical classifications and continuation results.
+
+## Repository contents
+
+| Location | Contents |
+|---|---|
+| [Paper PDF](A%20local%20solution%20of%20Ericksen%27s%20problem.pdf) | The complete article, appendices and supplementary calculations in one PDF. |
+| [tex/](tex/) | `main.tex`, the integrated `supplement.tex`, and all three required figure backgrounds. |
+| [Rank012/](Rank012/) | SageMath sources and required inputs for ranks zero, one and two. |
+| [Rank3/](Rank3/) | SageMath sources and required inputs for rank three, including the local conic ideals and endpoint. |
+| [assets/](assets/) | README illustrations, the TeX proof diagram and its build script. |
+| [VERIFICATION.json](VERIFICATION.json) | Recorded executions, fixed environment, manuscript hashes and file inventory. |
+| [SHA256SUMS.txt](SHA256SUMS.txt) | SHA-256 checksums for the distributed files. |
+
+Each calculation directory contains `PROOF_MAP.md` for the mathematical
+index, `PROOF_MAP.json` for the exact algebraic statements and dependencies,
+`SYMBOLS.md` for notation, `tasks.json` for the execution graph, and
+`MANIFEST.json` for source and input hashes. The `.tex` files under
+`inputs/paper/` are exact formula excerpts consumed by the programs.
 
 ## Reproduce the calculations
 
-Run the commands below from the extracted release directory on Linux
-x86_64, or in WSL on Windows. Use Conda or Miniforge to install the fixed
-environment. Installation requires access to the package repositories.
+Clone the repository and run the following commands from its root on
+Linux x86_64, or in WSL on Windows. Conda or Miniforge installs the fixed
+environment from the explicit lock file.
 
 ```sh
 conda create --prefix ./sage-environment --file Rank012/environment-linux-64.lock -y
@@ -31,88 +65,76 @@ conda create --prefix ./sage-environment --file Rank012/environment-linux-64.loc
 ./sage-environment/bin/python Rank3/run.py --work-dir ./rebuild-rank3 --workers 2
 ```
 
-Both directories contain the same environment lock: SageMath 10.9,
-Python 3.12.14 and SymPy 1.14.0, with all dependency versions and builds
-fixed. Provide at least 16 GiB of RAM; use `--workers 1` to reduce concurrent
-memory use.
+The environment contains SageMath 10.9, Python 3.12.14 and SymPy 1.14.0;
+all dependency versions and builds are fixed. Both calculation directories
+contain the same lock file. Allow at least 16 GiB of RAM for the complete
+calculation; `--workers 1` reduces concurrent memory use.
 
-Use a new work directory for each new run. Outputs and logs are created
-under its `run/` subdirectory. Continue an interrupted run by adding
-`--resume` to the original command. The runner resolves dependencies and
-creates the required generated inputs.
+A new run requires a new work directory. The runner resolves dependencies
+and builds the generated inputs. Outputs and logs appear under the work
+directory's `run/` subdirectory. To continue an interrupted run, repeat
+its command with `--resume`.
 
-To inspect or reproduce one mathematical part:
+To select a mathematical part together with its prerequisites:
 
 ```sh
 ./sage-environment/bin/python Rank3/run.py --list-proofs
 ./sage-environment/bin/python Rank3/run.py --proof ID --work-dir ./rebuild-part --workers 1
 ```
 
-Replace `ID` with an entry returned by `--list-proofs`.
+Replace `ID` with an entry returned by `--list-proofs`. For example,
+`C9_ENDPOINT` selects the relative conic ideals in Appendix C.9. The
+corresponding recorded exact outputs and labelled coefficient matrices
+are in [Rank3/results/conic_endpoint/](Rank3/results/conic_endpoint/).
 
-## Correspondence with the paper
-
-Each calculation directory contains:
-
-- `PROOF_MAP.md`: mathematical parts and their manuscript locations.
-- `PROOF_MAP.json`: exact algebraic statements, coefficient rings,
-  localizations, manuscript excerpts and dependencies.
-- `SYMBOLS.md`: manuscript notation and local Sage names.
-- `tasks.json`: the registered tasks and dependency graph.
-- `MANIFEST.json`: file hashes and the tasks requiring each source or input.
-
-The `.tex` files under `inputs/paper/` are exact formula excerpts used by
-the programs. They are included as calculation inputs. One required
-468-byte coefficient input in `Rank3/inputs/` has a `.log` extension.
-
-Check the calculation indices and their required files with:
+Compare the calculation indices with the included manuscript sources:
 
 ```sh
-./sage-environment/bin/python Rank012/paper_index.py
-./sage-environment/bin/python Rank3/paper_index.py
+./sage-environment/bin/python Rank012/paper_index.py --paper tex/main.tex --supplement tex/supplement.tex
+./sage-environment/bin/python Rank3/paper_index.py --paper tex/main.tex --supplement tex/supplement.tex
 ```
 
-To compare the indices with the separately distributed manuscript sources,
-add `--paper /path/to/main.tex --supplement /path/to/supplement.tex` to
-either command. `PROOF_MAP.json` records the manuscript version by SHA-256.
+## Recorded verification
 
-## Completed runs and file integrity
-
-| Calculation | Mathematical tasks covered by the recorded runs | Generated-data copies |
+| Calculation | Mathematical tasks covered | Generated input copies covered |
 |---|---:|---:|
-| Ranks 0, 1 and 2 | 63 / 63 passed | 0 |
-| Existing Rank 3 calculations | 337 / 337 passed | 129 / 129 completed |
-| Added conic endpoint calculations | 9 / 9 passed | 9 / 9 completed |
+| Ranks 0, 1 and 2 | 63 / 63 | 0 |
+| Rank 3 | 346 / 346 | 138 / 138 |
 
-The existing packages were executed in clean work directories. Their
-mathematical sources, inputs, arguments and execution programs are unchanged.
-Rank 3 includes full exact integer interpolation at 2039 and 965 nodes,
-with both complete independent readers passing.
+All registered mathematical tasks have successful clean execution records
+at the distributed source and input versions. Rank 3 includes exact
+integer interpolation at 2039 and 965 nodes and both complete independent
+readers. The table counts distinct tasks across the recorded runs;
+`VERIFICATION.json` retains their selections, run identifiers and hashes.
 
-The added Appendix C.9 calculations were run from another empty work
-directory together with their entire dependency closure: 23 mathematical
-executions and 19 generated-data copies, all completed. The current Rank3
-task graph contains 484 tasks. The verification combines the existing
-complete run and this clean endpoint dependency run.
-
-To reproduce the new part alone:
-
-```sh
-./sage-environment/bin/python Rank3/run.py --proof C9_ENDPOINT --work-dir ./rebuild-endpoint --workers 2
-```
-
-The exact outputs and both coefficient matrices are in
-`Rank3/results/conic_endpoint/`. The manuscript proves the local ideal
-implication from these identities in Appendix C.9.
-
-`VERIFICATION.json` contains the completed-run evidence, environment
-versions, manuscript hashes and directory hashes. The directory hash is
-SHA-256 of the sorted sequence of relative POSIX paths, a NUL separator,
-each file's SHA-256 and a newline. The manuscript hashes identify the
-separately distributed version used by the calculation indices.
-
-Verify the files from the repository root:
+Verify the distributed files from the repository root:
 
 ```sh
 sha256sum --check SHA256SUMS.txt
 ```
+
+## Build the paper and proof diagram
+
+The manuscript was compiled with TeX Live 2025. From `tex/`, run:
+
+```sh
+pdflatex -interaction=nonstopmode -halt-on-error main.tex
+pdflatex -interaction=nonstopmode -halt-on-error main.tex
+pdflatex -interaction=nonstopmode -halt-on-error main.tex
+```
+
+The supplementary material is included after Appendix E by `main.tex`.
+It shares the article's bibliography and has no separate abstract.
+
+The proof diagram is drawn with TeX and rendered by Python. With
+`pdflatex` and Poppler's `pdftoppm` on `PATH`, run from the repository root:
+
+```sh
+python assets/build_proof_figure.py
+```
+
+The [vector PDF](assets/proof_structure.pdf) and
+[TeX source](assets/proof_structure.tex) are included. The warm problem
+illustration was produced with the built-in image generation tool; its
+[prompt](assets/ericksen_problem_prompt.txt) is included. It depicts a
+classical deformation schematically.

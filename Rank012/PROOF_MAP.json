@@ -2,10 +2,10 @@
   "schema": "ericksen_current_paper_index/v2",
   "package": "rank012",
   "paper": {
-    "source": "main.tex",
+    "source": "tex/main.tex",
     "sha256": "19e3a40b7f6895cd42e08d74f113996077cf65f942a4ca07f599ea3cbbe90597",
-    "included_in_repository": false,
-    "distribution": "separate"
+    "included_in_repository": true,
+    "distribution": "repository"
   },
   "tasks": "tasks.json",
   "tasks_sha256": "f2332ec729efc511534aa4bb147f0b73e317ba510453f9ecfa09e2be6d2d2b8b",

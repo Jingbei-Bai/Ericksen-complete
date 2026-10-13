@@ -2,10 +2,10 @@
   "schema": "ericksen_current_paper_index/v2",
   "package": "rank3",
   "paper": {
-    "source": "main.tex",
+    "source": "tex/main.tex",
     "sha256": "19e3a40b7f6895cd42e08d74f113996077cf65f942a4ca07f599ea3cbbe90597",
-    "included_in_repository": false,
-    "distribution": "separate"
+    "included_in_repository": true,
+    "distribution": "repository"
   },
   "tasks": "tasks.json",
   "tasks_sha256": "b04539083448ee05665858dbec2fa74080224cbdaf6fd076a0fe6f9e28a247e9",
@@ -2854,6 +2854,311 @@
         }
       ],
       "title": "Relative ideals with one nonzero derivative coordinate"
+    },
+    {
+      "node": "C9_ENDPOINT",
+      "title": "The relative conic ideal and its w=0 endpoint",
+      "paper_labels": [
+        "appr3whole:identities",
+        "appr3whole:endpoint",
+        "r3:boundaryreduction"
+      ],
+      "coefficient_ring_and_localization": "QQ(k,r,eta,zeta), localized at k*r*(1+k)*(1+r)*(k-r)*eta*zeta*(eta-zeta)*(eta+1)*(zeta-1), with k=a*kappa_0 and r=kappa_0. At the endpoint xb^2=2*(1+k); eta,zeta remain local parameters. The open conic minor is used only where w*(w^2-k)*(w^2+k) is nonzero.",
+      "exact_mathematical_statement": "R2,R3,Q0,H6,H14,H16 belong to J3=(w,e0,e1,delta), retaining all t,kappa terms. The complete relations belong to the nonreduced conic ideal (I_graph,C,s^2,t,kappa). The complete regularized relations belong to the reference ideals; G21 is polynomial and belongs to (t,kappa). At w=0 the six-source Jacobian is 36*k^2*q*m^2*xb/7, the three-source Jacobian is m*q/3584, and the residual quadratic terms are B=-3*xb*v_end*w/(224*m), F=v_end^2/8+7*v_end*s/2+32*s^2. The residual coefficient determinant is -3*xb/(7*m). The open conic normal determinant has norm -9*r^2*q^2*w^2*m^7*(w^2-k)^4*(w^2+k)^11/(98*k^11).",
+      "geometric_interface": "Implicit uniqueness gives delta in (w) and kappa in (v_end,s^2). Since (w) intersect (v_end,s^2)=w*(v_end,s^2), the unit residual matrix puts kappa*delta in the necessary ideal. Faithful flatness contracts the membership to the local ring and tau=kappa^2*delta belongs to that ideal.",
+      "direct_tasks": [
+        {
+          "task_id": "conic_endpoint:generic_regularity",
+          "source": "reproduction/conic_endpoint/verify_generic_regularity.py",
+          "source_sha256": "48863a7f291ed61fc9b05d0ced74ed050ddee6b66336996dbc554eefa12dca2d",
+          "wrapper": null,
+          "arguments": [],
+          "action": "run",
+          "input_views": {},
+          "environment": {}
+        },
+        {
+          "task_id": "conic_endpoint:coefficient_units",
+          "source": "reproduction/conic_endpoint/verify_whole_coefficient_units.py",
+          "source_sha256": "2a5570837f1df1f02d57f3a1efa8eb763525f706f5362b3bfa6ab7453030f176",
+          "wrapper": null,
+          "arguments": [],
+          "action": "run",
+          "input_views": {},
+          "environment": {}
+        },
+        {
+          "task_id": "conic_endpoint:relative_boundary",
+          "source": "reproduction/conic_endpoint/verify_relative_boundary.py",
+          "source_sha256": "ba3b864d8157345586c3f2af48652b7c5988d619716ea35548269ac692394c0a",
+          "wrapper": null,
+          "arguments": [],
+          "action": "run",
+          "input_views": {},
+          "environment": {}
+        },
+        {
+          "task_id": "conic_endpoint:gauge_binding",
+          "source": "reproduction/conic_endpoint/verify_manuscript_gauge_binding.py",
+          "source_sha256": "46ee02c8401a8382911b93843a87b39c3f6c772343166e86fd68285fed4eaa83",
+          "wrapper": null,
+          "arguments": [],
+          "action": "run",
+          "input_views": {},
+          "environment": {}
+        },
+        {
+          "task_id": "conic_endpoint:rebuild_G21",
+          "source": "reproduction/conic_endpoint/rebuild_generic_G_p21_Q6.py",
+          "source_sha256": "70412c1054de1abd43a78b096ca1cd10a0a27813a4018c762aa0fc1a5ace341c",
+          "wrapper": null,
+          "arguments": [
+            "--source-directory",
+            "@WORKROOT@/reproduction/conic_endpoint/source_inputs",
+            "--output-directory",
+            "@WORKROOT@/reproduction/conic_endpoint"
+          ],
+          "action": "run",
+          "input_views": {},
+          "environment": {}
+        },
+        {
+          "task_id": "conic_endpoint:G21_conic_membership",
+          "source": "reproduction/conic_endpoint/verify_new_generic_G_J8.py",
+          "source_sha256": "9c332bcf9340119a6d6dc18bd1c78b4404b1d50f9a107b7cade5d754fd9615b4",
+          "wrapper": null,
+          "arguments": [
+            "--source-directory",
+            "@WORKROOT@/reproduction/conic_endpoint/source_inputs",
+            "--output-directory",
+            "@WORKROOT@/reproduction/conic_endpoint"
+          ],
+          "action": "run",
+          "input_views": {},
+          "environment": {}
+        },
+        {
+          "task_id": "conic_endpoint:implicit_graph",
+          "source": "reproduction/conic_endpoint/verify_endpoint_unit_and_obstructions.py",
+          "source_sha256": "2884e59c17dfcb63c1c3017f5522af8687536cc70e817b4ddd90c763a957b235",
+          "wrapper": null,
+          "arguments": [
+            "--source-directory",
+            "@WORKROOT@/reproduction/conic_endpoint/source_inputs",
+            "--output-directory",
+            "@WORKROOT@/reproduction/conic_endpoint"
+          ],
+          "action": "run",
+          "input_views": {},
+          "environment": {}
+        },
+        {
+          "task_id": "conic_endpoint:open_conic_minor",
+          "source": "reproduction/conic_endpoint/verify_conic_open_minor.py",
+          "source_sha256": "ea026d5f1f3a5971558a5620d604fcd743415ed13dcd2b9422464ebf358c7dbe",
+          "wrapper": null,
+          "arguments": [],
+          "action": "run",
+          "input_views": {},
+          "environment": {}
+        },
+        {
+          "task_id": "conic_endpoint:whole_J3",
+          "source": "reproduction/conic_endpoint/subcritical_single_endpoint_whole_J3_reader.py",
+          "source_sha256": "9852831f7c5426fc08b0068996f951955830a0b523983be30aa68429ea80c59b",
+          "wrapper": null,
+          "arguments": [],
+          "action": "run",
+          "input_views": {},
+          "environment": {}
+        }
+      ],
+      "necessary_dependency_task_ids": [
+        "conic_endpoint:input:independent_critical_single_RR3_normal",
+        "conic_endpoint:input:independent_delta_subcritical_H_initials",
+        "conic_endpoint:input:independent_delta_subcritical_Q0_full_source",
+        "conic_endpoint:input:independent_delta_subcritical_even_full_source",
+        "conic_endpoint:input:independent_partial_D_Newton_gauges_reader",
+        "conic_endpoint:input:independent_ratio_global_R_derivative_degreefall",
+        "conic_endpoint:input:independent_ratio_p_boundary_second_gauge",
+        "conic_endpoint:input:independent_subcritical_single_RR_full_complete_E_chart_H1",
+        "conic_endpoint:input:independent_subcritical_single_RR_full_regular_chart_H1",
+        "foundations:rebuild_state17",
+        "generated_alias:round10/independent_critical_single_RR3_normal.sobj",
+        "generated_alias:round10/independent_delta_subcritical_H_initials.sobj",
+        "generated_alias:round10/independent_inactive_single_RR_boundary.sobj",
+        "generated_alias:round10/independent_partial_D_Newton_gauges_reader.sobj",
+        "generated_alias:round10/independent_support_Newton_field_reader.sobj",
+        "rank3_coverage:independent_critical_single_RR3_normal:independent_critical_single_RR3_normal",
+        "rank3_coverage:independent_delta_subcritical_H_initials:independent_delta_subcritical_H_initials",
+        "rank3_coverage:independent_inactive_single_RR_boundary:independent_inactive_single_RR_boundary",
+        "rank3_coverage:independent_support_Newton_field_reader:independent_support_Newton_field_reader",
+        "rank3_coverage:subcritical_single_full_complete_E_chart_H1:subcritical_single_full_complete_E_chart_H1",
+        "rank3_coverage:subcritical_single_full_regular_chart_H1:subcritical_single_full_regular_chart_H1:1",
+        "rank3_current_proof:complete_global_source_views",
+        "rank3_current_proof:complete_small_support_source_view",
+        "rank3_current_proof:first_boundary_source_view",
+        "rank3_current_proof:fresh_saturation_sources",
+        "rank3_current_proof:independent_supercritical_RR_small_support_sources",
+        "rank3_current_proof:independent_supercritical_first_boundary_probe",
+        "rank3_current_proof:saturation_source_view:independent_delta_Q0_kernel_compatibility",
+        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_Q0_full_source",
+        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_even_full_source",
+        "rank3_readers:independent_partial_D_Newton_gauges_reader:round10/independent_partial_D_Newton_gauges_reader.py",
+        "rank3_sources:fresh_global_sources",
+        "rank3_sources:fresh_joint_sources"
+      ],
+      "manuscript_anchors": [
+        {
+          "label": "appr3whole:identities",
+          "line": 7621,
+          "text": "\\subsection{Relative identities with one nonzero \\texorpdfstring{$\\mathsf R$}{R} coordinate}\n\\label{appr3whole:identities}\n\nWork in the relative local ring of the single-coordinate boundary. Let $I$ be the ideal of necessary regularized equations in this ring. Put $k=a\\kappa_0 $, $m=1+k$, $q=1+\\kappa_0 $, and\n\\[\n \\alpha=\\frac{\\zeta -\\eta }{\\zeta (\\eta +1)},\\qquad\n \\beta=\\frac{\\eta (\\zeta -1)}{\\zeta (\\eta +1)}.\n\\]\nOn the $\\overline p_{13}=\\overline{\\boldsymbol R}_3=1$ incidence chart, the exact coordinates are\n\\[\n\\begin{gathered}\n \\overline p_{12}=x,\\quad \\overline p_{13}=1,\\quad \\overline p_{21}=z,\\quad \\overline p_{23}=w,\\\\\n \\overline p_{31}=\\frac{tz-\\kappa e_2^{\\mathrm{alg}}}{\\beta},\\qquad\n \\overline p_{32}=\\frac{xwt}{\\beta}+\\frac{\\kappa(xe_1^{\\mathrm{alg}}-e_0^{\\mathrm{alg}})}{\\alpha},\\\\\n \\overline{\\boldsymbol R}_1=\\frac{\\alpha w t}{\\beta}+\\kappa e_1^{\\mathrm{alg}},\\quad\n \\overline{\\boldsymbol R}_2=t,\\quad \\overline{\\boldsymbol R}_3=1,\\quad \\tau=\\kappa^2\\delta.\n\\end{gathered}\n\\]\nThe incidence matrix gives\n$L(\\overline p)\\overline{\\boldsymbol R}=\\kappa\\boldsymbol e^{\\mathrm{alg}}$ exactly. Write $s=x+z$. The four boundary graph functions are\n\\[\n\\begin{aligned}\n f_0={}&-2xw+\\frac{4\\eta \\zeta -2\\eta -4\\zeta ^2+2\\zeta }{\\eta \\zeta }\\,sw,\\\\\n f_1={}&-\\frac{2\\zeta (\\eta -1)}{\\eta (\\zeta -1)}w,\\\\\n f_2={}&2x+\\frac{2\\eta \\zeta -2\\eta -4\\zeta ^2+2\\zeta }{\\zeta }s,\\\\\n d={}&\\frac{4\\kappa_0 (\\eta +1)^3}{q\\eta ^2}sw.\n\\end{aligned}\n\\]\nLet $I_{\\mathrm{graph}}=(e_0^{\\mathrm{alg}}-f_0,e_1^{\\mathrm{alg}}-f_1,e_2^{\\mathrm{alg}}-f_2,\\delta-d)$ denote their\nideal. These functions are substituted into the compatibility relation\npolynomials.\n\nWrite $\\mathcal R_\\nu$, $\\mathcal H_n$ and $Q_j^{\\mathrm{reg}}$ for the\nregularized representatives with respective factors\n$\\kappa^8\\delta^4$, $\\kappa^{11}\\delta^5$, and\n$\\kappa^7\\delta^3$ for $Q_0$ or $\\kappa^8\\delta^4$\nfor $Q_1,Q_5,Q_6$.\n\nAway from $k+w^2=0$, put $c=(3k-w^2)/(k+w^2)$. The\n$28$ normalized relations belong to\n\\[\n J_9=\\bigl(I_{\\mathrm{graph}},\\kappa s,ts,s^2,(t+2\\kappa)x,x^2-cxs\\bigr).\n\\]\nIn the quotient over $\\mathbb Q(k,\\kappa_0 ,\\eta ,\\zeta ,w)$, multiplication in the quotient gives\n$\\overline p_{31}=\\overline p_{32}=0$, $\\delta^2=\\kappa\\delta=0$; \n\nAt the attachment $w^2=-k$, regard $k$ and $w$ as independent parameters. Let $C$ be the third even relation on the boundary graph. Its full\npolynomial is\n\\[\n \\begin{aligned}\n C={}&\\frac{2k}{m^2}(x^3z+xz^3)\n       +\\frac{10x^2-4xz-6z^2}{m}w^2\\\\\n     &+\\frac{k}{m}(-6x^2-4xz+10z^2).\n \\end{aligned}\n\\]\nModulo $s^2$ it is\n\\[\n\\begin{aligned}\n C={}&-\\frac{4k}{m^2}x^4+\\frac{8k}{m^2}x^3s\\\\\n    &+\\frac{8(k+w^2)}m x^2-\\frac{8(3k-w^2)}m xs.\n\\end{aligned}\n\\]\nThe relative ideal is\n\\[\n J_{10}=\\bigl(I_{\\mathrm{graph}},\\kappa s,ts,s^2,(t+2\\kappa)x,\n                         C,\\kappa x^3\\bigr).\n\\]\nOne additional reduction follows from the exact identity\n\\[\n\\begin{aligned}\n (k+w^2)\\kappa x^2={}&\\frac m8\\kappa C\n +\\frac{k}{2m}\\kappa x^4-\\frac km\\kappa x^3s\n +\\frac{3k-w^2}{m}\\kappa xs.\n\\end{aligned}\n\\]\nThis identity holds in the coefficient ring in which $k+w^2$ is not inverted.\n\nThe twenty-eight relations and the three pair relations vanish\nmodulo $J_{10}$; the third even relation reduces to $C$. The incidence pullback of each pair relation has numerator divisible\nby $\\kappa$, so its regularized representative is polynomial.\nThe derivative relations $H_n$ retain their $(\\widehat p,\\mathsf R)$ components of bidegrees\n$(4,1)$, $(5,0)$ and $(1,3)$ and the $(3,2)$ incidence module;\ntheir remaining terms belong to $(\\delta^2,\\kappa\\delta)$.\n\nFor the reverse inclusion, at the cyclic base, the four rows used for implicit elimination and six remaining relation classes give\n\\[\n \\det_{10}=\\frac{\\kappa_0 q\\,w^{10}}{4032(w^2-1)},\\qquad\n \\operatorname{Norm}_{w^2=-k}(\\det_{10})\n =\\frac{\\kappa_0 ^2q^2k^{10}}{16257024m^2}.\n\\]\nThis is a unit for every admissible triple of principal values and for both complex\namplitude roots. The coefficient matrix has independent columns for\nthe six classes modulo the maximal ideal times $J_{10}$; Nakayama\nthen gives equality with the necessary ideal of compatibility relations. Finally,\n\\[\n \\tau=\\kappa^2(\\delta-d)\n       +\\frac{4\\kappa_0 (\\eta +1)^3}{q\\eta ^2}\\,w\\kappa(\\kappa s)\\in J_{10}.\n\\]\nThe ideal inclusion applies to formal arcs over the base and $w$.\n\n\\paragraph{The conic and its derivative relations.}\nThe partial gauge with active coordinate $\\widehat p_{21}$ is\n\\[\n \\mathcal D_{21}\n   =\\widehat p_{21}\\widehat E_2\n      -c_2^{\\mathrm{diag}}R_2\\partial_{\\mathsf R_2}.\n\\]\nBy the definition of $\\widehat E_2$ in\nAppendix~\\ref{appr3:sources},\n\\[\n \\mathcal D_{21}Q_6\n =\\widehat p_{21}\\mathcal V_2Q_6\n  -(\\widehat p_{21}g_2Q_0+c_2^{\\mathrm{diag}}R_2)\n           \\partial_{\\mathsf R_2}Q_6.\n\\]\nIt vanishes on the actual state image, since $Q_0,R_2,Q_6$\nbelong to its invariant ideal. Let $\\mathcal G_{21}$ be the\npolynomial extension of $\\kappa^{13}\\delta^6\\mathcal D_{21}Q_6$\nunder the incidence substitution. For a part of ordinary degree\n$d$ and $\\mathsf R$ degree $d_R$, the exceptional factors are\n$\\kappa^{13-2d-d_R}\\delta^{6-d}$. The two negative\n$\\kappa$ exponents are $-1,-2$, and their substituted numerators\nare divisible by $\\kappa,\\kappa^2$, respectively. After these\nexact divisions the polynomial satisfies\n\\[\n \\mathcal G_{21}\\in(t,\\kappa).\n\\]\n\nOn the graph $I_{\\mathrm{graph}}$ with $t=\\kappa=0$, all\n$\\mathcal R_\\nu,Q_0^{\\mathrm{reg}},\\mathcal H_n$ vanish, and\nthe even equations restrict to\n\\[\n \\begin{aligned}\n Q_1^{\\mathrm{reg}}&=s^2\n       \\left(-\\frac{2xz}{m}-\\frac{6w^2}{k}+26\\right),\\\\\n Q_5^{\\mathrm{reg}}&=s^2\n       \\left(-\\frac{2kxz}{m}+26w^2-6k\\right),\\\\\n Q_6^{\\mathrm{reg}}&=C.\n \\end{aligned}\n\\]\nConsequently these sources and $\\mathcal G_{21}$ belong to\n\\[\n \\mathcal J_{\\mathrm{conic}}\n       =(I_{\\mathrm{graph}},C,s^2,t,\\kappa).\n\\]\nHere $\\eta,\\zeta$ are retained in the coefficient ring.\n\nFor the conic $x^2=2m(k+w^2)/k$, use the equation $C=0$ to\nlift $x$ to the dual algebra with $s^2=0$. If $x_s$ denotes its\nfirst coefficient, it is determined by\n\\[\n x_s=-\\frac{C_z}{C_x-C_z},\\qquad z=-x+s,\n\\]\nwhere the derivatives are evaluated on the reduced conic. Over $\\mathbb Q(k,\\kappa_0,\\eta,\\zeta,w)$, the constant and linear\ncoefficients of both regularized coordinate derivatives of $Q_6$\nvanish. Hence those derivatives belong to the relative ideal of\nthe nonreduced conic.\n\nOn the incidence chart, the\ntwo homogeneous parts of the differentiated equations of $\\mathsf R$ degrees three and two pull\nback to exact multiples of $\\kappa^2$ and $\\kappa$, respectively.\nFor the first field its denominator is $\\overline p_{13}=1$; for the second\nit is $\\overline p_{21}=z$, a unit on the conic chart in question. \nAt the cyclic ratio section, take the coefficient classes of\n\\[\n \\mathcal R_2,\\mathcal R_3,Q_0^{\\mathrm{reg}},\\mathcal G_{21},\n \\mathcal H_{14},Q_1^{\\mathrm{reg}},Q_5^{\\mathrm{reg}},Q_6^{\\mathrm{reg}}\n\\]\nin $\\mathcal J_{\\mathrm{conic}}/\\mathfrak m\\mathcal J_{\\mathrm{conic}}$,\nrelative to the ordered generators\n\\[\n (e_0^{\\mathrm{alg}}-f_0,e_1^{\\mathrm{alg}}-f_1,\n  e_2^{\\mathrm{alg}}-f_2,\\delta-d,C,s^2,t,\\kappa).\n\\]\nHere $\\mathfrak m$ is the maximal ideal at the conic point. The\nnorm of the determinant of this eight-column coefficient matrix\nover $x^2=2m(k+w^2)/k$ is\n\\[\n -\\frac{9\\kappa_0^2q^2w^2m^7\n          (w^2-k)^4(w^2+k)^{11}}{98k^{11}}.\n\\]\nIt is nonzero for $w(w^2-k)(w^2+k)\\ne0$ at both roots.\nThe selected relations belong to $\\mathcal J_{\\mathrm{conic}}$,\nand their classes span this quotient. Nakayama's lemma gives\n$\\mathcal J_{\\mathrm{conic}}\\subset I$ in the relative local\nring. Since $\\kappa\\in\\mathcal J_{\\mathrm{conic}}$, this gives\n$\\tau\\in I$. The attachment $w^2=-k$ was treated by $J_{10}$.\n\nAt $w^2=k$, $x^2=4m$, the coefficient matrix of the 28\ncomplete relations in the eight generators of\n$\\mathcal J_{\\mathrm{conic}}$ has rank six. Its kernel has dimension\ntwo. The two full differentiated relations of $Q_6$, restricted\nto a basis of this kernel, have coefficient matrix\n\\[\n \\begin{pmatrix}-640kw&-16kw\\\\-384kx&0\\end{pmatrix}.\n\\]\nIts determinant $-6144k^2wx$ is nonzero at all four roots.\nThe augmented normal matrix therefore has rank eight.\nThese relations belong to $\\mathcal J_{\\mathrm{conic}}$, so\nNakayama's lemma gives $\\mathcal J_{\\mathrm{conic}}\\subset I$ in\nthe local ring at this wall. In particular, $\\tau\\in I$.\n\n\\paragraph{The conic endpoint.}\\label{appr3whole:endpoint}\nConsider the point\n\\[\n \\eta=1,\\qquad \\zeta=-1,\\qquad\n x=x_b,\\qquad z=-x_b,\\qquad x_b^2=2m,\n\\]\nwith\n\\[\n w=e_0^{\\mathrm{alg}}=e_1^{\\mathrm{alg}}=\\delta=t=\\kappa=0,\n \\qquad e_2^{\\mathrm{alg}}=2x_b.\n\\]\nIn the algebraic local ring at this point we prove\n\\[\n \\kappa\\delta\\in I,\\qquad \\tau=\\kappa^2\\delta\\in I.\n\\]\n\\begin{proof}\nThe complete regularized sources have the relative inclusions\n\\[\n \\mathcal R_2,\\mathcal R_3,Q_0^{\\mathrm{reg}},\n       \\mathcal H_6,\\mathcal H_{14},\\mathcal H_{16}\n       \\in(w,e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},\\delta).\n\\]\nUse the six equations\n\\[\n \\mathcal R_2,\\mathcal R_3,Q_0^{\\mathrm{reg}},\n Q_1^{\\mathrm{reg}},Q_6^{\\mathrm{reg}},\\mathcal G_{21}\n\\]\nas implicit equations for\n$(x,e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},\\delta,t,\\kappa)$,\nwith $s=x+z$, $v_{\\mathrm{end}}=e_2^{\\mathrm{alg}}-f_2$ and $w$\nfixed. Their Jacobian determinant at the point is\n\\[\n \\frac{36}{7}k^2qm^2x_b\\ne0.\n\\]\nThus the quotient of the completed local ring by these six\nequations is\n\\[\n \\mathbb C[[v_{\\mathrm{end}},s,w,\\eta-1,\\zeta+1]].\n\\]\nA tilde denotes restriction to this implicit graph. Set\n\\[\n \\begin{aligned}\n \\mathcal B_{\\mathrm{end}}\n   &=Q_0^{\\mathrm{reg}}\n      +\\frac{27}{49mq}\\mathcal H_6\n      -\\frac{12}{49\\kappa_0m}\\mathcal H_{14}\n      +\\frac{39x_b}{98m}\\mathcal H_{16},\\\\\n \\mathcal F_{\\mathrm{end}}\n   &=Q_1^{\\mathrm{reg}}-\\frac1kQ_5^{\\mathrm{reg}}.\n \\end{aligned}\n\\]\nFor the first three implicit equations, the Jacobian in\n$(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},\\delta)$ is $mq/3584$.\nTheir solution at $w=0$ is\n$e_0^{\\mathrm{alg}}=e_1^{\\mathrm{alg}}=\\delta=0$.\nThe relative inclusions above and implicit uniqueness give\n\\[\n \\widetilde\\delta\\in(w),\\qquad\n \\widetilde{\\mathcal B}_{\\mathrm{end}}\\in(w).\n\\]\n\nNext restrict to $v_{\\mathrm{end}}=s^2=0$.\nThe derivative of $C$ in $x$ at fixed $s$ has value\n$-16kx_b/m\\ne0$. Solving $C=0$, putting\n$e_i^{\\mathrm{alg}}=f_i$, $\\delta=d$, $t=\\kappa=0$,\ngives a solution of the six implicit equations over this\nquotient ring, by their $\\mathcal J_{\\mathrm{conic}}$\nmemberships. Uniqueness of the implicit solution gives\n\\[\n \\widetilde\\kappa,\n \\widetilde{\\mathcal B}_{\\mathrm{end}},\n \\widetilde{\\mathcal F}_{\\mathrm{end}}\n       \\in(v_{\\mathrm{end}},s^2).\n\\]\nMultiplication by $w$ is injective modulo\n$(v_{\\mathrm{end}},s^2)$, since this quotient is free with\nbasis $1,s$ over $\\mathbb C[[w,\\eta-1,\\zeta+1]]$.\nHence\n\\[\n (w)\\cap(v_{\\mathrm{end}},s^2)\n       =w(v_{\\mathrm{end}},s^2).\n\\]\nThere is a matrix of formal power series\n$\\mathsf A_{\\mathrm{end}}$ such that\n\\[\n \\begin{pmatrix}\n   \\widetilde{\\mathcal B}_{\\mathrm{end}}\\\\\n   w\\widetilde{\\mathcal F}_{\\mathrm{end}}\n \\end{pmatrix}\n   =w\\mathsf A_{\\mathrm{end}}\n       \\begin{pmatrix}v_{\\mathrm{end}}\\\\s^2\\end{pmatrix}.\n\\]\nBoth source combinations have zero state differential at\nthe endpoint. Restricting their Hessians to the tangent space\nof the implicit graph gives the quadratic terms, with the\nratio parameters evaluated at their center,\n\\[\n \\begin{aligned}\n  \\widetilde{\\mathcal B}_{\\mathrm{end}}^{(2)}\n     &=-\\frac{3x_b}{224m}v_{\\mathrm{end}}w,\\\\\n  \\widetilde{\\mathcal F}_{\\mathrm{end}}^{(2)}\n     &=\\frac18v_{\\mathrm{end}}^2\n         +\\frac72v_{\\mathrm{end}}s+32s^2.\n \\end{aligned}\n\\]\nThus $(\\mathsf A_{\\mathrm{end}})_{11}(0)=-3x_b/(224m)$,\n$(\\mathsf A_{\\mathrm{end}})_{21}(0)=0$ and\n$(\\mathsf A_{\\mathrm{end}})_{22}(0)=32$. It follows that\n\\[\n \\det\\mathsf A_{\\mathrm{end}}(0)\n       =-\\frac{3x_b}{7m}\\ne0.\n\\]\nInverting this matrix gives\n\\[\n w(v_{\\mathrm{end}},s^2)\n   =\\bigl(\\widetilde{\\mathcal B}_{\\mathrm{end}},\n             w\\widetilde{\\mathcal F}_{\\mathrm{end}}\\bigr).\n\\]\nThe two memberships for $\\widetilde\\kappa$ and\n$\\widetilde\\delta$ imply\n$\\widetilde\\kappa\\widetilde\\delta\\in\n (\\widetilde{\\mathcal B}_{\\mathrm{end}},\n  \\widetilde{\\mathcal F}_{\\mathrm{end}})$.\nLifting through the quotient by the six implicit equations\nputs $\\kappa\\delta$ in the completed necessary ideal.\nFaithful flatness of completion contracts this membership\nto the algebraic local ring\n\\cite[Lemma~10.97.3, Tag~00MC]{StacksProject}.\nMultiplication by $\\kappa$ gives $\\tau\\in I$.\nSince $kmq\\ne0$ and $x_b^2=2m$, the two determinants\nare nonzero at either root $x_b$.\n\\end{proof}\n\n\\paragraph{The horizontal conormal matrix.}\nPut $K=\\mathbb Q(k,\\kappa_0,\\eta,\\zeta)$. Use the incidence chart\n\\[\n\\begin{aligned}\n \\overline p&=\\left(1,y,z,w,\n            \\frac{tz-\\kappa e_2^{\\mathrm{alg}}}{\\beta},\n            \\frac{v-\\kappa e_0^{\\mathrm{alg}}}{\\alpha}\\right),\\\\\n \\overline{\\boldsymbol R}&=(v,t,1),\\qquad\n I=yv-(\\alpha/\\beta) tw-\\kappa e_1^{\\mathrm{alg}},\\qquad I_0=yv-(\\alpha/\\beta) tw.\n\\end{aligned}\n\\]\nHere $I=0$ is the remaining incidence equation. For each relation\n$F$ we substitute\n\\[\n (\\widehat p,\\mathsf R)\n   =\\left(\\frac{\\overline p}{\\kappa^2\\delta},\n          \\frac{\\overline{\\boldsymbol R}}{\\kappa^3\\delta}\\right).\n\\]\n\nThe representatives are determined by the incidence identities\n$L\\overline{\\boldsymbol R}=\\kappa(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}})^\\top$ modulo $(I)$:\nthe $(3,1)$ part of $R_\\nu$ is replaced by $(DC)_{\\nu,*}(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}})^\\top$,\nthe $(3,2)$ part of $H_n$ by $\\sum_{i=1}^3 A_{n,i}e_{i-1}^{\\mathrm{alg}}$,\nthe $(1,2)$ part of $Q_0$ by $\\sum_{i=1}^3 B_{0,i}e_{i-1}^{\\mathrm{alg}}$,\nand the $(2,2)$ and $(3,1)$ parts of $Q_j$ by\n$c_j^{\\mathrm{even}}\\bigl(e_{\\iota(j)-1}^{\\mathrm{alg}}\\bigr)^2$ and\n$\\sum_{i=1}^3 B_{j,i}e_{i-1}^{\\mathrm{alg}}$, respectively. Here\n$\\boldsymbol e^{\\mathrm{alg}}=(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}})^\\top$ and the coefficients $B_{0,i}$ are defined by\n$(Q_0)_{12}=\\sum_{i=1}^3B_{0,i}(L\\mathsf R)_i$.\nFor a regularizing factor $\\kappa^{d_{\\mathrm{reg}}}\\delta^{e_{\\mathrm{reg}}}$,\neach other part of bidegree $(d_{\\widehat p},d_R)$ is multiplied by\n$\\kappa^{d_{\\mathrm{reg}}-2d_{\\widehat p}-3d_R}\n \\delta^{e_{\\mathrm{reg}}-d_{\\widehat p}-d_R}$ and evaluated on the chart.\n\nTo specify the three differentiated relations, use the derivation\n\\[\n \\mathcal D_{\\mathrm{axis}}=\\widehat p_{12}\\widehat E_1\n              -c_1^{\\mathrm{diag}}R_3\\partial_{\\mathsf R_1},\n \\qquad c_1^{\\mathrm{diag}}=\\frac{2(\\eta-\\zeta)}{\\eta\\zeta}.\n\\]\nIts coefficient derivatives include the ratio coordinates $\\eta,\\zeta$.\nLet $G_0,G_1,G_2$ be the regularized representatives of\n$\\mathcal D_{\\mathrm{axis}}Q_5$, $\\mathcal D_{\\mathrm{axis}}R_7$, $\\mathcal D_{\\mathrm{axis}}R_8$, with factors\n$\\kappa^{13}\\delta^6$, $\\kappa^{14}\\delta^6$,\n$\\kappa^{14}\\delta^6$, respectively. Their representatives are\nfixed as follows. Put $a_{\\mathrm{reg}}=13$ for $G_0$ and $14$ for\n$G_1,G_2$. A part of ordinary degree $d$ and $\\mathsf R$ degree $d_R$\nhas factor $\\kappa^{a_{\\mathrm{reg}}-2d-d_R}\\delta^{6-d}$.\nFor a nonnegative exponent take its direct substitution. For a negative\nexponent start with its substituted polynomial $P_0^{\\mathrm{reg}}$ and put\n\\[\n C_j=\\frac{P_j^{\\mathrm{reg}}|_{\\kappa=0}}{I_0},\\qquad\n P_{j+1}^{\\mathrm{reg}}=\\frac{P_j^{\\mathrm{reg}}-C_jI}{\\kappa}.\n\\]\nThe incidence identities make these quotients polynomial; the\nregularized part is $\\delta^{6-d}P_{2d+d_R-a_{\\mathrm{reg}}}^{\\mathrm{reg}}$.\n\nFor a polynomial $F$ independent of $\\kappa$, denote by\n$\\operatorname{rem}(F)$ and $\\operatorname{quo}(F)$ the remainder\nand quotient in division by the monic polynomial $I_0$, with leading\nmonomial $yv$. Thus\n\\[\n F=\\operatorname{rem}(F)+I_0\\operatorname{quo}(F),\n\\]\nand no monomial of $\\operatorname{rem}(F)$ is divisible by $yv$.\nDefine\n\\[\n\\begin{aligned}\n \\boldsymbol\\lambda^W&=\\left(1,-\\frac{8m(\\eta+1)}{3\\eta},\n       \\frac{8m\\zeta(\\eta+1)^2}{3\\eta(\\eta-\\zeta)},\n       \\frac{8m(\\eta+1)}{3\\eta}\\right),\\\\\n F^W&=(G_0,wG_1,vG_1,yG_2),\\\\\n C_W&=\\sum_{j=0}^3\\lambda_j^W\n           \\operatorname{quo}(F^W_j|_{\\kappa=0}),\\\\\n W&=\\frac{\\sum_{j=0}^3\\lambda_j^WF^W_j-C_WI}{\\kappa}.\n\\end{aligned}\n\\]\nThe numerator vanishes at $\\kappa=0$, so $W$ is polynomial.\n\nThe seven relations for the second divided relation are\n\\[\n F^h=(t\\mathcal R_5,\\mathcal H_4,w\\mathcal H_9,\n       \\mathcal H_{11},y\\mathcal H_{13},\n       v\\mathcal H_{16},t\\mathcal H_{17}).\n\\]\nLet $\\mathscr M$ be the finite set of monomials occurring in\n$\\operatorname{rem}(F^h_j|_{\\kappa=0})$, and define the coefficient\nmatrix\n\\[\n A^h_{\\mu,j+1}=[\\mu]\\operatorname{rem}(F^h_j|_{\\kappa=0}),\n \\qquad \\mu\\in\\mathscr M,\\quad 0\\le j\\le6.\n\\]\nIt has rank six over $K$, and its last six columns are independent.\nConsequently the equations\n\\[\n A^h\\boldsymbol c^{\\mathrm h}=0,\\qquad c_0^{\\mathrm h}=1\n\\]\ndefine a unique vector $\\boldsymbol c^{\\mathrm h}\\in K^7$. Put\n\\[\n C_h=\\sum_{j=0}^6c_j^{\\mathrm h}\\operatorname{quo}(F^h_j|_{\\kappa=0}),\n \\qquad h_0=\\frac{\\sum_{j=0}^6c_j^{\\mathrm h}F^h_j-C_hI}{\\kappa}.\n\\]\nThe defining kernel identity makes $h_0$ polynomial. For the horizontal family put\n\\[\n s_h=-\\frac{2\\eta(\\zeta+1)}{\\zeta(\\eta+1)},\\qquad\n e_0^{\\mathrm{alg}}=E+s_h\\ell,\\qquad v=(\\alpha+\\kappa s_h)\\ell.\n\\]\nDenote this substitution by $\\Phi_{\\mathrm{hor}}$. Its seven transverse coordinates\nare\n\\[\n n=(y,z,w,E,e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}},\\delta),\n\\]\nand its coefficient ring is $T=K[t,\\ell,\\kappa]$. Set\n\\[\n C_h^{\\mathrm{hor}}=(\\Phi_{\\mathrm{hor}}^*C_h)|_{n=0},\\qquad\n h=\\Phi_{\\mathrm{hor}}^*h_0+\\frac{C_h^{\\mathrm{hor}}}{\\kappa}\\Phi_{\\mathrm{hor}}^*I.\n\\]\nHere $C_h^{\\mathrm{hor}}$ is divisible by $\\kappa$ in $T$.\nThe ordered thirty relations are\n\\[\n \\Phi_{\\mathrm{hor}}^*(\\mathcal R_0,\\ldots,\\mathcal R_5,Q_0^{\\mathrm{reg}},\n         \\mathcal H_0,\\ldots,\\mathcal H_{17},\n         Q_1^{\\mathrm{reg}},Q_5^{\\mathrm{reg}},Q_6^{\\mathrm{reg}},W),\\quad h.\n\\]\nThey vanish at $n=0$. Let $(\\mathsf N_\\perp)_{ij}$ be the coefficient of the $j$th component of $n$\nin the $i$th relation modulo $(n)^2$, for $1\\le i\\le30$, $1\\le j\\le7$.\nThe incidence conormal is\n\\[\n ((\\alpha+\\kappa s_h)\\ell,0,-(\\alpha/\\beta)t,0,-\\kappa,0,0).\n\\]\nThe products $w\\mathcal H_9$ and $y\\mathcal H_{13}$ have zero\nconormal because both factors vanish on the horizontal family.\n\nSet\n\\[\n I=(4,7,26,29),\\qquad\n R=(2,5,7,3),\\qquad C=(1,4,6),\\qquad\n J=(27,28,30).\n\\]\nWrite $A=(\\mathsf N_\\perp)_{I,R}$ and $B=(\\mathsf N_\\perp)_{I,C}$. The relative polynomial identity is\n\\[\n (\\det A)(\\mathsf N_\\perp)_{J,C}-(\\mathsf N_\\perp)_{J,R}\\operatorname{adj}(A)B=0.\n\\]\nAt the\nhorizontal origin the two base charts give\n\\[\n \\left.\\det A\\right|_{\\eta =1,\\zeta =-1}\n =-\\frac{3qk}{224\\kappa_0 m^2},\\qquad\n \\left.\\det A\\right|_{\\eta =2,\\zeta =-1}\n =-\\frac{32qk}{1701\\kappa_0 m^2}.\n\\]\nBoth determinants are units for every admissible triple of principal\nvalues. The coefficient denominators specialize to nonzero rational\nconstants.\n\n\\paragraph{Transport to the chart with three nonzero coordinates.}\nLet $M$ be the ordinary boundary $37\\times6$ matrix of linear normal terms.\nFor $1\\le i\\le28$, the original rows, before adding derivative rows, transform to\nthe full-$\\mathsf R$ chart by\n\\[\n N_i(\\kappa)=d_i(\\kappa)\n M_i(l,\\varrho/\\kappa,1/\\kappa)J(\\kappa),\n \\qquad\n d_i=\\begin{cases}\\kappa,&i=1\\text{ or }i\\geq11,\\\\\n 1,&2\\leq i\\leq10.\n \\end{cases}\n\\]\nHere $J$ is the Jacobian of the six transverse coordinate\nchanges. Each transformed entry is regular at $\\kappa=0$. The matrix of linear normal terms and its variation are $N(0)$ and $\\partial_\\kappa N(0)$.\n\nThe two short odd factors and the even determinant factor are\n\\[\n P=\\frac{\\varrho^2}{\\beta^2}-5\\kappa_0 l^2-4q,\n \\qquad Q=\\frac{\\varrho^2}{\\beta^2}+4\\kappa_0 l^2+5q,\n \\qquad (ml^2-k)(ml^2+k).\n\\]\nThey satisfy $Q-P=9(\\kappa_0 l^2+q)$. On the two amplitude\nhypersurfaces work in the quadratic algebras $l^2=\\pm k/m$.\nElimination of the columns corresponding to the solved variables in $N(0)$ gives the Schur blocks,\nand $\\partial_\\kappa N(0)$ gives the transverse variation.",
+          "normalized_sha256": "7f18312e60d0962fb62207d89a0ea9c35a3facab4fbcd3be82040dfcd18cca3a",
+          "number": "C.9",
+          "page": 105
+        },
+        {
+          "label": "appr3whole:endpoint",
+          "line": 7822,
+          "text": "\\paragraph{The conic endpoint.}\\label{appr3whole:endpoint}\nConsider the point\n\\[\n \\eta=1,\\qquad \\zeta=-1,\\qquad\n x=x_b,\\qquad z=-x_b,\\qquad x_b^2=2m,\n\\]\nwith\n\\[\n w=e_0^{\\mathrm{alg}}=e_1^{\\mathrm{alg}}=\\delta=t=\\kappa=0,\n \\qquad e_2^{\\mathrm{alg}}=2x_b.\n\\]\nIn the algebraic local ring at this point we prove\n\\[\n \\kappa\\delta\\in I,\\qquad \\tau=\\kappa^2\\delta\\in I.\n\\]\n\\begin{proof}\nThe complete regularized sources have the relative inclusions\n\\[\n \\mathcal R_2,\\mathcal R_3,Q_0^{\\mathrm{reg}},\n       \\mathcal H_6,\\mathcal H_{14},\\mathcal H_{16}\n       \\in(w,e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},\\delta).\n\\]\nUse the six equations\n\\[\n \\mathcal R_2,\\mathcal R_3,Q_0^{\\mathrm{reg}},\n Q_1^{\\mathrm{reg}},Q_6^{\\mathrm{reg}},\\mathcal G_{21}\n\\]\nas implicit equations for\n$(x,e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},\\delta,t,\\kappa)$,\nwith $s=x+z$, $v_{\\mathrm{end}}=e_2^{\\mathrm{alg}}-f_2$ and $w$\nfixed. Their Jacobian determinant at the point is\n\\[\n \\frac{36}{7}k^2qm^2x_b\\ne0.\n\\]\nThus the quotient of the completed local ring by these six\nequations is\n\\[\n \\mathbb C[[v_{\\mathrm{end}},s,w,\\eta-1,\\zeta+1]].\n\\]\nA tilde denotes restriction to this implicit graph. Set\n\\[\n \\begin{aligned}\n \\mathcal B_{\\mathrm{end}}\n   &=Q_0^{\\mathrm{reg}}\n      +\\frac{27}{49mq}\\mathcal H_6\n      -\\frac{12}{49\\kappa_0m}\\mathcal H_{14}\n      +\\frac{39x_b}{98m}\\mathcal H_{16},\\\\\n \\mathcal F_{\\mathrm{end}}\n   &=Q_1^{\\mathrm{reg}}-\\frac1kQ_5^{\\mathrm{reg}}.\n \\end{aligned}\n\\]\nFor the first three implicit equations, the Jacobian in\n$(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},\\delta)$ is $mq/3584$.\nTheir solution at $w=0$ is\n$e_0^{\\mathrm{alg}}=e_1^{\\mathrm{alg}}=\\delta=0$.\nThe relative inclusions above and implicit uniqueness give\n\\[\n \\widetilde\\delta\\in(w),\\qquad\n \\widetilde{\\mathcal B}_{\\mathrm{end}}\\in(w).\n\\]\n\nNext restrict to $v_{\\mathrm{end}}=s^2=0$.\nThe derivative of $C$ in $x$ at fixed $s$ has value\n$-16kx_b/m\\ne0$. Solving $C=0$, putting\n$e_i^{\\mathrm{alg}}=f_i$, $\\delta=d$, $t=\\kappa=0$,\ngives a solution of the six implicit equations over this\nquotient ring, by their $\\mathcal J_{\\mathrm{conic}}$\nmemberships. Uniqueness of the implicit solution gives\n\\[\n \\widetilde\\kappa,\n \\widetilde{\\mathcal B}_{\\mathrm{end}},\n \\widetilde{\\mathcal F}_{\\mathrm{end}}\n       \\in(v_{\\mathrm{end}},s^2).\n\\]\nMultiplication by $w$ is injective modulo\n$(v_{\\mathrm{end}},s^2)$, since this quotient is free with\nbasis $1,s$ over $\\mathbb C[[w,\\eta-1,\\zeta+1]]$.\nHence\n\\[\n (w)\\cap(v_{\\mathrm{end}},s^2)\n       =w(v_{\\mathrm{end}},s^2).\n\\]\nThere is a matrix of formal power series\n$\\mathsf A_{\\mathrm{end}}$ such that\n\\[\n \\begin{pmatrix}\n   \\widetilde{\\mathcal B}_{\\mathrm{end}}\\\\\n   w\\widetilde{\\mathcal F}_{\\mathrm{end}}\n \\end{pmatrix}\n   =w\\mathsf A_{\\mathrm{end}}\n       \\begin{pmatrix}v_{\\mathrm{end}}\\\\s^2\\end{pmatrix}.\n\\]\nBoth source combinations have zero state differential at\nthe endpoint. Restricting their Hessians to the tangent space\nof the implicit graph gives the quadratic terms, with the\nratio parameters evaluated at their center,\n\\[\n \\begin{aligned}\n  \\widetilde{\\mathcal B}_{\\mathrm{end}}^{(2)}\n     &=-\\frac{3x_b}{224m}v_{\\mathrm{end}}w,\\\\\n  \\widetilde{\\mathcal F}_{\\mathrm{end}}^{(2)}\n     &=\\frac18v_{\\mathrm{end}}^2\n         +\\frac72v_{\\mathrm{end}}s+32s^2.\n \\end{aligned}\n\\]\nThus $(\\mathsf A_{\\mathrm{end}})_{11}(0)=-3x_b/(224m)$,\n$(\\mathsf A_{\\mathrm{end}})_{21}(0)=0$ and\n$(\\mathsf A_{\\mathrm{end}})_{22}(0)=32$. It follows that\n\\[\n \\det\\mathsf A_{\\mathrm{end}}(0)\n       =-\\frac{3x_b}{7m}\\ne0.\n\\]\nInverting this matrix gives\n\\[\n w(v_{\\mathrm{end}},s^2)\n   =\\bigl(\\widetilde{\\mathcal B}_{\\mathrm{end}},\n             w\\widetilde{\\mathcal F}_{\\mathrm{end}}\\bigr).\n\\]\nThe two memberships for $\\widetilde\\kappa$ and\n$\\widetilde\\delta$ imply\n$\\widetilde\\kappa\\widetilde\\delta\\in\n (\\widetilde{\\mathcal B}_{\\mathrm{end}},\n  \\widetilde{\\mathcal F}_{\\mathrm{end}})$.\nLifting through the quotient by the six implicit equations\nputs $\\kappa\\delta$ in the completed necessary ideal.\nFaithful flatness of completion contracts this membership\nto the algebraic local ring\n\\cite[Lemma~10.97.3, Tag~00MC]{StacksProject}.\nMultiplication by $\\kappa$ gives $\\tau\\in I$.\nSince $kmq\\ne0$ and $x_b^2=2m$, the two determinants\nare nonzero at either root $x_b$.\n\\end{proof}\n\n\\paragraph{The horizontal conormal matrix.}\nPut $K=\\mathbb Q(k,\\kappa_0,\\eta,\\zeta)$. Use the incidence chart\n\\[\n\\begin{aligned}\n \\overline p&=\\left(1,y,z,w,\n            \\frac{tz-\\kappa e_2^{\\mathrm{alg}}}{\\beta},\n            \\frac{v-\\kappa e_0^{\\mathrm{alg}}}{\\alpha}\\right),\\\\\n \\overline{\\boldsymbol R}&=(v,t,1),\\qquad\n I=yv-(\\alpha/\\beta) tw-\\kappa e_1^{\\mathrm{alg}},\\qquad I_0=yv-(\\alpha/\\beta) tw.\n\\end{aligned}\n\\]\nHere $I=0$ is the remaining incidence equation. For each relation\n$F$ we substitute\n\\[\n (\\widehat p,\\mathsf R)\n   =\\left(\\frac{\\overline p}{\\kappa^2\\delta},\n          \\frac{\\overline{\\boldsymbol R}}{\\kappa^3\\delta}\\right).\n\\]\n\nThe representatives are determined by the incidence identities\n$L\\overline{\\boldsymbol R}=\\kappa(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}})^\\top$ modulo $(I)$:\nthe $(3,1)$ part of $R_\\nu$ is replaced by $(DC)_{\\nu,*}(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}})^\\top$,\nthe $(3,2)$ part of $H_n$ by $\\sum_{i=1}^3 A_{n,i}e_{i-1}^{\\mathrm{alg}}$,\nthe $(1,2)$ part of $Q_0$ by $\\sum_{i=1}^3 B_{0,i}e_{i-1}^{\\mathrm{alg}}$,\nand the $(2,2)$ and $(3,1)$ parts of $Q_j$ by\n$c_j^{\\mathrm{even}}\\bigl(e_{\\iota(j)-1}^{\\mathrm{alg}}\\bigr)^2$ and\n$\\sum_{i=1}^3 B_{j,i}e_{i-1}^{\\mathrm{alg}}$, respectively. Here\n$\\boldsymbol e^{\\mathrm{alg}}=(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}})^\\top$ and the coefficients $B_{0,i}$ are defined by\n$(Q_0)_{12}=\\sum_{i=1}^3B_{0,i}(L\\mathsf R)_i$.\nFor a regularizing factor $\\kappa^{d_{\\mathrm{reg}}}\\delta^{e_{\\mathrm{reg}}}$,\neach other part of bidegree $(d_{\\widehat p},d_R)$ is multiplied by\n$\\kappa^{d_{\\mathrm{reg}}-2d_{\\widehat p}-3d_R}\n \\delta^{e_{\\mathrm{reg}}-d_{\\widehat p}-d_R}$ and evaluated on the chart.\n\nTo specify the three differentiated relations, use the derivation\n\\[\n \\mathcal D_{\\mathrm{axis}}=\\widehat p_{12}\\widehat E_1\n              -c_1^{\\mathrm{diag}}R_3\\partial_{\\mathsf R_1},\n \\qquad c_1^{\\mathrm{diag}}=\\frac{2(\\eta-\\zeta)}{\\eta\\zeta}.\n\\]\nIts coefficient derivatives include the ratio coordinates $\\eta,\\zeta$.\nLet $G_0,G_1,G_2$ be the regularized representatives of\n$\\mathcal D_{\\mathrm{axis}}Q_5$, $\\mathcal D_{\\mathrm{axis}}R_7$, $\\mathcal D_{\\mathrm{axis}}R_8$, with factors\n$\\kappa^{13}\\delta^6$, $\\kappa^{14}\\delta^6$,\n$\\kappa^{14}\\delta^6$, respectively. Their representatives are\nfixed as follows. Put $a_{\\mathrm{reg}}=13$ for $G_0$ and $14$ for\n$G_1,G_2$. A part of ordinary degree $d$ and $\\mathsf R$ degree $d_R$\nhas factor $\\kappa^{a_{\\mathrm{reg}}-2d-d_R}\\delta^{6-d}$.\nFor a nonnegative exponent take its direct substitution. For a negative\nexponent start with its substituted polynomial $P_0^{\\mathrm{reg}}$ and put\n\\[\n C_j=\\frac{P_j^{\\mathrm{reg}}|_{\\kappa=0}}{I_0},\\qquad\n P_{j+1}^{\\mathrm{reg}}=\\frac{P_j^{\\mathrm{reg}}-C_jI}{\\kappa}.\n\\]\nThe incidence identities make these quotients polynomial; the\nregularized part is $\\delta^{6-d}P_{2d+d_R-a_{\\mathrm{reg}}}^{\\mathrm{reg}}$.\n\nFor a polynomial $F$ independent of $\\kappa$, denote by\n$\\operatorname{rem}(F)$ and $\\operatorname{quo}(F)$ the remainder\nand quotient in division by the monic polynomial $I_0$, with leading\nmonomial $yv$. Thus\n\\[\n F=\\operatorname{rem}(F)+I_0\\operatorname{quo}(F),\n\\]\nand no monomial of $\\operatorname{rem}(F)$ is divisible by $yv$.\nDefine\n\\[\n\\begin{aligned}\n \\boldsymbol\\lambda^W&=\\left(1,-\\frac{8m(\\eta+1)}{3\\eta},\n       \\frac{8m\\zeta(\\eta+1)^2}{3\\eta(\\eta-\\zeta)},\n       \\frac{8m(\\eta+1)}{3\\eta}\\right),\\\\\n F^W&=(G_0,wG_1,vG_1,yG_2),\\\\\n C_W&=\\sum_{j=0}^3\\lambda_j^W\n           \\operatorname{quo}(F^W_j|_{\\kappa=0}),\\\\\n W&=\\frac{\\sum_{j=0}^3\\lambda_j^WF^W_j-C_WI}{\\kappa}.\n\\end{aligned}\n\\]\nThe numerator vanishes at $\\kappa=0$, so $W$ is polynomial.\n\nThe seven relations for the second divided relation are\n\\[\n F^h=(t\\mathcal R_5,\\mathcal H_4,w\\mathcal H_9,\n       \\mathcal H_{11},y\\mathcal H_{13},\n       v\\mathcal H_{16},t\\mathcal H_{17}).\n\\]\nLet $\\mathscr M$ be the finite set of monomials occurring in\n$\\operatorname{rem}(F^h_j|_{\\kappa=0})$, and define the coefficient\nmatrix\n\\[\n A^h_{\\mu,j+1}=[\\mu]\\operatorname{rem}(F^h_j|_{\\kappa=0}),\n \\qquad \\mu\\in\\mathscr M,\\quad 0\\le j\\le6.\n\\]\nIt has rank six over $K$, and its last six columns are independent.\nConsequently the equations\n\\[\n A^h\\boldsymbol c^{\\mathrm h}=0,\\qquad c_0^{\\mathrm h}=1\n\\]\ndefine a unique vector $\\boldsymbol c^{\\mathrm h}\\in K^7$. Put\n\\[\n C_h=\\sum_{j=0}^6c_j^{\\mathrm h}\\operatorname{quo}(F^h_j|_{\\kappa=0}),\n \\qquad h_0=\\frac{\\sum_{j=0}^6c_j^{\\mathrm h}F^h_j-C_hI}{\\kappa}.\n\\]\nThe defining kernel identity makes $h_0$ polynomial. For the horizontal family put\n\\[\n s_h=-\\frac{2\\eta(\\zeta+1)}{\\zeta(\\eta+1)},\\qquad\n e_0^{\\mathrm{alg}}=E+s_h\\ell,\\qquad v=(\\alpha+\\kappa s_h)\\ell.\n\\]\nDenote this substitution by $\\Phi_{\\mathrm{hor}}$. Its seven transverse coordinates\nare\n\\[\n n=(y,z,w,E,e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}},\\delta),\n\\]\nand its coefficient ring is $T=K[t,\\ell,\\kappa]$. Set\n\\[\n C_h^{\\mathrm{hor}}=(\\Phi_{\\mathrm{hor}}^*C_h)|_{n=0},\\qquad\n h=\\Phi_{\\mathrm{hor}}^*h_0+\\frac{C_h^{\\mathrm{hor}}}{\\kappa}\\Phi_{\\mathrm{hor}}^*I.\n\\]\nHere $C_h^{\\mathrm{hor}}$ is divisible by $\\kappa$ in $T$.\nThe ordered thirty relations are\n\\[\n \\Phi_{\\mathrm{hor}}^*(\\mathcal R_0,\\ldots,\\mathcal R_5,Q_0^{\\mathrm{reg}},\n         \\mathcal H_0,\\ldots,\\mathcal H_{17},\n         Q_1^{\\mathrm{reg}},Q_5^{\\mathrm{reg}},Q_6^{\\mathrm{reg}},W),\\quad h.\n\\]\nThey vanish at $n=0$. Let $(\\mathsf N_\\perp)_{ij}$ be the coefficient of the $j$th component of $n$\nin the $i$th relation modulo $(n)^2$, for $1\\le i\\le30$, $1\\le j\\le7$.\nThe incidence conormal is\n\\[\n ((\\alpha+\\kappa s_h)\\ell,0,-(\\alpha/\\beta)t,0,-\\kappa,0,0).\n\\]\nThe products $w\\mathcal H_9$ and $y\\mathcal H_{13}$ have zero\nconormal because both factors vanish on the horizontal family.\n\nSet\n\\[\n I=(4,7,26,29),\\qquad\n R=(2,5,7,3),\\qquad C=(1,4,6),\\qquad\n J=(27,28,30).\n\\]\nWrite $A=(\\mathsf N_\\perp)_{I,R}$ and $B=(\\mathsf N_\\perp)_{I,C}$. The relative polynomial identity is\n\\[\n (\\det A)(\\mathsf N_\\perp)_{J,C}-(\\mathsf N_\\perp)_{J,R}\\operatorname{adj}(A)B=0.\n\\]\nAt the\nhorizontal origin the two base charts give\n\\[\n \\left.\\det A\\right|_{\\eta =1,\\zeta =-1}\n =-\\frac{3qk}{224\\kappa_0 m^2},\\qquad\n \\left.\\det A\\right|_{\\eta =2,\\zeta =-1}\n =-\\frac{32qk}{1701\\kappa_0 m^2}.\n\\]\nBoth determinants are units for every admissible triple of principal\nvalues. The coefficient denominators specialize to nonzero rational\nconstants.\n\n\\paragraph{Transport to the chart with three nonzero coordinates.}\nLet $M$ be the ordinary boundary $37\\times6$ matrix of linear normal terms.\nFor $1\\le i\\le28$, the original rows, before adding derivative rows, transform to\nthe full-$\\mathsf R$ chart by\n\\[\n N_i(\\kappa)=d_i(\\kappa)\n M_i(l,\\varrho/\\kappa,1/\\kappa)J(\\kappa),\n \\qquad\n d_i=\\begin{cases}\\kappa,&i=1\\text{ or }i\\geq11,\\\\\n 1,&2\\leq i\\leq10.\n \\end{cases}\n\\]\nHere $J$ is the Jacobian of the six transverse coordinate\nchanges. Each transformed entry is regular at $\\kappa=0$. The matrix of linear normal terms and its variation are $N(0)$ and $\\partial_\\kappa N(0)$.\n\nThe two short odd factors and the even determinant factor are\n\\[\n P=\\frac{\\varrho^2}{\\beta^2}-5\\kappa_0 l^2-4q,\n \\qquad Q=\\frac{\\varrho^2}{\\beta^2}+4\\kappa_0 l^2+5q,\n \\qquad (ml^2-k)(ml^2+k).\n\\]\nThey satisfy $Q-P=9(\\kappa_0 l^2+q)$. On the two amplitude\nhypersurfaces work in the quadratic algebras $l^2=\\pm k/m$.\nElimination of the columns corresponding to the solved variables in $N(0)$ gives the Schur blocks,\nand $\\partial_\\kappa N(0)$ gives the transverse variation.",
+          "normalized_sha256": "fd0cbabfbb8a71839b14b32baefb56fac950b928cf51e217ba6fd572812b0170",
+          "number": "C.9",
+          "page": 107
+        },
+        {
+          "label": "r3:boundaryreduction",
+          "line": 3392,
+          "text": "\\begin{lemma}[Reduction of the relative boundary]\\label{r3:boundaryreduction}\nNear the fibre $(\\eta,\\zeta)=(1,-1)$, every irreducible component\nof the boundary of $Y$ dominating the ratio plane is contained,\nup to a signed cyclic relabeling, in the family\n\\begin{equation}\\label{r3:incomingfamily}\n\\begin{gathered}\n \\mathcal F_{\\rm in}:\\quad\n \\overline p=(1,0,0,0,0,\\ell),\\qquad\n \\boldsymbol R=(\\lambda_{\\mathrm{in}}(v)\\ell,u,v),\\qquad\n \\tau=0,\\qquad \\ell\\ne0,\\\\\n \\lambda_{\\mathrm{in}}(v)=\n \\frac{(\\zeta-\\eta)v-2\\eta(\\zeta+1)}{\\zeta(\\eta+1)}.\n\\end{gathered}\n\\end{equation}\nHere $\\overline p=\\tau\\widehat p$ and\n$\\boldsymbol R=\\tau\\mathsf R$ are ordinary homogeneous coordinates.\nThe homogeneous regularizations of the state derivations on the\nordinary projective closure preserve the surviving boundary component.\n\\end{lemma}",
+          "normalized_sha256": "f1f019bb27cbd8f8a52ecf1d6ad622a3cce63c4a2edb488aafb03bbd8b95b964",
+          "number": "8.5",
+          "page": 49
+        }
+      ],
+      "recorded_outputs": [
+        {
+          "path": "results/conic_endpoint/subcritical_single_endpoint_whole_J3_reader.json",
+          "task_id": "conic_endpoint:whole_J3",
+          "sha256": "145bb93064f7dcccf3761f1ad36b0306c9aff705668bea1373b0f1667ed5936c",
+          "bytes": 262
+        },
+        {
+          "path": "results/conic_endpoint/generic_regularity.json",
+          "task_id": "conic_endpoint:generic_regularity",
+          "sha256": "2332b95472a0bc8fda48d4e53536ab1156af12035b7f6281e449a4157d269322",
+          "bytes": 18900
+        },
+        {
+          "path": "results/conic_endpoint/whole_coefficient_units.json",
+          "task_id": "conic_endpoint:coefficient_units",
+          "sha256": "aed2c37e4c9627d6b7b1f926f9a8951cefd6be9f829b40eb6916b4fe71d97418",
+          "bytes": 2946420
+        },
+        {
+          "path": "results/conic_endpoint/relative_boundary_reconstruction.json",
+          "task_id": "conic_endpoint:relative_boundary",
+          "sha256": "af62273eb5d6e9a8fdf8ddce9f9f6d22db13e2fc1ec3fd30add12e1baf299ca1",
+          "bytes": 12071
+        },
+        {
+          "path": "results/conic_endpoint/manuscript_gauge_binding.json",
+          "task_id": "conic_endpoint:gauge_binding",
+          "sha256": "03a686a7bb20eb6d61b8a684fa1178301fd51c43ba2809eeabf3263daf18d2cd",
+          "bytes": 422
+        },
+        {
+          "path": "results/conic_endpoint/generic_G_relative_regular.json",
+          "task_id": "conic_endpoint:rebuild_G21",
+          "sha256": "94f7ef82330277824d0d466a32efd603895809da486f302a1690753ae2337937",
+          "bytes": 5781
+        },
+        {
+          "path": "results/conic_endpoint/generic_G_ideal_decomposition_sparse.json",
+          "task_id": "conic_endpoint:rebuild_G21",
+          "sha256": "0d6b20ea60f3304aaaecb9cc2c2de02dd0ecafc02d547b45b8613ffc9f69f22c",
+          "bytes": 4395853
+        },
+        {
+          "path": "results/conic_endpoint/new_generic_G_J8.json",
+          "task_id": "conic_endpoint:G21_conic_membership",
+          "sha256": "29b2c1c06b53402939014fa090c633d0b3d5f075f3b47bc1d218adab8ad9574b",
+          "bytes": 1518
+        },
+        {
+          "path": "results/conic_endpoint/endpoint_unit_and_obstructions.json",
+          "task_id": "conic_endpoint:implicit_graph",
+          "sha256": "2d862a40d67ebeeb0e5236ae7113f0185a95ceb35aa104f2bdeecf06601ad6e7",
+          "bytes": 2572
+        },
+        {
+          "path": "results/conic_endpoint/endpoint_normal_matrix.txt",
+          "task_id": "conic_endpoint:implicit_graph",
+          "sha256": "7315992db61fd12508d39fd92a3fc5d5674abb19d9821e4b00bd344def4aaa5f",
+          "bytes": 1498
+        },
+        {
+          "path": "results/conic_endpoint/conic_open_minor.json",
+          "task_id": "conic_endpoint:open_conic_minor",
+          "sha256": "a89a01743f7e492816403aef26e59fb33a06be2996360b0d13d6a115bb478bd9",
+          "bytes": 592
+        },
+        {
+          "path": "results/conic_endpoint/conic_normal_matrix.json",
+          "task_id": "conic_endpoint:open_conic_minor",
+          "sha256": "606b856e3358b5da232c2bd9a3dba53f4dc54f265e7a0e629ac7291abc52fb48",
+          "bytes": 2125
+        },
+        {
+          "path": "results/conic_endpoint/execution.json",
+          "sha256": "6d95dc6b17a88b8456966f4a969aa9cc67c08455df3ed0f215a165b1ca9977bf",
+          "bytes": 28660,
+          "proof_id": "C9_ENDPOINT",
+          "task_ids": [
+            "foundations:rebuild_state17",
+            "rank3_sources:fresh_joint_sources",
+            "rank3_sources:fresh_global_sources",
+            "rank3_current_proof:fresh_saturation_sources",
+            "rank3_current_proof:complete_global_source_views",
+            "rank3_coverage:independent_delta_subcritical_H_initials:independent_delta_subcritical_H_initials",
+            "rank3_coverage:independent_support_Newton_field_reader:independent_support_Newton_field_reader",
+            "rank3_current_proof:saturation_source_view:independent_delta_subcritical_Q0_full_source",
+            "rank3_current_proof:independent_supercritical_first_boundary_probe",
+            "rank3_current_proof:first_boundary_source_view",
+            "rank3_current_proof:saturation_source_view:independent_delta_Q0_kernel_compatibility",
+            "rank3_current_proof:saturation_source_view:independent_delta_subcritical_even_full_source",
+            "rank3_current_proof:independent_supercritical_RR_small_support_sources",
+            "rank3_current_proof:complete_small_support_source_view",
+            "generated_alias:round10/independent_delta_subcritical_H_initials.sobj",
+            "rank3_coverage:independent_inactive_single_RR_boundary:independent_inactive_single_RR_boundary",
+            "generated_alias:round10/independent_inactive_single_RR_boundary.sobj",
+            "rank3_coverage:independent_critical_single_RR3_normal:independent_critical_single_RR3_normal",
+            "generated_alias:round10/independent_critical_single_RR3_normal.sobj",
+            "rank3_coverage:subcritical_single_full_regular_chart_H1:subcritical_single_full_regular_chart_H1:1",
+            "generated_alias:round10/independent_support_Newton_field_reader.sobj",
+            "rank3_readers:independent_partial_D_Newton_gauges_reader:round10/independent_partial_D_Newton_gauges_reader.py",
+            "generated_alias:round10/independent_partial_D_Newton_gauges_reader.sobj",
+            "rank3_coverage:subcritical_single_full_complete_E_chart_H1:subcritical_single_full_complete_E_chart_H1",
+            "conic_endpoint:input:independent_delta_subcritical_Q0_full_source",
+            "conic_endpoint:input:independent_delta_subcritical_even_full_source",
+            "conic_endpoint:input:independent_ratio_global_R_derivative_degreefall",
+            "conic_endpoint:input:independent_delta_subcritical_H_initials",
+            "conic_endpoint:input:independent_partial_D_Newton_gauges_reader",
+            "conic_endpoint:input:independent_critical_single_RR3_normal",
+            "conic_endpoint:input:independent_subcritical_single_RR_full_regular_chart_H1",
+            "conic_endpoint:input:independent_subcritical_single_RR_full_complete_E_chart_H1",
+            "conic_endpoint:input:independent_ratio_p_boundary_second_gauge",
+            "conic_endpoint:generic_regularity",
+            "conic_endpoint:coefficient_units",
+            "conic_endpoint:relative_boundary",
+            "conic_endpoint:gauge_binding",
+            "conic_endpoint:rebuild_G21",
+            "conic_endpoint:G21_conic_membership",
+            "conic_endpoint:open_conic_minor",
+            "conic_endpoint:whole_J3",
+            "conic_endpoint:implicit_graph"
+          ],
+          "role": "aggregate_execution_record"
+        }
+      ]
     },
     {
       "node": "BC19",
@@ -7185,311 +7490,6 @@
           "page": 60
         }
       ]
-    },
-    {
-      "node": "C9_ENDPOINT",
-      "title": "The relative conic ideal and its w=0 endpoint",
-      "paper_labels": [
-        "appr3whole:identities",
-        "appr3whole:endpoint",
-        "r3:boundaryreduction"
-      ],
-      "coefficient_ring_and_localization": "QQ(k,r,eta,zeta), localized at k*r*(1+k)*(1+r)*(k-r)*eta*zeta*(eta-zeta)*(eta+1)*(zeta-1), with k=a*kappa_0 and r=kappa_0. At the endpoint xb^2=2*(1+k); eta,zeta remain local parameters. The open conic minor is used only where w*(w^2-k)*(w^2+k) is nonzero.",
-      "exact_mathematical_statement": "R2,R3,Q0,H6,H14,H16 belong to J3=(w,e0,e1,delta), retaining all t,kappa terms. The complete relations belong to the nonreduced conic ideal (I_graph,C,s^2,t,kappa). The complete regularized relations belong to the reference ideals; G21 is polynomial and belongs to (t,kappa). At w=0 the six-source Jacobian is 36*k^2*q*m^2*xb/7, the three-source Jacobian is m*q/3584, and the residual quadratic terms are B=-3*xb*v_end*w/(224*m), F=v_end^2/8+7*v_end*s/2+32*s^2. The residual coefficient determinant is -3*xb/(7*m). The open conic normal determinant has norm -9*r^2*q^2*w^2*m^7*(w^2-k)^4*(w^2+k)^11/(98*k^11).",
-      "geometric_interface": "Implicit uniqueness gives delta in (w) and kappa in (v_end,s^2). Since (w) intersect (v_end,s^2)=w*(v_end,s^2), the unit residual matrix puts kappa*delta in the necessary ideal. Faithful flatness contracts the membership to the local ring and tau=kappa^2*delta belongs to that ideal.",
-      "direct_tasks": [
-        {
-          "task_id": "conic_endpoint:generic_regularity",
-          "source": "reproduction/conic_endpoint/verify_generic_regularity.py",
-          "source_sha256": "48863a7f291ed61fc9b05d0ced74ed050ddee6b66336996dbc554eefa12dca2d",
-          "wrapper": null,
-          "arguments": [],
-          "action": "run",
-          "input_views": {},
-          "environment": {}
-        },
-        {
-          "task_id": "conic_endpoint:coefficient_units",
-          "source": "reproduction/conic_endpoint/verify_whole_coefficient_units.py",
-          "source_sha256": "2a5570837f1df1f02d57f3a1efa8eb763525f706f5362b3bfa6ab7453030f176",
-          "wrapper": null,
-          "arguments": [],
-          "action": "run",
-          "input_views": {},
-          "environment": {}
-        },
-        {
-          "task_id": "conic_endpoint:relative_boundary",
-          "source": "reproduction/conic_endpoint/verify_relative_boundary.py",
-          "source_sha256": "ba3b864d8157345586c3f2af48652b7c5988d619716ea35548269ac692394c0a",
-          "wrapper": null,
-          "arguments": [],
-          "action": "run",
-          "input_views": {},
-          "environment": {}
-        },
-        {
-          "task_id": "conic_endpoint:gauge_binding",
-          "source": "reproduction/conic_endpoint/verify_manuscript_gauge_binding.py",
-          "source_sha256": "46ee02c8401a8382911b93843a87b39c3f6c772343166e86fd68285fed4eaa83",
-          "wrapper": null,
-          "arguments": [],
-          "action": "run",
-          "input_views": {},
-          "environment": {}
-        },
-        {
-          "task_id": "conic_endpoint:rebuild_G21",
-          "source": "reproduction/conic_endpoint/rebuild_generic_G_p21_Q6.py",
-          "source_sha256": "70412c1054de1abd43a78b096ca1cd10a0a27813a4018c762aa0fc1a5ace341c",
-          "wrapper": null,
-          "arguments": [
-            "--source-directory",
-            "@WORKROOT@/reproduction/conic_endpoint/source_inputs",
-            "--output-directory",
-            "@WORKROOT@/reproduction/conic_endpoint"
-          ],
-          "action": "run",
-          "input_views": {},
-          "environment": {}
-        },
-        {
-          "task_id": "conic_endpoint:G21_conic_membership",
-          "source": "reproduction/conic_endpoint/verify_new_generic_G_J8.py",
-          "source_sha256": "9c332bcf9340119a6d6dc18bd1c78b4404b1d50f9a107b7cade5d754fd9615b4",
-          "wrapper": null,
-          "arguments": [
-            "--source-directory",
-            "@WORKROOT@/reproduction/conic_endpoint/source_inputs",
-            "--output-directory",
-            "@WORKROOT@/reproduction/conic_endpoint"
-          ],
-          "action": "run",
-          "input_views": {},
-          "environment": {}
-        },
-        {
-          "task_id": "conic_endpoint:implicit_graph",
-          "source": "reproduction/conic_endpoint/verify_endpoint_unit_and_obstructions.py",
-          "source_sha256": "2884e59c17dfcb63c1c3017f5522af8687536cc70e817b4ddd90c763a957b235",
-          "wrapper": null,
-          "arguments": [
-            "--source-directory",
-            "@WORKROOT@/reproduction/conic_endpoint/source_inputs",
-            "--output-directory",
-            "@WORKROOT@/reproduction/conic_endpoint"
-          ],
-          "action": "run",
-          "input_views": {},
-          "environment": {}
-        },
-        {
-          "task_id": "conic_endpoint:open_conic_minor",
-          "source": "reproduction/conic_endpoint/verify_conic_open_minor.py",
-          "source_sha256": "ea026d5f1f3a5971558a5620d604fcd743415ed13dcd2b9422464ebf358c7dbe",
-          "wrapper": null,
-          "arguments": [],
-          "action": "run",
-          "input_views": {},
-          "environment": {}
-        },
-        {
-          "task_id": "conic_endpoint:whole_J3",
-          "source": "reproduction/conic_endpoint/subcritical_single_endpoint_whole_J3_reader.py",
-          "source_sha256": "9852831f7c5426fc08b0068996f951955830a0b523983be30aa68429ea80c59b",
-          "wrapper": null,
-          "arguments": [],
-          "action": "run",
-          "input_views": {},
-          "environment": {}
-        }
-      ],
-      "necessary_dependency_task_ids": [
-        "conic_endpoint:input:independent_critical_single_RR3_normal",
-        "conic_endpoint:input:independent_delta_subcritical_H_initials",
-        "conic_endpoint:input:independent_delta_subcritical_Q0_full_source",
-        "conic_endpoint:input:independent_delta_subcritical_even_full_source",
-        "conic_endpoint:input:independent_partial_D_Newton_gauges_reader",
-        "conic_endpoint:input:independent_ratio_global_R_derivative_degreefall",
-        "conic_endpoint:input:independent_ratio_p_boundary_second_gauge",
-        "conic_endpoint:input:independent_subcritical_single_RR_full_complete_E_chart_H1",
-        "conic_endpoint:input:independent_subcritical_single_RR_full_regular_chart_H1",
-        "foundations:rebuild_state17",
-        "generated_alias:round10/independent_critical_single_RR3_normal.sobj",
-        "generated_alias:round10/independent_delta_subcritical_H_initials.sobj",
-        "generated_alias:round10/independent_inactive_single_RR_boundary.sobj",
-        "generated_alias:round10/independent_partial_D_Newton_gauges_reader.sobj",
-        "generated_alias:round10/independent_support_Newton_field_reader.sobj",
-        "rank3_coverage:independent_critical_single_RR3_normal:independent_critical_single_RR3_normal",
-        "rank3_coverage:independent_delta_subcritical_H_initials:independent_delta_subcritical_H_initials",
-        "rank3_coverage:independent_inactive_single_RR_boundary:independent_inactive_single_RR_boundary",
-        "rank3_coverage:independent_support_Newton_field_reader:independent_support_Newton_field_reader",
-        "rank3_coverage:subcritical_single_full_complete_E_chart_H1:subcritical_single_full_complete_E_chart_H1",
-        "rank3_coverage:subcritical_single_full_regular_chart_H1:subcritical_single_full_regular_chart_H1:1",
-        "rank3_current_proof:complete_global_source_views",
-        "rank3_current_proof:complete_small_support_source_view",
-        "rank3_current_proof:first_boundary_source_view",
-        "rank3_current_proof:fresh_saturation_sources",
-        "rank3_current_proof:independent_supercritical_RR_small_support_sources",
-        "rank3_current_proof:independent_supercritical_first_boundary_probe",
-        "rank3_current_proof:saturation_source_view:independent_delta_Q0_kernel_compatibility",
-        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_Q0_full_source",
-        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_even_full_source",
-        "rank3_readers:independent_partial_D_Newton_gauges_reader:round10/independent_partial_D_Newton_gauges_reader.py",
-        "rank3_sources:fresh_global_sources",
-        "rank3_sources:fresh_joint_sources"
-      ],
-      "manuscript_anchors": [
-        {
-          "label": "appr3whole:identities",
-          "line": 7621,
-          "text": "\\subsection{Relative identities with one nonzero \\texorpdfstring{$\\mathsf R$}{R} coordinate}\n\\label{appr3whole:identities}\n\nWork in the relative local ring of the single-coordinate boundary. Let $I$ be the ideal of necessary regularized equations in this ring. Put $k=a\\kappa_0 $, $m=1+k$, $q=1+\\kappa_0 $, and\n\\[\n \\alpha=\\frac{\\zeta -\\eta }{\\zeta (\\eta +1)},\\qquad\n \\beta=\\frac{\\eta (\\zeta -1)}{\\zeta (\\eta +1)}.\n\\]\nOn the $\\overline p_{13}=\\overline{\\boldsymbol R}_3=1$ incidence chart, the exact coordinates are\n\\[\n\\begin{gathered}\n \\overline p_{12}=x,\\quad \\overline p_{13}=1,\\quad \\overline p_{21}=z,\\quad \\overline p_{23}=w,\\\\\n \\overline p_{31}=\\frac{tz-\\kappa e_2^{\\mathrm{alg}}}{\\beta},\\qquad\n \\overline p_{32}=\\frac{xwt}{\\beta}+\\frac{\\kappa(xe_1^{\\mathrm{alg}}-e_0^{\\mathrm{alg}})}{\\alpha},\\\\\n \\overline{\\boldsymbol R}_1=\\frac{\\alpha w t}{\\beta}+\\kappa e_1^{\\mathrm{alg}},\\quad\n \\overline{\\boldsymbol R}_2=t,\\quad \\overline{\\boldsymbol R}_3=1,\\quad \\tau=\\kappa^2\\delta.\n\\end{gathered}\n\\]\nThe incidence matrix gives\n$L(\\overline p)\\overline{\\boldsymbol R}=\\kappa\\boldsymbol e^{\\mathrm{alg}}$ exactly. Write $s=x+z$. The four boundary graph functions are\n\\[\n\\begin{aligned}\n f_0={}&-2xw+\\frac{4\\eta \\zeta -2\\eta -4\\zeta ^2+2\\zeta }{\\eta \\zeta }\\,sw,\\\\\n f_1={}&-\\frac{2\\zeta (\\eta -1)}{\\eta (\\zeta -1)}w,\\\\\n f_2={}&2x+\\frac{2\\eta \\zeta -2\\eta -4\\zeta ^2+2\\zeta }{\\zeta }s,\\\\\n d={}&\\frac{4\\kappa_0 (\\eta +1)^3}{q\\eta ^2}sw.\n\\end{aligned}\n\\]\nLet $I_{\\mathrm{graph}}=(e_0^{\\mathrm{alg}}-f_0,e_1^{\\mathrm{alg}}-f_1,e_2^{\\mathrm{alg}}-f_2,\\delta-d)$ denote their\nideal. These functions are substituted into the compatibility relation\npolynomials.\n\nWrite $\\mathcal R_\\nu$, $\\mathcal H_n$ and $Q_j^{\\mathrm{reg}}$ for the\nregularized representatives with respective factors\n$\\kappa^8\\delta^4$, $\\kappa^{11}\\delta^5$, and\n$\\kappa^7\\delta^3$ for $Q_0$ or $\\kappa^8\\delta^4$\nfor $Q_1,Q_5,Q_6$.\n\nAway from $k+w^2=0$, put $c=(3k-w^2)/(k+w^2)$. The\n$28$ normalized relations belong to\n\\[\n J_9=\\bigl(I_{\\mathrm{graph}},\\kappa s,ts,s^2,(t+2\\kappa)x,x^2-cxs\\bigr).\n\\]\nIn the quotient over $\\mathbb Q(k,\\kappa_0 ,\\eta ,\\zeta ,w)$, multiplication in the quotient gives\n$\\overline p_{31}=\\overline p_{32}=0$, $\\delta^2=\\kappa\\delta=0$; \n\nAt the attachment $w^2=-k$, regard $k$ and $w$ as independent parameters. Let $C$ be the third even relation on the boundary graph. Its full\npolynomial is\n\\[\n \\begin{aligned}\n C={}&\\frac{2k}{m^2}(x^3z+xz^3)\n       +\\frac{10x^2-4xz-6z^2}{m}w^2\\\\\n     &+\\frac{k}{m}(-6x^2-4xz+10z^2).\n \\end{aligned}\n\\]\nModulo $s^2$ it is\n\\[\n\\begin{aligned}\n C={}&-\\frac{4k}{m^2}x^4+\\frac{8k}{m^2}x^3s\\\\\n    &+\\frac{8(k+w^2)}m x^2-\\frac{8(3k-w^2)}m xs.\n\\end{aligned}\n\\]\nThe relative ideal is\n\\[\n J_{10}=\\bigl(I_{\\mathrm{graph}},\\kappa s,ts,s^2,(t+2\\kappa)x,\n                         C,\\kappa x^3\\bigr).\n\\]\nOne additional reduction follows from the exact identity\n\\[\n\\begin{aligned}\n (k+w^2)\\kappa x^2={}&\\frac m8\\kappa C\n +\\frac{k}{2m}\\kappa x^4-\\frac km\\kappa x^3s\n +\\frac{3k-w^2}{m}\\kappa xs.\n\\end{aligned}\n\\]\nThis identity holds in the coefficient ring in which $k+w^2$ is not inverted.\n\nThe twenty-eight relations and the three pair relations vanish\nmodulo $J_{10}$; the third even relation reduces to $C$. The incidence pullback of each pair relation has numerator divisible\nby $\\kappa$, so its regularized representative is polynomial.\nThe derivative relations $H_n$ retain their $(\\widehat p,\\mathsf R)$ components of bidegrees\n$(4,1)$, $(5,0)$ and $(1,3)$ and the $(3,2)$ incidence module;\ntheir remaining terms belong to $(\\delta^2,\\kappa\\delta)$.\n\nFor the reverse inclusion, at the cyclic base, the four rows used for implicit elimination and six remaining relation classes give\n\\[\n \\det_{10}=\\frac{\\kappa_0 q\\,w^{10}}{4032(w^2-1)},\\qquad\n \\operatorname{Norm}_{w^2=-k}(\\det_{10})\n =\\frac{\\kappa_0 ^2q^2k^{10}}{16257024m^2}.\n\\]\nThis is a unit for every admissible triple of principal values and for both complex\namplitude roots. The coefficient matrix has independent columns for\nthe six classes modulo the maximal ideal times $J_{10}$; Nakayama\nthen gives equality with the necessary ideal of compatibility relations. Finally,\n\\[\n \\tau=\\kappa^2(\\delta-d)\n       +\\frac{4\\kappa_0 (\\eta +1)^3}{q\\eta ^2}\\,w\\kappa(\\kappa s)\\in J_{10}.\n\\]\nThe ideal inclusion applies to formal arcs over the base and $w$.\n\n\\paragraph{The conic and its derivative relations.}\nThe partial gauge with active coordinate $\\widehat p_{21}$ is\n\\[\n \\mathcal D_{21}\n   =\\widehat p_{21}\\widehat E_2\n      -c_2^{\\mathrm{diag}}R_2\\partial_{\\mathsf R_2}.\n\\]\nBy the definition of $\\widehat E_2$ in\nAppendix~\\ref{appr3:sources},\n\\[\n \\mathcal D_{21}Q_6\n =\\widehat p_{21}\\mathcal V_2Q_6\n  -(\\widehat p_{21}g_2Q_0+c_2^{\\mathrm{diag}}R_2)\n           \\partial_{\\mathsf R_2}Q_6.\n\\]\nIt vanishes on the actual state image, since $Q_0,R_2,Q_6$\nbelong to its invariant ideal. Let $\\mathcal G_{21}$ be the\npolynomial extension of $\\kappa^{13}\\delta^6\\mathcal D_{21}Q_6$\nunder the incidence substitution. For a part of ordinary degree\n$d$ and $\\mathsf R$ degree $d_R$, the exceptional factors are\n$\\kappa^{13-2d-d_R}\\delta^{6-d}$. The two negative\n$\\kappa$ exponents are $-1,-2$, and their substituted numerators\nare divisible by $\\kappa,\\kappa^2$, respectively. After these\nexact divisions the polynomial satisfies\n\\[\n \\mathcal G_{21}\\in(t,\\kappa).\n\\]\n\nOn the graph $I_{\\mathrm{graph}}$ with $t=\\kappa=0$, all\n$\\mathcal R_\\nu,Q_0^{\\mathrm{reg}},\\mathcal H_n$ vanish, and\nthe even equations restrict to\n\\[\n \\begin{aligned}\n Q_1^{\\mathrm{reg}}&=s^2\n       \\left(-\\frac{2xz}{m}-\\frac{6w^2}{k}+26\\right),\\\\\n Q_5^{\\mathrm{reg}}&=s^2\n       \\left(-\\frac{2kxz}{m}+26w^2-6k\\right),\\\\\n Q_6^{\\mathrm{reg}}&=C.\n \\end{aligned}\n\\]\nConsequently these sources and $\\mathcal G_{21}$ belong to\n\\[\n \\mathcal J_{\\mathrm{conic}}\n       =(I_{\\mathrm{graph}},C,s^2,t,\\kappa).\n\\]\nHere $\\eta,\\zeta$ are retained in the coefficient ring.\n\nFor the conic $x^2=2m(k+w^2)/k$, use the equation $C=0$ to\nlift $x$ to the dual algebra with $s^2=0$. If $x_s$ denotes its\nfirst coefficient, it is determined by\n\\[\n x_s=-\\frac{C_z}{C_x-C_z},\\qquad z=-x+s,\n\\]\nwhere the derivatives are evaluated on the reduced conic. Over $\\mathbb Q(k,\\kappa_0,\\eta,\\zeta,w)$, the constant and linear\ncoefficients of both regularized coordinate derivatives of $Q_6$\nvanish. Hence those derivatives belong to the relative ideal of\nthe nonreduced conic.\n\nOn the incidence chart, the\ntwo homogeneous parts of the differentiated equations of $\\mathsf R$ degrees three and two pull\nback to exact multiples of $\\kappa^2$ and $\\kappa$, respectively.\nFor the first field its denominator is $\\overline p_{13}=1$; for the second\nit is $\\overline p_{21}=z$, a unit on the conic chart in question. \nAt the cyclic ratio section, take the coefficient classes of\n\\[\n \\mathcal R_2,\\mathcal R_3,Q_0^{\\mathrm{reg}},\\mathcal G_{21},\n \\mathcal H_{14},Q_1^{\\mathrm{reg}},Q_5^{\\mathrm{reg}},Q_6^{\\mathrm{reg}}\n\\]\nin $\\mathcal J_{\\mathrm{conic}}/\\mathfrak m\\mathcal J_{\\mathrm{conic}}$,\nrelative to the ordered generators\n\\[\n (e_0^{\\mathrm{alg}}-f_0,e_1^{\\mathrm{alg}}-f_1,\n  e_2^{\\mathrm{alg}}-f_2,\\delta-d,C,s^2,t,\\kappa).\n\\]\nHere $\\mathfrak m$ is the maximal ideal at the conic point. The\nnorm of the determinant of this eight-column coefficient matrix\nover $x^2=2m(k+w^2)/k$ is\n\\[\n -\\frac{9\\kappa_0^2q^2w^2m^7\n          (w^2-k)^4(w^2+k)^{11}}{98k^{11}}.\n\\]\nIt is nonzero for $w(w^2-k)(w^2+k)\\ne0$ at both roots.\nThe selected relations belong to $\\mathcal J_{\\mathrm{conic}}$,\nand their classes span this quotient. Nakayama's lemma gives\n$\\mathcal J_{\\mathrm{conic}}\\subset I$ in the relative local\nring. Since $\\kappa\\in\\mathcal J_{\\mathrm{conic}}$, this gives\n$\\tau\\in I$. The attachment $w^2=-k$ was treated by $J_{10}$.\n\nAt $w^2=k$, $x^2=4m$, the coefficient matrix of the 28\ncomplete relations in the eight generators of\n$\\mathcal J_{\\mathrm{conic}}$ has rank six. Its kernel has dimension\ntwo. The two full differentiated relations of $Q_6$, restricted\nto a basis of this kernel, have coefficient matrix\n\\[\n \\begin{pmatrix}-640kw&-16kw\\\\-384kx&0\\end{pmatrix}.\n\\]\nIts determinant $-6144k^2wx$ is nonzero at all four roots.\nThe augmented normal matrix therefore has rank eight.\nThese relations belong to $\\mathcal J_{\\mathrm{conic}}$, so\nNakayama's lemma gives $\\mathcal J_{\\mathrm{conic}}\\subset I$ in\nthe local ring at this wall. In particular, $\\tau\\in I$.\n\n\\paragraph{The conic endpoint.}\\label{appr3whole:endpoint}\nConsider the point\n\\[\n \\eta=1,\\qquad \\zeta=-1,\\qquad\n x=x_b,\\qquad z=-x_b,\\qquad x_b^2=2m,\n\\]\nwith\n\\[\n w=e_0^{\\mathrm{alg}}=e_1^{\\mathrm{alg}}=\\delta=t=\\kappa=0,\n \\qquad e_2^{\\mathrm{alg}}=2x_b.\n\\]\nIn the algebraic local ring at this point we prove\n\\[\n \\kappa\\delta\\in I,\\qquad \\tau=\\kappa^2\\delta\\in I.\n\\]\n\\begin{proof}\nThe complete regularized sources have the relative inclusions\n\\[\n \\mathcal R_2,\\mathcal R_3,Q_0^{\\mathrm{reg}},\n       \\mathcal H_6,\\mathcal H_{14},\\mathcal H_{16}\n       \\in(w,e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},\\delta).\n\\]\nUse the six equations\n\\[\n \\mathcal R_2,\\mathcal R_3,Q_0^{\\mathrm{reg}},\n Q_1^{\\mathrm{reg}},Q_6^{\\mathrm{reg}},\\mathcal G_{21}\n\\]\nas implicit equations for\n$(x,e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},\\delta,t,\\kappa)$,\nwith $s=x+z$, $v_{\\mathrm{end}}=e_2^{\\mathrm{alg}}-f_2$ and $w$\nfixed. Their Jacobian determinant at the point is\n\\[\n \\frac{36}{7}k^2qm^2x_b\\ne0.\n\\]\nThus the quotient of the completed local ring by these six\nequations is\n\\[\n \\mathbb C[[v_{\\mathrm{end}},s,w,\\eta-1,\\zeta+1]].\n\\]\nA tilde denotes restriction to this implicit graph. Set\n\\[\n \\begin{aligned}\n \\mathcal B_{\\mathrm{end}}\n   &=Q_0^{\\mathrm{reg}}\n      +\\frac{27}{49mq}\\mathcal H_6\n      -\\frac{12}{49\\kappa_0m}\\mathcal H_{14}\n      +\\frac{39x_b}{98m}\\mathcal H_{16},\\\\\n \\mathcal F_{\\mathrm{end}}\n   &=Q_1^{\\mathrm{reg}}-\\frac1kQ_5^{\\mathrm{reg}}.\n \\end{aligned}\n\\]\nFor the first three implicit equations, the Jacobian in\n$(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},\\delta)$ is $mq/3584$.\nTheir solution at $w=0$ is\n$e_0^{\\mathrm{alg}}=e_1^{\\mathrm{alg}}=\\delta=0$.\nThe relative inclusions above and implicit uniqueness give\n\\[\n \\widetilde\\delta\\in(w),\\qquad\n \\widetilde{\\mathcal B}_{\\mathrm{end}}\\in(w).\n\\]\n\nNext restrict to $v_{\\mathrm{end}}=s^2=0$.\nThe derivative of $C$ in $x$ at fixed $s$ has value\n$-16kx_b/m\\ne0$. Solving $C=0$, putting\n$e_i^{\\mathrm{alg}}=f_i$, $\\delta=d$, $t=\\kappa=0$,\ngives a solution of the six implicit equations over this\nquotient ring, by their $\\mathcal J_{\\mathrm{conic}}$\nmemberships. Uniqueness of the implicit solution gives\n\\[\n \\widetilde\\kappa,\n \\widetilde{\\mathcal B}_{\\mathrm{end}},\n \\widetilde{\\mathcal F}_{\\mathrm{end}}\n       \\in(v_{\\mathrm{end}},s^2).\n\\]\nMultiplication by $w$ is injective modulo\n$(v_{\\mathrm{end}},s^2)$, since this quotient is free with\nbasis $1,s$ over $\\mathbb C[[w,\\eta-1,\\zeta+1]]$.\nHence\n\\[\n (w)\\cap(v_{\\mathrm{end}},s^2)\n       =w(v_{\\mathrm{end}},s^2).\n\\]\nThere is a matrix of formal power series\n$\\mathsf A_{\\mathrm{end}}$ such that\n\\[\n \\begin{pmatrix}\n   \\widetilde{\\mathcal B}_{\\mathrm{end}}\\\\\n   w\\widetilde{\\mathcal F}_{\\mathrm{end}}\n \\end{pmatrix}\n   =w\\mathsf A_{\\mathrm{end}}\n       \\begin{pmatrix}v_{\\mathrm{end}}\\\\s^2\\end{pmatrix}.\n\\]\nBoth source combinations have zero state differential at\nthe endpoint. Restricting their Hessians to the tangent space\nof the implicit graph gives the quadratic terms, with the\nratio parameters evaluated at their center,\n\\[\n \\begin{aligned}\n  \\widetilde{\\mathcal B}_{\\mathrm{end}}^{(2)}\n     &=-\\frac{3x_b}{224m}v_{\\mathrm{end}}w,\\\\\n  \\widetilde{\\mathcal F}_{\\mathrm{end}}^{(2)}\n     &=\\frac18v_{\\mathrm{end}}^2\n         +\\frac72v_{\\mathrm{end}}s+32s^2.\n \\end{aligned}\n\\]\nThus $(\\mathsf A_{\\mathrm{end}})_{11}(0)=-3x_b/(224m)$,\n$(\\mathsf A_{\\mathrm{end}})_{21}(0)=0$ and\n$(\\mathsf A_{\\mathrm{end}})_{22}(0)=32$. It follows that\n\\[\n \\det\\mathsf A_{\\mathrm{end}}(0)\n       =-\\frac{3x_b}{7m}\\ne0.\n\\]\nInverting this matrix gives\n\\[\n w(v_{\\mathrm{end}},s^2)\n   =\\bigl(\\widetilde{\\mathcal B}_{\\mathrm{end}},\n             w\\widetilde{\\mathcal F}_{\\mathrm{end}}\\bigr).\n\\]\nThe two memberships for $\\widetilde\\kappa$ and\n$\\widetilde\\delta$ imply\n$\\widetilde\\kappa\\widetilde\\delta\\in\n (\\widetilde{\\mathcal B}_{\\mathrm{end}},\n  \\widetilde{\\mathcal F}_{\\mathrm{end}})$.\nLifting through the quotient by the six implicit equations\nputs $\\kappa\\delta$ in the completed necessary ideal.\nFaithful flatness of completion contracts this membership\nto the algebraic local ring\n\\cite[Lemma~10.97.3, Tag~00MC]{StacksProject}.\nMultiplication by $\\kappa$ gives $\\tau\\in I$.\nSince $kmq\\ne0$ and $x_b^2=2m$, the two determinants\nare nonzero at either root $x_b$.\n\\end{proof}\n\n\\paragraph{The horizontal conormal matrix.}\nPut $K=\\mathbb Q(k,\\kappa_0,\\eta,\\zeta)$. Use the incidence chart\n\\[\n\\begin{aligned}\n \\overline p&=\\left(1,y,z,w,\n            \\frac{tz-\\kappa e_2^{\\mathrm{alg}}}{\\beta},\n            \\frac{v-\\kappa e_0^{\\mathrm{alg}}}{\\alpha}\\right),\\\\\n \\overline{\\boldsymbol R}&=(v,t,1),\\qquad\n I=yv-(\\alpha/\\beta) tw-\\kappa e_1^{\\mathrm{alg}},\\qquad I_0=yv-(\\alpha/\\beta) tw.\n\\end{aligned}\n\\]\nHere $I=0$ is the remaining incidence equation. For each relation\n$F$ we substitute\n\\[\n (\\widehat p,\\mathsf R)\n   =\\left(\\frac{\\overline p}{\\kappa^2\\delta},\n          \\frac{\\overline{\\boldsymbol R}}{\\kappa^3\\delta}\\right).\n\\]\n\nThe representatives are determined by the incidence identities\n$L\\overline{\\boldsymbol R}=\\kappa(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}})^\\top$ modulo $(I)$:\nthe $(3,1)$ part of $R_\\nu$ is replaced by $(DC)_{\\nu,*}(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}})^\\top$,\nthe $(3,2)$ part of $H_n$ by $\\sum_{i=1}^3 A_{n,i}e_{i-1}^{\\mathrm{alg}}$,\nthe $(1,2)$ part of $Q_0$ by $\\sum_{i=1}^3 B_{0,i}e_{i-1}^{\\mathrm{alg}}$,\nand the $(2,2)$ and $(3,1)$ parts of $Q_j$ by\n$c_j^{\\mathrm{even}}\\bigl(e_{\\iota(j)-1}^{\\mathrm{alg}}\\bigr)^2$ and\n$\\sum_{i=1}^3 B_{j,i}e_{i-1}^{\\mathrm{alg}}$, respectively. Here\n$\\boldsymbol e^{\\mathrm{alg}}=(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}})^\\top$ and the coefficients $B_{0,i}$ are defined by\n$(Q_0)_{12}=\\sum_{i=1}^3B_{0,i}(L\\mathsf R)_i$.\nFor a regularizing factor $\\kappa^{d_{\\mathrm{reg}}}\\delta^{e_{\\mathrm{reg}}}$,\neach other part of bidegree $(d_{\\widehat p},d_R)$ is multiplied by\n$\\kappa^{d_{\\mathrm{reg}}-2d_{\\widehat p}-3d_R}\n \\delta^{e_{\\mathrm{reg}}-d_{\\widehat p}-d_R}$ and evaluated on the chart.\n\nTo specify the three differentiated relations, use the derivation\n\\[\n \\mathcal D_{\\mathrm{axis}}=\\widehat p_{12}\\widehat E_1\n              -c_1^{\\mathrm{diag}}R_3\\partial_{\\mathsf R_1},\n \\qquad c_1^{\\mathrm{diag}}=\\frac{2(\\eta-\\zeta)}{\\eta\\zeta}.\n\\]\nIts coefficient derivatives include the ratio coordinates $\\eta,\\zeta$.\nLet $G_0,G_1,G_2$ be the regularized representatives of\n$\\mathcal D_{\\mathrm{axis}}Q_5$, $\\mathcal D_{\\mathrm{axis}}R_7$, $\\mathcal D_{\\mathrm{axis}}R_8$, with factors\n$\\kappa^{13}\\delta^6$, $\\kappa^{14}\\delta^6$,\n$\\kappa^{14}\\delta^6$, respectively. Their representatives are\nfixed as follows. Put $a_{\\mathrm{reg}}=13$ for $G_0$ and $14$ for\n$G_1,G_2$. A part of ordinary degree $d$ and $\\mathsf R$ degree $d_R$\nhas factor $\\kappa^{a_{\\mathrm{reg}}-2d-d_R}\\delta^{6-d}$.\nFor a nonnegative exponent take its direct substitution. For a negative\nexponent start with its substituted polynomial $P_0^{\\mathrm{reg}}$ and put\n\\[\n C_j=\\frac{P_j^{\\mathrm{reg}}|_{\\kappa=0}}{I_0},\\qquad\n P_{j+1}^{\\mathrm{reg}}=\\frac{P_j^{\\mathrm{reg}}-C_jI}{\\kappa}.\n\\]\nThe incidence identities make these quotients polynomial; the\nregularized part is $\\delta^{6-d}P_{2d+d_R-a_{\\mathrm{reg}}}^{\\mathrm{reg}}$.\n\nFor a polynomial $F$ independent of $\\kappa$, denote by\n$\\operatorname{rem}(F)$ and $\\operatorname{quo}(F)$ the remainder\nand quotient in division by the monic polynomial $I_0$, with leading\nmonomial $yv$. Thus\n\\[\n F=\\operatorname{rem}(F)+I_0\\operatorname{quo}(F),\n\\]\nand no monomial of $\\operatorname{rem}(F)$ is divisible by $yv$.\nDefine\n\\[\n\\begin{aligned}\n \\boldsymbol\\lambda^W&=\\left(1,-\\frac{8m(\\eta+1)}{3\\eta},\n       \\frac{8m\\zeta(\\eta+1)^2}{3\\eta(\\eta-\\zeta)},\n       \\frac{8m(\\eta+1)}{3\\eta}\\right),\\\\\n F^W&=(G_0,wG_1,vG_1,yG_2),\\\\\n C_W&=\\sum_{j=0}^3\\lambda_j^W\n           \\operatorname{quo}(F^W_j|_{\\kappa=0}),\\\\\n W&=\\frac{\\sum_{j=0}^3\\lambda_j^WF^W_j-C_WI}{\\kappa}.\n\\end{aligned}\n\\]\nThe numerator vanishes at $\\kappa=0$, so $W$ is polynomial.\n\nThe seven relations for the second divided relation are\n\\[\n F^h=(t\\mathcal R_5,\\mathcal H_4,w\\mathcal H_9,\n       \\mathcal H_{11},y\\mathcal H_{13},\n       v\\mathcal H_{16},t\\mathcal H_{17}).\n\\]\nLet $\\mathscr M$ be the finite set of monomials occurring in\n$\\operatorname{rem}(F^h_j|_{\\kappa=0})$, and define the coefficient\nmatrix\n\\[\n A^h_{\\mu,j+1}=[\\mu]\\operatorname{rem}(F^h_j|_{\\kappa=0}),\n \\qquad \\mu\\in\\mathscr M,\\quad 0\\le j\\le6.\n\\]\nIt has rank six over $K$, and its last six columns are independent.\nConsequently the equations\n\\[\n A^h\\boldsymbol c^{\\mathrm h}=0,\\qquad c_0^{\\mathrm h}=1\n\\]\ndefine a unique vector $\\boldsymbol c^{\\mathrm h}\\in K^7$. Put\n\\[\n C_h=\\sum_{j=0}^6c_j^{\\mathrm h}\\operatorname{quo}(F^h_j|_{\\kappa=0}),\n \\qquad h_0=\\frac{\\sum_{j=0}^6c_j^{\\mathrm h}F^h_j-C_hI}{\\kappa}.\n\\]\nThe defining kernel identity makes $h_0$ polynomial. For the horizontal family put\n\\[\n s_h=-\\frac{2\\eta(\\zeta+1)}{\\zeta(\\eta+1)},\\qquad\n e_0^{\\mathrm{alg}}=E+s_h\\ell,\\qquad v=(\\alpha+\\kappa s_h)\\ell.\n\\]\nDenote this substitution by $\\Phi_{\\mathrm{hor}}$. Its seven transverse coordinates\nare\n\\[\n n=(y,z,w,E,e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}},\\delta),\n\\]\nand its coefficient ring is $T=K[t,\\ell,\\kappa]$. Set\n\\[\n C_h^{\\mathrm{hor}}=(\\Phi_{\\mathrm{hor}}^*C_h)|_{n=0},\\qquad\n h=\\Phi_{\\mathrm{hor}}^*h_0+\\frac{C_h^{\\mathrm{hor}}}{\\kappa}\\Phi_{\\mathrm{hor}}^*I.\n\\]\nHere $C_h^{\\mathrm{hor}}$ is divisible by $\\kappa$ in $T$.\nThe ordered thirty relations are\n\\[\n \\Phi_{\\mathrm{hor}}^*(\\mathcal R_0,\\ldots,\\mathcal R_5,Q_0^{\\mathrm{reg}},\n         \\mathcal H_0,\\ldots,\\mathcal H_{17},\n         Q_1^{\\mathrm{reg}},Q_5^{\\mathrm{reg}},Q_6^{\\mathrm{reg}},W),\\quad h.\n\\]\nThey vanish at $n=0$. Let $(\\mathsf N_\\perp)_{ij}$ be the coefficient of the $j$th component of $n$\nin the $i$th relation modulo $(n)^2$, for $1\\le i\\le30$, $1\\le j\\le7$.\nThe incidence conormal is\n\\[\n ((\\alpha+\\kappa s_h)\\ell,0,-(\\alpha/\\beta)t,0,-\\kappa,0,0).\n\\]\nThe products $w\\mathcal H_9$ and $y\\mathcal H_{13}$ have zero\nconormal because both factors vanish on the horizontal family.\n\nSet\n\\[\n I=(4,7,26,29),\\qquad\n R=(2,5,7,3),\\qquad C=(1,4,6),\\qquad\n J=(27,28,30).\n\\]\nWrite $A=(\\mathsf N_\\perp)_{I,R}$ and $B=(\\mathsf N_\\perp)_{I,C}$. The relative polynomial identity is\n\\[\n (\\det A)(\\mathsf N_\\perp)_{J,C}-(\\mathsf N_\\perp)_{J,R}\\operatorname{adj}(A)B=0.\n\\]\nAt the\nhorizontal origin the two base charts give\n\\[\n \\left.\\det A\\right|_{\\eta =1,\\zeta =-1}\n =-\\frac{3qk}{224\\kappa_0 m^2},\\qquad\n \\left.\\det A\\right|_{\\eta =2,\\zeta =-1}\n =-\\frac{32qk}{1701\\kappa_0 m^2}.\n\\]\nBoth determinants are units for every admissible triple of principal\nvalues. The coefficient denominators specialize to nonzero rational\nconstants.\n\n\\paragraph{Transport to the chart with three nonzero coordinates.}\nLet $M$ be the ordinary boundary $37\\times6$ matrix of linear normal terms.\nFor $1\\le i\\le28$, the original rows, before adding derivative rows, transform to\nthe full-$\\mathsf R$ chart by\n\\[\n N_i(\\kappa)=d_i(\\kappa)\n M_i(l,\\varrho/\\kappa,1/\\kappa)J(\\kappa),\n \\qquad\n d_i=\\begin{cases}\\kappa,&i=1\\text{ or }i\\geq11,\\\\\n 1,&2\\leq i\\leq10.\n \\end{cases}\n\\]\nHere $J$ is the Jacobian of the six transverse coordinate\nchanges. Each transformed entry is regular at $\\kappa=0$. The matrix of linear normal terms and its variation are $N(0)$ and $\\partial_\\kappa N(0)$.\n\nThe two short odd factors and the even determinant factor are\n\\[\n P=\\frac{\\varrho^2}{\\beta^2}-5\\kappa_0 l^2-4q,\n \\qquad Q=\\frac{\\varrho^2}{\\beta^2}+4\\kappa_0 l^2+5q,\n \\qquad (ml^2-k)(ml^2+k).\n\\]\nThey satisfy $Q-P=9(\\kappa_0 l^2+q)$. On the two amplitude\nhypersurfaces work in the quadratic algebras $l^2=\\pm k/m$.\nElimination of the columns corresponding to the solved variables in $N(0)$ gives the Schur blocks,\nand $\\partial_\\kappa N(0)$ gives the transverse variation.",
-          "normalized_sha256": "7f18312e60d0962fb62207d89a0ea9c35a3facab4fbcd3be82040dfcd18cca3a",
-          "number": "C.9",
-          "page": 105
-        },
-        {
-          "label": "appr3whole:endpoint",
-          "line": 7822,
-          "text": "\\paragraph{The conic endpoint.}\\label{appr3whole:endpoint}\nConsider the point\n\\[\n \\eta=1,\\qquad \\zeta=-1,\\qquad\n x=x_b,\\qquad z=-x_b,\\qquad x_b^2=2m,\n\\]\nwith\n\\[\n w=e_0^{\\mathrm{alg}}=e_1^{\\mathrm{alg}}=\\delta=t=\\kappa=0,\n \\qquad e_2^{\\mathrm{alg}}=2x_b.\n\\]\nIn the algebraic local ring at this point we prove\n\\[\n \\kappa\\delta\\in I,\\qquad \\tau=\\kappa^2\\delta\\in I.\n\\]\n\\begin{proof}\nThe complete regularized sources have the relative inclusions\n\\[\n \\mathcal R_2,\\mathcal R_3,Q_0^{\\mathrm{reg}},\n       \\mathcal H_6,\\mathcal H_{14},\\mathcal H_{16}\n       \\in(w,e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},\\delta).\n\\]\nUse the six equations\n\\[\n \\mathcal R_2,\\mathcal R_3,Q_0^{\\mathrm{reg}},\n Q_1^{\\mathrm{reg}},Q_6^{\\mathrm{reg}},\\mathcal G_{21}\n\\]\nas implicit equations for\n$(x,e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},\\delta,t,\\kappa)$,\nwith $s=x+z$, $v_{\\mathrm{end}}=e_2^{\\mathrm{alg}}-f_2$ and $w$\nfixed. Their Jacobian determinant at the point is\n\\[\n \\frac{36}{7}k^2qm^2x_b\\ne0.\n\\]\nThus the quotient of the completed local ring by these six\nequations is\n\\[\n \\mathbb C[[v_{\\mathrm{end}},s,w,\\eta-1,\\zeta+1]].\n\\]\nA tilde denotes restriction to this implicit graph. Set\n\\[\n \\begin{aligned}\n \\mathcal B_{\\mathrm{end}}\n   &=Q_0^{\\mathrm{reg}}\n      +\\frac{27}{49mq}\\mathcal H_6\n      -\\frac{12}{49\\kappa_0m}\\mathcal H_{14}\n      +\\frac{39x_b}{98m}\\mathcal H_{16},\\\\\n \\mathcal F_{\\mathrm{end}}\n   &=Q_1^{\\mathrm{reg}}-\\frac1kQ_5^{\\mathrm{reg}}.\n \\end{aligned}\n\\]\nFor the first three implicit equations, the Jacobian in\n$(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},\\delta)$ is $mq/3584$.\nTheir solution at $w=0$ is\n$e_0^{\\mathrm{alg}}=e_1^{\\mathrm{alg}}=\\delta=0$.\nThe relative inclusions above and implicit uniqueness give\n\\[\n \\widetilde\\delta\\in(w),\\qquad\n \\widetilde{\\mathcal B}_{\\mathrm{end}}\\in(w).\n\\]\n\nNext restrict to $v_{\\mathrm{end}}=s^2=0$.\nThe derivative of $C$ in $x$ at fixed $s$ has value\n$-16kx_b/m\\ne0$. Solving $C=0$, putting\n$e_i^{\\mathrm{alg}}=f_i$, $\\delta=d$, $t=\\kappa=0$,\ngives a solution of the six implicit equations over this\nquotient ring, by their $\\mathcal J_{\\mathrm{conic}}$\nmemberships. Uniqueness of the implicit solution gives\n\\[\n \\widetilde\\kappa,\n \\widetilde{\\mathcal B}_{\\mathrm{end}},\n \\widetilde{\\mathcal F}_{\\mathrm{end}}\n       \\in(v_{\\mathrm{end}},s^2).\n\\]\nMultiplication by $w$ is injective modulo\n$(v_{\\mathrm{end}},s^2)$, since this quotient is free with\nbasis $1,s$ over $\\mathbb C[[w,\\eta-1,\\zeta+1]]$.\nHence\n\\[\n (w)\\cap(v_{\\mathrm{end}},s^2)\n       =w(v_{\\mathrm{end}},s^2).\n\\]\nThere is a matrix of formal power series\n$\\mathsf A_{\\mathrm{end}}$ such that\n\\[\n \\begin{pmatrix}\n   \\widetilde{\\mathcal B}_{\\mathrm{end}}\\\\\n   w\\widetilde{\\mathcal F}_{\\mathrm{end}}\n \\end{pmatrix}\n   =w\\mathsf A_{\\mathrm{end}}\n       \\begin{pmatrix}v_{\\mathrm{end}}\\\\s^2\\end{pmatrix}.\n\\]\nBoth source combinations have zero state differential at\nthe endpoint. Restricting their Hessians to the tangent space\nof the implicit graph gives the quadratic terms, with the\nratio parameters evaluated at their center,\n\\[\n \\begin{aligned}\n  \\widetilde{\\mathcal B}_{\\mathrm{end}}^{(2)}\n     &=-\\frac{3x_b}{224m}v_{\\mathrm{end}}w,\\\\\n  \\widetilde{\\mathcal F}_{\\mathrm{end}}^{(2)}\n     &=\\frac18v_{\\mathrm{end}}^2\n         +\\frac72v_{\\mathrm{end}}s+32s^2.\n \\end{aligned}\n\\]\nThus $(\\mathsf A_{\\mathrm{end}})_{11}(0)=-3x_b/(224m)$,\n$(\\mathsf A_{\\mathrm{end}})_{21}(0)=0$ and\n$(\\mathsf A_{\\mathrm{end}})_{22}(0)=32$. It follows that\n\\[\n \\det\\mathsf A_{\\mathrm{end}}(0)\n       =-\\frac{3x_b}{7m}\\ne0.\n\\]\nInverting this matrix gives\n\\[\n w(v_{\\mathrm{end}},s^2)\n   =\\bigl(\\widetilde{\\mathcal B}_{\\mathrm{end}},\n             w\\widetilde{\\mathcal F}_{\\mathrm{end}}\\bigr).\n\\]\nThe two memberships for $\\widetilde\\kappa$ and\n$\\widetilde\\delta$ imply\n$\\widetilde\\kappa\\widetilde\\delta\\in\n (\\widetilde{\\mathcal B}_{\\mathrm{end}},\n  \\widetilde{\\mathcal F}_{\\mathrm{end}})$.\nLifting through the quotient by the six implicit equations\nputs $\\kappa\\delta$ in the completed necessary ideal.\nFaithful flatness of completion contracts this membership\nto the algebraic local ring\n\\cite[Lemma~10.97.3, Tag~00MC]{StacksProject}.\nMultiplication by $\\kappa$ gives $\\tau\\in I$.\nSince $kmq\\ne0$ and $x_b^2=2m$, the two determinants\nare nonzero at either root $x_b$.\n\\end{proof}\n\n\\paragraph{The horizontal conormal matrix.}\nPut $K=\\mathbb Q(k,\\kappa_0,\\eta,\\zeta)$. Use the incidence chart\n\\[\n\\begin{aligned}\n \\overline p&=\\left(1,y,z,w,\n            \\frac{tz-\\kappa e_2^{\\mathrm{alg}}}{\\beta},\n            \\frac{v-\\kappa e_0^{\\mathrm{alg}}}{\\alpha}\\right),\\\\\n \\overline{\\boldsymbol R}&=(v,t,1),\\qquad\n I=yv-(\\alpha/\\beta) tw-\\kappa e_1^{\\mathrm{alg}},\\qquad I_0=yv-(\\alpha/\\beta) tw.\n\\end{aligned}\n\\]\nHere $I=0$ is the remaining incidence equation. For each relation\n$F$ we substitute\n\\[\n (\\widehat p,\\mathsf R)\n   =\\left(\\frac{\\overline p}{\\kappa^2\\delta},\n          \\frac{\\overline{\\boldsymbol R}}{\\kappa^3\\delta}\\right).\n\\]\n\nThe representatives are determined by the incidence identities\n$L\\overline{\\boldsymbol R}=\\kappa(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}})^\\top$ modulo $(I)$:\nthe $(3,1)$ part of $R_\\nu$ is replaced by $(DC)_{\\nu,*}(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}})^\\top$,\nthe $(3,2)$ part of $H_n$ by $\\sum_{i=1}^3 A_{n,i}e_{i-1}^{\\mathrm{alg}}$,\nthe $(1,2)$ part of $Q_0$ by $\\sum_{i=1}^3 B_{0,i}e_{i-1}^{\\mathrm{alg}}$,\nand the $(2,2)$ and $(3,1)$ parts of $Q_j$ by\n$c_j^{\\mathrm{even}}\\bigl(e_{\\iota(j)-1}^{\\mathrm{alg}}\\bigr)^2$ and\n$\\sum_{i=1}^3 B_{j,i}e_{i-1}^{\\mathrm{alg}}$, respectively. Here\n$\\boldsymbol e^{\\mathrm{alg}}=(e_0^{\\mathrm{alg}},e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}})^\\top$ and the coefficients $B_{0,i}$ are defined by\n$(Q_0)_{12}=\\sum_{i=1}^3B_{0,i}(L\\mathsf R)_i$.\nFor a regularizing factor $\\kappa^{d_{\\mathrm{reg}}}\\delta^{e_{\\mathrm{reg}}}$,\neach other part of bidegree $(d_{\\widehat p},d_R)$ is multiplied by\n$\\kappa^{d_{\\mathrm{reg}}-2d_{\\widehat p}-3d_R}\n \\delta^{e_{\\mathrm{reg}}-d_{\\widehat p}-d_R}$ and evaluated on the chart.\n\nTo specify the three differentiated relations, use the derivation\n\\[\n \\mathcal D_{\\mathrm{axis}}=\\widehat p_{12}\\widehat E_1\n              -c_1^{\\mathrm{diag}}R_3\\partial_{\\mathsf R_1},\n \\qquad c_1^{\\mathrm{diag}}=\\frac{2(\\eta-\\zeta)}{\\eta\\zeta}.\n\\]\nIts coefficient derivatives include the ratio coordinates $\\eta,\\zeta$.\nLet $G_0,G_1,G_2$ be the regularized representatives of\n$\\mathcal D_{\\mathrm{axis}}Q_5$, $\\mathcal D_{\\mathrm{axis}}R_7$, $\\mathcal D_{\\mathrm{axis}}R_8$, with factors\n$\\kappa^{13}\\delta^6$, $\\kappa^{14}\\delta^6$,\n$\\kappa^{14}\\delta^6$, respectively. Their representatives are\nfixed as follows. Put $a_{\\mathrm{reg}}=13$ for $G_0$ and $14$ for\n$G_1,G_2$. A part of ordinary degree $d$ and $\\mathsf R$ degree $d_R$\nhas factor $\\kappa^{a_{\\mathrm{reg}}-2d-d_R}\\delta^{6-d}$.\nFor a nonnegative exponent take its direct substitution. For a negative\nexponent start with its substituted polynomial $P_0^{\\mathrm{reg}}$ and put\n\\[\n C_j=\\frac{P_j^{\\mathrm{reg}}|_{\\kappa=0}}{I_0},\\qquad\n P_{j+1}^{\\mathrm{reg}}=\\frac{P_j^{\\mathrm{reg}}-C_jI}{\\kappa}.\n\\]\nThe incidence identities make these quotients polynomial; the\nregularized part is $\\delta^{6-d}P_{2d+d_R-a_{\\mathrm{reg}}}^{\\mathrm{reg}}$.\n\nFor a polynomial $F$ independent of $\\kappa$, denote by\n$\\operatorname{rem}(F)$ and $\\operatorname{quo}(F)$ the remainder\nand quotient in division by the monic polynomial $I_0$, with leading\nmonomial $yv$. Thus\n\\[\n F=\\operatorname{rem}(F)+I_0\\operatorname{quo}(F),\n\\]\nand no monomial of $\\operatorname{rem}(F)$ is divisible by $yv$.\nDefine\n\\[\n\\begin{aligned}\n \\boldsymbol\\lambda^W&=\\left(1,-\\frac{8m(\\eta+1)}{3\\eta},\n       \\frac{8m\\zeta(\\eta+1)^2}{3\\eta(\\eta-\\zeta)},\n       \\frac{8m(\\eta+1)}{3\\eta}\\right),\\\\\n F^W&=(G_0,wG_1,vG_1,yG_2),\\\\\n C_W&=\\sum_{j=0}^3\\lambda_j^W\n           \\operatorname{quo}(F^W_j|_{\\kappa=0}),\\\\\n W&=\\frac{\\sum_{j=0}^3\\lambda_j^WF^W_j-C_WI}{\\kappa}.\n\\end{aligned}\n\\]\nThe numerator vanishes at $\\kappa=0$, so $W$ is polynomial.\n\nThe seven relations for the second divided relation are\n\\[\n F^h=(t\\mathcal R_5,\\mathcal H_4,w\\mathcal H_9,\n       \\mathcal H_{11},y\\mathcal H_{13},\n       v\\mathcal H_{16},t\\mathcal H_{17}).\n\\]\nLet $\\mathscr M$ be the finite set of monomials occurring in\n$\\operatorname{rem}(F^h_j|_{\\kappa=0})$, and define the coefficient\nmatrix\n\\[\n A^h_{\\mu,j+1}=[\\mu]\\operatorname{rem}(F^h_j|_{\\kappa=0}),\n \\qquad \\mu\\in\\mathscr M,\\quad 0\\le j\\le6.\n\\]\nIt has rank six over $K$, and its last six columns are independent.\nConsequently the equations\n\\[\n A^h\\boldsymbol c^{\\mathrm h}=0,\\qquad c_0^{\\mathrm h}=1\n\\]\ndefine a unique vector $\\boldsymbol c^{\\mathrm h}\\in K^7$. Put\n\\[\n C_h=\\sum_{j=0}^6c_j^{\\mathrm h}\\operatorname{quo}(F^h_j|_{\\kappa=0}),\n \\qquad h_0=\\frac{\\sum_{j=0}^6c_j^{\\mathrm h}F^h_j-C_hI}{\\kappa}.\n\\]\nThe defining kernel identity makes $h_0$ polynomial. For the horizontal family put\n\\[\n s_h=-\\frac{2\\eta(\\zeta+1)}{\\zeta(\\eta+1)},\\qquad\n e_0^{\\mathrm{alg}}=E+s_h\\ell,\\qquad v=(\\alpha+\\kappa s_h)\\ell.\n\\]\nDenote this substitution by $\\Phi_{\\mathrm{hor}}$. Its seven transverse coordinates\nare\n\\[\n n=(y,z,w,E,e_1^{\\mathrm{alg}},e_2^{\\mathrm{alg}},\\delta),\n\\]\nand its coefficient ring is $T=K[t,\\ell,\\kappa]$. Set\n\\[\n C_h^{\\mathrm{hor}}=(\\Phi_{\\mathrm{hor}}^*C_h)|_{n=0},\\qquad\n h=\\Phi_{\\mathrm{hor}}^*h_0+\\frac{C_h^{\\mathrm{hor}}}{\\kappa}\\Phi_{\\mathrm{hor}}^*I.\n\\]\nHere $C_h^{\\mathrm{hor}}$ is divisible by $\\kappa$ in $T$.\nThe ordered thirty relations are\n\\[\n \\Phi_{\\mathrm{hor}}^*(\\mathcal R_0,\\ldots,\\mathcal R_5,Q_0^{\\mathrm{reg}},\n         \\mathcal H_0,\\ldots,\\mathcal H_{17},\n         Q_1^{\\mathrm{reg}},Q_5^{\\mathrm{reg}},Q_6^{\\mathrm{reg}},W),\\quad h.\n\\]\nThey vanish at $n=0$. Let $(\\mathsf N_\\perp)_{ij}$ be the coefficient of the $j$th component of $n$\nin the $i$th relation modulo $(n)^2$, for $1\\le i\\le30$, $1\\le j\\le7$.\nThe incidence conormal is\n\\[\n ((\\alpha+\\kappa s_h)\\ell,0,-(\\alpha/\\beta)t,0,-\\kappa,0,0).\n\\]\nThe products $w\\mathcal H_9$ and $y\\mathcal H_{13}$ have zero\nconormal because both factors vanish on the horizontal family.\n\nSet\n\\[\n I=(4,7,26,29),\\qquad\n R=(2,5,7,3),\\qquad C=(1,4,6),\\qquad\n J=(27,28,30).\n\\]\nWrite $A=(\\mathsf N_\\perp)_{I,R}$ and $B=(\\mathsf N_\\perp)_{I,C}$. The relative polynomial identity is\n\\[\n (\\det A)(\\mathsf N_\\perp)_{J,C}-(\\mathsf N_\\perp)_{J,R}\\operatorname{adj}(A)B=0.\n\\]\nAt the\nhorizontal origin the two base charts give\n\\[\n \\left.\\det A\\right|_{\\eta =1,\\zeta =-1}\n =-\\frac{3qk}{224\\kappa_0 m^2},\\qquad\n \\left.\\det A\\right|_{\\eta =2,\\zeta =-1}\n =-\\frac{32qk}{1701\\kappa_0 m^2}.\n\\]\nBoth determinants are units for every admissible triple of principal\nvalues. The coefficient denominators specialize to nonzero rational\nconstants.\n\n\\paragraph{Transport to the chart with three nonzero coordinates.}\nLet $M$ be the ordinary boundary $37\\times6$ matrix of linear normal terms.\nFor $1\\le i\\le28$, the original rows, before adding derivative rows, transform to\nthe full-$\\mathsf R$ chart by\n\\[\n N_i(\\kappa)=d_i(\\kappa)\n M_i(l,\\varrho/\\kappa,1/\\kappa)J(\\kappa),\n \\qquad\n d_i=\\begin{cases}\\kappa,&i=1\\text{ or }i\\geq11,\\\\\n 1,&2\\leq i\\leq10.\n \\end{cases}\n\\]\nHere $J$ is the Jacobian of the six transverse coordinate\nchanges. Each transformed entry is regular at $\\kappa=0$. The matrix of linear normal terms and its variation are $N(0)$ and $\\partial_\\kappa N(0)$.\n\nThe two short odd factors and the even determinant factor are\n\\[\n P=\\frac{\\varrho^2}{\\beta^2}-5\\kappa_0 l^2-4q,\n \\qquad Q=\\frac{\\varrho^2}{\\beta^2}+4\\kappa_0 l^2+5q,\n \\qquad (ml^2-k)(ml^2+k).\n\\]\nThey satisfy $Q-P=9(\\kappa_0 l^2+q)$. On the two amplitude\nhypersurfaces work in the quadratic algebras $l^2=\\pm k/m$.\nElimination of the columns corresponding to the solved variables in $N(0)$ gives the Schur blocks,\nand $\\partial_\\kappa N(0)$ gives the transverse variation.",
-          "normalized_sha256": "fd0cbabfbb8a71839b14b32baefb56fac950b928cf51e217ba6fd572812b0170",
-          "number": "C.9",
-          "page": 107
-        },
-        {
-          "label": "r3:boundaryreduction",
-          "line": 3392,
-          "text": "\\begin{lemma}[Reduction of the relative boundary]\\label{r3:boundaryreduction}\nNear the fibre $(\\eta,\\zeta)=(1,-1)$, every irreducible component\nof the boundary of $Y$ dominating the ratio plane is contained,\nup to a signed cyclic relabeling, in the family\n\\begin{equation}\\label{r3:incomingfamily}\n\\begin{gathered}\n \\mathcal F_{\\rm in}:\\quad\n \\overline p=(1,0,0,0,0,\\ell),\\qquad\n \\boldsymbol R=(\\lambda_{\\mathrm{in}}(v)\\ell,u,v),\\qquad\n \\tau=0,\\qquad \\ell\\ne0,\\\\\n \\lambda_{\\mathrm{in}}(v)=\n \\frac{(\\zeta-\\eta)v-2\\eta(\\zeta+1)}{\\zeta(\\eta+1)}.\n\\end{gathered}\n\\end{equation}\nHere $\\overline p=\\tau\\widehat p$ and\n$\\boldsymbol R=\\tau\\mathsf R$ are ordinary homogeneous coordinates.\nThe homogeneous regularizations of the state derivations on the\nordinary projective closure preserve the surviving boundary component.\n\\end{lemma}",
-          "normalized_sha256": "f1f019bb27cbd8f8a52ecf1d6ad622a3cce63c4a2edb488aafb03bbd8b95b964",
-          "number": "8.5",
-          "page": 49
-        }
-      ],
-      "recorded_outputs": [
-        {
-          "path": "results/conic_endpoint/subcritical_single_endpoint_whole_J3_reader.json",
-          "task_id": "conic_endpoint:whole_J3",
-          "sha256": "145bb93064f7dcccf3761f1ad36b0306c9aff705668bea1373b0f1667ed5936c",
-          "bytes": 262
-        },
-        {
-          "path": "results/conic_endpoint/generic_regularity.json",
-          "task_id": "conic_endpoint:generic_regularity",
-          "sha256": "2332b95472a0bc8fda48d4e53536ab1156af12035b7f6281e449a4157d269322",
-          "bytes": 18900
-        },
-        {
-          "path": "results/conic_endpoint/whole_coefficient_units.json",
-          "task_id": "conic_endpoint:coefficient_units",
-          "sha256": "aed2c37e4c9627d6b7b1f926f9a8951cefd6be9f829b40eb6916b4fe71d97418",
-          "bytes": 2946420
-        },
-        {
-          "path": "results/conic_endpoint/relative_boundary_reconstruction.json",
-          "task_id": "conic_endpoint:relative_boundary",
-          "sha256": "af62273eb5d6e9a8fdf8ddce9f9f6d22db13e2fc1ec3fd30add12e1baf299ca1",
-          "bytes": 12071
-        },
-        {
-          "path": "results/conic_endpoint/manuscript_gauge_binding.json",
-          "task_id": "conic_endpoint:gauge_binding",
-          "sha256": "03a686a7bb20eb6d61b8a684fa1178301fd51c43ba2809eeabf3263daf18d2cd",
-          "bytes": 422
-        },
-        {
-          "path": "results/conic_endpoint/generic_G_relative_regular.json",
-          "task_id": "conic_endpoint:rebuild_G21",
-          "sha256": "94f7ef82330277824d0d466a32efd603895809da486f302a1690753ae2337937",
-          "bytes": 5781
-        },
-        {
-          "path": "results/conic_endpoint/generic_G_ideal_decomposition_sparse.json",
-          "task_id": "conic_endpoint:rebuild_G21",
-          "sha256": "0d6b20ea60f3304aaaecb9cc2c2de02dd0ecafc02d547b45b8613ffc9f69f22c",
-          "bytes": 4395853
-        },
-        {
-          "path": "results/conic_endpoint/new_generic_G_J8.json",
-          "task_id": "conic_endpoint:G21_conic_membership",
-          "sha256": "29b2c1c06b53402939014fa090c633d0b3d5f075f3b47bc1d218adab8ad9574b",
-          "bytes": 1518
-        },
-        {
-          "path": "results/conic_endpoint/endpoint_unit_and_obstructions.json",
-          "task_id": "conic_endpoint:implicit_graph",
-          "sha256": "2d862a40d67ebeeb0e5236ae7113f0185a95ceb35aa104f2bdeecf06601ad6e7",
-          "bytes": 2572
-        },
-        {
-          "path": "results/conic_endpoint/endpoint_normal_matrix.txt",
-          "task_id": "conic_endpoint:implicit_graph",
-          "sha256": "7315992db61fd12508d39fd92a3fc5d5674abb19d9821e4b00bd344def4aaa5f",
-          "bytes": 1498
-        },
-        {
-          "path": "results/conic_endpoint/conic_open_minor.json",
-          "task_id": "conic_endpoint:open_conic_minor",
-          "sha256": "a89a01743f7e492816403aef26e59fb33a06be2996360b0d13d6a115bb478bd9",
-          "bytes": 592
-        },
-        {
-          "path": "results/conic_endpoint/conic_normal_matrix.json",
-          "task_id": "conic_endpoint:open_conic_minor",
-          "sha256": "606b856e3358b5da232c2bd9a3dba53f4dc54f265e7a0e629ac7291abc52fb48",
-          "bytes": 2125
-        },
-        {
-          "path": "results/conic_endpoint/execution.json",
-          "sha256": "6d95dc6b17a88b8456966f4a969aa9cc67c08455df3ed0f215a165b1ca9977bf",
-          "bytes": 28660,
-          "proof_id": "C9_ENDPOINT",
-          "task_ids": [
-            "foundations:rebuild_state17",
-            "rank3_sources:fresh_joint_sources",
-            "rank3_sources:fresh_global_sources",
-            "rank3_current_proof:fresh_saturation_sources",
-            "rank3_current_proof:complete_global_source_views",
-            "rank3_coverage:independent_delta_subcritical_H_initials:independent_delta_subcritical_H_initials",
-            "rank3_coverage:independent_support_Newton_field_reader:independent_support_Newton_field_reader",
-            "rank3_current_proof:saturation_source_view:independent_delta_subcritical_Q0_full_source",
-            "rank3_current_proof:independent_supercritical_first_boundary_probe",
-            "rank3_current_proof:first_boundary_source_view",
-            "rank3_current_proof:saturation_source_view:independent_delta_Q0_kernel_compatibility",
-            "rank3_current_proof:saturation_source_view:independent_delta_subcritical_even_full_source",
-            "rank3_current_proof:independent_supercritical_RR_small_support_sources",
-            "rank3_current_proof:complete_small_support_source_view",
-            "generated_alias:round10/independent_delta_subcritical_H_initials.sobj",
-            "rank3_coverage:independent_inactive_single_RR_boundary:independent_inactive_single_RR_boundary",
-            "generated_alias:round10/independent_inactive_single_RR_boundary.sobj",
-            "rank3_coverage:independent_critical_single_RR3_normal:independent_critical_single_RR3_normal",
-            "generated_alias:round10/independent_critical_single_RR3_normal.sobj",
-            "rank3_coverage:subcritical_single_full_regular_chart_H1:subcritical_single_full_regular_chart_H1:1",
-            "generated_alias:round10/independent_support_Newton_field_reader.sobj",
-            "rank3_readers:independent_partial_D_Newton_gauges_reader:round10/independent_partial_D_Newton_gauges_reader.py",
-            "generated_alias:round10/independent_partial_D_Newton_gauges_reader.sobj",
-            "rank3_coverage:subcritical_single_full_complete_E_chart_H1:subcritical_single_full_complete_E_chart_H1",
-            "conic_endpoint:input:independent_delta_subcritical_Q0_full_source",
-            "conic_endpoint:input:independent_delta_subcritical_even_full_source",
-            "conic_endpoint:input:independent_ratio_global_R_derivative_degreefall",
-            "conic_endpoint:input:independent_delta_subcritical_H_initials",
-            "conic_endpoint:input:independent_partial_D_Newton_gauges_reader",
-            "conic_endpoint:input:independent_critical_single_RR3_normal",
-            "conic_endpoint:input:independent_subcritical_single_RR_full_regular_chart_H1",
-            "conic_endpoint:input:independent_subcritical_single_RR_full_complete_E_chart_H1",
-            "conic_endpoint:input:independent_ratio_p_boundary_second_gauge",
-            "conic_endpoint:generic_regularity",
-            "conic_endpoint:coefficient_units",
-            "conic_endpoint:relative_boundary",
-            "conic_endpoint:gauge_binding",
-            "conic_endpoint:rebuild_G21",
-            "conic_endpoint:G21_conic_membership",
-            "conic_endpoint:open_conic_minor",
-            "conic_endpoint:whole_J3",
-            "conic_endpoint:implicit_graph"
-          ],
-          "role": "aggregate_execution_record"
-        }
-      ]
     }
   ],
   "formula_inputs": [
@@ -7698,7 +7698,7 @@
       "varrho": "rho"
     }
   },
-  "execution_verification_status": "PASS_EXISTING_COMPLETE_RUN_AND_CLEAN_ENDPOINT_DEPENDENCY_RUN",
+  "execution_verification_status": "PASS_RECORDED_CLEAN_RUN_COVERAGE",
   "recorded_outputs": [
     {
       "path": "results/conic_endpoint/subcritical_single_endpoint_whole_J3_reader.json",

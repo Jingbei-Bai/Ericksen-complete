@@ -28,24 +28,24 @@ one part and its prerequisites with `--proof ID` and a new work directory.
 `runtime/` contains the execution support. `tasks.json` fixes the dependency
 graph. `MANIFEST.json` lists the required files, hashes and consuming tasks.
 The `.tex` files in `inputs/paper/` are exact formula inputs. The complete
-manuscript and supplement are distributed separately.
+manuscript and supplement sources are in `../tex/`.
 
 The calculations use exact integer, rational or algebraic arithmetic.
 Provide at least 16 GiB of RAM for the complete calculation.
 
-## The relative conic endpoint in Appendix C.9
+## Local ideals on the conic boundary
 
-This calculation is included in the complete run. To reproduce it separately
-with all its prerequisites, run from the repository root:
+The relative conic ideals form part of the boundary calculations in
+Appendix C.9. To select them with all their prerequisites, run from the
+repository root:
 
 ```sh
 ./sage-environment/bin/python Rank3/run.py --proof C9_ENDPOINT --work-dir ./rebuild-endpoint --workers 2
 ```
 
-The selection has 42 tasks: 23 mathematical executions and 19 copies of
-freshly generated inputs. Nine mathematical checks and nine input copies
-were added for this proof. The preceding source calculations are shared
-with the rest of Rank3.
+The selection contains 42 tasks: 23 mathematical executions and 19
+copies of freshly generated inputs. Its dependencies are shared with
+the other rank three calculations.
 
 `results/conic_endpoint/` contains the recorded exact outputs: the
 1444-term relative derivative polynomial through its exact ideal decomposition, the

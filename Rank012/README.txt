@@ -28,7 +28,7 @@ one part and its prerequisites with `--proof ID` and a new work directory.
 `runtime/` contains the execution support. `tasks.json` fixes the dependency
 graph. `MANIFEST.json` lists the required files, hashes and consuming tasks.
 The `.tex` files in `inputs/paper/` are exact formula inputs. The complete
-manuscript and supplement are distributed separately.
+manuscript and supplement sources are in `../tex/`.
 
 The calculations use exact integer, rational or algebraic arithmetic.
 Provide at least 16 GiB of RAM for the complete calculation.
