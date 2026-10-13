@@ -12,14 +12,14 @@
       "work_path": "PROOF_MAP.json",
       "kind": "documentation",
       "bytes": 174895,
-      "sha256": "f89b56092fdcb17232844b845682107c40769ac6615a6ae58615702cf5e3e876"
+      "sha256": "2b84f443d92513495c683a3048fd82b96ea47590f77e9dec6faf0e7ebabca9e6"
     },
     {
       "archive_path": "PROOF_MAP.md",
       "work_path": "PROOF_MAP.md",
       "kind": "documentation",
       "bytes": 2702,
-      "sha256": "e0e8a486b6b2c99734a612eb9c8aa3a1bfd8611587899e5297540aaf930d7221"
+      "sha256": "4e14fab69371feb4327e2b86a5777670b1acfa659453f338ad8b80bcd7847521"
     },
     {
       "archive_path": "README.txt",
@@ -1496,5 +1496,5 @@
     }
   ],
   "registered_tasks": 63,
-  "paper_sha256": "c63de334e291f5d7aae6b6676a14973894979f5002671b7cfacba099f29f4ac4"
+  "paper_sha256": "24bbe5fcbd7f366f1e4eaff180e1e5c08a865f3146e8d86fd3f67dc60f8bb6e4"
 }

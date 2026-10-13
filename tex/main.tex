@@ -3498,9 +3498,8 @@ linear parts. The equations in the remaining coordinates then
 have well-defined weighted initial forms. If these forms have
 only the zero solution and
 $\tau^N\in I+(g_1,\ldots,g_r)$, the preceding lemma again
-excludes an affine arc. A quadratic term created by implicit
-elimination contributes to these initial forms; it cannot be
-read from the original linear matrix alone.
+excludes an affine arc. The weighted initial forms include the
+quadratic terms created by implicit elimination.
 Lemmas~\ref{r3short:initial} and~\ref{r3short:schur} give the
 corresponding local reductions.
 
@@ -3908,9 +3907,8 @@ the base. An irreducible component dominating the ratio plane
 has its generic point over every such open set. Thus a unit
 coefficient matrix near $(1,-2)$ excludes the same putative
 component even if that matrix is singular at $(1,-1)$.
-The change of base point applies to the relative normal ideal
-on $v=-2$; it does not require transferring a fibre identity
-across a vanishing horizontal minor.
+Here the coefficient matrix is computed for the relative normal
+ideal on $v=-2$ at the replacement base point.
 
 \begin{proposition}[Finite fibres over the ratio plane]
 \label{r3:dominantfinite}
@@ -3960,14 +3958,11 @@ curve compatibility relations. After clearing denominators, they
 belong to $\mathfrak p$ by analyticity and constrain the generic
 fibre of $Y$.
 
-The slope $\varsigma$ is therefore a rational function on the
-actual ratio curve. It is not an additional independent material
-parameter. In an elimination performed at a single ratio point,
-one can treat its value as a parameter; persistence along the
-curve also requires $\zeta'=\varsigma$ and the differentiated
-compatibility equations. This distinction is what will remove
-the exceptional direction families left by pointwise
-elimination.
+The slope $\varsigma$ is a rational function on the ratio curve.
+Pointwise elimination treats its value as a parameter. Along the
+curve, the equations $\zeta'=\varsigma$ and the differentiated
+compatibility relations further constrain the exceptional
+direction families.
 
 The smaller base permits a larger state fibre. An affine
 irreducible component of dimension $d\ge1$ has boundary of
@@ -7230,7 +7225,7 @@ interfaces in the accompanying Rank~3 calculation package.
 \midrule\endhead
 One $\overline R_i$; $45$ patterns
  & Unit leading coefficients (BC21)
- & Even equations and complete normal matrix (BC14)
+ & Even equations and normal matrix (BC14)
  & Support table; axis and conic ideals
    (BC16--BC18, C9\_ENDPOINT)\\
 Two $\overline R_i$; $21$ patterns
@@ -7304,9 +7299,7 @@ They are disjoint because $D_+-D_-=2k$ is a unit. Each wall is
 intersected with the material resonance $k+q=0$ and its complement.
 At the canonical paired intersection, the six-generator ideal of
 Appendix~\ref{r3:boundarysources} contains $\kappa\delta$, hence
-$\tau=\kappa^2\delta$. Its three quotient-ring identities include
-the products of the amplitude, direction and exceptional
-coordinates (BC20, BC33). In an axis chart, the identity
+$\tau=\kappa^2\delta$ (BC20, BC33). In an axis chart, the identity
 $29D_{15}+19D_9=960q$ makes the $D_{15}$ pivot invertible when
 $D_9=0$ (BC19, BC32).
 
@@ -7907,12 +7900,16 @@ In the supercritical full-$\overline{\boldsymbol R}$ inactive chart the canonica
 
 For supercritical $\overline{\boldsymbol R}$ support of size two the remaining two amplitudes are multiplied, up to unit in the stated localization, by each of the following pairs: $(\zeta -3\eta ,\eta -3\zeta )$, $(\zeta -3,3\zeta -1)$ or $(\eta +3,3\eta +1)$. Their respective unit combinations are $-(3A+B)/(8\eta )=1$, $(B-3A)/8=1$ and $(3A-B)/8=1$. Thus both amplitudes vanish. For support of size one the compatibility relations multiply the remaining $\overline p$ pairs by the six factors in $V_0$ and force $\overline p=0$. None of these factors vanishes at the cyclic section. 
 
-The local identities force $\tau$ to vanish on every reduced formal
-arc through a boundary component dominating the ratio plane. Such an
-arc cannot meet the affine locus. At the ordinary exceptional family,
-local containment in $\mathcal F_{\rm in}$ followed by irreducibility
-and its generic exclusion gives the same conclusion. The generic
-affine fibre therefore has no projective boundary. It is proper and
+For critical full derivative support with at least two amplitude
+pairs, the first integrals and coefficient equations exclude an
+invariant boundary component dominating the ratio plane
+(Appendices~\ref{r3logic:boundaryconstants} and~\ref{appr3:coverageindex}).
+On the strata treated by local normal ideals, their radical
+inclusions force $\tau=0$ on every reduced formal arc through such
+a component, excluding an approach from the affine locus. At the
+ordinary exceptional family, local containment in $\mathcal F_{\rm in}$
+and its generic exclusion remove the remaining dominant component.
+The generic affine fibre therefore has no projective boundary. It is proper and
 affine, hence finite, and $\dim Y_{\mathrm{gen}}=0$ when $\dim\mathscr B=2$.
 
 \subsection{Relative identities with one nonzero \texorpdfstring{$\mathsf R$}{R} coordinate}
