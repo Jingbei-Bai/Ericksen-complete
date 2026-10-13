@@ -123,3 +123,10 @@ Verify the distributed files from the repository root:
 ```sh
 sha256sum --check SHA256SUMS.txt
 ```
+
+## Citation and licenses
+
+Citation information is in [CITATION.cff](CITATION.cff).
+The paper and original figures use [CC BY 4.0](LICENSE-CC-BY-4.0.txt);
+the original programs use [MIT](LICENSE-MIT.txt).
+See [LICENSE.md](LICENSE.md) for the file-specific scope and font license.

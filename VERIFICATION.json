@@ -2,7 +2,7 @@
   "schema": "ericksen.verified-release.v5",
   "release_date": "2026-10-12",
   "status": "PASS",
-  "verified_utc": "2026-10-13T02:25:34.121608+00:00",
+  "verified_utc": "2026-10-13T03:29:27.981744+00:00",
   "environment": {
     "sage": "10.9",
     "python": "3.12.14",
@@ -10636,13 +10636,33 @@
       "sha256": "c2066b4b8b17d03c3ca8cb79d88497960db1aef2d4ba344fbd81daad55b66921",
       "bytes": 138
     },
+    ".zenodo.json": {
+      "sha256": "5c336ff5c61ef227214b97ddf3b47f164c4b828e021c2dfc910fc0fde2552ead",
+      "bytes": 1732
+    },
     "A local solution of Ericksen's problem.pdf": {
       "sha256": "d6585849133d596db3abccaf2981de2791fbf562f3dbae6c2344cce310389309",
       "bytes": 1445481
     },
+    "CITATION.cff": {
+      "sha256": "9824479f1e468f511311902049493c5ae3cddda8472eaaa6bfc400a164f6257c",
+      "bytes": 854
+    },
+    "LICENSE-CC-BY-4.0.txt": {
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "bytes": 18657
+    },
+    "LICENSE-MIT.txt": {
+      "sha256": "d4003eb08076ea54c662ef366874f14b27c3e238ddc08a3b1d71e10261924cb9",
+      "bytes": 1089
+    },
+    "LICENSE.md": {
+      "sha256": "e58eef3cc73ae5eb604b8e5840adb8c85b133a66d19b9dc46014b4282aa65e54",
+      "bytes": 782
+    },
     "README.md": {
-      "sha256": "737680f78178cd1ccf85ae943695b68cd258301545d4f1c4d2b2399c6cfadc02",
-      "bytes": 6119
+      "sha256": "99b5e0fdc5e1212cfc637caa049c47703f9ae7bcf34b090f19b4666fcf4a545c",
+      "bytes": 6399
     },
     "Rank012/MANIFEST.json": {
       "sha256": "f60235ac042ecd4889503ed1c7ad8837089f374921380e05bfa43db3832c36bf",

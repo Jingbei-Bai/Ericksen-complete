@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Please cite the paper and identify the calculation version used."
+type: software
+title: "A local solution of Ericksen's problem"
+authors:
+  - family-names: Bai
+    given-names: Jingbei
+    affiliation: "Xingjian College, Tsinghua University"
+version: 1.0.0
+date-released: 2026-10-12
+url: "https://github.com/Jingbei-Bai/Ericksen-complete"
+repository-code: "https://github.com/Jingbei-Bai/Ericksen-complete"
+keywords:
+  - Ericksen problem
+  - universal deformation
+  - incompressible isotropic elasticity
+  - SageMath
+preferred-citation:
+  type: unpublished
+  title: "A local solution of Ericksen's problem"
+  authors:
+    - family-names: Bai
+      given-names: Jingbei
+      affiliation: "Xingjian College, Tsinghua University"
+  year: 2026
+  url: "https://github.com/Jingbei-Bai/Ericksen-complete"

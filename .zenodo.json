@@ -1,0 +1,33 @@
+{
+  "title": "A local solution of Ericksen's problem",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-10-12",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Bai, Jingbei",
+      "affiliation": "Xingjian College, Tsinghua University"
+    }
+  ],
+  "description": "<p>The manuscript proves the local completeness of the six classical families of orientation preserving C3 universal deformations of homogeneous incompressible isotropic hyperelastic solids. For three distinct constant principal stretches, the principal step establishes local integrability of the plane field orthogonal to one principal direction.</p><p>The archive includes the article with appendices and supplementary calculations, complete LaTeX sources, and the SageMath programs, coefficient inputs and exact outputs for ranks zero, one, two and three. The fixed calculation environment uses SageMath 10.9, Python 3.12.14 and SymPy 1.14.0.</p><p>The paper, original figures and mathematical documentation are licensed under CC BY 4.0; the original programs are licensed under MIT. The file LICENSE.md specifies the scope of each license. Latin Modern fonts retain the GUST Font License.</p>",
+  "access_right": "open",
+  "license": "other-open",
+  "keywords": [
+    "Ericksen problem",
+    "universal deformation",
+    "incompressible isotropic elasticity",
+    "principal stretches",
+    "principal frame",
+    "SageMath",
+    "symbolic computation"
+  ],
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Jingbei-Bai/Ericksen-complete/releases/tag/v1.0.0",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    }
+  ]
+}
