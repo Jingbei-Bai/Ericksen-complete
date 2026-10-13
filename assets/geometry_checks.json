@@ -1,14 +1,18 @@
 {
   "status": "PASS",
   "source": "assets/build_problem_figure.py",
-  "source_sha256": "580d866520d795a8ebc6cfbd6088aa7a786e65eb4fb17e6b8ab7433f524ee77d",
+  "source_sha256": "dcf3685cb0249c46812f8a68c2e03c72132008bf7a9e322393a4f00388cab132",
   "paper_section": "2.2",
   "geometry": "images of the same parameter-domain faces under the exact Cartesian maps",
-  "problem_statement": [
-    "Determine all universal deformations of homogeneous incompressible isotropic hyperelastic solids in three dimensions.",
-    "For every isotropic strain energy, the deformation can be maintained in equilibrium without body forces;",
-    "the pressure and surface traction are allowed to depend on the constitutive law."
+  "paper_title": "A local solution of Ericksen's problem",
+  "problem_statement": "Determine all deformations admitting equilibrium for every isotropic hyperelastic law.",
+  "physical_scope": "Homogeneous incompressible solids \u00b7 No body forces",
+  "classification_statement": "Complete local classification: the six classical families.",
+  "principal_direction_explanation": [
+    "Equilibrium for every isotropic hyperelastic law constrains principal direction fields in three dimensions.",
+    "For distinct constant principal stretches, one principal direction is normal to a family of surfaces."
   ],
+  "font": "Latin Modern Roman 2.005",
   "versions": {
     "numpy": "2.5.3",
     "sympy": "1.14.0",
@@ -265,7 +269,7 @@
     }
   ],
   "fitted_pair_zooms": {
-    "F0": 1.093348265148946,
+    "F0": 1.0934371378397187,
     "F1": 1.3,
     "F2": 1.3,
     "F3": 1.3,

@@ -2,7 +2,7 @@
   "schema": "ericksen.verified-release.v5",
   "release_date": "2026-10-12",
   "status": "PASS",
-  "verified_utc": "2026-10-13T01:53:26.036717+00:00",
+  "verified_utc": "2026-10-13T02:25:34.121608+00:00",
   "environment": {
     "sage": "10.9",
     "python": "3.12.14",
@@ -10641,8 +10641,8 @@
       "bytes": 1445481
     },
     "README.md": {
-      "sha256": "27be4fd99f40a3f2668ee4aaeb2e44813956d0050a21ab2746dc4cc430c875fd",
-      "bytes": 6009
+      "sha256": "737680f78178cd1ccf85ae943695b68cd258301545d4f1c4d2b2399c6cfadc02",
+      "bytes": 6119
     },
     "Rank012/MANIFEST.json": {
       "sha256": "f60235ac042ecd4889503ed1c7ad8837089f374921380e05bfa43db3832c36bf",
@@ -13501,24 +13501,44 @@
       "bytes": 381901
     },
     "assets/build_problem_figure.py": {
-      "sha256": "580d866520d795a8ebc6cfbd6088aa7a786e65eb4fb17e6b8ab7433f524ee77d",
-      "bytes": 14620
+      "sha256": "dcf3685cb0249c46812f8a68c2e03c72132008bf7a9e322393a4f00388cab132",
+      "bytes": 15103
     },
     "assets/build_proof_figure.py": {
       "sha256": "aa53a679426386d2b22f55b996e3f2071fad83ab39e6a00e844e05689fd2a762",
       "bytes": 1329
     },
     "assets/ericksen_problem.pdf": {
-      "sha256": "398815074bb8a0c37daeadd27b9ed1cb13c21a494cf85e26a7d664f749d2ef1a",
-      "bytes": 1136003
+      "sha256": "9b0112f81cd31670b36268c19cee518693cf71b00cdfdef821e0a954d1060d7f",
+      "bytes": 1147508
     },
     "assets/ericksen_problem.png": {
-      "sha256": "60aa40f9243462b5e8959dddef87666fd0ec0ab21bbc0fb341b9f8556c823944",
-      "bytes": 1129159
+      "sha256": "c69dbd8ba0f771fb5b1259318f4ab7c1536f062884b7438cc2bf058882e456b3",
+      "bytes": 1040340
+    },
+    "assets/fonts/GUST-FONT-LICENSE.txt": {
+      "sha256": "49ea6cb9257bbee0a3979c48a774cd221550ac1c20c95549efe45fc99cc18050",
+      "bytes": 1377
+    },
+    "assets/fonts/LPPL-1.3c.txt": {
+      "sha256": "ca3227f672053cb608959d7e1d476c7a13efea11be3f6e53758a68b650c918e8",
+      "bytes": 19040
+    },
+    "assets/fonts/README.txt": {
+      "sha256": "a93624f33146a6b91b00e6351ab7bdaa190af4c5a41ed50da7a755cce9b18464",
+      "bytes": 524
+    },
+    "assets/fonts/lmroman10-regular.otf": {
+      "sha256": "1aa18cfefa58132c52ce5de70db1fd1154201c19cd2b2cdaffba4906a33e6852",
+      "bytes": 111536
+    },
+    "assets/fonts/lmroman17-regular.otf": {
+      "sha256": "ed048c80fb4b67663b80899b89fe5fba17d7442e1286d61fd08fe5689c6b7c3c",
+      "bytes": 110248
     },
     "assets/geometry_checks.json": {
-      "sha256": "dbe1ba425d2af35c5c38e7c53d40e11ee991e7ccd93f3d5bc3cbe168bc9e6b60",
-      "bytes": 6276
+      "sha256": "3be11bd5b8860b23f3a933d34a231f064a99a07581996e8a997e97e46d7320da",
+      "bytes": 6571
     },
     "assets/proof_structure.pdf": {
       "sha256": "1f9603a8c029ff77694771865614042caadf6a407c8e3a787cdaedc2730a50f5",
@@ -13563,7 +13583,7 @@
     "endpoint_calculations_rebuilt_from_empty_work_directory": true,
     "existing_mathematical_sources_inputs_arguments_and_wrappers_unchanged": true,
     "manuscript_included": true,
-    "repository_layout_updated_utc": "2026-10-13T01:53:26.036717+00:00",
+    "repository_layout_updated_utc": "2026-10-13T02:25:34.121608+00:00",
     "rank3_presentation": "single calculation package and unified proof index",
     "protected_source_and_input_files_checked": 689,
     "readme_figures": {

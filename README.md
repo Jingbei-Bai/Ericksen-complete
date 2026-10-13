@@ -23,7 +23,9 @@ The geometry is drawn from these maps by the
 scale for the reference and current configurations within each panel.
 The [geometry record](assets/geometry_checks.json) gives the selected
 parameters, domains and exact signed Jacobians. A
-[vector PDF](assets/ericksen_problem.pdf) is also included.
+[vector PDF](assets/ericksen_problem.pdf) is also included. The Latin Modern
+font files used in the figure are in `assets/fonts/`, with their original
+GUST Font License.
 
 The paper proves local completeness of the six classical families for
 orientation preserving $C^3$ universal deformations, including their

@@ -14,6 +14,7 @@ import json
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+from matplotlib import font_manager
 from matplotlib.colors import LightSource
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
@@ -22,6 +23,13 @@ import numpy as np
 import sympy as sp
 
 ASSETS = Path(__file__).resolve().parent
+TITLE = "A local solution of Ericksen's problem"
+SHORT_NAMES = ['Homogeneous','Block bending','Sector straightening',
+               'Inflation and torsion','Spherical shell','Logarithmic cylindrical']
+for filename in ['lmroman17-regular.otf','lmroman10-regular.otf']:
+    font_manager.fontManager.addfont(ASSETS/'fonts'/filename)
+TITLE_FONT = font_manager.FontProperties(fname=ASSETS/'fonts/lmroman17-regular.otf')
+TEXT_FONT = font_manager.FontProperties(fname=ASSETS/'fonts/lmroman10-regular.otf')
 u, v, w = sp.symbols('u v w', real=True)
 Q = (u, v, w)
 RAT = sp.Rational
@@ -170,20 +178,17 @@ def draw(family,fig,x,y,width,height):
     fig.add_artist(FancyBboxPatch((x,y),width,height,boxstyle='round,pad=0.002,rounding_size=.006',
                                  transform=fig.transFigure,facecolor=IVORY,
                                  edgecolor='#E6B58B',linewidth=.75,zorder=-5))
-    fig.text(x+width/2,y+height*.912,f'$\\mathcal{{F}}_{family.number}$ · {family.name}',
-             ha='center',va='center',fontsize=15.2,color=INK)
+    fig.text(x+width/2,y+height*.912,f'$\\mathcal{{F}}_{family.number}$   {SHORT_NAMES[family.number]}',
+             ha='center',va='center',fontsize=17,color=INK,fontproperties=TEXT_FONT)
     axis_width = width*.47
-    axis_y = y+height*.163
-    axis_height = height*.671
+    axis_y = y+height*.085
+    axis_height = height*.745
     views = []
     for i,(patches,centre) in enumerate(zip([reference,current],centres)):
         axis_x = x+width*(.015 if i==0 else .515)
         ax = fig.add_axes([axis_x,axis_y,axis_width,axis_height],projection='3d')
         show(ax,patches,centre,span,family.number)
         views.append((ax,all_points[i]-centre,span.copy(),family.number))
-        fig.text(axis_x+axis_width/2,y+height*.0846,
-                 'Reference' if i==0 else 'Current',
-                 ha='center',va='center',fontsize=13.5,color=INK)
     fig.add_artist(FancyArrowPatch((x+width*.478,y+height*.485),
                                   (x+width*.522,y+height*.485),
                                   transform=fig.transFigure,arrowstyle='-|>',
@@ -203,35 +208,33 @@ def main():
     assert sp.simplify(cases[1].current[0]**2+cases[1].current[1]**2-(2*u+1))==0
     assert sp.simplify(cases[3].current[0]**2+cases[3].current[1]**2-(RAT(4,5)*u**2+RAT(2,5)))==0
     assert all(sp.simplify(sp.diff(component,w))==0 for component in cases[5].current[:2])
-    matplotlib.rcParams.update({'font.family':'STIXGeneral','mathtext.fontset':'stix',
-                               'pdf.fonttype':42,'savefig.facecolor':IVORY})
-    height_scale = 10.7/11.9
-    fig = plt.figure(figsize=(16,11.9),facecolor=IVORY)
-    fig.text(.5,.959,"Ericksen's problem",ha='center',va='center',fontsize=32,color=INK)
-    statement = [
-        'Determine all universal deformations of homogeneous incompressible isotropic hyperelastic solids in three dimensions.',
-        'For every isotropic strain energy, the deformation can be maintained in equilibrium without body forces;',
-        'the pressure and surface traction are allowed to depend on the constitutive law.',
-    ]
-    for line,position in zip(statement,[.903,.873,.843]):
-        fig.text(.5,position,line,ha='center',va='center',fontsize=15.2,color=INK)
-    fig.text(.5,.791,'Universal deformation',ha='center',va='center',fontsize=22,color=INK)
+    matplotlib.rcParams.update({'font.family':TEXT_FONT.get_name(),'mathtext.fontset':'cm',
+                               'pdf.fonttype':3,'savefig.facecolor':IVORY})
+    height_scale = 1.0
+    fig = plt.figure(figsize=(16,10.7),facecolor=IVORY)
+    fig.text(.5,.953,TITLE,ha='center',va='center',fontsize=39,color=INK,fontproperties=TITLE_FONT)
+    statement = 'Determine all deformations admitting equilibrium for every isotropic hyperelastic law.'
+    fig.text(.5,.894,statement,ha='center',va='center',fontsize=20,color=INK,fontproperties=TEXT_FONT)
+    scope = 'Homogeneous incompressible solids · No body forces'
+    fig.text(.5,.858,scope,ha='center',va='center',fontsize=14,color='#845E48',fontproperties=TEXT_FONT)
     views = []
     for family in cases:
         column = family.number%3
         row = family.number//3
         views.extend(draw(family,fig,.021+column*.326,(.52-row*.342)*height_scale,
                           .305,.319*height_scale))
-    fig.add_artist(FancyBboxPatch((.022,.023*height_scale),.956,.118*height_scale,
+    fig.add_artist(FancyBboxPatch((.022,.018),.956,.126,
                                  boxstyle='round,pad=0.004,rounding_size=.012',
                                  transform=fig.transFigure,facecolor='#FFF0DC',
                                  edgecolor='none',zorder=-5))
-    fig.text(.5,.107*height_scale,'Six classical families · $\\det D\\chi=1$',
-             ha='center',va='center',fontsize=18,color=INK)
-    fig.text(.5,.068*height_scale,'Reference and current configurations use the same physical scale within each panel.',
-             ha='center',va='center',fontsize=13,color=INK)
-    fig.text(.5,.036*height_scale,'Spherical shells are shown in cutaway.',
-             ha='center',va='center',fontsize=13,color='#845E48')
+    classification = 'Complete local classification: the six classical families.'
+    fig.text(.5,.117,classification,ha='center',va='center',fontsize=24,color=INK,fontproperties=TITLE_FONT)
+    explanation = [
+        'Equilibrium for every isotropic hyperelastic law constrains principal direction fields in three dimensions.',
+        'For distinct constant principal stretches, one principal direction is normal to a family of surfaces.',
+    ]
+    for line,position in zip(explanation,[.076,.046]):
+        fig.text(.5,position,line,ha='center',va='center',fontsize=16,color=INK,fontproperties=TEXT_FONT)
     fig.canvas.draw()
     fitted_zoom = {}
     for start in range(0,len(views),2):
@@ -262,12 +265,15 @@ def main():
         assert display[:,1].min()>frame.y0+2 and display[:,1].max()<frame.y1-2
     fig.savefig(args.output_dir/'ericksen_problem.png',dpi=190)
     fig.savefig(args.output_dir/'ericksen_problem.pdf',metadata={
-        'Title':"Ericksen's problem: the six classical families",'Author':'Jingbei Bai'})
+        'Title':TITLE,'Author':'Jingbei Bai'})
     plt.close(fig)
     report = {'status':'PASS','source':ASSETS.name+'/'+Path(__file__).name,
               'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
               'paper_section':'2.2','geometry':'images of the same parameter-domain faces under the exact Cartesian maps',
-              'problem_statement':statement,
+              'paper_title':TITLE,'problem_statement':statement,
+              'physical_scope':scope,
+              'classification_statement':classification,'principal_direction_explanation':explanation,
+              'font':'Latin Modern Roman 2.005',
               'versions':{'numpy':np.__version__,'sympy':sp.__version__,'matplotlib':matplotlib.__version__},
               'families':checks,
               'fitted_pair_zooms':fitted_zoom,
