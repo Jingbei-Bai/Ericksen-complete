@@ -42,7 +42,7 @@ argument to the classical classifications and continuation results.
 | [Paper PDF](A%20local%20solution%20of%20Ericksen%27s%20problem.pdf) | The complete article, appendices and supplementary calculations in one PDF. |
 | [tex/](tex/) | `main.tex`, the integrated `supplement.tex`, and all three required figure backgrounds. |
 | [Rank012/](Rank012/) | SageMath sources and required inputs for ranks zero, one and two. |
-| [Rank3/](Rank3/) | SageMath sources and required inputs for rank three, including the local conic ideals and endpoint. |
+| [Rank3/](Rank3/) | SageMath sources and required inputs for rank three. |
 | [assets/](assets/) | README illustrations, the TeX proof diagram and its build script. |
 | [VERIFICATION.json](VERIFICATION.json) | Recorded executions, fixed environment, manuscript hashes and file inventory. |
 | [SHA256SUMS.txt](SHA256SUMS.txt) | SHA-256 checksums for the distributed files. |
