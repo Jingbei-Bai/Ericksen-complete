@@ -3,7 +3,7 @@
   "package": "rank012",
   "paper": {
     "source": "main.tex",
-    "sha256": "8a496be39eb8306abefb654929ad80065d6bb48ea6dac5399ffd943ded018944",
+    "sha256": "19e3a40b7f6895cd42e08d74f113996077cf65f942a4ca07f599ea3cbbe90597",
     "included_in_repository": false,
     "distribution": "separate"
   },

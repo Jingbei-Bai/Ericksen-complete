@@ -13,7 +13,7 @@
       "work_path": "PROOF_MAP.json",
       "kind": "documentation",
       "bytes": 1122353,
-      "sha256": "83fae3163798d758ebd3c9bb6ee00d7b96d47e5207be5a81b82d34c8f8d66f76"
+      "sha256": "37d035c0e0b393ecf9178facf713ed7aa0a59e3db0e74b7f011dca907a3ab031"
     },
     {
       "archive_path": "PROOF_MAP.md",
@@ -6878,7 +6878,7 @@
       "sha256": "b04539083448ee05665858dbec2fa74080224cbdaf6fd076a0fe6f9e28a247e9"
     }
   ],
-  "paper_sha256": "8a496be39eb8306abefb654929ad80065d6bb48ea6dac5399ffd943ded018944",
+  "paper_sha256": "19e3a40b7f6895cd42e08d74f113996077cf65f942a4ca07f599ea3cbbe90597",
   "recorded_outputs": [
     {
       "path": "results/conic_endpoint/subcritical_single_endpoint_whole_J3_reader.json",

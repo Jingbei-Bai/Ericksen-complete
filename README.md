@@ -1,4 +1,4 @@
-# SageMath calculations for Ericksen's classification problem
+# SageMath calculations for Ericksen's problem
 
 Release date: 12 October 2026.
 

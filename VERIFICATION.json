@@ -11,7 +11,7 @@
     "lock_sha256": "db651778e9a788477213181183fab4bd5ec7e4c36f982477b34167d385555a56"
   },
   "paper": {
-    "main_tex_sha256": "8a496be39eb8306abefb654929ad80065d6bb48ea6dac5399ffd943ded018944",
+    "main_tex_sha256": "19e3a40b7f6895cd42e08d74f113996077cf65f942a4ca07f599ea3cbbe90597",
     "supplement_tex_sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
     "pages": {
       "main.pdf": 210
@@ -74,6 +74,12 @@
       "updated_utc": "2026-10-13T00:44:45.333309+00:00",
       "scope": "CRediT author contributions, Code availability and AI acknowledgements revised in the separately maintained manuscript.",
       "mathematical_content_unchanged": true
+    },
+    "title": "A local solution of Ericksen's problem",
+    "title_revision": {
+      "updated_utc": "2026-10-13T00:51:36.182866+00:00",
+      "scope": "Article title shortened and PDF title metadata synchronized.",
+      "mathematical_content_unchanged": true
     }
   },
   "packages": {
@@ -101,13 +107,13 @@
         "indexed_roots": 63,
         "registered_tasks": 63,
         "dependency_closure": 63,
-        "paper_sha256": "8a496be39eb8306abefb654929ad80065d6bb48ea6dac5399ffd943ded018944",
+        "paper_sha256": "19e3a40b7f6895cd42e08d74f113996077cf65f942a4ca07f599ea3cbbe90597",
         "formula_inputs": 1
       },
       "format": "directory",
       "files": 124,
       "uncompressed_bytes": 1236984,
-      "directory_tree_sha256": "fa11bbbd14358decfadc00ba51d34d2b9d227d0273ec207f19af77febed85bfe"
+      "directory_tree_sha256": "5a38d598863af6d79a08d32bab0b5d903ab610735d0c8aabaed7b2559fa2f4ee"
     },
     "rank3": {
       "status": "PASS",
@@ -132,13 +138,13 @@
         "indexed_roots": 276,
         "registered_tasks": 484,
         "dependency_closure": 484,
-        "paper_sha256": "8a496be39eb8306abefb654929ad80065d6bb48ea6dac5399ffd943ded018944",
+        "paper_sha256": "19e3a40b7f6895cd42e08d74f113996077cf65f942a4ca07f599ea3cbbe90597",
         "formula_inputs": 1
       },
       "format": "directory",
       "files": 590,
       "uncompressed_bytes": 380792484,
-      "directory_tree_sha256": "2d65d2670ffaf920c4f50f706b0f3b2b154050db43a359b9f7b7fa2c7a764096",
+      "directory_tree_sha256": "2e64bc424618dec922938798f37d59cea50bef2eeaf5eedcb3b09696db5a9d4c",
       "existing_complete_run": {
         "registered_tasks": 466,
         "actual_mathematical_executions": 337,
@@ -10734,7 +10740,7 @@
       "bytes": 71505
     },
     "Rank012/MANIFEST.json": {
-      "sha256": "ac0914d0b42a4b4c26bc8c4f03218247568b6730cb8c7cf1b4fd564b5fd55717",
+      "sha256": "2f713aa451919634a32eee29d338a05b7f112bf524402fb64c056e48e0b0204f",
       "bytes": 93895
     },
     "Rank012/paper_index.py": {
@@ -10742,7 +10748,7 @@
       "bytes": 5939
     },
     "Rank012/PROOF_MAP.json": {
-      "sha256": "7b911e72c46a2e68eb63f7eab62d8ce5f3b4b6f74a35f26de06c0b63109b2bde",
+      "sha256": "469ea11b927b68ed1c9744db9b04c0b5b9615167b18b989ad314e9716dc836ee",
       "bytes": 174890
     },
     "Rank012/PROOF_MAP.md": {
@@ -12086,7 +12092,7 @@
       "bytes": 7799
     },
     "Rank3/MANIFEST.json": {
-      "sha256": "f73f52d37bdd73e8cb58b862c63e60c4b1bbade3ac41bb75a7c485eeccdd07b5",
+      "sha256": "451e07161fbca1921ab567fe2f87a877d4429c4dfeb1c29af0514546dc34372f",
       "bytes": 422035
     },
     "Rank3/paper_index.py": {
@@ -12094,7 +12100,7 @@
       "bytes": 5939
     },
     "Rank3/PROOF_MAP.json": {
-      "sha256": "83fae3163798d758ebd3c9bb6ee00d7b96d47e5207be5a81b82d34c8f8d66f76",
+      "sha256": "37d035c0e0b393ecf9178facf713ed7aa0a59e3db0e74b7f011dca907a3ab031",
       "bytes": 1122353
     },
     "Rank3/PROOF_MAP.md": {
@@ -13426,8 +13432,8 @@
       "bytes": 381901
     },
     "README.md": {
-      "sha256": "f0b36d644eb9b42ff85851bc355d1453f371918e580c827fa2e0204120b2996d",
-      "bytes": 4600
+      "sha256": "b91bfb372e036f19bc27c77c0e79eb5c81a19af718faea77a2792c6696309404",
+      "bytes": 4585
     },
     ".gitattributes": {
       "sha256": "8781d16f00760c69157a8be423f04a94893c9ec3d644241a18d5fef66fc42373",
