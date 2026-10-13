@@ -1,5 +1,7 @@
 # A local solution of Ericksen's problem
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23330905.svg)](https://doi.org/10.5281/zenodo.23330905)
+
 **Jingbei Bai** · Xingjian College, Tsinghua University
 
 [bjb23@mails.tsinghua.edu.cn](mailto:bjb23@mails.tsinghua.edu.cn)

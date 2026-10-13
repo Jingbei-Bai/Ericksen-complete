@@ -7,6 +7,7 @@ authors:
     given-names: Jingbei
     affiliation: "Xingjian College, Tsinghua University"
 version: 1.0.0
+doi: "10.5281/zenodo.23330905"
 date-released: 2026-10-12
 url: "https://github.com/Jingbei-Bai/Ericksen-complete"
 repository-code: "https://github.com/Jingbei-Bai/Ericksen-complete"
@@ -23,4 +24,5 @@ preferred-citation:
       given-names: Jingbei
       affiliation: "Xingjian College, Tsinghua University"
   year: 2026
+  doi: "10.5281/zenodo.23330905"
   url: "https://github.com/Jingbei-Bai/Ericksen-complete"
