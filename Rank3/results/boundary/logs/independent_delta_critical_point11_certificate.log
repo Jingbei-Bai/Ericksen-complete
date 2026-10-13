@@ -1,0 +1,4 @@
+WITNESS 0 2 factor (2187/4) * (pH + 1)^-6 * (-pH + pZ)^-5 * (pZ - 1)^-4 * pr^2 * pB^4 * pC^5 * pZ^6 * pH^8 * (pH*pZ - pH + pZ)^-3 * (pH^2 - 3*pH*pZ + pZ^2 + 3*pH - 3*pZ + 1)
+WITNESS 12 14 factor (-2187/4) * (-pH + pZ)^-6 * (pH + 1)^-5 * (pZ - 1)^-4 * pr^2 * pC^3 * pB^4 * pZ^6 * pH^8 * (pH*pZ - pH + pZ)^-3 * (pH^2 - 3*pH*pZ + pZ^2 + 3*pH - 3*pZ + 1)
+CANONICAL_CONSTANT (-81) * (-pH + pZ)^-2 * (pZ - 1)^-2 * (pH + 1)^-2 * pC * pB * (pr + 1)^2 * pZ^3 * pH^3 * (pH*pZ - pH + pZ)^-2 * (-2*pH^2 + pH*pZ - 4*pH - pZ)
+ISOLATED REPLAY PASS independent_delta_critical_point11_certificate.py imports 1 seconds 0.05541777500002354

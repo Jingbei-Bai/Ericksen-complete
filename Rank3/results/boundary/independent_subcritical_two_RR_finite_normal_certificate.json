@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checks": 26,
+  "seconds": 0.0920135129999835,
+  "scope": "Explicit exact source certificates for the G6 and J19 normal-factor layers.\n\nScope: representative missing-RR3, t*w*s != 0.  D=tw+ws+s is retained\nas a separate whole curve; no claim about other support transports here.\nAll material parameters are retained via N=a*r^2 in (0,1).\n",
+  "G_cubic_ratio": "(-24)/(32*fx^2 - 80*fx + 32)",
+  "J_omega_unit": "omega^3/positive_N^2"
+}

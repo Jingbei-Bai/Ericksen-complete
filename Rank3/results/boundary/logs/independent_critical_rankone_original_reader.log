@@ -1,0 +1,7 @@
+raw H 9 seconds 14.84
+raw H 15 seconds 30.98
+raw H 10 seconds 36.4
+raw H 16 seconds 39.35
+endpoint chart {'missing': 0, 'RR': (0, planeV, 1), 'p': (planeP, planeQ, 0, 0, 0, 0), 'v_squared': (generic_r*generic_H^3*generic_Z^2 - 2*generic_r*generic_H^2*generic_Z^3 - 2*generic_r*generic_H^3*generic_Z + 4*generic_r*generic_H^2*generic_Z^2 + generic_H^3*generic_Z^2 - 2*generic_H^2*generic_Z^3 + generic_r*generic_H^3 - 2*generic_r*generic_H^2*generic_Z - 2*generic_H^3*generic_Z + 4*generic_H^2*generic_Z^2 + generic_H^3 - 2*generic_H^2*generic_Z)/(-2*generic_H^3*generic_Z^2 + generic_H^2*generic_Z^3 - 4*generic_H^2*generic_Z^2 + 2*generic_H*generic_Z^3 - 2*generic_H*generic_Z^2 + generic_Z^3), 'necessary_nonzero_factors': (-2*generic_H + generic_Z, -generic_H + 2*generic_Z)} amplitudes [planeP, planeQ]
+PASS {'PASS': True, 'checks': 63, 'seconds': 40.02842569351196, 'no_horizontal_descent': True, 'source_row_indices': [3, 6, 16, 22], 'endpoint': 'complete original even e=0 then literal full F12/H13 Bezout', 'material_orientations': ['123', '231', '312']}
+ISOLATED REPLAY PASS independent_critical_rankone_original_reader.py imports 7 seconds 37.432529152999905

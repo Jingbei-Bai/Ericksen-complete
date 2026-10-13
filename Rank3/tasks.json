@@ -7164,6 +7164,490 @@
         "conic_endpoint:input:independent_ratio_global_R_derivative_degreefall",
         "conic_endpoint:generic_regularity"
       ]
+    },
+    {
+      "id": "rank3_boundary:independent_RR_torus_missing_p_critical_amplitudes",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_RR_torus_missing_p_critical_amplitudes.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_RR_torus_missing_p_critical_amplitudes.py"
+      ],
+      "depends_on": [],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_RR_torus_missing_p_super_normal",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_RR_torus_missing_p_super_normal.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_RR_torus_missing_p_super_normal.py"
+      ],
+      "depends_on": [],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_RR_torus_missing_p_closure",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_RR_torus_missing_p_closure.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_RR_torus_missing_p_closure.py"
+      ],
+      "depends_on": [
+        "boundary_alias:round10/independent_RR_torus_missing_p_super_normal.sobj"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_RR_torus_missing_p_reader",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_RR_torus_missing_p_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_RR_torus_missing_p_reader.py"
+      ],
+      "depends_on": [
+        "boundary_alias:round10/independent_RR_torus_missing_p_closure.sobj",
+        "boundary_alias:round10/independent_RR_torus_missing_p_critical_amplitudes.sobj",
+        "boundary_alias:round10/independent_RR_torus_missing_p_super_normal.sobj"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_subcritical_missing_support_certificate",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_subcritical_missing_support_certificate.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_subcritical_missing_support_certificate.py"
+      ],
+      "depends_on": [],
+      "action": "run",
+      "input_views": {
+        "research/ericksen_20261007/round10/independent_subcritical_two_RR_even_probe.sobj": "reproduction/boundary/two_derivative_rank_minors.sobj"
+      }
+    },
+    {
+      "id": "rank3_boundary:independent_delta_critical_ranktwo_structure",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_delta_critical_ranktwo_structure.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_delta_critical_ranktwo_structure.py"
+      ],
+      "depends_on": [
+        "boundary_alias:round10/independent_delta_critical_amplitude_coefficients.sobj"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_delta_critical_rankdrop_certificate",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_delta_critical_rankdrop_certificate.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_delta_critical_rankdrop_certificate.py"
+      ],
+      "depends_on": [
+        "boundary_alias:round10/independent_delta_critical_ranktwo_structure.sobj"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_delta_critical_exceptional_directions",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_delta_critical_exceptional_directions.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_delta_critical_exceptional_directions.py"
+      ],
+      "depends_on": [
+        "boundary_alias:round10/independent_delta_critical_ranktwo_structure.sobj"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_delta_critical_ranktwo_Q0_bridge",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_delta_critical_ranktwo_Q0_bridge.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_delta_critical_ranktwo_Q0_bridge.py"
+      ],
+      "depends_on": [
+        "generated_alias:round10/independent_delta_critical_canonical_amplitude.sobj"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_delta_critical_point11_reader",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_delta_critical_point11_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_delta_critical_point11_reader.py"
+      ],
+      "depends_on": [
+        "boundary_alias:round10/independent_delta_critical_point11_certificate.sobj",
+        "boundary_alias:round10/independent_delta_critical_point11_schur.sobj"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_delta_critical_singular_old_block_review",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_delta_critical_singular_old_block_review.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_delta_critical_singular_old_block_review.py"
+      ],
+      "depends_on": [
+        "boundary_alias:round10/independent_critical_exceptional_old_block.sobj"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_delta_critical_line_rank_certificate",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_delta_critical_line_rank_certificate.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_delta_critical_line_rank_certificate.py"
+      ],
+      "depends_on": [
+        "boundary_alias:round10/independent_delta_critical_line_delta_coefficients.sobj"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_delta_critical_line_resultant_reader",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_delta_critical_line_resultant_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_delta_critical_line_resultant_reader.py"
+      ],
+      "depends_on": [],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_delta_critical_line_equal_material_wall",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_delta_critical_line_equal_material_wall.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_delta_critical_line_equal_material_wall.py"
+      ],
+      "depends_on": [],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_delta_critical_amplitude_coefficients",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_delta_critical_amplitude_coefficients.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_delta_critical_amplitude_coefficients.py"
+      ],
+      "depends_on": [],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_delta_critical_line_delta_coefficients",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_delta_critical_line_delta_coefficients.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_delta_critical_line_delta_coefficients.py"
+      ],
+      "depends_on": [],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_delta_critical_point11_certificate",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_delta_critical_point11_certificate.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_delta_critical_point11_certificate.py"
+      ],
+      "depends_on": [
+        "boundary_alias:round10/independent_delta_critical_point11_schur.sobj"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_delta_critical_point11_schur",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_delta_critical_point11_schur.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_delta_critical_point11_schur.py"
+      ],
+      "depends_on": [],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_critical_exceptional_old_block",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_critical_exceptional_old_block.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_critical_exceptional_old_block.py"
+      ],
+      "depends_on": [],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_subcritical_Csing_descent_reader",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_subcritical_Csing_descent_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_subcritical_Csing_descent_reader.py"
+      ],
+      "depends_on": [],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_subcritical_two_RR_D_curve_source_reader",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_source_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_subcritical_two_RR_D_curve_source_reader.py"
+      ],
+      "depends_on": [],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_subcritical_two_RR_finite_normal_certificate",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_subcritical_two_RR_finite_normal_certificate.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_subcritical_two_RR_finite_normal_certificate.py"
+      ],
+      "depends_on": [],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_subcritical_two_RR_inactive_rankone_raw_reader",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_subcritical_two_RR_inactive_rankone_raw_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_subcritical_two_RR_inactive_rankone_raw_reader.py"
+      ],
+      "depends_on": [
+        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_Q0_full_source",
+        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_even_full_source",
+        "generated_alias:round10/independent_partial_D_Newton_gauges_reader.sobj"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_subcritical_two_RR_inactive_rankone_material_units_reader",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_subcritical_two_RR_inactive_rankone_material_units_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_subcritical_two_RR_inactive_rankone_material_units_reader.py"
+      ],
+      "depends_on": [
+        "boundary_alias:round10/independent_subcritical_two_RR_inactive_rankone_raw_reader.sobj"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_critical_rankone_original_reader",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_critical_rankone_original_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_critical_rankone_original_reader.py"
+      ],
+      "depends_on": [
+        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_Q0_full_source",
+        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_even_full_source",
+        "rank3_current_proof:complete_small_support_source_view"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_critical_rankone_endpoint_certificate",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_critical_rankone_endpoint_certificate.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_critical_rankone_endpoint_certificate.py"
+      ],
+      "depends_on": [
+        "boundary_alias:round10/independent_critical_rankone_original_reader.sobj",
+        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_Q0_full_source",
+        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_even_full_source"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_critical_inactive_fullRR_original_leading_reader",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_critical_inactive_fullRR_original_leading_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_critical_inactive_fullRR_original_leading_reader.py"
+      ],
+      "depends_on": [
+        "generated_alias:round10/independent_delta_subcritical_H_initials.sobj",
+        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_Q0_full_source",
+        "generated_alias:round10/independent_inactive_RRtorus_incoming_boundary.sobj",
+        "generated_alias:round10/independent_inactive_RRtorus_normal_blocks.sobj"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_critical_inactive_fullRR_beta_polynomial_reader",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_critical_inactive_fullRR_beta_polynomial_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_critical_inactive_fullRR_beta_polynomial_reader.py"
+      ],
+      "depends_on": [
+        "generated_alias:round10/independent_delta_subcritical_H_initials.sobj",
+        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_Q0_full_source",
+        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_even_full_source",
+        "rank3_current_proof:first_boundary_source_view"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "rank3_boundary:independent_inactive_fullRR_subcritical_independent_coverage_reader",
+      "group": "rank3_boundary",
+      "source_member": "research/ericksen_20261007/round10/independent_inactive_fullRR_subcritical_independent_coverage_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_inactive_fullRR_subcritical_independent_coverage_reader.py"
+      ],
+      "depends_on": [
+        "rank3_current_proof:saturation_source_view:independent_delta_subcritical_Q0_full_source",
+        "generated_alias:round10/independent_inactive_RRtorus_wall_variation_raw.sobj",
+        "generated_alias:round10/independent_ratio_p_boundary_global_pair_syzygies.sobj",
+        "rank3_current_proof:first_boundary_source_view"
+      ],
+      "action": "run"
+    },
+    {
+      "id": "boundary_alias:round10/independent_RR_torus_missing_p_super_normal.sobj",
+      "group": "rank3_boundary",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_RR_torus_missing_p_super_normal/generated/round10/independent_RR_torus_missing_p_super_normal.sobj",
+      "to": "research/ericksen_20261007/round10/independent_RR_torus_missing_p_super_normal.sobj",
+      "depends_on": [
+        "rank3_boundary:independent_RR_torus_missing_p_super_normal"
+      ]
+    },
+    {
+      "id": "boundary_alias:round10/independent_RR_torus_missing_p_closure.sobj",
+      "group": "rank3_boundary",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_RR_torus_missing_p_closure/generated/round10/independent_RR_torus_missing_p_closure.sobj",
+      "to": "research/ericksen_20261007/round10/independent_RR_torus_missing_p_closure.sobj",
+      "depends_on": [
+        "rank3_boundary:independent_RR_torus_missing_p_closure"
+      ]
+    },
+    {
+      "id": "boundary_alias:round10/independent_RR_torus_missing_p_critical_amplitudes.sobj",
+      "group": "rank3_boundary",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_RR_torus_missing_p_critical_amplitudes/generated/round10/independent_RR_torus_missing_p_critical_amplitudes.sobj",
+      "to": "research/ericksen_20261007/round10/independent_RR_torus_missing_p_critical_amplitudes.sobj",
+      "depends_on": [
+        "rank3_boundary:independent_RR_torus_missing_p_critical_amplitudes"
+      ]
+    },
+    {
+      "id": "boundary_alias:round10/independent_delta_critical_amplitude_coefficients.sobj",
+      "group": "rank3_boundary",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_delta_critical_amplitude_coefficients/generated/round10/independent_delta_critical_amplitude_coefficients.sobj",
+      "to": "research/ericksen_20261007/round10/independent_delta_critical_amplitude_coefficients.sobj",
+      "depends_on": [
+        "rank3_boundary:independent_delta_critical_amplitude_coefficients"
+      ]
+    },
+    {
+      "id": "boundary_alias:round10/independent_delta_critical_ranktwo_structure.sobj",
+      "group": "rank3_boundary",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_delta_critical_ranktwo_structure/generated/round10/independent_delta_critical_ranktwo_structure.sobj",
+      "to": "research/ericksen_20261007/round10/independent_delta_critical_ranktwo_structure.sobj",
+      "depends_on": [
+        "rank3_boundary:independent_delta_critical_ranktwo_structure"
+      ]
+    },
+    {
+      "id": "boundary_alias:round10/independent_delta_critical_point11_certificate.sobj",
+      "group": "rank3_boundary",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_delta_critical_point11_certificate/generated/round10/independent_delta_critical_point11_certificate.sobj",
+      "to": "research/ericksen_20261007/round10/independent_delta_critical_point11_certificate.sobj",
+      "depends_on": [
+        "rank3_boundary:independent_delta_critical_point11_certificate"
+      ]
+    },
+    {
+      "id": "boundary_alias:round10/independent_delta_critical_point11_schur.sobj",
+      "group": "rank3_boundary",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_delta_critical_point11_schur/generated/round10/independent_delta_critical_point11_schur.sobj",
+      "to": "research/ericksen_20261007/round10/independent_delta_critical_point11_schur.sobj",
+      "depends_on": [
+        "rank3_boundary:independent_delta_critical_point11_schur"
+      ]
+    },
+    {
+      "id": "boundary_alias:round10/independent_critical_exceptional_old_block.sobj",
+      "group": "rank3_boundary",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_critical_exceptional_old_block/generated/round10/independent_critical_exceptional_old_block.sobj",
+      "to": "research/ericksen_20261007/round10/independent_critical_exceptional_old_block.sobj",
+      "depends_on": [
+        "rank3_boundary:independent_critical_exceptional_old_block"
+      ]
+    },
+    {
+      "id": "boundary_alias:round10/independent_delta_critical_line_delta_coefficients.sobj",
+      "group": "rank3_boundary",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_delta_critical_line_delta_coefficients/generated/round10/independent_delta_critical_line_delta_coefficients.sobj",
+      "to": "research/ericksen_20261007/round10/independent_delta_critical_line_delta_coefficients.sobj",
+      "depends_on": [
+        "rank3_boundary:independent_delta_critical_line_delta_coefficients"
+      ]
+    },
+    {
+      "id": "boundary_alias:round10/independent_subcritical_two_RR_inactive_rankone_raw_reader.sobj",
+      "group": "rank3_boundary",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_subcritical_two_RR_inactive_rankone_raw_reader/generated/round10/independent_subcritical_two_RR_inactive_rankone_raw_reader.sobj",
+      "to": "research/ericksen_20261007/round10/independent_subcritical_two_RR_inactive_rankone_raw_reader.sobj",
+      "depends_on": [
+        "rank3_boundary:independent_subcritical_two_RR_inactive_rankone_raw_reader"
+      ]
+    },
+    {
+      "id": "boundary_alias:round10/independent_critical_rankone_original_reader.sobj",
+      "group": "rank3_boundary",
+      "action": "copy_generated",
+      "from": "research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_critical_rankone_original_reader/generated/round10/independent_critical_rankone_original_reader.sobj",
+      "to": "research/ericksen_20261007/round10/independent_critical_rankone_original_reader.sobj",
+      "depends_on": [
+        "rank3_boundary:independent_critical_rankone_original_reader"
+      ]
     }
   ],
   "scope": "Rank-three primary proof certificates and complete source/provenance prerequisites.",

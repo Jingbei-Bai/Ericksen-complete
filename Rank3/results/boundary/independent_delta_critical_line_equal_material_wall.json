@@ -1,0 +1,7 @@
+{
+  "resultant_factors": "(64) * (wn - 3/2) * (wn + 9) * (wn + 1)^3 * (wn - 1)^5 * wn^16 * (wn^2 - 1/2*wn + 1/2)",
+  "degree_bound": 32,
+  "integer_nodes": 33,
+  "seconds": 0.08890274600000225,
+  "scope": "Exact n=lambda exceptional-wall audit, retaining every allowed material."
+}

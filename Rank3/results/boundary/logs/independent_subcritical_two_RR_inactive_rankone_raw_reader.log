@@ -1,0 +1,3 @@
+PID 1616 VM_cap_MB 2927
+PASS {'PASS': True, 'checks': 52, 'seconds': 20.187764883041382, 'range_base_determinant_cyclic': '2^-12 * 5^2 * 7^-2', 'complete_even_resultant_cyclic': '(1024) * ir^2 * ia^2', 'atlas_counts': {'paired': 3, 'pureaxis': 6, 'mixed': 3}, 'no_horizontal_descent_on_rankone': True, 'all_material_parameters_symbolic': True}
+ISOLATED REPLAY PASS independent_subcritical_two_RR_inactive_rankone_raw_reader.py imports 5 seconds 17.597306991000096

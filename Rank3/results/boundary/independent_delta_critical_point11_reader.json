@@ -1,0 +1,6 @@
+{
+  "checks": 56,
+  "status": "PASS",
+  "seconds": 1.3572392570000034,
+  "scope": "Direct-original-row replay of the complete point-(1,1) certificate.\n\nThis reader does not trust saved Schur entries or the creator's row\nnormalizations, and reduces square-root relations by polynomial division.\n"
+}

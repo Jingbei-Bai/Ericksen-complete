@@ -1,0 +1,7 @@
+{
+  "rows": 90,
+  "rank_over_function_field": 2,
+  "checks": 90,
+  "seconds": 1.9645831860000271,
+  "scope": "Exact H/Z coefficient consequences of all critical affine minors off lambda=0.\n\nOnly the explicitly selected lambda branch and nonzero B,C amplitudes are\ndivided; source factors in the remaining directions/materials are kept.\n"
+}

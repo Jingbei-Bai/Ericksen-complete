@@ -1,0 +1,6 @@
+RAW H 1 seconds 6.6621112630000425
+RAW H 13 seconds 7.515847762000021
+RANGE2 UNIT (-3/2) * (-iH + iZ)^-2 * (iZ - 1)^-1 * (iH + 1)^-1 * iH * iZ^3 * (iH*iZ - iH + iZ)^-1
+P UNIT (-1/4) * (iH + 1)^-4 * (-iH + iZ)^-2 * (iZ - 1)^-1 * ir^-1 * (3*iH + 2) * iZ^2 * iH^4 * (iH*iZ - iH + iZ)^-2 Q UNIT (-1/4) * (iH + 1)^-4 * (-iH + iZ)^-2 * (iZ - 1)^-1 * ir^-1 * (3*iH + 1) * iZ^3 * iH^4 * (iH*iZ - iH + iZ)^-2
+PASS {'status': 'PASS', 'checks': 29, 'seconds': 7.624878693000028, 'true_critical_delta_unit_leading_classification': True, 'no_separate_F12_zero_assumed': True, 'all_four_root_e_graphs': True, 'scope': 'Original-source classification of every critical inactive full-RR paired limit.\nUse complete kappa=0 sources, delta a unit; F12 is not assumed separately zero.\n'}
+ISOLATED REPLAY PASS independent_critical_inactive_fullRR_original_leading_reader.py imports 5 seconds 7.669948398000088

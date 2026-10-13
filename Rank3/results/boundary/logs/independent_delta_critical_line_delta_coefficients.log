@@ -1,0 +1,21 @@
+LINE_SOURCE Q0 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.23459340100001214
+LINE_SOURCE H0 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.2850183809999862
+LINE_SOURCE H1 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.32894441499999516
+LINE_SOURCE H2 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.38148969700000634
+LINE_SOURCE H3 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.428083627999996
+LINE_SOURCE H4 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.47243360100000586
+LINE_SOURCE H5 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.5169569299999921
+LINE_SOURCE H6 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.56967414799999
+LINE_SOURCE H7 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.6155021390000002
+LINE_SOURCE H8 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.6658268390000046
+LINE_SOURCE H9 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.727630806999997
+LINE_SOURCE H10 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.7615743359999954
+LINE_SOURCE H11 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.8023695070000088
+LINE_SOURCE H12 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.8496019039999965
+LINE_SOURCE H13 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.896643613000009
+LINE_SOURCE H14 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.9420126089999883
+LINE_SOURCE H15 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 0.986561633000008
+LINE_SOURCE H16 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 1.030541588999995
+LINE_SOURCE H17 amplitude_support [(0, 0), (0, 2), (2, 0)] seconds 1.0775779619999923
+MATRIX 93 3 mons [(0, 0), (0, 2), (2, 0)] rank 2 seconds 1.151866235
+ISOLATED REPLAY PASS independent_delta_critical_line_delta_coefficients.py imports 1 seconds 1.7107576770000037

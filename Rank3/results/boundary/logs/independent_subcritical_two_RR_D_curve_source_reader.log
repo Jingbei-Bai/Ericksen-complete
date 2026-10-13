@@ -1,0 +1,2 @@
+PASS {'checks': 96, 'seconds': 1.673633929999994, 'scope': 'Representative two-RR subcritical Dcurve excluded, all complex directions and every material. Genuine free e is eliminated, never made base-constant.'}
+ISOLATED REPLAY PASS independent_subcritical_two_RR_D_curve_source_reader.py imports 10 seconds 1.6795970980000163

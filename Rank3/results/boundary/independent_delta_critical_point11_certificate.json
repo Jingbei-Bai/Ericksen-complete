@@ -1,0 +1,15 @@
+{
+  "witness_pairs": [
+    [
+      0,
+      2
+    ],
+    [
+      12,
+      14
+    ]
+  ],
+  "canonical_H0_constant": "(-81) * (-pH + pZ)^-2 * (pZ - 1)^-2 * (pH + 1)^-2 * pC * pB * (pr + 1)^2 * pZ^3 * pH^3 * (pH*pZ - pH + pZ)^-2 * (-2*pH^2 + pH*pZ - 4*pH - pZ)",
+  "seconds": 0.05372412299999496,
+  "scope": "Short complete source certificate at the critical direction (1,1)."
+}

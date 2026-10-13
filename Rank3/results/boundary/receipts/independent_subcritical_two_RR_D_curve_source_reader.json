@@ -1,0 +1,180 @@
+{
+  "status": "PASS",
+  "script": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_source_reader.py",
+  "script_sha256": "88361b4fe89d93a72627250f6332768bf1b702612be41ac324d64524b98a5951",
+  "executed_source_sha256": "88361b4fe89d93a72627250f6332768bf1b702612be41ac324d64524b98a5951",
+  "source_text_transformations": [],
+  "imports": [
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_delta_even_elimination.sobj",
+      "sha256": "e9c9fcff8f87aeb7885b986b802bcbb57320775866090fdc10c075d9fad8d4de",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_full_normal.sobj",
+      "sha256": "16894079e43ccf13f7cf84026fe6a00c0ea17f53679ef2253342eb14104a40d5",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_delta_material_scaling.sobj",
+      "sha256": "3cee2449f38f6a04bc5880b43a15a4e5166c158001be886991211e0af3d18a54",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_sources.sobj",
+      "sha256": "da21238b4772244059116c18fac8bf53f681c76a2327428fc68fca515f0a7762",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_factor_ideals.sobj",
+      "sha256": "f86aa4119f982b11b00b4db219dbd88ecfef5c6d5d680c53732e5cda2d0cb053",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_even_resultants.sobj",
+      "sha256": "aa0a1447ab944a6c8d0e91e3fe996c94bc778f2af1f42a03eca9840aec1b554a",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_even_resultants.sobj",
+      "sha256": "d6b71cfe7d8deeef7b35c62ac8812d2030f61c9fb4080b4d9d27c814d530ce60",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_exclusion_certificate.sobj",
+      "sha256": "6790f2713e2494d55ba29f0412d0e01739a59b67daaa90396b93424d86e66b0e",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_A_projection.sobj",
+      "sha256": "62c928edc0770f49e45527dbeec901435e86bcc26b17d563154dd989a1906a41",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_even_projection.sobj",
+      "sha256": "63e4fbabb19409a8b39ae2b112b7561a134caa7c106903cdf5f2313957a5bdc7",
+      "regenerated": false
+    }
+  ],
+  "file_reads": [
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_source_reader.py",
+      "sha256": "88361b4fe89d93a72627250f6332768bf1b702612be41ac324d64524b98a5951",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_source_reader.py",
+      "sha256": "88361b4fe89d93a72627250f6332768bf1b702612be41ac324d64524b98a5951",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_delta_even_elimination.sobj",
+      "sha256": "e9c9fcff8f87aeb7885b986b802bcbb57320775866090fdc10c075d9fad8d4de",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_delta_even_elimination.sobj",
+      "sha256": "e9c9fcff8f87aeb7885b986b802bcbb57320775866090fdc10c075d9fad8d4de",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_full_normal.sobj",
+      "sha256": "16894079e43ccf13f7cf84026fe6a00c0ea17f53679ef2253342eb14104a40d5",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_full_normal.sobj",
+      "sha256": "16894079e43ccf13f7cf84026fe6a00c0ea17f53679ef2253342eb14104a40d5",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_delta_material_scaling.sobj",
+      "sha256": "3cee2449f38f6a04bc5880b43a15a4e5166c158001be886991211e0af3d18a54",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_delta_material_scaling.sobj",
+      "sha256": "3cee2449f38f6a04bc5880b43a15a4e5166c158001be886991211e0af3d18a54",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_sources.sobj",
+      "sha256": "da21238b4772244059116c18fac8bf53f681c76a2327428fc68fca515f0a7762",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_sources.sobj",
+      "sha256": "da21238b4772244059116c18fac8bf53f681c76a2327428fc68fca515f0a7762",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_factor_ideals.sobj",
+      "sha256": "f86aa4119f982b11b00b4db219dbd88ecfef5c6d5d680c53732e5cda2d0cb053",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_factor_ideals.sobj",
+      "sha256": "f86aa4119f982b11b00b4db219dbd88ecfef5c6d5d680c53732e5cda2d0cb053",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_even_resultants.sobj",
+      "sha256": "aa0a1447ab944a6c8d0e91e3fe996c94bc778f2af1f42a03eca9840aec1b554a",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_even_resultants.sobj",
+      "sha256": "aa0a1447ab944a6c8d0e91e3fe996c94bc778f2af1f42a03eca9840aec1b554a",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_even_resultants.sobj",
+      "sha256": "d6b71cfe7d8deeef7b35c62ac8812d2030f61c9fb4080b4d9d27c814d530ce60",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_even_resultants.sobj",
+      "sha256": "d6b71cfe7d8deeef7b35c62ac8812d2030f61c9fb4080b4d9d27c814d530ce60",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_exclusion_certificate.sobj",
+      "sha256": "6790f2713e2494d55ba29f0412d0e01739a59b67daaa90396b93424d86e66b0e",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_exclusion_certificate.sobj",
+      "sha256": "6790f2713e2494d55ba29f0412d0e01739a59b67daaa90396b93424d86e66b0e",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_A_projection.sobj",
+      "sha256": "62c928edc0770f49e45527dbeec901435e86bcc26b17d563154dd989a1906a41",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_A_projection.sobj",
+      "sha256": "62c928edc0770f49e45527dbeec901435e86bcc26b17d563154dd989a1906a41",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_even_projection.sobj",
+      "sha256": "63e4fbabb19409a8b39ae2b112b7561a134caa7c106903cdf5f2313957a5bdc7",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_even_projection.sobj",
+      "sha256": "63e4fbabb19409a8b39ae2b112b7561a134caa7c106903cdf5f2313957a5bdc7",
+      "kind": "open"
+    }
+  ],
+  "writes": [
+    "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_subcritical_two_RR_D_curve_source_reader/generated/round10/independent_subcritical_two_RR_D_curve_source_reader.sobj",
+    "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_subcritical_two_RR_D_curve_source_reader/generated/round10/independent_subcritical_two_RR_D_curve_source_reader.json",
+    "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_subcritical_two_RR_D_curve_source_reader/generated/round10/independent_subcritical_two_RR_D_curve_source_reader.json"
+  ],
+  "elapsed_seconds": 1.6795970980000163,
+  "error": null,
+  "evidence_level": "FRESH_SOURCE_REPLAY_WITH_IMPORTED_COEFFICIENT_DATA",
+  "limitation": "Imported necessary-source arrays and comparison objects were not independently regenerated by this reader. Successful replay is not evidence that the entire upstream source chain was regenerated."
+}

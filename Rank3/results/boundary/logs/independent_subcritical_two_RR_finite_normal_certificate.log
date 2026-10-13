@@ -1,0 +1,4 @@
+G_RATIO (-24)/(32*fx^2 - 80*fx + 32)
+J_COMPATIBILITY_RATIO omega^3/positive_N^2
+PASS 26 SECONDS 0.09248383999999987
+ISOLATED REPLAY PASS independent_subcritical_two_RR_finite_normal_certificate.py imports 3 seconds 0.09453012299999841

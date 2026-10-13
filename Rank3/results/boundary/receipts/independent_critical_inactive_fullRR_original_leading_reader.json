@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "script": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_critical_inactive_fullRR_original_leading_reader.py",
+  "script_sha256": "8541938cf5151ac8c4973d7a8064b8520a7ec05a81b98c25a3143772322055f1",
+  "executed_source_sha256": "8541938cf5151ac8c4973d7a8064b8520a7ec05a81b98c25a3143772322055f1",
+  "source_text_transformations": [],
+  "imports": [
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_delta_subcritical_Q0_full_source.sobj",
+      "sha256": "a2451f2fb02b7c97a4d8a59f697ec5244db292cd014d58dcedb3a8d6a569296b",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_delta_subcritical_H_initials.sobj",
+      "sha256": "345e88a0061400c8cbd01fe21c7c9d54751e55d7b48027bc7d3e3f7e7f59aefe",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_ratio_global_R_derivative_degreefall.sobj",
+      "sha256": "640e1bae1cac9033b69918f36e3471fa1160292fd133e458a548b7b5ae68ec71",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_inactive_RRtorus_normal_blocks.sobj",
+      "sha256": "75db5af342aa29e43c28903bede6d9db910bdeb702320939a96a1be61474771d",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_inactive_RRtorus_incoming_boundary.sobj",
+      "sha256": "835b0ad7c28142143433e58f3e5dfa34553e4916939b899452fb385e7ec6aab6",
+      "regenerated": false
+    }
+  ],
+  "file_reads": [
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_critical_inactive_fullRR_original_leading_reader.py",
+      "sha256": "8541938cf5151ac8c4973d7a8064b8520a7ec05a81b98c25a3143772322055f1",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_critical_inactive_fullRR_original_leading_reader.py",
+      "sha256": "8541938cf5151ac8c4973d7a8064b8520a7ec05a81b98c25a3143772322055f1",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_delta_subcritical_Q0_full_source.sobj",
+      "sha256": "a2451f2fb02b7c97a4d8a59f697ec5244db292cd014d58dcedb3a8d6a569296b",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_delta_subcritical_Q0_full_source.sobj",
+      "sha256": "a2451f2fb02b7c97a4d8a59f697ec5244db292cd014d58dcedb3a8d6a569296b",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_delta_subcritical_H_initials.sobj",
+      "sha256": "345e88a0061400c8cbd01fe21c7c9d54751e55d7b48027bc7d3e3f7e7f59aefe",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_delta_subcritical_H_initials.sobj",
+      "sha256": "345e88a0061400c8cbd01fe21c7c9d54751e55d7b48027bc7d3e3f7e7f59aefe",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_ratio_global_R_derivative_degreefall.sobj",
+      "sha256": "640e1bae1cac9033b69918f36e3471fa1160292fd133e458a548b7b5ae68ec71",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_ratio_global_R_derivative_degreefall.sobj",
+      "sha256": "640e1bae1cac9033b69918f36e3471fa1160292fd133e458a548b7b5ae68ec71",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_inactive_RRtorus_normal_blocks.sobj",
+      "sha256": "75db5af342aa29e43c28903bede6d9db910bdeb702320939a96a1be61474771d",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_inactive_RRtorus_normal_blocks.sobj",
+      "sha256": "75db5af342aa29e43c28903bede6d9db910bdeb702320939a96a1be61474771d",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_inactive_RRtorus_incoming_boundary.sobj",
+      "sha256": "835b0ad7c28142143433e58f3e5dfa34553e4916939b899452fb385e7ec6aab6",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_inactive_RRtorus_incoming_boundary.sobj",
+      "sha256": "835b0ad7c28142143433e58f3e5dfa34553e4916939b899452fb385e7ec6aab6",
+      "kind": "open"
+    }
+  ],
+  "writes": [
+    "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_critical_inactive_fullRR_original_leading_reader/generated/round10/independent_critical_inactive_fullRR_original_leading_reader.sobj",
+    "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_critical_inactive_fullRR_original_leading_reader/generated/round10/independent_critical_inactive_fullRR_original_leading_reader.json",
+    "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_critical_inactive_fullRR_original_leading_reader/generated/round10/independent_critical_inactive_fullRR_original_leading_reader.json"
+  ],
+  "elapsed_seconds": 7.669948398000088,
+  "error": null,
+  "evidence_level": "FRESH_SOURCE_REPLAY_WITH_IMPORTED_COEFFICIENT_DATA",
+  "limitation": "Imported necessary-source arrays and comparison objects were not independently regenerated by this reader. Successful replay is not evidence that the entire upstream source chain was regenerated."
+}

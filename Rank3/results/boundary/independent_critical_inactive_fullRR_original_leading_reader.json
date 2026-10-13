@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": 29,
+  "seconds": 7.624878693000028,
+  "true_critical_delta_unit_leading_classification": true,
+  "no_separate_F12_zero_assumed": true,
+  "all_four_root_e_graphs": true,
+  "scope": "Original-source classification of every critical inactive full-RR paired limit.\nUse complete kappa=0 sources, delta a unit; F12 is not assumed separately zero.\n"
+}

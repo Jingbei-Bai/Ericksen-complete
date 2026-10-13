@@ -1,0 +1,20 @@
+{
+  "rows": 93,
+  "columns": 3,
+  "monomials": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      2,
+      0
+    ]
+  ],
+  "seconds": 1.703655198000007,
+  "scope": "Critical delta-nonzero line consequences from the genuine affine sources."
+}

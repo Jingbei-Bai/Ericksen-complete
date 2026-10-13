@@ -1,0 +1,5 @@
+CASE 0 s,z 1 1 rank 0 rowbasis []
+CASE 1 s,z 1 omega rank 1 rowbasis [(0, 1, -1)]
+CASE 2 s,z omega 1 rank 1 rowbasis [(1, 0, -1)]
+CASE 3 s,z omega omega rank 1 rowbasis [(1, -1, 0)]
+ISOLATED REPLAY PASS independent_delta_critical_exceptional_directions.py imports 1 seconds 0.7914200169999788

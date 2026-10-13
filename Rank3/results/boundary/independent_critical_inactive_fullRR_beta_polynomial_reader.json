@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": 230,
+  "seconds": 34.98248004800007,
+  "all22_true_sigma_columns_beta_independent": true,
+  "all22_true_R_compensated_kernel_quadratics_beta_independent": true,
+  "original_all_layer_even_extra_retained": true,
+  "all_four_roots": true,
+  "scope": "Direct general-base finite-beta original-source sigma/quadratic pullbacks.\nEvery original H source and complete even RR-linear module is retained.\nFour canonical root embeddings are kept; no frozen-beta extension is assumed.\n"
+}

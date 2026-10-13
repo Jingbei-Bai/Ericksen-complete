@@ -1,0 +1,8 @@
+CRITICAL p12_p32 factor (-1/14) * (-nH + nZ)^-3 * (nZ - 1)^-2 * (nH + 1)^-2 * (nr + 1)^-2 * nr * nH^2 * ny^3 * nZ^3 * (-2*nH^2*ny^3 + 2*nZ^2*ny^3 + 7*nH^2*ny^2 - 10*nH*nZ*ny^2 - 4*nZ^2*ny^2 - 7*nH^2*ny + 14*nH*nZ*ny + 14*nH*ny^2 - 18*nZ*ny^2 + 2*nH^2 - 10*nH*ny + 18*nZ*ny + 4*ny - 2) directiongcd 1 seconds 0.4735261440000045
+SUPER p12_p32 gcd 1 source minors 11 seconds 0.6803204630000153
+CRITICAL p13_p23 factor (1/14) * (-nH + nZ)^-3 * (nZ - 1)^-2 * (nH + 1)^-2 * nr * (nr + 1) * nH^2 * ny^3 * nZ^3 * (-2*nH^2*ny^3 + 2*nZ^2*ny^3 + 4*nH^2*ny^2 + 10*nH*nZ*ny^2 - 7*nZ^2*ny^2 - 14*nH*nZ*ny + 7*nZ^2*ny - 18*nH*ny^2 + 14*nZ*ny^2 - 2*nZ^2 + 18*nH*ny - 10*nZ*ny - 4*ny + 2) directiongcd 1 seconds 0.7274692990000062
+SUPER p13_p23 gcd 1 source minors 10 seconds 0.9279430210000044
+CRITICAL p21_p31 factor (1/14) * (-nH + nZ)^-3 * (nZ - 1)^-2 * (nH + 1)^-2 * nr^-1 * ny^2 * nH^2 * (nr + 1)^2 * nZ^3 * (2*nH^2*ny^3 - 4*nH^2*ny^2 - 18*nH*nZ*ny^2 + 18*nH*nZ*ny + 4*nZ^2*ny + 10*nH*ny^2 - 14*nZ*ny^2 - 2*ny^3 - 2*nZ^2 - 14*nH*ny + 10*nZ*ny + 7*ny^2 - 7*ny + 2) directiongcd 1 seconds 0.9989136290000147
+SUPER p21_p31 gcd 1 source minors 11 seconds 1.2037975840000001
+DONE 606 seconds 1.269521836000024
+ISOLATED REPLAY PASS independent_RR_torus_missing_p_closure.py imports 2 seconds 1.271625886999999

@@ -1,0 +1,17 @@
+BLOCK point11 terms 0 seconds 0.5664198569999996
+BLOCK_FACTORS point11 []
+BLOCK_AFTER_RETAINED_AMPLITUDE_RELATION point11 zero True numterms 0
+BLOCK one_omega terms 250 seconds 0.6746302859999957
+BLOCK_FACTORS one_omega [(1, 1, 1, cb_C), (1, 1, 1, cb_B), (1, 2, 1, cb_H - cb_Z), (2, 2, 1, cb_Z - 1), (2, 1, 1, cb_r), (3, 1, 1, cb_Z), (4, 1, 1, cb_H), (4, 2, 1, cb_H + 1), (3, 3, 2, cb_H*cb_Z - cb_H + cb_Z), (1, 10, 4, cb_r*cb_H*cb_C^2 + (1/6*wall_omega - 7/6)*cb_r*cb_Z*cb_C^2 + (1/12*wall_omega - 11/6)*cb_H*cb_B^2 + (-1/6*wall_omega + 7/6)*cb_Z*cb_B^2 + (-1/12*wall_omega + 11/6)*cb_r*cb_C^2 + (1/12*wall_omega - 5/6)*cb_r*cb_H - cb_B^2 + (-1/12*wall_omega + 5/6)*cb_r + (1/12*wall_omega - 5/6)*cb_H + (-1/12*wall_omega + 5/6))]
+BLOCK_AFTER_RETAINED_AMPLITUDE_RELATION one_omega zero False numterms 174
+REDUCED_BLOCK_FACTORS one_omega [(1, 1, cb_C), (1, 1, cb_B), (1, 2, cb_H - cb_Z), (1, 2, cb_H - 1), (2, 2, cb_Z - 1), (2, 1, cb_r), (3, 1, cb_Z), (4, 1, cb_H), (4, 2, cb_H + 1), (3, 3, cb_H*cb_Z - cb_H + cb_Z), (1, 3, cb_r*cb_C^2 + cb_r + 1)]
+BLOCK omega_one terms 262 seconds 0.9161379490000172
+BLOCK_FACTORS omega_one [(1, 1, 1, cb_C), (1, 1, 1, cb_B), (1, 2, 1, cb_H - cb_Z), (2, 2, 1, cb_Z - 1), (2, 1, 1, cb_r), (3, 1, 1, cb_Z), (4, 1, 1, cb_H), (4, 2, 1, cb_H + 1), (3, 3, 2, cb_H*cb_Z - cb_H + cb_Z), (1, 11, 4, cb_r*cb_H*cb_C^2 + cb_r*cb_Z*cb_C^2 + (173/12*wall_omega - 2197/24)*cb_H*cb_B^2 + (-95/12*wall_omega + 1207/24)*cb_Z*cb_B^2 + (-1/3*wall_omega - 7/6)*cb_r*cb_H + (1/3*wall_omega + 13/6)*cb_r*cb_Z + (217/24*wall_omega - 2753/48)*cb_B^2 + (1/6*wall_omega - 17/12)*cb_r + (-1/3*wall_omega - 7/6)*cb_H + (1/3*wall_omega + 13/6)*cb_Z + (1/6*wall_omega - 17/12))]
+BLOCK_AFTER_RETAINED_AMPLITUDE_RELATION omega_one zero False numterms 183
+REDUCED_BLOCK_FACTORS omega_one [(1, 1, cb_C), (1, 1, cb_B), (1, 2, cb_H - cb_Z), (1, 2, cb_H + cb_Z), (2, 2, cb_Z - 1), (2, 1, cb_r), (3, 1, cb_Z), (4, 1, cb_H), (4, 2, cb_H + 1), (3, 3, cb_H*cb_Z - cb_H + cb_Z), (1, 3, cb_r*cb_C^2 + cb_r + 1)]
+BLOCK omega_omega terms 261 seconds 1.190590099000019
+BLOCK_FACTORS omega_omega [(1, 1, 1, cb_C), (1, 1, 1, cb_B), (1, 2, 1, cb_H - cb_Z), (2, 2, 1, cb_Z - 1), (2, 1, 1, cb_r), (3, 1, 1, cb_Z), (4, 1, 1, cb_H), (4, 2, 1, cb_H + 1), (3, 3, 2, cb_H*cb_Z - cb_H + cb_Z), (1, 11, 4, cb_r*cb_H*cb_C^2 + (4/3*wall_omega - 28/3)*cb_r*cb_Z*cb_C^2 + (217/12*wall_omega - 2753/24)*cb_Z*cb_B^2 + (-5/3*wall_omega + 73/6)*cb_r*cb_C^2 + cb_r*cb_H + (5/3*wall_omega - 73/6)*cb_r*cb_Z + (217/12*wall_omega - 2753/24)*cb_B^2 + (-4/3*wall_omega + 28/3)*cb_r + cb_H + (5/3*wall_omega - 73/6)*cb_Z + (-4/3*wall_omega + 28/3))]
+BLOCK_AFTER_RETAINED_AMPLITUDE_RELATION omega_omega zero False numterms 180
+REDUCED_BLOCK_FACTORS omega_omega [(1, 1, cb_C), (1, 1, cb_B), (1, 2, cb_Z + 1), (1, 2, cb_H - cb_Z), (2, 2, cb_Z - 1), (2, 1, cb_r), (3, 1, cb_Z), (4, 1, cb_H), (4, 2, cb_H + 1), (1, 3, cb_B^2 + (13/2*wall_omega - 1)*cb_r + (13/2*wall_omega - 1)), (3, 3, cb_H*cb_Z - cb_H + cb_Z)]
+SECONDS 1.324186037000004
+ISOLATED REPLAY PASS independent_critical_exceptional_old_block.py imports 1 seconds 1.3271341020000023

@@ -1,0 +1,12 @@
+{
+  "PASS": true,
+  "distinct_cyclic_denominators": 35,
+  "seconds": 0.11269044876098633,
+  "guards": [
+    "a",
+    "r",
+    "q=1+r",
+    "m=1+ar",
+    "a-1"
+  ]
+}

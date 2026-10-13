@@ -23,6 +23,25 @@ relates manuscript notation to the local Sage names. List the available
 parts with `../sage-environment/bin/python run.py --list-proofs`; select
 one part and its prerequisites with `--proof ID` and a new work directory.
 
+`BOUNDARY_INDEX.md` and `BOUNDARY_INDEX.json` give the five valuation
+regions, all 73 intermediate coordinate support patterns, and the
+mathematical argument and calculation nodes for each of the three
+intermediate regions. Their exceptional-locus entries identify the
+rank conditions, alternative minors, amplitude walls, material
+resonance and conic endpoints. Check this index with:
+
+```sh
+../sage-environment/bin/python validate_boundary_index.py
+```
+
+The source replay records and mathematical outputs for BC30–BC33 are in
+`results/boundary/`. Together with their prerequisites, these parts
+select 102 tasks. Select the four parts with:
+
+```sh
+../sage-environment/bin/python run.py --proof BC30 --proof BC31 --proof BC32 --proof BC33 --work-dir ../rebuild-boundary --workers 2
+```
+
 `sources/` contains the mathematical programs and their imported modules.
 `inputs/` contains the required exact coefficient data and witnesses.
 `runtime/` contains the execution support. `tasks.json` fixes the dependency

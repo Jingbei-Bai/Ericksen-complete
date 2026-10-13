@@ -1,0 +1,18 @@
+{
+  "PASS": true,
+  "checks": 63,
+  "seconds": 40.02842569351196,
+  "no_horizontal_descent": true,
+  "source_row_indices": [
+    3,
+    6,
+    16,
+    22
+  ],
+  "endpoint": "complete original even e=0 then literal full F12/H13 Bezout",
+  "material_orientations": [
+    "123",
+    "231",
+    "312"
+  ]
+}

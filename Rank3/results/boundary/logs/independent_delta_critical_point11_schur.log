@@ -1,0 +1,20 @@
+POINT_H 0 delta_terms 17 constant_terms 4 seconds 0.21611763199999245
+POINT_H 1 delta_terms 17 constant_terms 4 seconds 0.253142242999985
+POINT_H 2 delta_terms 18 constant_terms 4 seconds 0.2881459709999774
+POINT_H 3 delta_terms 20 constant_terms 5 seconds 0.3296680279999862
+POINT_H 4 delta_terms 20 constant_terms 5 seconds 0.3679408679999767
+POINT_H 5 delta_terms 18 constant_terms 4 seconds 0.39982002399997896
+POINT_H 6 delta_terms 17 constant_terms 4 seconds 0.43823374999999487
+POINT_H 7 delta_terms 17 constant_terms 4 seconds 0.47118187099999886
+POINT_H 8 delta_terms 20 constant_terms 5 seconds 0.5109223309999891
+POINT_H 9 delta_terms 18 constant_terms 4 seconds 0.5469250019999947
+POINT_H 10 delta_terms 18 constant_terms 4 seconds 0.5815791019999779
+POINT_H 11 delta_terms 20 constant_terms 5 seconds 0.6243692839999824
+POINT_H 12 delta_terms 20 constant_terms 5 seconds 0.651996271999991
+POINT_H 13 delta_terms 20 constant_terms 5 seconds 0.6946904539999821
+POINT_H 14 delta_terms 17 constant_terms 4 seconds 0.7313582809999843
+POINT_H 15 delta_terms 17 constant_terms 4 seconds 0.7658821549999857
+POINT_H 16 delta_terms 17 constant_terms 4 seconds 0.7966423999999961
+POINT_H 17 delta_terms 17 constant_terms 4 seconds 0.8248433599999885
+QZERO [True, True]
+ISOLATED REPLAY PASS independent_delta_critical_point11_schur.py imports 1 seconds 0.854370270000004

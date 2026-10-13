@@ -2,7 +2,7 @@
   "schema": "ericksen.verified-release.v5",
   "release_date": "2026-10-12",
   "status": "PASS",
-  "verified_utc": "2026-10-13T03:32:15.740432+00:00",
+  "verified_utc": "2026-10-13T06:40:11.816816+00:00",
   "environment": {
     "sage": "10.9",
     "python": "3.12.14",
@@ -17,27 +17,40 @@
     "email": "bjb23@mails.tsinghua.edu.cn",
     "computational_repository": "https://github.com/Jingbei-Bai/Ericksen-complete",
     "main_source_path": "tex/main.tex",
-    "main_tex_sha256": "19e3a40b7f6895cd42e08d74f113996077cf65f942a4ca07f599ea3cbbe90597",
+    "main_tex_sha256": "ea9c004891c1e9f24d2535ea4e8714f8c08f184608ab2fa83f44a9597d6fed42",
     "supplement_source_path": "tex/supplement.tex",
     "supplement_tex_sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
     "pdf_path": "A local solution of Ericksen's problem.pdf",
-    "pdf_sha256": "d6585849133d596db3abccaf2981de2791fbf562f3dbae6c2344cce310389309",
+    "pdf_sha256": "bc9c77f247c300fb525ddb06601c01b60ef2ab62d848e72a26b4df73f0f93ff1",
     "pages": {
-      "A local solution of Ericksen's problem.pdf": 210
+      "A local solution of Ericksen's problem.pdf": 213
     },
-    "supplement_first_page": 168,
+    "supplement_first_page": 171,
     "supplement_included_after_appendix": "E",
     "single_abstract": true,
     "included_in_repository": true,
     "distribution": "repository",
     "source_build_verification": {
       "status": "PASS",
-      "passes": 3,
-      "pages": 210,
+      "passes": 2,
+      "pages": 213,
       "every_page_text_matches_root_pdf": true,
       "all_label_records_match_canonical": true,
       "title": "A local solution of Ericksen's problem",
-      "paper_source_sha256": "19e3a40b7f6895cd42e08d74f113996077cf65f942a4ca07f599ea3cbbe90597"
+      "paper_source_sha256": "ea9c004891c1e9f24d2535ea4e8714f8c08f184608ab2fa83f44a9597d6fed42"
+    },
+    "boundary_coverage_lemma": {
+      "label": "r3:boundarycoverage",
+      "number": "8.4",
+      "page": 48
+    },
+    "boundary_support_index": {
+      "label": "appr3:coverageindex",
+      "appendix": "C.7",
+      "pages": [
+        98,
+        99
+      ]
     }
   },
   "packages": {
@@ -65,20 +78,20 @@
         "indexed_roots": 63,
         "registered_tasks": 63,
         "dependency_closure": 63,
-        "paper_sha256": "19e3a40b7f6895cd42e08d74f113996077cf65f942a4ca07f599ea3cbbe90597",
+        "paper_sha256": "ea9c004891c1e9f24d2535ea4e8714f8c08f184608ab2fa83f44a9597d6fed42",
         "formula_inputs": 1
       },
       "format": "directory",
       "files": 124,
-      "uncompressed_bytes": 1236977,
-      "directory_tree_sha256": "2a25e2d038ce0c3a498db12b1748cd4318ab415ebbcb15d88c648405426e923c"
+      "uncompressed_bytes": 1235944,
+      "directory_tree_sha256": "2a04504bd997e8f73e1e6f648a49185251afb5c7a9ce71da80039f9d00029e71"
     },
     "rank3": {
       "status": "PASS",
       "path": "Rank3",
-      "registered_tasks": 484,
-      "actual_mathematical_executions": 346,
-      "fresh_generated_copies": 138,
+      "registered_tasks": 524,
+      "actual_mathematical_executions": 375,
+      "fresh_generated_copies": 149,
       "inherited_execution_results_used": false,
       "generated_outputs_initially_absent": true,
       "all_mathematical_sources_inputs_arguments_and_wrappers_byte_identical": true,
@@ -91,17 +104,17 @@
       ],
       "current_paper_index": {
         "status": "INDEX_PASS",
-        "proof_nodes": 52,
-        "indexed_roots": 276,
-        "registered_tasks": 484,
-        "dependency_closure": 484,
-        "paper_sha256": "19e3a40b7f6895cd42e08d74f113996077cf65f942a4ca07f599ea3cbbe90597",
+        "proof_nodes": 56,
+        "indexed_roots": 305,
+        "registered_tasks": 524,
+        "dependency_closure": 524,
+        "paper_sha256": "ea9c004891c1e9f24d2535ea4e8714f8c08f184608ab2fa83f44a9597d6fed42",
         "formula_inputs": 1
       },
       "format": "directory",
-      "files": 590,
-      "uncompressed_bytes": 380792392,
-      "directory_tree_sha256": "9a70f2ca5f544c6eca6e6508dea7f61526852f4cca476054a393886bb22e285c",
+      "files": 735,
+      "uncompressed_bytes": 386133159,
+      "directory_tree_sha256": "b6f611c016f8c65b7f563ea658782cd3ff2a568f17cb2a1a3e1b3e8a0c257d77",
       "byte_identity_scope": "Each distributed mathematical source, input, argument and wrapper matches its recorded clean execution.",
       "execution_runs": [
         {
@@ -122,8 +135,30 @@
           "selection": "C9_ENDPOINT and its complete dependency closure",
           "distinct_math_tasks_contributed": 9,
           "distinct_input_copies_contributed": 9
+        },
+        {
+          "record": "Rank3/results/boundary/execution.json",
+          "record_sha256": "b2371c6a31ef57286eeb9ab88eb780d49c0f3cca8923bae9c91f4e52ae8654a7",
+          "selection": "BC30-BC33 with their prerequisite tasks and the exact rank-minor input interface",
+          "selected_tasks": 102,
+          "distinct_math_tasks_contributed": 29,
+          "distinct_input_copies_contributed": 11,
+          "run_ids": [
+            "a4cfd597-882b-49cb-808c-57e7b73fe9c1",
+            "e7ae37d5-48ef-49ae-bc2d-b00f8ada745e"
+          ]
         }
-      ]
+      ],
+      "boundary_index": {
+        "status": "INDEX_PASS",
+        "valuation_regions": 5,
+        "support_patterns": 73,
+        "intermediate_region_support_pairs": 219,
+        "exceptional_loci": 13,
+        "proof_nodes": 34,
+        "registered_tasks": 524,
+        "dependency_graph_acyclic": true
+      }
     }
   },
   "all_original_readers_rerun_unmodified": true,
@@ -10641,8 +10676,60 @@
       "bytes": 1699
     },
     "A local solution of Ericksen's problem.pdf": {
-      "sha256": "d6585849133d596db3abccaf2981de2791fbf562f3dbae6c2344cce310389309",
-      "bytes": 1445481
+      "sha256": "bc9c77f247c300fb525ddb06601c01b60ef2ab62d848e72a26b4df73f0f93ff1",
+      "bytes": 1457427
+    },
+    "assets/build_problem_figure.py": {
+      "sha256": "dcf3685cb0249c46812f8a68c2e03c72132008bf7a9e322393a4f00388cab132",
+      "bytes": 15103
+    },
+    "assets/build_proof_figure.py": {
+      "sha256": "aa53a679426386d2b22f55b996e3f2071fad83ab39e6a00e844e05689fd2a762",
+      "bytes": 1329
+    },
+    "assets/ericksen_problem.pdf": {
+      "sha256": "9b0112f81cd31670b36268c19cee518693cf71b00cdfdef821e0a954d1060d7f",
+      "bytes": 1147508
+    },
+    "assets/ericksen_problem.png": {
+      "sha256": "c69dbd8ba0f771fb5b1259318f4ab7c1536f062884b7438cc2bf058882e456b3",
+      "bytes": 1040340
+    },
+    "assets/fonts/GUST-FONT-LICENSE.txt": {
+      "sha256": "49ea6cb9257bbee0a3979c48a774cd221550ac1c20c95549efe45fc99cc18050",
+      "bytes": 1377
+    },
+    "assets/fonts/lmroman10-regular.otf": {
+      "sha256": "1aa18cfefa58132c52ce5de70db1fd1154201c19cd2b2cdaffba4906a33e6852",
+      "bytes": 111536
+    },
+    "assets/fonts/lmroman17-regular.otf": {
+      "sha256": "ed048c80fb4b67663b80899b89fe5fba17d7442e1286d61fd08fe5689c6b7c3c",
+      "bytes": 110248
+    },
+    "assets/fonts/LPPL-1.3c.txt": {
+      "sha256": "ca3227f672053cb608959d7e1d476c7a13efea11be3f6e53758a68b650c918e8",
+      "bytes": 19040
+    },
+    "assets/fonts/README.txt": {
+      "sha256": "a93624f33146a6b91b00e6351ab7bdaa190af4c5a41ed50da7a755cce9b18464",
+      "bytes": 524
+    },
+    "assets/geometry_checks.json": {
+      "sha256": "3be11bd5b8860b23f3a933d34a231f064a99a07581996e8a997e97e46d7320da",
+      "bytes": 6571
+    },
+    "assets/proof_structure.pdf": {
+      "sha256": "1f9603a8c029ff77694771865614042caadf6a407c8e3a787cdaedc2730a50f5",
+      "bytes": 132445
+    },
+    "assets/proof_structure.png": {
+      "sha256": "c3d62734b212509cd149dba47004a1feb43f21bcffa4b100d54c5a58f60138ce",
+      "bytes": 220799
+    },
+    "assets/proof_structure.tex": {
+      "sha256": "3341c335483d7133eab20458488ed62c013929fff37d37d28d99c09d12350fc3",
+      "bytes": 4111
     },
     "CITATION.cff": {
       "sha256": "2244d251860f095ebb7534e2deb43f3b334569cc50fcea9145f7887e7e3eacfb",
@@ -10659,30 +10746,6 @@
     "LICENSE.md": {
       "sha256": "89d1889886f267a4084fe8661c382c647149375eb8d92ba8a97f9ef3f4fbfe60",
       "bytes": 765
-    },
-    "README.md": {
-      "sha256": "c009daeecd74966c0e1ae6dcf2a0e24e8fbbf655c278bbcf7e4b8067130f82c2",
-      "bytes": 6508
-    },
-    "Rank012/MANIFEST.json": {
-      "sha256": "f60235ac042ecd4889503ed1c7ad8837089f374921380e05bfa43db3832c36bf",
-      "bytes": 93895
-    },
-    "Rank012/PROOF_MAP.json": {
-      "sha256": "a1ffbf6fc8f58862ae4e000194fdf0bfa133735ec67ec677651a0e973c1cc1bf",
-      "bytes": 174895
-    },
-    "Rank012/PROOF_MAP.md": {
-      "sha256": "518d61a6f43caf3005cd9db0579e785b2d3efc38773af324afe0e3096ed8624a",
-      "bytes": 3735
-    },
-    "Rank012/README.txt": {
-      "sha256": "34f7214e1964ba5fe21fe6256a25f2afc99dec48db0f09a132e3f702766aac17",
-      "bytes": 1680
-    },
-    "Rank012/SYMBOLS.md": {
-      "sha256": "86dc6bb54fd6443fa13ee20d27fa64d9d05fb1622da98f8fd786550e5549d1bf",
-      "bytes": 592
     },
     "Rank012/check_environment.py": {
       "sha256": "bd1601143ccb69d01e88769252258694e7a4efdf23dc672898a27fc0d89e423b",
@@ -10756,9 +10819,25 @@
       "sha256": "2c719239544d8093c60fb0f85872fbdea3e728c49dfc8e00c9877b3f8e3220a9",
       "bytes": 71505
     },
+    "Rank012/MANIFEST.json": {
+      "sha256": "09d29ae75aa63ec450e268abc84347a16e7a4e7bfd756d25199266db90a42079",
+      "bytes": 93895
+    },
     "Rank012/paper_index.py": {
       "sha256": "7a6c9355d6ea60b9aa2a11470dc508d0da41822a8539a7f92c39d75e9e5b8cda",
       "bytes": 5939
+    },
+    "Rank012/PROOF_MAP.json": {
+      "sha256": "1fa3ee218f05b09bccc55aba65766da894877a2d8180111137951dee70c5e949",
+      "bytes": 174895
+    },
+    "Rank012/PROOF_MAP.md": {
+      "sha256": "a71d9236d91e6f48ef224bcd17e8bf1cd142922140bcc38e66c6466e6c6fb825",
+      "bytes": 2702
+    },
+    "Rank012/README.txt": {
+      "sha256": "34f7214e1964ba5fe21fe6256a25f2afc99dec48db0f09a132e3f702766aac17",
+      "bytes": 1680
     },
     "Rank012/run.py": {
       "sha256": "763f6e72ff468b5df29f1529f23b25f932f004a8fc030dedbf06935ac4c45392",
@@ -10984,22 +11063,6 @@
       "sha256": "1f0ab2d30f8506f26e4f67c091c7136cba92548b6f949454925069297139ea10",
       "bytes": 2380
     },
-    "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_Newton_reader.py": {
-      "sha256": "dc682672058ece54dd059c3ec2644c9a77371b15ceaaedd2cac715426e5a9a24",
-      "bytes": 1867
-    },
-    "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_leaders.py": {
-      "sha256": "ce2b16e15c2f4c3ca825ea606e810d52dfa6c6da596f9989e8f518d1f9fe02f6",
-      "bytes": 3453
-    },
-    "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_wall_reader.py": {
-      "sha256": "1190966179eda1a2db635665ead60f7a0136bcf423466723dd3e31ff28429406",
-      "bytes": 4449
-    },
-    "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_zero_angle_reader.py": {
-      "sha256": "3d26200f54d5f783f9841d7e111a0082dc6dabdefcb83332f11a8dfbf55cda29",
-      "bytes": 2931
-    },
     "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_algebra_double_infinity_reader.py": {
       "sha256": "bb781ca46a4dacd5659d0174335091089a6f66edd87a287eb558c37b92b56f4e",
       "bytes": 2628
@@ -11035,6 +11098,22 @@
     "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_angle_wall_source_reader.py": {
       "sha256": "09326529fec237d88abbaea562c9380cd817e676a5ea6a4a430e6e179eefe1b8",
       "bytes": 3709
+    },
+    "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_leaders.py": {
+      "sha256": "ce2b16e15c2f4c3ca825ea606e810d52dfa6c6da596f9989e8f518d1f9fe02f6",
+      "bytes": 3453
+    },
+    "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_Newton_reader.py": {
+      "sha256": "dc682672058ece54dd059c3ec2644c9a77371b15ceaaedd2cac715426e5a9a24",
+      "bytes": 1867
+    },
+    "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_L0_wall_reader.py": {
+      "sha256": "1190966179eda1a2db635665ead60f7a0136bcf423466723dd3e31ff28429406",
+      "bytes": 4449
+    },
+    "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_B_infinity_zero_angle_reader.py": {
+      "sha256": "3d26200f54d5f783f9841d7e111a0082dc6dabdefcb83332f11a8dfbf55cda29",
+      "bytes": 2931
     },
     "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/immutable_sources/round11/trs_newton_face_positive_transfer_reader.py": {
       "sha256": "dcb525cdcb14492ce7b863877844cc4f175717e53cf586c2520d04663e412b75",
@@ -11136,10 +11215,6 @@
       "sha256": "0ec109e86e51bb70f1e76621d992c0e4132e1d8ddd7457158fe59714b886add9",
       "bytes": 2686
     },
-    "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_B_infinity_L0_leaders.py": {
-      "sha256": "ce2b16e15c2f4c3ca825ea606e810d52dfa6c6da596f9989e8f518d1f9fe02f6",
-      "bytes": 3453
-    },
     "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_algebra_frobenius_infinity_leading.py": {
       "sha256": "5ea22e0461ca4695b4ac93453b4eb8efe1d2d14fbf0c287a74a9858bb8eef33c",
       "bytes": 3841
@@ -11147,6 +11222,10 @@
     "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_algebra_newton_blowup.py": {
       "sha256": "7ef551ac27788f549fedeb7f9241c19c18c23dad1ddcdfa21d5d737b4e9cdf02",
       "bytes": 4865
+    },
+    "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/replay/round11/trs_B_infinity_L0_leaders.py": {
+      "sha256": "ce2b16e15c2f4c3ca825ea606e810d52dfa6c6da596f9989e8f518d1f9fe02f6",
+      "bytes": 3453
     },
     "Rank012/sources/research/ericksen_20261007/full_recompute_20261009/isometries/replay_one.py": {
       "sha256": "ad7ab525b8a038f775e5a4834dfaa1b4d1bff856e90ec2a7e447f3dc71eba1a5",
@@ -11156,29 +11235,21 @@
       "sha256": "51fb668f33f7bcfa304543d4568336dc775b354d592963f399ca2140121a3325",
       "bytes": 2981
     },
+    "Rank012/SYMBOLS.md": {
+      "sha256": "86dc6bb54fd6443fa13ee20d27fa64d9d05fb1622da98f8fd786550e5549d1bf",
+      "bytes": 592
+    },
     "Rank012/tasks.json": {
       "sha256": "f2332ec729efc511534aa4bb147f0b73e317ba510453f9ecfa09e2be6d2d2b8b",
       "bytes": 40631
     },
-    "Rank3/MANIFEST.json": {
-      "sha256": "2c4de9e98dd80be55cf4d6ab00741d14ba6e4f1cb56eee22e2cfe7fbe8019c57",
-      "bytes": 422035
+    "Rank3/BOUNDARY_INDEX.json": {
+      "sha256": "82987b9734a977d57b67515199e1662ed3f8fcf58a6c2e002421143f5dc9185d",
+      "bytes": 408828
     },
-    "Rank3/PROOF_MAP.json": {
-      "sha256": "a74b24f1262adba890451b033a1150ab784c636e9c92c96a3d6f70e207236c70",
-      "bytes": 1122330
-    },
-    "Rank3/PROOF_MAP.md": {
-      "sha256": "3d686243464741736290d59caed6707d42482710fea6cc8c29c022162bd75976",
-      "bytes": 18787
-    },
-    "Rank3/README.md": {
-      "sha256": "ad3285cea3d5a93c838cc72460d0e4be7cb1299c5bedeb5b9732448664214a2b",
-      "bytes": 3423
-    },
-    "Rank3/SYMBOLS.md": {
-      "sha256": "26e3e8a25c5470258f0bef861805155c62cfd5b9f58c1ecdcda5791b8355ce0c",
-      "bytes": 1658
+    "Rank3/BOUNDARY_INDEX.md": {
+      "sha256": "03cb3c3d317225a78425f457fc6ee0dccd5c3d11f2de3d5b78529f6c33490d37",
+      "bytes": 10384
     },
     "Rank3/check_environment.py": {
       "sha256": "bd1601143ccb69d01e88769252258694e7a4efdf23dc672898a27fc0d89e423b",
@@ -11195,6 +11266,10 @@
     "Rank3/inputs/paper/supplement.tex": {
       "sha256": "ef6b6912ec390213e0a7d16f53979956a461f95ebe4fbc18b51967b067d31c2f",
       "bytes": 43014
+    },
+    "Rank3/inputs/reproduction/boundary/two_derivative_rank_minors.sobj": {
+      "sha256": "10fca0c87631c63d34f3dd0a5cb28b0d260375d028ec6c9ae00de396446768e9",
+      "bytes": 79138
     },
     "Rank3/inputs/research/ericksen_20261007/rank3_simplification_20261009/original_moment_definitions.json": {
       "sha256": "04c1b45c85fe5e5d68f2ac70a4dd4d98dc6eeb31d48c358b821d480bb3926216",
@@ -11304,13 +11379,13 @@
       "sha256": "84de0b128be4f983d187b252e203e83cc6138d06d616c18b0c7745f9a0491a04",
       "bytes": 463762
     },
-    "Rank3/inputs/research/ericksen_20261007/round10/general_curve_scalar_D00_zero.sobj": {
-      "sha256": "f4d158f490441c226c131934fc4c6608d8c0c7bbbbc0662df5b9d939f77bfb59",
-      "bytes": 3614
-    },
     "Rank3/inputs/research/ericksen_20261007/round10/general_curve_scalar_contact_source.sobj": {
       "sha256": "ee8210a67a3fe9a6557d51adafe5d9f1f34375e28efc38ed54e85efd0a074b07",
       "bytes": 36935
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/general_curve_scalar_D00_zero.sobj": {
+      "sha256": "f4d158f490441c226c131934fc4c6608d8c0c7bbbbc0662df5b9d939f77bfb59",
+      "bytes": 3614
     },
     "Rank3/inputs/research/ericksen_20261007/round10/general_curve_scalar_dimensionless.sobj": {
       "sha256": "f010481eb55fb82437a53f8251dedc77cbf87b9c767c465eabea777d50563c83",
@@ -11496,10 +11571,6 @@
       "sha256": "de82a1103b3721370573388fee37c355285564a807c5ab70da88c6e7aed879ec",
       "bytes": 3558506
     },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_RR_torus_missing_p_sources.sobj": {
-      "sha256": "5beba09a19eee848c72281056deecab5ee4849bcf18897ce6cd1c47dc7330543",
-      "bytes": 981138
-    },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_critical_omega_even_graphs.sobj": {
       "sha256": "6fd96f39bc16f2b32304ff81dfaed913699f37c619e5d5723f412568ef307e97",
       "bytes": 848373
@@ -11511,6 +11582,10 @@
     "Rank3/inputs/research/ericksen_20261007/round10/independent_critical_omega_material_factors.sobj": {
       "sha256": "316f00a68c2734a8c922b5c4f23e2670da6fb6f0562b690970327d7b7bf90170",
       "bytes": 7099
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_critical_rankone_generic_resultant.sobj": {
+      "sha256": "26007204dd6b7085bfdb06d7ec885d406b5b91c969cd66a38b2e2d27570cf3ec",
+      "bytes": 89860
     },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_critical_single_RR3_pure_normal_minors.sobj": {
       "sha256": "16fdcc22c2effc4b10f84a9362beb0a394a0d546c01a18e3e98ccf6917422579",
@@ -11524,9 +11599,17 @@
       "sha256": "9e9954cabf15f617afd4ef671a96caa36f8dac2000791d4f34e769600442bb46",
       "bytes": 61018
     },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_H_global_L_module.sobj": {
-      "sha256": "7daecab9b6a64b23158e85a2239438b50deb0e2a45da54d7f8ba6e715ed7eba5",
-      "bytes": 13749924
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_critical_two_RR_inactive_rankone_even_probe.sobj": {
+      "sha256": "d912bc78a0d046e588335431e539ab55fd27fedf96a1eddd55ffeb8d2dffb454",
+      "bytes": 5543
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_critical_two_RR_inactive_rankone_full_matrix.sobj": {
+      "sha256": "29f1255075e2147a1d9616e545b5d471d16ebc760dc6bf3bbd96bf065c0f9946",
+      "bytes": 47121
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_critical_consistency_minors.sobj": {
+      "sha256": "c17b8aa2094bdfd18c65d2f7d7450ea5d5fb01fa034f64f752d2a0f0e9667ed8",
+      "bytes": 2427789
     },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_critical_line_conics.sobj": {
       "sha256": "680457348afc218561e774f405513c4e9d8a2367f91f4bc5fed4ef97e6082692",
@@ -11535,6 +11618,18 @@
     "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_critical_line_native_resultants.sobj": {
       "sha256": "8d69c0ef9db41a6c723c661565ed222b5f3fb935f83fd61f93bd059dd6816439",
       "bytes": 5258
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_critical_line_resultant_01.txt": {
+      "sha256": "63039df1d45c30d1fac66a7a467d9d923566a0571f479a82fa74d8351f75878f",
+      "bytes": 1954
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_critical_line_resultant_02.txt": {
+      "sha256": "52b7112776e1d964e0b26e684a9761c1bfcf0f49682b4a072b2474bcf726120b",
+      "bytes": 1925
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_critical_line_resultant_12.txt": {
+      "sha256": "c408adc803754350bd86b01c039346a801aaadb78a69e0ffb486d0f1327db628",
+      "bytes": 1953
     },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_critical_linear_sources.sobj": {
       "sha256": "7ae1effdf151a7a801b0cb9b94b43b98fbd6d3ce5551b7c670b780f2d79e1208",
@@ -11548,6 +11643,18 @@
       "sha256": "9e8b414747b0938cdd093e8b3bcdf22690b366c0b86a9c0465f96ec310d1ce94",
       "bytes": 9947485
     },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_H_global_L_module.sobj": {
+      "sha256": "7daecab9b6a64b23158e85a2239438b50deb0e2a45da54d7f8ba6e715ed7eba5",
+      "bytes": 13749924
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_subcritical_even_coefficient_rank.sobj": {
+      "sha256": "5d7b682297591c9f567611e4566559ae3d106c06349ea5dc669341b94a3b1b34",
+      "bytes": 622356
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_subcritical_even_directions.sobj": {
+      "sha256": "0659ca1fb793aae54ad6b1dec732b643f9bcd9744782ca4cf9989fc4393fe8ef",
+      "bytes": 439701
+    },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_subcritical_H_two_parameter_jets.sobj": {
       "sha256": "4707b129b0dd004102d5605a23b5852e021a686f5b3215ba49665b043d40963e",
       "bytes": 11917194
@@ -11560,17 +11667,13 @@
       "sha256": "56306d2c4f83f2a2a9994b701635fa5680a7e43bf91accc3865e2516feecee0f",
       "bytes": 311049
     },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_subcritical_Q0_six_directions.sobj": {
+      "sha256": "3516d82f70db5c7551f2efd2f6a5019716c1e4bb69af4da12ffbbcf57fdd1be2",
+      "bytes": 1145118
+    },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_subcritical_RQ_two_parameter_jets.sobj": {
       "sha256": "bc32300d8980e1c1f4e3dda9d17fcdff06753ac8824b5bfded3eec9d9adad59e",
       "bytes": 678093
-    },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_subcritical_even_coefficient_rank.sobj": {
-      "sha256": "5d7b682297591c9f567611e4566559ae3d106c06349ea5dc669341b94a3b1b34",
-      "bytes": 622356
-    },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_delta_subcritical_even_directions.sobj": {
-      "sha256": "0659ca1fb793aae54ad6b1dec732b643f9bcd9744782ca4cf9989fc4393fe8ef",
-      "bytes": 439701
     },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_even_cubic_RR_linear_module.sobj": {
       "sha256": "07f1a9d515838784d09a4a567243d3006c13a99be3e54f501699fe9cbdc2755c",
@@ -11588,6 +11691,22 @@
       "sha256": "ebd40105464318cc96c9529a167adef872fcc4538273a9892c30fcd73a9520c1",
       "bytes": 4626
     },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_inactive_RRtorus_canonical_delta_decoupling.sobj": {
+      "sha256": "5c9137e140b907889ead4994168ebd326d23720100bf1695260bfd08175f9bb6",
+      "bytes": 4014
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_inactive_RRtorus_negative_generic_kernel.sobj": {
+      "sha256": "8cea192b4ed885ef628f31ccdab01dbfc79c5cdb2ba2f3b4bddfef7c220fdf29",
+      "bytes": 83394
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_inactive_RRtorus_pair_negative_generic_kernel.sobj": {
+      "sha256": "25cf2baeefcb567bbcd90178ab915c353b6010307b596f08883b2bc530b607b4",
+      "bytes": 8468
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_inactive_RRtorus_positive_generic_kernel.sobj": {
+      "sha256": "cbc64a1bcbca5cd02d00e06c11445eb9edd8a5bb85c7bda45875005409819bf5",
+      "bytes": 83397
+    },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_inactive_single_RR_even_graph.sobj": {
       "sha256": "a1dc12c1c8413516a888e80ef47f58534b638a112b454043f973e1ed0ce49fe7",
       "bytes": 29647
@@ -11604,10 +11723,6 @@
       "sha256": "8d285cfb6955abf240894305168fa148202fbf7799fd59fe63390d0ed562f506",
       "bytes": 15083
     },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_ordinary_minus_two_V_certificate.sobj": {
-      "sha256": "e0b8a45eaf24fd62cfdde796cf46819419d8111077ac2da647b24b27359e3693",
-      "bytes": 612631
-    },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_ordinary_minus_two_coupled_minor.sobj": {
       "sha256": "7f9bde27dadce35e99092a61e44e4d52fc8f52e394eb059f338e533dec2995b9",
       "bytes": 7009183
@@ -11616,49 +11731,9 @@
       "sha256": "720af3b13598d27f0623629b3f1ea4aea55fbbd93ab9d91fe90880899094fb32",
       "bytes": 835781
     },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_boundary_classification.sobj": {
-      "sha256": "49d2a3cb3c011c804276d5b5ca52526aa638b5ae3d195bc794b31412599fb2bd",
-      "bytes": 60508
-    },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_boundary_leading.sobj": {
-      "sha256": "61d43d54a95e28a9c69f94dca74137524183d615d741c82db7587a1095e8d7ea",
-      "bytes": 486875
-    },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_canonical_cubic_sources.sobj": {
-      "sha256": "56282f0730632b8672798ebf361d1d73474749246a34294e7bb233d367d7532a",
-      "bytes": 92338
-    },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_canonical_tangent_obstruction.sobj": {
-      "sha256": "0b455a3bf081de2fdd36e7bc2ee56e9065467e725cfbb464a2d9d2aefc11eb2c",
-      "bytes": 46043
-    },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_canonical_whole_cone.sobj": {
-      "sha256": "3c38ea01c2138e5e9f1488fa6c11bdfdaeeb89f8e9820f1bde9780bdde06fd3d",
-      "bytes": 194199
-    },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_cyclic_block_minors.sobj": {
-      "sha256": "f45fdcdeb706e7cf1cb57a7edafd7abdc0574938b2e64af8888c73269e2bda7d",
-      "bytes": 173438
-    },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_cyclic_pblock_minors.sobj": {
-      "sha256": "319d52d3ea3c3774742143126beba73eff5b9296982ac1d0b001d08d3599ef56",
-      "bytes": 59238
-    },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_cyclic_residual_point.sobj": {
-      "sha256": "871698546d2304108b36466bb9e76ff081522c630b64c1da50d8b04ed28e2116",
-      "bytes": 12486
-    },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_normal_all_derivatives.sobj": {
-      "sha256": "7d1b74ac41cc8a7f576ae420954d6e81f136a24a6876c304042ded35e5325e7b",
-      "bytes": 3818636
-    },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_normal_old_sources.sobj": {
-      "sha256": "6c92d49fcb30bf0a53c76404ad0701cceb6031914e034ade474e265c77fbe961",
-      "bytes": 309865
-    },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_section_plane_blocks.sobj": {
-      "sha256": "4d17e8e104474b4bd2d02d6c37722f166232adb80efe178561257f1b836ef7d8",
-      "bytes": 926706
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_ordinary_minus_two_V_certificate.sobj": {
+      "sha256": "e0b8a45eaf24fd62cfdde796cf46819419d8111077ac2da647b24b27359e3693",
+      "bytes": 612631
     },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_canonical_amplitude_normal.sobj": {
       "sha256": "855dc4234f689774ef2d2767c2585eafda21ae98dbd2b09bc7ccad1d36ec1bb4",
@@ -11824,6 +11899,50 @@
       "sha256": "1a407b52924b8991faa3e990e90aa24c47b5ee7aeaa64081877d8ace6ea2a1d6",
       "bytes": 86770
     },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_boundary_classification.sobj": {
+      "sha256": "49d2a3cb3c011c804276d5b5ca52526aa638b5ae3d195bc794b31412599fb2bd",
+      "bytes": 60508
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_boundary_leading.sobj": {
+      "sha256": "61d43d54a95e28a9c69f94dca74137524183d615d741c82db7587a1095e8d7ea",
+      "bytes": 486875
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_canonical_cubic_sources.sobj": {
+      "sha256": "56282f0730632b8672798ebf361d1d73474749246a34294e7bb233d367d7532a",
+      "bytes": 92338
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_canonical_tangent_obstruction.sobj": {
+      "sha256": "0b455a3bf081de2fdd36e7bc2ee56e9065467e725cfbb464a2d9d2aefc11eb2c",
+      "bytes": 46043
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_canonical_whole_cone.sobj": {
+      "sha256": "3c38ea01c2138e5e9f1488fa6c11bdfdaeeb89f8e9820f1bde9780bdde06fd3d",
+      "bytes": 194199
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_cyclic_block_minors.sobj": {
+      "sha256": "f45fdcdeb706e7cf1cb57a7edafd7abdc0574938b2e64af8888c73269e2bda7d",
+      "bytes": 173438
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_cyclic_pblock_minors.sobj": {
+      "sha256": "319d52d3ea3c3774742143126beba73eff5b9296982ac1d0b001d08d3599ef56",
+      "bytes": 59238
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_cyclic_residual_point.sobj": {
+      "sha256": "871698546d2304108b36466bb9e76ff081522c630b64c1da50d8b04ed28e2116",
+      "bytes": 12486
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_normal_all_derivatives.sobj": {
+      "sha256": "7d1b74ac41cc8a7f576ae420954d6e81f136a24a6876c304042ded35e5325e7b",
+      "bytes": 3818636
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_normal_old_sources.sobj": {
+      "sha256": "6c92d49fcb30bf0a53c76404ad0701cceb6031914e034ade474e265c77fbe961",
+      "bytes": 309865
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_RR_section_plane_blocks.sobj": {
+      "sha256": "4d17e8e104474b4bd2d02d6c37722f166232adb80efe178561257f1b836ef7d8",
+      "bytes": 926706
+    },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_two_RR_genuine_higher.sobj": {
       "sha256": "c2b754c37ca764d0bd4383a4d319ac09a9c672cf9b1f7fbf325bff36b9b120d2",
       "bytes": 89391
@@ -11839,6 +11958,10 @@
     "Rank3/inputs/research/ericksen_20261007/round10/independent_ratio_weighted_degreefall.sobj": {
       "sha256": "cb9c120705502878de41b92b692d0740a2f9d0617ee21c574f1293dcf2b7e22a",
       "bytes": 3569258
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_RR_torus_missing_p_sources.sobj": {
+      "sha256": "5beba09a19eee848c72281056deecab5ee4849bcf18897ce6cd1c47dc7330543",
+      "bytes": 981138
     },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_subcritical_line_material_free.sobj": {
       "sha256": "4db9fd6f88fab2b73bee5bb7b33b886c7738b4e37ed728ae61fd3232fe5f763a",
@@ -11932,6 +12055,10 @@
       "sha256": "3cee2449f38f6a04bc5880b43a15a4e5166c158001be886991211e0af3d18a54",
       "bytes": 284665
     },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_subcritical_two_RR_delta_ratio_coordinates.sobj": {
+      "sha256": "9be33d894be05a83253b21bf707a73a8ff7bd47bce787414b4d1b480e8e04823",
+      "bytes": 96879
+    },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_subcritical_two_RR_even_probe.sobj": {
       "sha256": "e6990f4b5dfc921c92386ed4c0e7a016d4adb119b57bb771504b5fbd122289cd",
       "bytes": 32428
@@ -11939,6 +12066,10 @@
     "Rank3/inputs/research/ericksen_20261007/round10/independent_subcritical_two_RR_even_resultants.sobj": {
       "sha256": "aa0a1447ab944a6c8d0e91e3fe996c94bc778f2af1f42a03eca9840aec1b554a",
       "bytes": 606701
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_subcritical_two_RR_finite_normal_layers.sobj": {
+      "sha256": "5106f8f1692bf2225165bbbcc5e8a2020bce31c147ae6b36c5e872f71a014769",
+      "bytes": 14198
     },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_subcritical_two_RR_full_normal.sobj": {
       "sha256": "16894079e43ccf13f7cf84026fe6a00c0ea17f53679ef2253342eb14104a40d5",
@@ -11952,9 +12083,17 @@
       "sha256": "87d66ae9109305b4b4b50ee1c14a2a537ccffc0a01f27541f67082f96b01b7e1",
       "bytes": 21703
     },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_subcritical_two_RR_inactive_rankone_classification.sobj": {
+      "sha256": "cdc1ee09b44466617884044e2a63e81a598232dcd85a3804557688c120e02cf5",
+      "bytes": 18625
+    },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_subcritical_two_RR_kappa_compatibility.sobj": {
       "sha256": "c04b8a219a7fc3b1ead12b94ac5b093f7f10bcc66aba3b0d855aa0875638e27a",
       "bytes": 340566
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_subcritical_two_RR_normal_factor_constants.sobj": {
+      "sha256": "3add29472531b0c0ed72497579fdd298819fff20740176bb15681766d319d008",
+      "bytes": 23289
     },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_subcritical_two_RR_three_even_transport.sobj": {
       "sha256": "d665d0a0953aaf79041af9a548cb455c5e0f1a5b59d9f906c454c6464fd558cc",
@@ -11972,10 +12111,6 @@
       "sha256": "fabdf73f73d6c518c14956c3d1d998d8fbe1fc382cce755e5858e7b8dbd01cec",
       "bytes": 780580
     },
-    "Rank3/inputs/research/ericksen_20261007/round10/independent_supercritical_F12_module_identity.sobj": {
-      "sha256": "55f6c37cd0e5a5fb928f7d3800311d049aef9a8abea7d0e2e29df6ba15b1c693",
-      "bytes": 28155
-    },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_supercritical_canonical_normal.sobj": {
       "sha256": "8ec4606a657db2fe7ccdb4401a1a4173894552ff4f7ac8276aced9a12a9749fe",
       "bytes": 666030
@@ -11984,6 +12119,10 @@
       "sha256": "9c382ecb7a7dc572e358d9fa4cc0c9a4a5cb10a1392a3b37b812efaf36782279",
       "bytes": 81434
     },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_supercritical_F12_module_identity.sobj": {
+      "sha256": "55f6c37cd0e5a5fb928f7d3800311d049aef9a8abea7d0e2e29df6ba15b1c693",
+      "bytes": 28155
+    },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_supercritical_fixed_directions.sobj": {
       "sha256": "8625ce1982d269caddf615c244cc681a26037345336566f304a7c2f48ba3a93e",
       "bytes": 1080163
@@ -11991,6 +12130,10 @@
     "Rank3/inputs/research/ericksen_20261007/round10/independent_supercritical_inactive_generic_first5.sobj": {
       "sha256": "f311302422f579bf4dba4f30d0a556d7ef89be04aed779ce7eb21cb9b62a4ec2",
       "bytes": 76069
+    },
+    "Rank3/inputs/research/ericksen_20261007/round10/independent_supercritical_inactive_generic_resonance_kernel.sobj": {
+      "sha256": "38497648249c7b2ce953042589c901853366211ae0da18a79280c0be6ae9139b",
+      "bytes": 37402
     },
     "Rank3/inputs/research/ericksen_20261007/round10/independent_supercritical_inactive_saturated_twojet.sobj": {
       "sha256": "745c53d34bd749eae013fb821587185e7ab4d3fc7be0254645f5307c0c248f0b",
@@ -12108,9 +12251,405 @@
       "sha256": "4b1f5482061bd0a0580379af19b452eb3980727d237735425ad42c32ffbaf435",
       "bytes": 7799
     },
+    "Rank3/MANIFEST.json": {
+      "sha256": "f04976b74d5f22531185d44fcc3758d302fc41fe2a84058a1150571a277e0e31",
+      "bytes": 474541
+    },
     "Rank3/paper_index.py": {
       "sha256": "7a6c9355d6ea60b9aa2a11470dc508d0da41822a8539a7f92c39d75e9e5b8cda",
       "bytes": 5939
+    },
+    "Rank3/PROOF_MAP.json": {
+      "sha256": "56261cea5e2a30f37caaa6990a99bf57bb57d4f632dcc181b82e10a5ac427de4",
+      "bytes": 1439850
+    },
+    "Rank3/PROOF_MAP.md": {
+      "sha256": "b3e0c3a14573fe85db9272ad852d45ca5f27df9c7e1c0f92ca53cea6d5dbb87b",
+      "bytes": 6839
+    },
+    "Rank3/README.md": {
+      "sha256": "cc2ee933024ada851c6ad645949f0c85e8ef58882530e8790d59c2384da7c07b",
+      "bytes": 4212
+    },
+    "Rank3/results/boundary/execution.json": {
+      "sha256": "b2371c6a31ef57286eeb9ab88eb780d49c0f3cca8923bae9c91f4e52ae8654a7",
+      "bytes": 107858
+    },
+    "Rank3/results/boundary/independent_critical_inactive_fullRR_beta_polynomial_reader.json": {
+      "sha256": "54c456a4fb821c34a20706879afd8593806edf382459cc54f372ccc8a252735e",
+      "bytes": 515
+    },
+    "Rank3/results/boundary/independent_critical_inactive_fullRR_original_leading_reader.json": {
+      "sha256": "6219638b7782845f5cbb34aa9c73d4741032c43c177275965f392c504019dc01",
+      "bytes": 381
+    },
+    "Rank3/results/boundary/independent_critical_rankone_endpoint_certificate.json": {
+      "sha256": "0ff36591984d0e698f5d51735acf29e3540ebac54d5a80b966348e5b32bcdae7",
+      "bytes": 347
+    },
+    "Rank3/results/boundary/independent_critical_rankone_original_reader.json": {
+      "sha256": "b6b4011f8c44c6d270150ac2c5ad6aa73195f8b24b94de63fa3e182c0d38ef9b",
+      "bytes": 302
+    },
+    "Rank3/results/boundary/independent_delta_critical_amplitude_coefficients.json": {
+      "sha256": "267912512f42ffe22cb451f556772c65d00f78696f952cfe3b5790e59240892b",
+      "bytes": 344
+    },
+    "Rank3/results/boundary/independent_delta_critical_exceptional_directions.json": {
+      "sha256": "b52c22c087b7b40103e31c4c90f766bfb2b623fc9d1ac9532df381b129cef85a",
+      "bytes": 170
+    },
+    "Rank3/results/boundary/independent_delta_critical_line_delta_coefficients.json": {
+      "sha256": "7a48f2a80cb237fb1175259d3841cd79896f9fea61be56eb8be8a6f9e060a307",
+      "bytes": 264
+    },
+    "Rank3/results/boundary/independent_delta_critical_line_equal_material_wall.json": {
+      "sha256": "75b5779724ff58f4f51dfa250a6bc263a4fc3ac07c5d7a6ece4f5b554fbe3b2d",
+      "bytes": 282
+    },
+    "Rank3/results/boundary/independent_delta_critical_line_rank_certificate.json": {
+      "sha256": "f9134c019679232fa70058bf90f50a35471fad50abcb4373c64d4fd621696e57",
+      "bytes": 176
+    },
+    "Rank3/results/boundary/independent_delta_critical_line_resultant_reader.json": {
+      "sha256": "f4756982aa7f0f56f895cd21900f8e46a3031cfaed4ba408c9d405da65da7281",
+      "bytes": 551
+    },
+    "Rank3/results/boundary/independent_delta_critical_point11_certificate.json": {
+      "sha256": "e2727c6f5c8ef9c32da66dfddfc3108049450f75352c7ecff40765e5ed06d75a",
+      "bytes": 377
+    },
+    "Rank3/results/boundary/independent_delta_critical_point11_reader.json": {
+      "sha256": "dd6bf437660df8201a6980479200099c47e9dc26f781fea68566938e8114ec2d",
+      "bytes": 302
+    },
+    "Rank3/results/boundary/independent_delta_critical_point11_schur.json": {
+      "sha256": "b59d726b3f85bb5270798acc39f3c6a06f7a973e398d58d9dea5f215924502fa",
+      "bytes": 465
+    },
+    "Rank3/results/boundary/independent_delta_critical_rankdrop_certificate.json": {
+      "sha256": "8b12d891772441d855887c2c70641e4ac49cff7eb37287e1c5aee674746511e3",
+      "bytes": 183
+    },
+    "Rank3/results/boundary/independent_delta_critical_ranktwo_Q0_bridge.json": {
+      "sha256": "9bdfa38c229b2ef135d567f34e1eda9908c770cfe007b510d60a65a62befce97",
+      "bytes": 276
+    },
+    "Rank3/results/boundary/independent_delta_critical_ranktwo_structure.json": {
+      "sha256": "2ae3832f315cd0ca7ba2c091d2758c77ac62f58d144ad217528fb5e6ce84baee",
+      "bytes": 485
+    },
+    "Rank3/results/boundary/independent_delta_critical_singular_old_block_review.json": {
+      "sha256": "37211b593506783729fc8873eaf26d327755d122791095aec900e86a83e84f8b",
+      "bytes": 135
+    },
+    "Rank3/results/boundary/independent_inactive_fullRR_subcritical_independent_coverage_reader.json": {
+      "sha256": "8c0c96713a9d672d00b8509ecb47052d89cdf344c420975c870d41e6f4023a8d",
+      "bytes": 361
+    },
+    "Rank3/results/boundary/independent_RR_torus_missing_p_reader.json": {
+      "sha256": "29a7218bc53adab5a05f15ce96289aaae3c86735f106e2562dc5ca6d5be824f7",
+      "bytes": 333
+    },
+    "Rank3/results/boundary/independent_subcritical_Csing_descent_reader.json": {
+      "sha256": "8547fa6775b29b56eae5f3159c21e753b8d6d4e5c6b178d1a0094c6d36a29c60",
+      "bytes": 281
+    },
+    "Rank3/results/boundary/independent_subcritical_missing_support_certificate.json": {
+      "sha256": "efd5f238a2dd5b8bc4a448a5ba3f5bb23ce801b7140e08d1766ad19e8bc56235",
+      "bytes": 112
+    },
+    "Rank3/results/boundary/independent_subcritical_two_RR_D_curve_source_reader.json": {
+      "sha256": "45ab33a536d3cd90f3a37677cd4888b35fbeda3c7ef16b1058002d6e0771f474",
+      "bytes": 215
+    },
+    "Rank3/results/boundary/independent_subcritical_two_RR_finite_normal_certificate.json": {
+      "sha256": "9b1477122f79a5f15baeb9ac6247ff28ff9095036e9781abdca1238993e74b57",
+      "bytes": 464
+    },
+    "Rank3/results/boundary/independent_subcritical_two_RR_inactive_rankone_material_units_reader.json": {
+      "sha256": "3caf027ba076f898f27536b33af2f9755f9bc613a6b747895352b9d402d42735",
+      "bytes": 164
+    },
+    "Rank3/results/boundary/independent_subcritical_two_RR_inactive_rankone_raw_reader.json": {
+      "sha256": "374df8e18c0a6aaf1a45a2dcf9dc272308f63a42d2e19f70248ee24a733d48ab",
+      "bytes": 349
+    },
+    "Rank3/results/boundary/logs/independent_critical_exceptional_old_block.copy.log": {
+      "sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+      "bytes": 45
+    },
+    "Rank3/results/boundary/logs/independent_critical_exceptional_old_block.log": {
+      "sha256": "293e1a0e84dcb4db860af85e293c2814f6d4e5455a65da7e3fabbe67c68b710c",
+      "bytes": 3099
+    },
+    "Rank3/results/boundary/logs/independent_critical_inactive_fullRR_beta_polynomial_reader.log": {
+      "sha256": "8a0b22c326179dccb0d429942efe1288bc4f27d20d5e6aad2605e53ee6f52ca0",
+      "bytes": 1444
+    },
+    "Rank3/results/boundary/logs/independent_critical_inactive_fullRR_original_leading_reader.log": {
+      "sha256": "00e8f59a116f52ebcb35e9a4cab07e19eb23446cb8ae150d76c8e4374d5672f2",
+      "bytes": 891
+    },
+    "Rank3/results/boundary/logs/independent_critical_rankone_endpoint_certificate.log": {
+      "sha256": "a21d6c56b59d1c19247f21148e48476a6c56a0305247e5779a479716a2a8527c",
+      "bytes": 422
+    },
+    "Rank3/results/boundary/logs/independent_critical_rankone_original_reader.copy.log": {
+      "sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+      "bytes": 45
+    },
+    "Rank3/results/boundary/logs/independent_critical_rankone_original_reader.log": {
+      "sha256": "f545b3ba601d46ea11a8476a78c336d5526fffa0001de598b7550d568e083dc2",
+      "bytes": 1169
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_amplitude_coefficients.copy.log": {
+      "sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+      "bytes": 45
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_amplitude_coefficients.log": {
+      "sha256": "6b5611a07c2b103e357b7d27a1429ffdde253b20cbb855828bfa1c19bc8613cd",
+      "bytes": 223
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_exceptional_directions.log": {
+      "sha256": "10d6c414dd74acc4eca71e32286d885ef510a8eb16c489e26723d1bad84bd060",
+      "bytes": 293
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_line_delta_coefficients.copy.log": {
+      "sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+      "bytes": 45
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_line_delta_coefficients.log": {
+      "sha256": "43df4befef10e201dd842d88519dfc0b3ec805c31ab089bf351b02cd80762bbe",
+      "bytes": 1801
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_line_equal_material_wall.log": {
+      "sha256": "21064dab903347ade6fcd33bd0740b097d47df9762fa7d9c1f59f7f2feddbcb2",
+      "bytes": 482
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_line_rank_certificate.log": {
+      "sha256": "022b4637fb7b18392027bd10ac7d5e9e71980076f6cdca89e06b9451d0dd09bc",
+      "bytes": 165
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_line_resultant_reader.log": {
+      "sha256": "eaaa4411e26fec1aa2cbb57de4c13fa50cdc73d4679f31f7818dda033b7f4353",
+      "bytes": 1168
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_point11_certificate.copy.log": {
+      "sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+      "bytes": 45
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_point11_certificate.log": {
+      "sha256": "5828df985eaa8be4a1b360f420d45ae04b49ce57d25cc1c97d76e7e772302c57",
+      "bytes": 621
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_point11_reader.log": {
+      "sha256": "6a7ddc6111c21cb5810e9f6c3f04965b302476ae659570d667b2cbbc6210cd0d",
+      "bytes": 135
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_point11_schur.copy.log": {
+      "sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+      "bytes": 45
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_point11_schur.log": {
+      "sha256": "9cbb25c3d43cb599246e0b8d356a730a83ffe124f01d7465a640a01ee9adf03c",
+      "bytes": 1372
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_rankdrop_certificate.log": {
+      "sha256": "8b5aa463f081dce1b5657da2b2c84606026803e3e38258c57759a8edfbf51b81",
+      "bytes": 822
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_ranktwo_Q0_bridge.log": {
+      "sha256": "6710bfbbde21abb94e38781522e9cc99a8bac6760064e8957002a4a7bb84cce1",
+      "bytes": 145
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_ranktwo_structure.copy.log": {
+      "sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+      "bytes": 45
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_ranktwo_structure.log": {
+      "sha256": "0774aa97aaf6f1751fe3c7fcc9c1b4187a1693cc345f55d67dcf9bd534dfd197",
+      "bytes": 460
+    },
+    "Rank3/results/boundary/logs/independent_delta_critical_singular_old_block_review.log": {
+      "sha256": "3687ea8832c2454f1a2e00aadeea25a5c04fcfc3924d4e5bb3b402e8e607c46d",
+      "bytes": 696
+    },
+    "Rank3/results/boundary/logs/independent_inactive_fullRR_subcritical_independent_coverage_reader.log": {
+      "sha256": "cf71ffa073bc2c635920343c2340a3f31d8b2465f8839087c75338247679c77d",
+      "bytes": 636
+    },
+    "Rank3/results/boundary/logs/independent_RR_torus_missing_p_closure.copy.log": {
+      "sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+      "bytes": 45
+    },
+    "Rank3/results/boundary/logs/independent_RR_torus_missing_p_closure.log": {
+      "sha256": "2829e062c8a04d05e8b93f2d2e99245033d2ce56a91330d3dafe56f483dcb24c",
+      "bytes": 1293
+    },
+    "Rank3/results/boundary/logs/independent_RR_torus_missing_p_critical_amplitudes.copy.log": {
+      "sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+      "bytes": 45
+    },
+    "Rank3/results/boundary/logs/independent_RR_torus_missing_p_critical_amplitudes.log": {
+      "sha256": "1592b9b3f862eb003fe8243e71e03160981177b1d76b82afd32e33dd3b9d3e00",
+      "bytes": 495
+    },
+    "Rank3/results/boundary/logs/independent_RR_torus_missing_p_reader.log": {
+      "sha256": "22754e9c2eabe6fbfc6f854a701ad1819f3d40437edf85a0c1040205db5f40c6",
+      "bytes": 607
+    },
+    "Rank3/results/boundary/logs/independent_RR_torus_missing_p_super_normal.copy.log": {
+      "sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+      "bytes": 45
+    },
+    "Rank3/results/boundary/logs/independent_RR_torus_missing_p_super_normal.log": {
+      "sha256": "655db6f09d3b046854d75c5b08247c31868067eb1d52e8a1ef4f452e3ee77c2f",
+      "bytes": 2606
+    },
+    "Rank3/results/boundary/logs/independent_subcritical_Csing_descent_reader.log": {
+      "sha256": "fe435d5f346ffedf17f8dda56efc0b7706576e8c96a2546f93011a237c89d471",
+      "bytes": 388
+    },
+    "Rank3/results/boundary/logs/independent_subcritical_missing_support_certificate.log": {
+      "sha256": "cc0e79140d365a1f0c98835fea8b1bffacc96cfc522c1cb6c17a96052329a4b6",
+      "bytes": 151
+    },
+    "Rank3/results/boundary/logs/independent_subcritical_two_RR_D_curve_source_reader.log": {
+      "sha256": "ba1afd723ce0366e708a709beb534e59ccae1a50bc19a0559945585e7bbefcba",
+      "bytes": 327
+    },
+    "Rank3/results/boundary/logs/independent_subcritical_two_RR_finite_normal_certificate.log": {
+      "sha256": "56cff146f830e79637c2c11685e957fd851520d1301a6034125e9c067b431297",
+      "bytes": 235
+    },
+    "Rank3/results/boundary/logs/independent_subcritical_two_RR_inactive_rankone_material_units_reader.log": {
+      "sha256": "5ea047f9bfbe52aaef6f264087ad4030013fd2df5ad837fe24c53c3a36a14801",
+      "bytes": 268
+    },
+    "Rank3/results/boundary/logs/independent_subcritical_two_RR_inactive_rankone_raw_reader.copy.log": {
+      "sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
+      "bytes": 45
+    },
+    "Rank3/results/boundary/logs/independent_subcritical_two_RR_inactive_rankone_raw_reader.log": {
+      "sha256": "7542dfda215d8a39dbf31672cb5f54434f748653cf038f4d57eb7024582c0d5d",
+      "bytes": 464
+    },
+    "Rank3/results/boundary/receipts/independent_critical_exceptional_old_block.json": {
+      "sha256": "730a7c37d230532257b193216fef7cfe640ec7d22b9c8d3cc33c07bc52a1fdd1",
+      "bytes": 3037
+    },
+    "Rank3/results/boundary/receipts/independent_critical_inactive_fullRR_beta_polynomial_reader.json": {
+      "sha256": "f3b86c717b48871cfb7571343f5a03ebddb8b9ad83fc0914a12473753e22aeef",
+      "bytes": 7795
+    },
+    "Rank3/results/boundary/receipts/independent_critical_inactive_fullRR_original_leading_reader.json": {
+      "sha256": "d5752e98c0118e2f6d950803c0a32bdc7304c94a3f01fadde75de89b3d98308b",
+      "bytes": 6182
+    },
+    "Rank3/results/boundary/receipts/independent_critical_rankone_endpoint_certificate.json": {
+      "sha256": "1b4467c04fbb95cf8dc48be376bcda2f52174e58d327cda3ddb48c86545bf48f",
+      "bytes": 4485
+    },
+    "Rank3/results/boundary/receipts/independent_critical_rankone_original_reader.json": {
+      "sha256": "f9ed8f8b67ec064dc628dc43fa45ac72fcb3aef33c45e7ac48ab7876220549d5",
+      "bytes": 7754
+    },
+    "Rank3/results/boundary/receipts/independent_delta_critical_amplitude_coefficients.json": {
+      "sha256": "5174efdbbb50a20553a2be6f44d2816caad9b5b52f1f26db5b4bf6046cd1c8ef",
+      "bytes": 2879
+    },
+    "Rank3/results/boundary/receipts/independent_delta_critical_exceptional_directions.json": {
+      "sha256": "ed1f8f9fb1b3c6bafe09eb1ea4b928cb935384710bfe70fcddc540d3f3fac1e2",
+      "bytes": 2876
+    },
+    "Rank3/results/boundary/receipts/independent_delta_critical_line_delta_coefficients.json": {
+      "sha256": "74768a240eaf8f00951abef846ab5ff0b535eaf58876df126f3c778aa3c672be",
+      "bytes": 2888
+    },
+    "Rank3/results/boundary/receipts/independent_delta_critical_line_equal_material_wall.json": {
+      "sha256": "bbf35e75f3cdf763a3d3b5f8793306f24eb3f1153802d15026600e873fe08477",
+      "bytes": 2910
+    },
+    "Rank3/results/boundary/receipts/independent_delta_critical_line_rank_certificate.json": {
+      "sha256": "8cc66ab4e574e387252a80d6ff90aecb451c8c258246c1d33c01f9af680cac40",
+      "bytes": 2886
+    },
+    "Rank3/results/boundary/receipts/independent_delta_critical_line_resultant_reader.json": {
+      "sha256": "1b91b57a96a0afd1748879819e885ca5e6be7bca77ea0246a2562153a3b4c928",
+      "bytes": 4466
+    },
+    "Rank3/results/boundary/receipts/independent_delta_critical_point11_certificate.json": {
+      "sha256": "c034b6bee8397c9cdf447bc9e787f02bd3859a909801468ac87dcb1e14d11e94",
+      "bytes": 2838
+    },
+    "Rank3/results/boundary/receipts/independent_delta_critical_point11_reader.json": {
+      "sha256": "78c34ccedfbf79b9d501841890c8ed3ecdabfaa876f82f2c10d1e3e0cd1945a6",
+      "bytes": 4391
+    },
+    "Rank3/results/boundary/receipts/independent_delta_critical_point11_schur.json": {
+      "sha256": "d1521cca116f5ee84d14df2fe9ad43f2d3bce766039c54e9353573e607fb80aa",
+      "bytes": 2797
+    },
+    "Rank3/results/boundary/receipts/independent_delta_critical_rankdrop_certificate.json": {
+      "sha256": "c65292130ba9aaec181452f38eef3c4f8806daa9ed4328aef81b67ad5c053cc5",
+      "bytes": 2858
+    },
+    "Rank3/results/boundary/receipts/independent_delta_critical_ranktwo_Q0_bridge.json": {
+      "sha256": "16c849cea6bd4fc306972267742c3cb25fa3b887f624a2812b003b12d7b4a95a",
+      "bytes": 3634
+    },
+    "Rank3/results/boundary/receipts/independent_delta_critical_ranktwo_structure.json": {
+      "sha256": "4c70c5d2645a41dc9ecd938175be64a4490d7bb205c0478edc0734002fcd3880",
+      "bytes": 2846
+    },
+    "Rank3/results/boundary/receipts/independent_delta_critical_singular_old_block_review.json": {
+      "sha256": "e95eaad0162129620445490eca229d8f03314b125c7651a13c2694090b488192",
+      "bytes": 2898
+    },
+    "Rank3/results/boundary/receipts/independent_inactive_fullRR_subcritical_independent_coverage_reader.json": {
+      "sha256": "b1066e14dc76edf95b2f23d7b09c8b3eb32de44de06c96e44eeaa291ba1f5e91",
+      "bytes": 8802
+    },
+    "Rank3/results/boundary/receipts/independent_RR_torus_missing_p_closure.json": {
+      "sha256": "d3b4e3664ec14a9cbd4837cef18bcb322a95ccbc060f0111a9439cb6291bb700",
+      "bytes": 3557
+    },
+    "Rank3/results/boundary/receipts/independent_RR_torus_missing_p_critical_amplitudes.json": {
+      "sha256": "c833d414cb94a132d856c0a170174c44d08771ce91441aa3e3851861766f5775",
+      "bytes": 2867
+    },
+    "Rank3/results/boundary/receipts/independent_RR_torus_missing_p_reader.json": {
+      "sha256": "93bf20a6029927385786239d92ede98fdd9944a87a4a49ca1fde643707ac8452",
+      "bytes": 5153
+    },
+    "Rank3/results/boundary/receipts/independent_RR_torus_missing_p_super_normal.json": {
+      "sha256": "84ac41fa5bd5b69ab1070c2b2f767310dfc8234593a607643b1ecc8f7936fbc6",
+      "bytes": 2804
+    },
+    "Rank3/results/boundary/receipts/independent_subcritical_Csing_descent_reader.json": {
+      "sha256": "4bb1801630aaa126cf2d03ecc19e7682269a7c7d55f33a69a001699fd043f770",
+      "bytes": 3631
+    },
+    "Rank3/results/boundary/receipts/independent_subcritical_missing_support_certificate.json": {
+      "sha256": "9b9a6f164dcbf9d72ce959aea37d9b8d25464a02b5ec76edc930cca7cebee1e2",
+      "bytes": 3173
+    },
+    "Rank3/results/boundary/receipts/independent_subcritical_two_RR_D_curve_source_reader.json": {
+      "sha256": "9f480809bde8f5bf5a4ca45285e5ec57decf32b37104f223c3c1c7151041613a",
+      "bytes": 10334
+    },
+    "Rank3/results/boundary/receipts/independent_subcritical_two_RR_finite_normal_certificate.json": {
+      "sha256": "e6807578d36d1be1232dc2fef30551ca67de4150c1919aa36ba8884f344b3c51",
+      "bytes": 4625
+    },
+    "Rank3/results/boundary/receipts/independent_subcritical_two_RR_inactive_rankone_material_units_reader.json": {
+      "sha256": "f79f70d6773ea25d34a6ef46fa4f79d0a865dcee9f160c422acbcccfe5639649",
+      "bytes": 3099
+    },
+    "Rank3/results/boundary/receipts/independent_subcritical_two_RR_inactive_rankone_raw_reader.json": {
+      "sha256": "7df6edde73208d15beb6f0fcb2fee6e5fa3f791c287ae800df42f54326ce5dae",
+      "bytes": 6231
     },
     "Rank3/results/conic_endpoint/conic_normal_matrix.json": {
       "sha256": "606b856e3358b5da232c2bd9a3dba53f4dc54f265e7a0e629ac7291abc52fb48",
@@ -12308,10 +12847,6 @@
       "sha256": "acb5d1fa403a2a5144b792f07cdb416943cbfe5f6718b4143cdc59143faafd71",
       "bytes": 2364
     },
-    "Rank3/sources/research/ericksen_20261007/full_recompute_20261009/rank3/fresh_G48_cofactors.py": {
-      "sha256": "59a6295e73b13493e809a70f66f5a5059f93026feace1a1870607ea379a48e4d",
-      "bytes": 4043
-    },
     "Rank3/sources/research/ericksen_20261007/full_recompute_20261009/rank3/fresh_canonical_projection_links.py": {
       "sha256": "851a5100e85788d60e4dd6fdd1041d0d45707d03673a75d566d030f92d6c1985",
       "bytes": 2093
@@ -12331,6 +12866,10 @@
     "Rank3/sources/research/ericksen_20261007/full_recompute_20261009/rank3/fresh_even_derivative_source_links.py": {
       "sha256": "f931c0315a3dd923fd75b2ad13df36b9d963e7fd6d84634daf1f120da2f029b8",
       "bytes": 2609
+    },
+    "Rank3/sources/research/ericksen_20261007/full_recompute_20261009/rank3/fresh_G48_cofactors.py": {
+      "sha256": "59a6295e73b13493e809a70f66f5a5059f93026feace1a1870607ea379a48e4d",
+      "bytes": 4043
     },
     "Rank3/sources/research/ericksen_20261007/full_recompute_20261009/rank3/fresh_global_sources.py": {
       "sha256": "81d0e80003401db934e3076f3458f6d95b9a6054d8a64b27d1cb66766539d362",
@@ -12568,22 +13107,6 @@
       "sha256": "3d83e3a8ebb7c01837fb49ef7f884715f95e27c628d2cb040ae2ca8f1d1a944c",
       "bytes": 2131
     },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_RR_canonical_rank4_reader.py": {
-      "sha256": "678aab1ab23cb55c45be82f1a67d2c727a6b6acfddc2314ca783ab02da543a53",
-      "bytes": 2991
-    },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_RR_special_fiber_scheme_reader.py": {
-      "sha256": "f7f5b80698d8bf7df5d6a64d7e49fecad1e2059c5537d94993d1b40cbdc1d990",
-      "bytes": 4297
-    },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_RR_tangent_obstruction_reader.py": {
-      "sha256": "2458479cae67d1497b5dbc2fc534e9ae53e559b61d8e2e221241b427ef429609",
-      "bytes": 3654
-    },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_RR_whole_cone_reader.py": {
-      "sha256": "2aa7f940ce4f921c3c5be3095d8ae6c5f10175ca553539e3ae3fa09b27d7b0c9",
-      "bytes": 4763
-    },
     "Rank3/sources/research/ericksen_20261007/round10/independent_canonical_amplitude_normal_reader.py": {
       "sha256": "0af736f8e9f7abfb88f402f8a778658cf8efaa0cee5b4abf62ecd90288092817",
       "bytes": 4619
@@ -12604,9 +13127,29 @@
       "sha256": "7bce3670a6ca9d557c1c5ca7f16549cc0863c8c4485fe944ca29176eeb5c54ac",
       "bytes": 3805
     },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_critical_exceptional_old_block.py": {
+      "sha256": "aff1df7eca8e6d12ec583821fce85eb31584f7e50eb9c1f980c9a3cd12153997",
+      "bytes": 2510
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_critical_inactive_fullRR_beta_polynomial_reader.py": {
+      "sha256": "8d7f934f6a5b7a66ffb1aafc1df295e52412a7b85b4ea17533ea57b9622bac97",
+      "bytes": 7976
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_critical_inactive_fullRR_original_leading_reader.py": {
+      "sha256": "8541938cf5151ac8c4973d7a8064b8520a7ec05a81b98c25a3143772322055f1",
+      "bytes": 5818
+    },
     "Rank3/sources/research/ericksen_20261007/round10/independent_critical_omega_reader.py": {
       "sha256": "8727c7a519eca4f0364092a89125998692720c171433ea7436940c0ecf1a0b26",
       "bytes": 4239
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_critical_rankone_endpoint_certificate.py": {
+      "sha256": "ffe8a8f9429a72ce4dc542eee9b18879485c9b496febf6a2e3f7fe10f3d661be",
+      "bytes": 2876
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_critical_rankone_original_reader.py": {
+      "sha256": "dcc47c03f94c936ca84d6db21f41e41c2fe2f0dba74ae4cece03b50f15dc66db",
+      "bytes": 6183
     },
     "Rank3/sources/research/ericksen_20261007/round10/independent_critical_single_RR3_normal.py": {
       "sha256": "c896f7c1e2ac569011d846543fbae93bf9b833a6b18ff959ca4efb70cf1348de",
@@ -12616,14 +13159,6 @@
       "sha256": "ab0ccc394ba507f55dc8b45f0b492183b7f32cbde6385d6e3d66120001f79ded",
       "bytes": 7264
     },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_critical_two_RR_R_coefficients.py": {
-      "sha256": "f89139afd1436bd5587606ba982cfcd30d4a6d50741b3953b05d31ca12d68d44",
-      "bytes": 1936
-    },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_critical_two_RR_R_scaled.py": {
-      "sha256": "142c4ab938dd1803363f9808e1ca581e160cda3e2288cd2dfbaf93a70493246d",
-      "bytes": 2130
-    },
     "Rank3/sources/research/ericksen_20261007/round10/independent_critical_two_RR_direction_certificate.py": {
       "sha256": "58fa929d0d49c48e2a683ecc3fa486941a2746f746a9729f6fb6da77c0b52e6f",
       "bytes": 1946
@@ -12632,13 +13167,73 @@
       "sha256": "3f1efc48ce5630470cc1d8c7857fd4d2bc4c963da24ad38c1fa8a6f283eca8ae",
       "bytes": 3621
     },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_critical_two_RR_R_coefficients.py": {
+      "sha256": "f89139afd1436bd5587606ba982cfcd30d4a6d50741b3953b05d31ca12d68d44",
+      "bytes": 1936
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_critical_two_RR_R_scaled.py": {
+      "sha256": "142c4ab938dd1803363f9808e1ca581e160cda3e2288cd2dfbaf93a70493246d",
+      "bytes": 2130
+    },
     "Rank3/sources/research/ericksen_20261007/round10/independent_critical_two_RR_source_reader.py": {
       "sha256": "8fa142755368e24e4fcaea0a6031d2559382e998d18ceef748091f0ab50d5098",
       "bytes": 4759
     },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_delta_critical_amplitude_coefficients.py": {
+      "sha256": "48692dec2285c0010a103c2d659e115c3c4324e73eca02ddb9fa63676e67c005",
+      "bytes": 2580
+    },
     "Rank3/sources/research/ericksen_20261007/round10/independent_delta_critical_canonical_amplitude.py": {
       "sha256": "29a50550f96cadab6df0efe9dec690417394dd6102184a51533783d3f805dd3c",
       "bytes": 2770
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_delta_critical_exceptional_directions.py": {
+      "sha256": "13578c0e103f6126688c96f889d84ecd0fb1e90399606f124b6faf42be176301",
+      "bytes": 1153
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_delta_critical_line_delta_coefficients.py": {
+      "sha256": "685834cd39783e3776aa1e41b63404d039cf2b8786a5c31fbb7ab9589f84b0d7",
+      "bytes": 1881
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_delta_critical_line_equal_material_wall.py": {
+      "sha256": "74f8f5bae237467d0828556d3a3d4371b7105296e158b9f9e73b310e5da0c629",
+      "bytes": 1618
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_delta_critical_line_rank_certificate.py": {
+      "sha256": "a701bbd30ee95a50e709c49262978a15d442537927e9a1a67a94d2b4672f5109",
+      "bytes": 2114
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_delta_critical_line_resultant_reader.py": {
+      "sha256": "40edeeee6d0ce6cd40563160a0531983f11daae0fd07e5738bb81440b09da7be",
+      "bytes": 1877
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_delta_critical_point11_certificate.py": {
+      "sha256": "61091dfff12e9f3df40709064141d678192c25f384f47490b4f11ff20d12d5fb",
+      "bytes": 1798
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_delta_critical_point11_reader.py": {
+      "sha256": "f19c6a8401c40a90b0d7fa7a9250251f509df92c67a8a2eac762c93cc3370bc5",
+      "bytes": 3333
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_delta_critical_point11_schur.py": {
+      "sha256": "705fe47e80621b1d25eb9dbc3553edae0b342e6db7d7e0b2806eb5dae77e3a1d",
+      "bytes": 1459
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_delta_critical_rankdrop_certificate.py": {
+      "sha256": "e3eaca4d5414b311b1e5324feddcd365c090ce639ea5210fcc5ab4af6eed0bbb",
+      "bytes": 1817
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_delta_critical_ranktwo_Q0_bridge.py": {
+      "sha256": "395a02c55119c0da92762d02fcb77322c887f4a0781f9ee585d3618c21ce7e76",
+      "bytes": 1813
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_delta_critical_ranktwo_structure.py": {
+      "sha256": "a8c2465a5125281256133d6dbd841e7665041b0ae68b96ad9ffab7ba9b6f91d5",
+      "bytes": 2281
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_delta_critical_singular_old_block_review.py": {
+      "sha256": "4d50c02abbc2e5c656623f324b3024eebf6a3d2ff72fee6c13f78f6e4c175c21",
+      "bytes": 1148
     },
     "Rank3/sources/research/ericksen_20261007/round10/independent_delta_subcritical_H_initials.py": {
       "sha256": "e1cb772495011f0b1b1566c3395174cdb895f74a3a8b953a376d41f874dd57f6",
@@ -12680,6 +13275,18 @@
       "sha256": "c44c8e2dd0043202875ed9463b8083cf320bcc53eb6e5b105196ff84fda13e8b",
       "bytes": 5501
     },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_inactive_fullRR_subcritical_independent_coverage_reader.py": {
+      "sha256": "2defbf749487eac40d1900689d3ca0f133ca2af19afead5f326209bc006f9870",
+      "bytes": 7506
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_inactive_fullRR_subcritical_independent_pair_reader.py": {
+      "sha256": "07ce2fe53506f92ef0b5445fb4d5f750e32de2e4e6b6e7a4005fcacc73b2d488",
+      "bytes": 8834
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_inactive_generic_support_reader.py": {
+      "sha256": "e40b723a237079edc25905dcaee8e0b2ba588e9aab122af430ded87fa080dd71",
+      "bytes": 15535
+    },
     "Rank3/sources/research/ericksen_20261007/round10/independent_inactive_RRtorus_incoming_boundary.py": {
       "sha256": "c975df744d793bf2e31ce1f35147f50ce7f44809c2d0daa40cd5219c359bbfae",
       "bytes": 4262
@@ -12715,14 +13322,6 @@
     "Rank3/sources/research/ericksen_20261007/round10/independent_inactive_RRtorus_wall_Schur.py": {
       "sha256": "58ba62d500e27d473569a43612634c3469bb8c1bd992fc5570ae7013432f7d3a",
       "bytes": 2088
-    },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_inactive_fullRR_subcritical_independent_pair_reader.py": {
-      "sha256": "07ce2fe53506f92ef0b5445fb4d5f750e32de2e4e6b6e7a4005fcacc73b2d488",
-      "bytes": 8834
-    },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_inactive_generic_support_reader.py": {
-      "sha256": "e40b723a237079edc25905dcaee8e0b2ba588e9aab122af430ded87fa080dd71",
-      "bytes": 15535
     },
     "Rank3/sources/research/ericksen_20261007/round10/independent_inactive_single_RR_boundary.py": {
       "sha256": "b703cff8cca5c7eea0ee89e00c03b6cbb6b3d925d9388f5d30f0e5f8c2a5f91b",
@@ -12764,10 +13363,6 @@
       "sha256": "325f7cd9f45651c5f864252d74c8a6f9c351ad947fa9880c69b8932a0d64c474",
       "bytes": 6664
     },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_ratio_RR_cyclic_full_matrix.py": {
-      "sha256": "185f3ff823118628505dc7c3e8d06126c6cb22574fb6d1a20c3792ca26306b3b",
-      "bytes": 2685
-    },
     "Rank3/sources/research/ericksen_20261007/round10/independent_ratio_axis_normal_kernel_certificate.py": {
       "sha256": "981edc55b29a55d754f0be9d098ca542938002fa9c0dd796dca90443670ea50b",
       "bytes": 2600
@@ -12784,13 +13379,13 @@
       "sha256": "7ace5a91c6e7cfc365a8f867cedb8935c35b45d468e78c031153f7a7089c60d8",
       "bytes": 3790
     },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_ratio_inactive_row3_RR_derivatives.py": {
-      "sha256": "ce02dbb9732f9748ec4fd0f42b5e286d9e92904b0ef50f97c20ffca41658c351",
-      "bytes": 2765
-    },
     "Rank3/sources/research/ericksen_20261007/round10/independent_ratio_inactive_row3_linear_strata.py": {
       "sha256": "779b07ca87518413906f3216ae540163c0200e52926e79c704fe37e7f9ec340b",
       "bytes": 3068
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_ratio_inactive_row3_RR_derivatives.py": {
+      "sha256": "ce02dbb9732f9748ec4fd0f42b5e286d9e92904b0ef50f97c20ffca41658c351",
+      "bytes": 2765
     },
     "Rank3/sources/research/ericksen_20261007/round10/independent_ratio_incoming12_all_third_range.py": {
       "sha256": "03c2c1b48fa50e10ef8c194d2496e4848795de2c75012fe394fea6406ec648fd",
@@ -12852,9 +13447,45 @@
       "sha256": "14cf6cffbf0fc8b8379d11a9fd6cf9090cbadd171a3d0dc718dd6ad475578be7",
       "bytes": 2879
     },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_ratio_RR_cyclic_full_matrix.py": {
+      "sha256": "185f3ff823118628505dc7c3e8d06126c6cb22574fb6d1a20c3792ca26306b3b",
+      "bytes": 2685
+    },
     "Rank3/sources/research/ericksen_20261007/round10/independent_relative_Newton_cyclic_regularity_reader.py": {
       "sha256": "557b07618a990f3624d5efd2e44f5f0d89c0a1e87354b233f43d0798be4f25a7",
       "bytes": 2501
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_RR_canonical_rank4_reader.py": {
+      "sha256": "678aab1ab23cb55c45be82f1a67d2c727a6b6acfddc2314ca783ab02da543a53",
+      "bytes": 2991
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_RR_special_fiber_scheme_reader.py": {
+      "sha256": "f7f5b80698d8bf7df5d6a64d7e49fecad1e2059c5537d94993d1b40cbdc1d990",
+      "bytes": 4297
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_RR_tangent_obstruction_reader.py": {
+      "sha256": "2458479cae67d1497b5dbc2fc534e9ae53e559b61d8e2e221241b427ef429609",
+      "bytes": 3654
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_RR_torus_missing_p_closure.py": {
+      "sha256": "89084802cb55668e800ffcfdb7e70d1b08adf9559ae697ceeb2ac414abf919e0",
+      "bytes": 3212
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_RR_torus_missing_p_critical_amplitudes.py": {
+      "sha256": "943df8c10a82f218004ca0e35a1da38fd29cfce4bd0bea7dcb446d3adf80675c",
+      "bytes": 3725
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_RR_torus_missing_p_reader.py": {
+      "sha256": "5af158ccdb8c846eefb08ea6ea611d762978e171c4e967cef8c665a2374b62a4",
+      "bytes": 6364
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_RR_torus_missing_p_super_normal.py": {
+      "sha256": "38d3bfd84b9f90b7a53a3214af9fcc27faf44bd69172c903117a027c242c1441",
+      "bytes": 2728
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_RR_whole_cone_reader.py": {
+      "sha256": "2aa7f940ce4f921c3c5be3095d8ae6c5f10175ca553539e3ae3fa09b27d7b0c9",
+      "bytes": 4763
     },
     "Rank3/sources/research/ericksen_20261007/round10/independent_scalar_D00_zero_reader.py": {
       "sha256": "cca7274ae672215f110a30ac41290d1b81a9392221e684413c13f3fa911ff46d",
@@ -12892,17 +13523,21 @@
       "sha256": "45a373bafb9c047fc45531fe136db3c5e67324a328d03ae3d63bce3f511c3429",
       "bytes": 7539
     },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_Q0_source_reader.py": {
-      "sha256": "555aba2e1886be633b669984220e458852c264c2d06cc258c4131837ff79f327",
-      "bytes": 9139
+    "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_Csing_descent_reader.py": {
+      "sha256": "4b291d4dcac2185c9df8ef3569e1c4cd059f592feb643b2e1c6d5148abe54cfa",
+      "bytes": 2002
     },
     "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_even_line_reader.py": {
       "sha256": "66924f5d83ee3f6ccb3595d3afaedd268769561f4639fb16ff840194d6b41705",
       "bytes": 9262
     },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_single_RR_G30_J10_dual_reader.py": {
-      "sha256": "e25d6bf33f4e089629c6c1f6bfb5f5be4dc901d751ad6229a30d1f08b33718ce",
-      "bytes": 3486
+    "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_missing_support_certificate.py": {
+      "sha256": "a9cfff3cbc37f619c4d07c64279780be4a54f375f69eb60505dde64d6b05ebaf",
+      "bytes": 3605
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_Q0_source_reader.py": {
+      "sha256": "555aba2e1886be633b669984220e458852c264c2d06cc258c4131837ff79f327",
+      "bytes": 9139
     },
     "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_single_RR_complete_E_regularity.py": {
       "sha256": "1df60e960c795477dccd2b588bacbd996b84ea14f217410cb1649005dd127959",
@@ -12939,6 +13574,10 @@
     "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_single_RR_full_regular_chart.py": {
       "sha256": "8ae20704eddf80e243868609286d3d6f145162cee72a4fc843e7ae26891ba4fd",
       "bytes": 4742
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_single_RR_G30_J10_dual_reader.py": {
+      "sha256": "e25d6bf33f4e089629c6c1f6bfb5f5be4dc901d751ad6229a30d1f08b33718ce",
+      "bytes": 3486
     },
     "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_single_RR_odd_saturation_generic_dual_reader.py": {
       "sha256": "6f6b5a626e5f562304642978e937e612d73de030b99485a92f86b978964e4162",
@@ -13008,13 +13647,13 @@
       "sha256": "9baaf749f7035a3ce33f8dcf39c7147e6b07acc249d777d24687567bbec171d9",
       "bytes": 2553
     },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_single_RR_yw_plus_wall_J10_unit_reader.py": {
-      "sha256": "b84f5ab2a7f952d9553b5b94156ebaa12a41ab917ba33b5922686bec2286d491",
-      "bytes": 2229
-    },
     "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_single_RR_yw_plus_wall_cubic_probe.py": {
       "sha256": "372f69e9cf9140e952a7cc437890de2c1e90ce9224add357c24b75a12fdca25f",
       "bytes": 3348
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_single_RR_yw_plus_wall_J10_unit_reader.py": {
+      "sha256": "b84f5ab2a7f952d9553b5b94156ebaa12a41ab917ba33b5922686bec2286d491",
+      "bytes": 2229
     },
     "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_single_RR_yw_plus_wall_odd_saturated_jets.py": {
       "sha256": "9f3d988a638ef749e7663db7feb2e48db3907d4e5a8e26a24bf4412d29f1cba7",
@@ -13023,6 +13662,14 @@
     "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_single_RR_yw_plus_wall_saturated_cubic_probe.py": {
       "sha256": "c431b80a2f2f0318c6a9a847ca7903d5d417546548a9c88a377a48878e0a0d38",
       "bytes": 3262
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_two_RR_D_curve_source_reader.py": {
+      "sha256": "88361b4fe89d93a72627250f6332768bf1b702612be41ac324d64524b98a5951",
+      "bytes": 6053
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_two_RR_finite_normal_certificate.py": {
+      "sha256": "87463be9aea58ae8e21e4eced9808abafa5d0680fa050df029034ec8fe808b80",
+      "bytes": 4098
     },
     "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_two_RR_inactive_axis_all37_second_module.py": {
       "sha256": "44a87e3dc2b65842a4e81b9ea7623f4a620742d7801a79f99b54656e86c022f9",
@@ -13092,6 +13739,14 @@
       "sha256": "e315378f09f7a895b5374b266e2151045005e29b2fddfad41a6f501bcbdc324b",
       "bytes": 4938
     },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_two_RR_inactive_rankone_material_units_reader.py": {
+      "sha256": "86d551b67030925deca34278b5e23eaaed5ef5927ea9ad4f25cebb1c71e8cd87",
+      "bytes": 1973
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_two_RR_inactive_rankone_raw_reader.py": {
+      "sha256": "47b09a473e7d3f5db83125ea387af43ed153c29db65cabf5dba2ee6c7c544fcf",
+      "bytes": 7962
+    },
     "Rank3/sources/research/ericksen_20261007/round10/independent_subcritical_two_RR_three_full_normals.py": {
       "sha256": "f5db2dcab77c9d2cacfad8d3a73b5b2c71bcd265cb7d380bd2d5496696eb14bc",
       "bytes": 5498
@@ -13104,21 +13759,13 @@
       "sha256": "fbc6d07358d8fe9631e2d456e30f9193041e077e6c3c9bd42583ff01662a981d",
       "bytes": 6468
     },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_supercritical_F12_source_reader.py": {
-      "sha256": "3961bb298673e95b0600d06fa430892fb6e9735e7c9d90ed11ac0dd99fedd004",
-      "bytes": 2487
-    },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_supercritical_RR_small_support_reader.py": {
-      "sha256": "908735e3c438313fa83c4bab8ff58f779e58ad4df69c8929d49175ad4b4a72ce",
-      "bytes": 10920
-    },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_supercritical_RR_small_support_sources.py": {
-      "sha256": "8785b2b8017a45657196e46da2dfd303332a6c96c5b19d3ae1f665c9874f1515",
-      "bytes": 4769
-    },
     "Rank3/sources/research/ericksen_20261007/round10/independent_supercritical_exceptional_even.py": {
       "sha256": "c697eec0c4df50b8a85b903d62344350aef19dbb901d9356dcac0f35235ec2ca",
       "bytes": 2570
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_supercritical_F12_source_reader.py": {
+      "sha256": "3961bb298673e95b0600d06fa430892fb6e9735e7c9d90ed11ac0dd99fedd004",
+      "bytes": 2487
     },
     "Rank3/sources/research/ericksen_20261007/round10/independent_supercritical_first_boundary_probe.py": {
       "sha256": "a119e97e6d4415c20f9629544e5cf3b61f278ec7843ca289b3453ebf25c9575e",
@@ -13131,6 +13778,14 @@
     "Rank3/sources/research/ericksen_20261007/round10/independent_supercritical_normal_direction.py": {
       "sha256": "496d94888b9e70599b2b732f293581a2a09a9d6b3022c4852dcf08706a70eec0",
       "bytes": 2226
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_supercritical_RR_small_support_reader.py": {
+      "sha256": "908735e3c438313fa83c4bab8ff58f779e58ad4df69c8929d49175ad4b4a72ce",
+      "bytes": 10920
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_supercritical_RR_small_support_sources.py": {
+      "sha256": "8785b2b8017a45657196e46da2dfd303332a6c96c5b19d3ae1f665c9874f1515",
+      "bytes": 4769
     },
     "Rank3/sources/research/ericksen_20261007/round10/independent_supercritical_whole_torus_reader.py": {
       "sha256": "ec6c27a5a8536711a2717a991e25408e21e3cfa1c836b51708f72a2999ebd613",
@@ -13148,10 +13803,6 @@
       "sha256": "85c3b53382d9425ea61b897451915dfe0d863b1b38bfeeb41678133d966ed30f",
       "bytes": 4758
     },
-    "Rank3/sources/research/ericksen_20261007/round10/independent_two_RR_mixed_exclusion_reader.py": {
-      "sha256": "3ec25526f498d081e7866b4a32396b90c8e8cc5af5611b989889b003c75be9c0",
-      "bytes": 8286
-    },
     "Rank3/sources/research/ericksen_20261007/round10/independent_two_pair_amplitude_reader.py": {
       "sha256": "bdb2bd4c37d2e6882a58e022aafa6b74a02c5af8905daf20d1232e32eaf43ec5",
       "bytes": 4577
@@ -13167,6 +13818,10 @@
     "Rank3/sources/research/ericksen_20261007/round10/independent_two_pair_good_reduction_reader.py": {
       "sha256": "69824f75e16a0dd9f9395a541e8c431d5d89a7b413a72d49b8fbafe9a871c01b",
       "bytes": 3970
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_two_RR_mixed_exclusion_reader.py": {
+      "sha256": "3ec25526f498d081e7866b4a32396b90c8e8cc5af5611b989889b003c75be9c0",
+      "bytes": 8286
     },
     "Rank3/sources/research/ericksen_20261007/round10/independent_two_trilinear_graphs_reader.py": {
       "sha256": "bd9ee8761cfb83b98b3399242d7680f8683138df9ce13b3b8fa27af7482b936f",
@@ -13232,13 +13887,13 @@
       "sha256": "a3a8f4ae38d9a45567f01bc6c905adc5de902e3b134c9720dc5718e42a25e6f6",
       "bytes": 3442
     },
-    "Rank3/sources/research/ericksen_20261007/round10/ordinary_pair_minus_E35_cubic.py": {
-      "sha256": "150a9d1945c99a7d192ccaa8ccfdcd2f4e46890176979f79d605bbaa33e9219d",
-      "bytes": 2248
-    },
     "Rank3/sources/research/ericksen_20261007/round10/ordinary_pair_minus_adapted_B.py": {
       "sha256": "d9a115a87a0bdd515e157f2f5400d594c848dc694c10d05f702901bb06cec2c5",
       "bytes": 3791
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/ordinary_pair_minus_E35_cubic.py": {
+      "sha256": "150a9d1945c99a7d192ccaa8ccfdcd2f4e46890176979f79d605bbaa33e9219d",
+      "bytes": 2248
     },
     "Rank3/sources/research/ericksen_20261007/round10/ordinary_pair_minus_general_quadratic_range.py": {
       "sha256": "b8e6e638c6305033dc8b62c74e4993d0e3d1340fe1de987bb96bf03b4a4141f9",
@@ -13252,13 +13907,13 @@
       "sha256": "8999d604be22ace9483f453835e8440eaceed29e485ef853390ad187f52cf6dd",
       "bytes": 1764
     },
-    "Rank3/sources/research/ericksen_20261007/round10/ordinary_pair_minus_wall_E29_mixed_third_probe.py": {
-      "sha256": "76a10f35de490fbf372dc34a4d93c61482c9dca51b1623c6613ba7c3d09fa4e6",
-      "bytes": 1083
-    },
     "Rank3/sources/research/ericksen_20261007/round10/ordinary_pair_minus_wall_cyclic_coupled_probe.py": {
       "sha256": "3d21aa63d3196b34d31c8e8a7e962ff21602fce1e86b1cc92f637059de2fb1f1",
       "bytes": 1132
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/ordinary_pair_minus_wall_E29_mixed_third_probe.py": {
+      "sha256": "76a10f35de490fbf372dc34a4d93c61482c9dca51b1623c6613ba7c3d09fa4e6",
+      "bytes": 1083
     },
     "Rank3/sources/research/ericksen_20261007/round10/ordinary_pair_minus_wall_resonant_A6.py": {
       "sha256": "90af2ebda8aca64f4e36e8c86a13bd861a0fc3d211e97464b6c35af3b081f127",
@@ -13304,6 +13959,10 @@
       "sha256": "0fa31219d30afb1c5c18c6d34f75ee149f2c7d9832686d7705af5fb0d51ff9c8",
       "bytes": 1763
     },
+    "Rank3/sources/research/ericksen_20261007/round10/ordinary_single_axis_dimensionless_blocks.py": {
+      "sha256": "c80ade8bfdee50c249f44dcddb5b41defd09bd2166f09a648b7136200cd1800a",
+      "bytes": 1961
+    },
     "Rank3/sources/research/ericksen_20261007/round10/ordinary_single_axis_J9.py": {
       "sha256": "b7e67c4176eacd3e7a6cdff2533f8bf707d1e51c6ebedba1f75a37494cae41ee",
       "bytes": 3275
@@ -13312,21 +13971,17 @@
       "sha256": "269e84d79a10e90a3e9d9781f4578d759643bc6e3d03244c9974f300010b7485",
       "bytes": 2676
     },
-    "Rank3/sources/research/ericksen_20261007/round10/ordinary_single_axis_dimensionless_blocks.py": {
-      "sha256": "c80ade8bfdee50c249f44dcddb5b41defd09bd2166f09a648b7136200cd1800a",
-      "bytes": 1961
-    },
     "Rank3/sources/research/ericksen_20261007/round10/ordinary_single_axis_whole_reader.py": {
       "sha256": "5e85e2f69207d1851a4d5d51a311e7eca457529fd6de4ce189c96f0e8a9bf72f",
       "bytes": 7390
     },
-    "Rank3/sources/research/ericksen_20261007/round10/pencil_T2_uniform_audit.py": {
-      "sha256": "972cd906d9fedcc467da764ad39f3e0041f5508a9353b8dad53d0bced689304b",
-      "bytes": 4638
-    },
     "Rank3/sources/research/ericksen_20261007/round10/pencil_aqminusone_Azero.py": {
       "sha256": "25404025f32124a93167da78a220081e51ed242bd89178ffa5be96af76d3d7f3",
       "bytes": 833
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/pencil_aqminusone_newton.py": {
+      "sha256": "dbd7d6fb97dff8c9d6593c32b030733cd7e5059373bd4d37e9d50ab1d433486a",
+      "bytes": 1751
     },
     "Rank3/sources/research/ericksen_20261007/round10/pencil_aqminusone_Ttwo.py": {
       "sha256": "71a7e267763ed3044eba6c2e42f0c2bc0b69b5748394f908b291ded5efdbb84b",
@@ -13339,10 +13994,6 @@
     "Rank3/sources/research/ericksen_20261007/round10/pencil_aqminusone_Ttwo_sylvester.py": {
       "sha256": "a5c4ed1329d670ec4b8e7d6b30116a497fec778f012f8e80439bb584b0de7cba",
       "bytes": 1477
-    },
-    "Rank3/sources/research/ericksen_20261007/round10/pencil_aqminusone_newton.py": {
-      "sha256": "dbd7d6fb97dff8c9d6593c32b030733cd7e5059373bd4d37e9d50ab1d433486a",
-      "bytes": 1751
     },
     "Rank3/sources/research/ericksen_20261007/round10/pencil_aqminusone_uniform_audit.py": {
       "sha256": "33ea485fbda6ac52eeaeaf7e2d5d3376d8bbffda038fcfb634518e216b419260",
@@ -13396,6 +14047,10 @@
       "sha256": "a5d424e35e40b857fcf9323a0480ab1ff33834339d1e2d1c50e75fb0cd68cbc1",
       "bytes": 1230
     },
+    "Rank3/sources/research/ericksen_20261007/round10/pencil_T2_uniform_audit.py": {
+      "sha256": "972cd906d9fedcc467da764ad39f3e0041f5508a9353b8dad53d0bced689304b",
+      "bytes": 4638
+    },
     "Rank3/sources/research/ericksen_20261007/round10/pencil_u_primitive_coefficient.py": {
       "sha256": "7f1988248e44492ccfaddf30de398c3ce3b0696365e272986c4ff06e5bfa1f59",
       "bytes": 1480
@@ -13424,10 +14079,6 @@
       "sha256": "ee94b7ed45686e0009b2def1f891b315c57571f445b180222cfa64913e69605a",
       "bytes": 2086
     },
-    "Rank3/sources/research/ericksen_20261007/round10/subcritical_single_H_one_G_whole_family.py": {
-      "sha256": "4c8826ff8d466eb0b511c227eb9e719ff5bf1af31934ba73102f5cd0873966b6",
-      "bytes": 2280
-    },
     "Rank3/sources/research/ericksen_20261007/round10/subcritical_single_cyclic_conic_G_normal_cover.py": {
       "sha256": "f33019cc0ecadaa44168efcdf56f5b26abd861cc30b795c61a63a1df13331912",
       "bytes": 3575
@@ -13451,6 +14102,10 @@
     "Rank3/sources/research/ericksen_20261007/round10/subcritical_single_full_regular_chart_H1.py": {
       "sha256": "eceb94a6d675e7dcf7f584d67c8f2116584a5edd851d3150b5dfe2a402bb877a",
       "bytes": 4890
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/subcritical_single_H_one_G_whole_family.py": {
+      "sha256": "4c8826ff8d466eb0b511c227eb9e719ff5bf1af31934ba73102f5cd0873966b6",
+      "bytes": 2280
     },
     "Rank3/sources/research/ericksen_20261007/round10/subcritical_single_p12_full_chart.py": {
       "sha256": "26a1c738b49004530afc6f693fd222c572797f262b6dd92b6fd77e54510ef118",
@@ -13516,61 +14171,21 @@
       "sha256": "92986c56f091e889ef1347924e22fc9525cfb4c12afb03d8fe90debb9ba811ce",
       "bytes": 2516
     },
+    "Rank3/SYMBOLS.md": {
+      "sha256": "3e4e8dda402db4d37f5368f3f503687bb244a50e81572e36f2f51c0449a10d16",
+      "bytes": 3006
+    },
     "Rank3/tasks.json": {
-      "sha256": "b04539083448ee05665858dbec2fa74080224cbdaf6fd076a0fe6f9e28a247e9",
-      "bytes": 381901
+      "sha256": "7f7e9964dec3b9df4ba6f1f37b72e3d6b5f6451b3d79f4735ee12e480351ee97",
+      "bytes": 406465
     },
-    "assets/build_problem_figure.py": {
-      "sha256": "dcf3685cb0249c46812f8a68c2e03c72132008bf7a9e322393a4f00388cab132",
-      "bytes": 15103
+    "Rank3/validate_boundary_index.py": {
+      "sha256": "223dd94c1b4fd2885749d36bfb355e99a20412b5b1b13cf78f1d2b2ef46b831e",
+      "bytes": 3485
     },
-    "assets/build_proof_figure.py": {
-      "sha256": "aa53a679426386d2b22f55b996e3f2071fad83ab39e6a00e844e05689fd2a762",
-      "bytes": 1329
-    },
-    "assets/ericksen_problem.pdf": {
-      "sha256": "9b0112f81cd31670b36268c19cee518693cf71b00cdfdef821e0a954d1060d7f",
-      "bytes": 1147508
-    },
-    "assets/ericksen_problem.png": {
-      "sha256": "c69dbd8ba0f771fb5b1259318f4ab7c1536f062884b7438cc2bf058882e456b3",
-      "bytes": 1040340
-    },
-    "assets/fonts/GUST-FONT-LICENSE.txt": {
-      "sha256": "49ea6cb9257bbee0a3979c48a774cd221550ac1c20c95549efe45fc99cc18050",
-      "bytes": 1377
-    },
-    "assets/fonts/LPPL-1.3c.txt": {
-      "sha256": "ca3227f672053cb608959d7e1d476c7a13efea11be3f6e53758a68b650c918e8",
-      "bytes": 19040
-    },
-    "assets/fonts/README.txt": {
-      "sha256": "a93624f33146a6b91b00e6351ab7bdaa190af4c5a41ed50da7a755cce9b18464",
-      "bytes": 524
-    },
-    "assets/fonts/lmroman10-regular.otf": {
-      "sha256": "1aa18cfefa58132c52ce5de70db1fd1154201c19cd2b2cdaffba4906a33e6852",
-      "bytes": 111536
-    },
-    "assets/fonts/lmroman17-regular.otf": {
-      "sha256": "ed048c80fb4b67663b80899b89fe5fba17d7442e1286d61fd08fe5689c6b7c3c",
-      "bytes": 110248
-    },
-    "assets/geometry_checks.json": {
-      "sha256": "3be11bd5b8860b23f3a933d34a231f064a99a07581996e8a997e97e46d7320da",
-      "bytes": 6571
-    },
-    "assets/proof_structure.pdf": {
-      "sha256": "1f9603a8c029ff77694771865614042caadf6a407c8e3a787cdaedc2730a50f5",
-      "bytes": 132445
-    },
-    "assets/proof_structure.png": {
-      "sha256": "c3d62734b212509cd149dba47004a1feb43f21bcffa4b100d54c5a58f60138ce",
-      "bytes": 220799
-    },
-    "assets/proof_structure.tex": {
-      "sha256": "3341c335483d7133eab20458488ed62c013929fff37d37d28d99c09d12350fc3",
-      "bytes": 4111
+    "README.md": {
+      "sha256": "98e8a233f11e092ad847df4695d6f84e4f0823fa0cecd684726da58fecd21341",
+      "bytes": 6849
     },
     "tex/figures/rank_mechanism_geometry.pdf": {
       "sha256": "13f6c2b57642ed82d2b11109723920fa4389e4f3ba6bcf4a07c4675b76da6c88",
@@ -13585,8 +14200,8 @@
       "bytes": 1946
     },
     "tex/main.tex": {
-      "sha256": "19e3a40b7f6895cd42e08d74f113996077cf65f942a4ca07f599ea3cbbe90597",
-      "bytes": 596314
+      "sha256": "ea9c004891c1e9f24d2535ea4e8714f8c08f184608ab2fa83f44a9597d6fed42",
+      "bytes": 605126
     },
     "tex/supplement.tex": {
       "sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
@@ -13603,7 +14218,7 @@
     "endpoint_calculations_rebuilt_from_empty_work_directory": true,
     "existing_mathematical_sources_inputs_arguments_and_wrappers_unchanged": true,
     "manuscript_included": true,
-    "repository_layout_updated_utc": "2026-10-13T02:25:34.121608+00:00",
+    "repository_layout_updated_utc": "2026-10-13T06:40:11.816816+00:00",
     "rank3_presentation": "single calculation package and unified proof index",
     "protected_source_and_input_files_checked": 689,
     "readme_figures": {
@@ -13623,6 +14238,8 @@
       "proof": "assets/proof_structure.png",
       "proof_source": "assets/proof_structure.tex",
       "proof_builder": "assets/build_proof_figure.py"
-    }
+    },
+    "boundary_coverage_index_added": true,
+    "boundary_source_checks_rebuilt": 29
   }
 }

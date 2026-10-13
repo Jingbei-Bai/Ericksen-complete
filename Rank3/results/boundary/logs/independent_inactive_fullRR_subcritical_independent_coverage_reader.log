@@ -1,0 +1,5 @@
+SUPPORT+MATERIAL+CANONICAL PASS 289 seconds 2.050242677999904
+GENERIC positive KERNEL PASS 2.295889116000126
+GENERIC negative KERNEL PASS 2.4666602060001424
+PASS {'status': 'PASS', 'checks': 479, 'seconds': 2.4676389149999522, 'all_supports_and_three_material_labels': True, 'whole_amplitude_canonical_delta_inputs': True, 'whole_base_wall_kernels': True, 'scope': 'Independent support, material and whole-base scheme-input audit.\nOriginal D masks, all three cyclic labels and every root are retained.\n'}
+ISOLATED REPLAY PASS independent_inactive_fullRR_subcritical_independent_coverage_reader.py imports 8 seconds 2.4721564439996655

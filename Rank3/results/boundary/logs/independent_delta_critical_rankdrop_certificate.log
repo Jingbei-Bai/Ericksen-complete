@@ -1,0 +1,7 @@
+CONSTANT_ROW_RANK 17 rows [0, 1, 2, 3, 4, 11, 20, 21, 22, 23, 24, 26, 29, 30, 31, 49, 50]
+SMALLBASIS [cs^4 - 17/2*cs^3 + 15*cs^2 - 17/2*cs + 1, cs*cz^3 - 15/2*cs*cz^2 - cz^3 + 15/2*cs*cz + 15/2*cz^2 - cs - 15/2*cz + 1, cz^4 - 17/2*cz^3 + 15*cz^2 - 17/2*cz + 1, cs^2*cz - cs*cz^2 - cs^2 + cz^2 + cs - cz] sources 134 seconds 0.7099444529999914
+LIFT cs^4 - 17/2*cs^3 + 15*cs^2 - 17/2*cs + 1 nonzero 17 seconds 0.7353612910000038
+LIFT cs*cz^3 - 15/2*cs*cz^2 - cz^3 + 15/2*cs*cz + 15/2*cz^2 - cs - 15/2*cz + 1 nonzero 17 seconds 0.7581082849999916
+LIFT cz^4 - 17/2*cz^3 + 15*cz^2 - 17/2*cz + 1 nonzero 17 seconds 0.7826393640000049
+LIFT cs^2*cz - cs*cz^2 - cs^2 + cz^2 + cs - cz nonzero 17 seconds 0.8009153760000061
+ISOLATED REPLAY PASS independent_delta_critical_rankdrop_certificate.py imports 1 seconds 0.8403725060000227

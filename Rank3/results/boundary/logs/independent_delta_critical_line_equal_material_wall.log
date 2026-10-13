@@ -1,0 +1,3 @@
+WALL_POLYS [wn^2 * ((wn^2 - 1)*wt^4 + (5*wn - 3)*wt^3 + (5*wn - 3)*wt^2 + 2*wt + 2), wn^2 * ((wn - 1)*wt^2 + (2*wn - 1)*wt + 2*wn - 1) * ((wn + 1)*wt^2 + 4*wt + 4), wn^2 * ((wn^2 - 1)*wt^4 + (5*wn - 1)*wt^3 + (5*wn + 3)*wt^2 + 6*wt + 2)]
+WALL_RESULTANT (64) * (wn - 3/2) * (wn + 9) * (wn + 1)^3 * (wn - 1)^5 * wn^16 * (wn^2 - 1/2*wn + 1/2) seconds 0.08186965199999463
+ISOLATED REPLAY PASS independent_delta_critical_line_equal_material_wall.py imports 1 seconds 0.09178737799999226

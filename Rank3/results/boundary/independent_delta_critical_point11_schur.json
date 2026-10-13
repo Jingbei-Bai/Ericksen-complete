@@ -1,0 +1,28 @@
+{
+  "Q_zero": [
+    true,
+    true
+  ],
+  "H_constant_zero": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "seconds": 0.8518715749999899,
+  "scope": "All original critical H equations on the constant direction (s,z)=(1,1).\n\nBoth Schur columns are retained.  Delta is not assumed constant over H,Z.\n"
+}

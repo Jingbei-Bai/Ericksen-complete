@@ -1,0 +1,12 @@
+SUPPORT PASS p12_p32 checks 442 seconds 5.438960479000002
+SUPPORT PASS p13_p23 checks 884 seconds 8.166667482999998
+SUPPORT PASS p21_p31 checks 1326 seconds 10.99750694299999
+{
+  "checks": 1326,
+  "seconds": 10.997605536999998,
+  "supports": 3,
+  "all_complex_amplitudes_retained": true,
+  "all_materials_retained": true,
+  "scope": "All three four-p full-RR supports in the critical and supercritical strata; source/normal criteria combined with original projective-p descent and finite incidence atlas."
+}
+ISOLATED REPLAY PASS independent_RR_torus_missing_p_reader.py imports 4 seconds 11.003795448000005

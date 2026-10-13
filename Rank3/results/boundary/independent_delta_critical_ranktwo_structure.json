@@ -1,0 +1,13 @@
+{
+  "checks": 90,
+  "rows": 87,
+  "minors": 3669,
+  "basis": [
+    "cs^8 - 17/2*cs^7 + 15*cs^6 - 17/2*cs^5 + cs^4",
+    "cs^5*cz^3 - 15/2*cs^5*cz^2 - cs^4*cz^3 + 15/2*cs^5*cz + 15/2*cs^4*cz^2 - cs^5 - 15/2*cs^4*cz + cs^4",
+    "cs^4*cz^4 - 17/2*cs^4*cz^3 + 15*cs^4*cz^2 - 17/2*cs^4*cz + cs^4",
+    "cs^6*cz - cs^5*cz^2 - cs^6 + cs^4*cz^2 + cs^5 - cs^4*cz"
+  ],
+  "seconds": 1.8046027729999992,
+  "scope": "Exact spectral separation and small rank-drop ideal of the critical matrix."
+}

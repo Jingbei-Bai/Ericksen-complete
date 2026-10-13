@@ -1,0 +1,21 @@
+R RANGE PATHS READY 7.206719554000074
+GENERIC BETA H 0 seconds 7.907285311000123
+GENERIC BETA H 1 seconds 10.607384697000043
+GENERIC BETA H 2 seconds 11.42514710599994
+GENERIC BETA H 3 seconds 15.893446692999987
+GENERIC BETA H 4 seconds 17.210711497000148
+GENERIC BETA H 5 seconds 18.23199531199998
+GENERIC BETA H 6 seconds 18.82283851200009
+GENERIC BETA H 7 seconds 20.26478113799999
+GENERIC BETA H 8 seconds 21.104696517000093
+GENERIC BETA H 9 seconds 23.112242885000114
+GENERIC BETA H 10 seconds 23.51221121499998
+GENERIC BETA H 11 seconds 24.518235728000036
+GENERIC BETA H 12 seconds 25.53717104500015
+GENERIC BETA H 13 seconds 28.460105659999954
+GENERIC BETA H 14 seconds 29.424489644999994
+GENERIC BETA H 15 seconds 33.06996806300003
+GENERIC BETA H 16 seconds 33.44857213
+GENERIC BETA H 17 seconds 34.30850222599997
+PASS {'status': 'PASS', 'checks': 230, 'seconds': 34.98248004800007, 'all22_true_sigma_columns_beta_independent': True, 'all22_true_R_compensated_kernel_quadratics_beta_independent': True, 'original_all_layer_even_extra_retained': True, 'all_four_roots': True, 'scope': 'Direct general-base finite-beta original-source sigma/quadratic pullbacks.\nEvery original H source and complete even RR-linear module is retained.\nFour canonical root embeddings are kept; no frozen-beta extension is assumed.\n'}
+ISOLATED REPLAY PASS independent_critical_inactive_fullRR_beta_polynomial_reader.py imports 7 seconds 34.99993786599998

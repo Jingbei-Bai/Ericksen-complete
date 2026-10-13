@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "script": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_RR_torus_missing_p_reader.py",
+  "script_sha256": "5af158ccdb8c846eefb08ea6ea611d762978e171c4e967cef8c665a2374b62a4",
+  "executed_source_sha256": "5af158ccdb8c846eefb08ea6ea611d762978e171c4e967cef8c665a2374b62a4",
+  "source_text_transformations": [],
+  "imports": [
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_RR_torus_missing_p_sources.sobj",
+      "sha256": "5beba09a19eee848c72281056deecab5ee4849bcf18897ce6cd1c47dc7330543",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_RR_torus_missing_p_critical_amplitudes.sobj",
+      "sha256": "f3803f4aaa7a3e581c20af95046361ed4a3612d736f99777056bdd577300d1b3",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_RR_torus_missing_p_super_normal.sobj",
+      "sha256": "ad10bea318e1de89abdba2652c8b1c6002c353759ec48d8fbcebc406ee6fa671",
+      "regenerated": false
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_RR_torus_missing_p_closure.sobj",
+      "sha256": "67e4f41155e6bc356fed075120346deaa3f43ef2c91593588d9369e152fe4b33",
+      "regenerated": false
+    }
+  ],
+  "file_reads": [
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_RR_torus_missing_p_reader.py",
+      "sha256": "5af158ccdb8c846eefb08ea6ea611d762978e171c4e967cef8c665a2374b62a4",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_RR_torus_missing_p_reader.py",
+      "sha256": "5af158ccdb8c846eefb08ea6ea611d762978e171c4e967cef8c665a2374b62a4",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_RR_torus_missing_p_sources.sobj",
+      "sha256": "5beba09a19eee848c72281056deecab5ee4849bcf18897ce6cd1c47dc7330543",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_RR_torus_missing_p_sources.sobj",
+      "sha256": "5beba09a19eee848c72281056deecab5ee4849bcf18897ce6cd1c47dc7330543",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_RR_torus_missing_p_critical_amplitudes.sobj",
+      "sha256": "f3803f4aaa7a3e581c20af95046361ed4a3612d736f99777056bdd577300d1b3",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_RR_torus_missing_p_critical_amplitudes.sobj",
+      "sha256": "f3803f4aaa7a3e581c20af95046361ed4a3612d736f99777056bdd577300d1b3",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_RR_torus_missing_p_super_normal.sobj",
+      "sha256": "ad10bea318e1de89abdba2652c8b1c6002c353759ec48d8fbcebc406ee6fa671",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_RR_torus_missing_p_super_normal.sobj",
+      "sha256": "ad10bea318e1de89abdba2652c8b1c6002c353759ec48d8fbcebc406ee6fa671",
+      "kind": "open"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_RR_torus_missing_p_closure.sobj",
+      "sha256": "67e4f41155e6bc356fed075120346deaa3f43ef2c91593588d9369e152fe4b33",
+      "kind": "bytes"
+    },
+    {
+      "path": "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/round10/independent_RR_torus_missing_p_closure.sobj",
+      "sha256": "67e4f41155e6bc356fed075120346deaa3f43ef2c91593588d9369e152fe4b33",
+      "kind": "open"
+    }
+  ],
+  "writes": [
+    "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_RR_torus_missing_p_reader/generated/round10/independent_RR_torus_missing_p_reader.sobj",
+    "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_RR_torus_missing_p_reader/generated/round10/independent_RR_torus_missing_p_reader.json",
+    "/root/ericksen_boundary_coverage_20261013_v1/research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_RR_torus_missing_p_reader/generated/round10/independent_RR_torus_missing_p_reader.json"
+  ],
+  "elapsed_seconds": 11.003795448000005,
+  "error": null,
+  "evidence_level": "FRESH_SOURCE_REPLAY_WITH_IMPORTED_COEFFICIENT_DATA",
+  "limitation": "Imported necessary-source arrays and comparison objects were not independently regenerated by this reader. Successful replay is not evidence that the entire upstream source chain was regenerated."
+}

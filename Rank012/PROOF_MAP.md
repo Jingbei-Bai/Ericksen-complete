@@ -1,19 +1,19 @@
 # Manuscript and calculation index
 
-The mathematical parts below refer to the manuscript in `../tex/`. Source identities, coefficient rings, complete prerequisites and recorded outputs are in PROOF_MAP.json.
+| Node | Manuscript labels | Current locations | Direct tasks |
+|---|---|---|---:|
+| R01201 | `fnd:finiteclosure`, `fnd:reconstruction`, `appf:finiteconstruction`, `appf:minor2`, `appf:weightidentity`, `appn:cubicreconstruction` | 2.4 (p. 12); 2.5 (p. 12); A.2 (p. 71); A.7 (p. 72); A.9 (p. 73); B.1 (p. 73) | 1 |
+| R01202 | `fnd:constantratio`, `appn:ratiosubstitution` | 3.1 (p. 14); B.5 (p. 74) | 1 |
+| R01203 | `fnd:muwall`, `appn:mugeometry`, `fnd:mu-short-cubic`, `fnd:mu-newton-roots`, `fnd:mu-newton-values`, `appn:musources` | 3.2 (p. 16); B.3 (p. 74); B.11 (p. 75); B.12 (p. 76); B.13 (p. 76); B.4 (p. 76) | 2 |
+| R01204 | `fnd:two-killing-generators`, `fnd:two-similarity-generators`, `fnd:lowrankexclusion`, `appn:two-killing-proof`, `appn:nonabelian-proof`, `appn:commuting-equations`, `appn:legendreproof`, `appn:phaseproof` | 4.1 (p. 19); 4.2 (p. 20); 4.3 (p. 21); B.5 (p. 77); B.6 (p. 78); B.8 (p. 81); B.9 (p. 81); B.10 (p. 82) | 1 |
+| R01205 | `sim:generator`, `sim:inverse`, `sim:types` | 5.1 (p. 21); 5.2 (p. 22); 5.3 (p. 23) | 3 |
+| R01206 | `iso:tt-fibres`, `appiso-tt`, `appiso-tt-adjugate` | 6.8 (p. 28); D.1 (p. 143); D.4 (p. 144) | 1 |
+| R01207 | `iso:harmonic`, `iso:trs-fibres`, `appiso-trs-source`, `appiso-harmonic-offshell`, `appiso-G-reconstruct`, `appiso-wall`, `appiso-trs-boundary` | 6.9 (p. 29); 6.10 (p. 30); D.2 (p. 144); D.5 (p. 144); D.8 (p. 145); D.2 (p. 146); D.2.1 (p. 147) | 27 |
+| R01208 | `iso:rr-linearization`, `iso:rr-isolation`, `appiso-cylinder`, `appiso-conic-wall` | 6.12 (p. 32); 6.13 (p. 32); D.4 (p. 154); D.22 (p. 155) | 5 |
+| R01209 | `iso:rr-good-direction`, `appiso-rr-matrix`, `appiso-material` | 6.15 (p. 34); D.5 (p. 156); D.6 (p. 157) | 17 |
+| R01210 | `iso:rr-bad-fibres`, `appiso-pencil` | 6.16 (p. 34); D.7 (p. 158) | 2 |
+| R01211 | `iso:stable-axial`, `appiso-ss` | 6.17 (p. 37); D.8 (p. 159) | 1 |
+| R01212 | `iso:compactness`, `appiso-compactness`, `dil:whole`, `dil:pure`, `dil:cyl-bound`, `dil:carrier`, `dil:incoming`, `app:similarity-dilation` | 6.4 (p. 26); D.3 (p. 151); 7.1 (p. 38); 7.2 (p. 39); 7.3 (p. 39); 7.6 (p. 41); 7.7 (p. 42); E (p. 160) | 1 |
+| R01213 | `completion:sufficiency`, `suff:cylindrical-divergence`, `suff:cylindrical-pressure`, `suff:cylindrical-gradients`, `suff:full-cylindrical-block`, `suff:spherical-gradient`, `suff:spherical-pressure`, `suff:logarithmic-gradient`, `suff:logarithmic-pressure` | 9.7 (p. 67); 9.14 (p. 67); 9.15 (p. 67); 9.16 (p. 68); 9.18 (p. 68); 9.21 (p. 68); 9.24 (p. 69); 9.25 (p. 69); 9.28 (p. 69) | 1 |
 
-| Part | Manuscript location | Mathematical calculation |
-|---|---|---|
-| `R01201` | `fnd:finiteclosure` (2.4, p. 12), `fnd:reconstruction` (2.5, p. 12), `appf:finiteconstruction` (A.2, p. 70), `appf:minor2` (A.7, p. 71), `appf:weightidentity` (A.9, p. 72), `appn:cubicreconstruction` (B.1, p. 72) | Finite frame system, cubic and quartic compatibility, weights |
-| `R01202` | `fnd:constantratio` (3.1, p. 14), `appn:ratiosubstitution` (B.5, p. 73) | Weighted normalization, constant ratios, protected reconstruction |
-| `R01203` | `fnd:muwall` (3.2, p. 16), `appn:mugeometry` (B.3, p. 73), `fnd:mu-short-cubic` (B.11, p. 74), `fnd:mu-newton-roots` (B.12, p. 75), `fnd:mu-newton-values` (B.13, p. 75), `appn:musources` (B.4, p. 75) | Vanishing reconstruction coefficient and all three Laurent roots |
-| `R01204` | `fnd:two-killing-generators` (4.1, p. 19), `fnd:two-similarity-generators` (4.2, p. 20), `fnd:lowrankexclusion` (4.3, p. 21), `appn:two-killing-proof` (B.5, p. 76), `appn:nonabelian-proof` (B.6, p. 77), `appn:commuting-equations` (B.8, p. 80), `appn:legendreproof` (B.9, p. 80), `appn:phaseproof` (B.10, p. 81) | Rank zero and one: two generators, nonabelian and commuting cases |
-| `R01205` | `sim:generator` (5.1, p. 21), `sim:inverse` (5.2, p. 22), `sim:types` (5.3, p. 23) | Common similarities, inverse equivalence and pressure forms |
-| `R01206` | `iso:tt-fibres` (6.8, p. 28), `appiso-tt` (D.1, p. 140), `appiso-tt-adjugate` (D.4, p. 141) | Two translations and finite connection fibres |
-| `R01207` | `iso:harmonic` (6.9, p. 29), `iso:trs-fibres` (6.10, p. 30), `appiso-trs-source` (D.2, p. 141), `appiso-harmonic-offshell` (D.5, p. 141), `appiso-G-reconstruct` (D.8, p. 142), `appiso-wall` (D.2, p. 143), `appiso-trs-boundary` (D.2.1, p. 144) | Translation and rotation or screw: source equations, phase fibres and all infinity strata |
-| `R01208` | `iso:rr-linearization` (6.12, p. 32), `iso:rr-isolation` (6.13, p. 32), `appiso-cylinder` (D.4, p. 151), `appiso-conic-wall` (D.22, p. 152) | Cylindrical rotation states and full fixed-pressure second-order obstruction |
-| `R01209` | `iso:rr-good-direction` (6.15, p. 34), `appiso-rr-matrix` (D.5, p. 153), `appiso-material` (D.6, p. 154) | Rotation: Cartesian symbol, protected third-jet elimination, both null sheets, axis resultant and material wall |
-| `R01210` | `iso:rr-bad-fibres` (6.16, p. 34), `appiso-pencil` (D.7, p. 155) | Rotation: direction/paired pencil and all-parameter positive identity |
-| `R01211` | `iso:stable-axial` (6.17, p. 37), `appiso-ss` (D.8, p. 156) | Screw pair: longitudinal pressure data, pitch carrier and stable axial orbit |
-| `R01212` | `iso:compactness` (6.4, p. 26), `appiso-compactness` (D.3, p. 148), `dil:whole` (7.1, p. 38), `dil:pure` (7.2, p. 39), `dil:cyl-bound` (7.3, p. 39), `dil:carrier` (7.6, p. 41), `dil:incoming` (7.7, p. 42), `app:similarity-dilation` (E, p. 157) | Dilation: complete homothety jet reduction, all normal faces, cylindrical carrier and boundary estimates |
-| `R01213` | `completion:sufficiency` (9.7, p. 66), `suff:cylindrical-divergence` (9.14, p. 67), `suff:cylindrical-pressure` (9.15, p. 67), `suff:cylindrical-gradients` (9.16, p. 67), `suff:full-cylindrical-block` (9.18, p. 67), `suff:spherical-gradient` (9.21, p. 68), `suff:spherical-pressure` (9.24, p. 68), `suff:logarithmic-gradient` (9.25, p. 68), `suff:logarithmic-pressure` (9.28, p. 68) | Exact Jacobians, strain tensors and constitutive-independent local pressures of the six classical families |
+The exact coefficient rings, mathematical statements, source hashes, task arguments and prerequisite closures are in `PROOF_MAP.json`.

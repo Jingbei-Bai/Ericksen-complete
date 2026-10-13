@@ -1,0 +1,2 @@
+PASS {'PASS': True, 'distinct_cyclic_denominators': 35, 'seconds': 0.11269044876098633, 'guards': ['a', 'r', 'q=1+r', 'm=1+ar', 'a-1']}
+ISOLATED REPLAY PASS independent_subcritical_two_RR_inactive_rankone_material_units_reader.py imports 1 seconds 0.11398459800011551

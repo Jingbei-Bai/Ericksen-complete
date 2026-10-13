@@ -1,0 +1,4 @@
+ROWS 87 degrees [5, 6] seconds 0.36070568900001376
+MINOR GCD cs^4 count 3669
+BASIS [cs^8 - 17/2*cs^7 + 15*cs^6 - 17/2*cs^5 + cs^4, cs^5*cz^3 - 15/2*cs^5*cz^2 - cs^4*cz^3 + 15/2*cs^5*cz + 15/2*cs^4*cz^2 - cs^5 - 15/2*cs^4*cz + cs^4, cs^4*cz^4 - 17/2*cs^4*cz^3 + 15*cs^4*cz^2 - 17/2*cs^4*cz + cs^4, cs^6*cz - cs^5*cz^2 - cs^6 + cs^4*cz^2 + cs^5 - cs^4*cz]
+ISOLATED REPLAY PASS independent_delta_critical_ranktwo_structure.py imports 1 seconds 1.8127701980000097

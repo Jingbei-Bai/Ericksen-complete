@@ -3304,6 +3304,133 @@ derivative coordinates vanish. Properness brings a dominant
 boundary component to the chosen ratio fibre; the blowup charts
 give regular local equations at its points.
 
+\begin{lemma}[Boundary coverage]\label{r3:boundarycoverage}
+Fix positive, pairwise distinct principal values and suppose that
+$\dim\mathscr B=2$. Consider a formal arc with generic point in $Y$
+and special point on the boundary over $(\eta,\zeta)=(1,-1)$.
+After a finite extension it lifts to the modification and the finite
+covers of Appendix~\ref{r3:atlas}, with the following alternatives.
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*]
+\item Put $n=\operatorname{ord}\tau>0$ and
+$s_0=\min_j\operatorname{ord}(\boldsymbol v)_j$, with $s_0=\infty$
+if $\boldsymbol v=0$ identically. The valuation regions are
+\[
+ s_0=0,\qquad 0<s_0<n/2,\qquad s_0=n/2,\qquad
+ n/2<s_0<n,\qquad n\le s_0\le\infty.
+\]
+They lie, respectively, in the original weighted charts, the
+supercritical charts, the common critical chart, the subcritical
+charts and the ordinary charts.
+\item In the intermediate regions $0<s_0<n$, the leading
+representative $\overline{\boldsymbol R}$ has a nonempty coordinate
+support. A support of size one leaves four possible
+$\overline p$ coordinates and fifteen nonempty supports. A support of
+size two leaves, up to cyclic relabeling, a single paired support,
+two coordinate axes, a mixed support, or a nonzero paired group
+together with at least one remaining coordinate. A support of size three has the three paired
+groups $(12,32)$, $(13,23)$ and $(21,31)$.
+\item On each support stratum, the simultaneous ranks of any finite
+collection of regular coefficient matrices, together with the zero
+and nonzero loci of finitely many regular coefficient factors,
+define a finite locally closed refinement.
+\end{enumerate}
+Every closed point of a boundary component dominating the ratio plane over
+$(1,-1)$ admits an arc of this form.
+\end{lemma}
+
+\begin{proof}
+The two blowups are proper and have their centres in $\tau=0$.
+Hence an arc from the affine locus lifts by the valuative criterion.
+The auxiliary covers are finite and surjective, so the lift extends
+to them after a finite extension of its complete discrete valuation
+ring. A ramification index multiplies all orders by the same integer.
+
+If $s_0=0$, a nonzero $(\boldsymbol v)_j$ selects an original weighted chart,
+including points with $\overline p=0$. If $s_0>0$, some
+$\overline p$ coordinate is nonzero. For finite $s_0$, choose an entry
+$(\boldsymbol v)_j$ of least order. The chart equations are
+\[
+\begin{array}{c|c|c}
+\text{chart}&\text{coordinates}&\text{orders}\\ \hline
+W_{\mathrm O}&\boldsymbol v=\tau\boldsymbol R
+ &\operatorname{ord}R_j\ge0\quad(s_0\ge n)\\
+W_{\mathrm S}&\boldsymbol v=\kappa\delta\overline{\boldsymbol R},\quad
+              \tau=\kappa^2\delta
+ &(\operatorname{ord}\kappa,\operatorname{ord}\delta)
+       =(n-s_0,2s_0-n)\\
+W_{\mathrm T}&\boldsymbol v=\sigma\overline{\boldsymbol R},\quad
+              \tau=\sigma^2\beta_{\mathrm T}
+ &(\operatorname{ord}\sigma,\operatorname{ord}\beta_{\mathrm T})
+       =(s_0,n-2s_0).
+\end{array}
+\]
+Nonnegativity gives the regions in \textup{(i)}. At $s_0=n/2$,
+$\delta$ and $\beta_{\mathrm T}$ are units and $\delta\beta_{\mathrm T}=1$ on the overlap.
+If $s_0=\infty$, the ordinary chart has $\boldsymbol R=0$.
+
+In an intermediate chart, choose $(\boldsymbol v)_j$ of least order and normalize
+$\overline{\boldsymbol R}=\boldsymbol v/(\boldsymbol v)_j$. The finite auxiliary
+coordinates $\boldsymbol e^{\mathrm{alg}}$ of Appendix~\ref{r3:atlas}
+are regular on the lifted arc and satisfy
+\[
+ L(\overline p)\overline{\boldsymbol R}
+       =\frac{\tau}{(\boldsymbol v)_j}\boldsymbol e^{\mathrm{alg}},\qquad
+ \operatorname{ord}\frac{\tau}{(\boldsymbol v)_j}=n-s_0>0.
+\]
+Thus $L(\overline p)\overline{\boldsymbol R}=0$ at its special point.
+Writing out the matrix $L$ of Appendix~\ref{appr3:sources} gives
+\[
+\begin{aligned}
+\overline p_{12}\overline R_1
+ &=\frac{\zeta-\eta}{\zeta(\eta+1)}
+       \overline p_{32}\overline R_3,\\
+\overline p_{13}\overline R_1
+ &=\frac{\zeta-\eta}{\eta(\zeta-1)}
+       \overline p_{23}\overline R_2,\\
+\overline p_{21}\overline R_2
+ &=\frac{\eta(\zeta-1)}{\zeta(\eta+1)}
+       \overline p_{31}\overline R_3.
+\end{aligned}
+\]
+Their coefficients are units in the ratio localization. With only
+$\overline R_3\ne0$, they force
+$\overline p_{31}=\overline p_{32}=0$, leaving the other four entries.
+With $\overline R_2\overline R_3\ne0$ and $\overline R_1=0$, they
+force $\overline p_{23}=\overline p_{32}=0$ and pair
+$\overline p_{21}$ with $\overline p_{31}$. If this pair is the only
+nonzero group, the support is paired. If it is zero, the remaining
+coordinates give the two axes or their mixed support. If the pair
+and at least one remaining coordinate survive, they give the last
+alternative in \textup{(ii)}.
+Cyclic permutations give three paired, six axis and three mixed
+configurations. When all three $\overline R_i$ are nonzero, the
+displayed relations give the three groups in \textup{(ii)}.
+These incidence relations therefore allow
+$3\cdot15+3\cdot7+7=73$ possible coordinate support patterns.
+
+On a fixed support, a matrix has rank $r>0$ precisely where all its
+$(r+1)$-minors vanish and at least one $r$-minor is nonzero; rank zero
+means that every entry vanishes. These are finitely many locally
+closed conditions. Each additional coefficient factor is then
+partitioned into its zero and nonzero loci. Intersecting these finite
+partitions proves \textup{(iii)}. On a paired chart put
+$\ell=\overline p_{32}$ and use $k=a\kappa_0$, $m=1+k$
+as in Appendix~\ref{appr3:sources}. The two conditions
+$m\ell^2=\pm k$ are disjoint, since
+$2k\ne0$. Each is considered both on and off the material
+resonance $k+q=0$. The local ideals are formed in the full local
+ring, with the coefficient factors that vanish at the special point
+retained as parameters.
+
+Finally, the strict transform $\widetilde Y$ is the irreducible closure
+of $Y$ in the modification. Its generic point lies in $Y$ and
+specializes to every closed point of $\widetilde Y$.
+A discrete valuation ring realizes this specialization
+\cite[Lemma~28.5.10, Tag~054F]{StacksProject}; completing it gives
+the required formal arc. A boundary component
+dominating the ratio plane meets the selected fibre by properness.
+\end{proof}
+
 Let $J$
 be the ideal of the closure of $Y$ in a
 boundary chart. It is saturated:
@@ -3414,57 +3541,11 @@ it meets the fibre $(1,-1)$. We examine the approaches
 from the affine locus to this fibre, using the necessary ideal
 $I\subset J$ and Lemma~\ref{r3:normalexclusion}.
 
-The weighted coordinates distinguish growth of the frame coefficients
-from growth of their weight two jets. To keep track of this relative
-growth, on a formal arc meeting the affine locus set
-$n=\operatorname{ord}\tau>0$ and
-$s=\min_j\operatorname{ord}(\boldsymbol v)_j$, where
-$\boldsymbol v=\tau^2\mathsf R$ is the weighted homogeneous
-representative. The possible orders are partitioned by
-\[
- s=0,\qquad 0<s<n/2,\qquad s=n/2,\qquad
- n/2<s<n,\qquad n\le s\le\infty.
-\]
-The last possibility includes $\boldsymbol v=0$ identically, which
-remains in the ordinary chart with $\boldsymbol R=0$.
-The charts of the two blowups cover these five regions: the
-ordinary chart covers $s\ge n$, and the other two charts cover
-the intervening regions with their common critical endpoint.
-When $s<\infty$, a coordinate of least order supplies a nonzero
-normalized coordinate of $\boldsymbol v$. The remaining weighted charts cover
-$s=0$, including the locus $\overline p=0$.
-Every affine arc lifts to the finite algebraic covers after a finite
-extension, which multiplies all its orders by the same positive integer.
-
-These order regions are considered before any coefficient minor
-is inverted. Within a region, support means the set of coordinates
-whose leading coefficients are nonzero; it is unchanged by the
-finite ramified extension. Within a fixed support, a coefficient
-minor is either nonzero at the point or belongs to the maximal
-ideal. In the latter case its vanishing condition is retained in
-the next local equations. This order of the distinctions is
-needed, for example, at an intersection of a support boundary
-with an amplitude hypersurface: an elimination valid only off
-that hypersurface cannot be used at the intersection.
-
-Within each order region, the next distinction is which leading
-coordinates are nonzero. The incidence equations are monomial or
-binomial at this order, so this is a finite partition by coordinate
-support. On the weighted and intermediate boundary charts they give
-the following supports.
-There are seven nonempty supports for the three coordinates of
-$\boldsymbol v$ or its normalized representative. If only one
-survives, the incidence equations leave
-four possible $\overline p$ coordinates and hence fifteen nonempty
-supports. If all three survive, the equations pair the coordinates
-as $(12,32)$, $(13,23)$ and $(21,31)$; their nonzero groups determine
-which coordinate derivations are available. With two surviving
-coordinates, the same equations isolate the single pair configurations
-and those having only the row of the missing coordinate
-available. Outside these cases, two available fields supply a nonzero
-horizontal minor. The exceptional configurations consist, up to cyclic changes
-of labels, of a paired support, two coordinate axes and a mixed
-support.
+For an approaching arc, use the orders $n,s_0$ and the support
+alternatives of Lemma~\ref{r3:boundarycoverage}. On each support
+we retain the coefficient factors
+at a rank drop and their intersections with the special
+principal value loci in the local coefficient ring.
 
 The local equations on these supports have two exclusion mechanisms.
 Where a normal coefficient matrix has full column rank, its selected
@@ -3548,8 +3629,8 @@ Appendix~\ref{r3:boundarysources}.
 On the other intermediate supports we use differential invariance
 to pass from the selected fibre to a neighbourhood in the base.
 The state derivations extend after homogeneous regularization on
-the weighted Rees model with integer weights $(n,2n-s)$. Put
-$\gamma=2-s/n$. For each monomial of a regularized derivation, the
+the weighted Rees model with integer weights $(n,2n-s_0)$. Put
+$\gamma=2-s_0/n$. For each monomial of a regularized derivation, the
 exponent of the exceptional parameter is affine in $\gamma$.
 The endpoint degree bounds in Appendix~\ref{appr3:fielddegrees}
 make this exponent nonnegative at $\gamma=1,2$, and therefore
@@ -6168,22 +6249,22 @@ Let $\mathscr B$ be integral, let $Y\to \mathscr B$ be a dominant affine morphis
 finite type, and let $\overline Y\to \mathscr B$ be a proper closure of $Y$.
 Let $\pi:\widetilde Y\to\overline Y$ be a proper modification of
 the whole closure which is an isomorphism over $Y$, and fix
-$s_0\in \mathscr B$. Write $D=\widetilde Y\setminus Y$.
-Suppose that every irreducible component $C$ of $D$ dominating $\mathscr B$
-has the following property at each of its points over $s_0$:
+$b_\ast\in \mathscr B$. Write $\partial\widetilde Y=\widetilde Y\setminus Y$.
+Suppose that every irreducible component $C$ of $\partial\widetilde Y$ dominating $\mathscr B$
+has the following property at each of its points over $b_\ast$:
 either an identity in the local compatibility ideal rules out that
 point on the saturated closure, or a neighbourhood of that point
 in $C$ lies in a specified relatively closed boundary family $F$
-which contains no component of $D$ dominating $\mathscr B$. Then the generic fibre $Y_{\mathrm{gen}}$ is finite.
+which contains no component of $\partial\widetilde Y$ dominating $\mathscr B$. Then the generic fibre $Y_{\mathrm{gen}}$ is finite.
 \end{lemma}
 \begin{proof}
 If the generic projective boundary were nonempty, one of its
 closures would dominate $\mathscr B$. Proper surjectivity of $\pi$ gives
 an irreducible component of its inverse image dominating that
-closure. Enlarge it to a component $C$ of $D$; this component
+closure. Enlarge it to a component $C$ of $\partial\widetilde Y$; this component
 still dominates $\mathscr B$. Since $C\to \mathscr B$ is proper, its image is closed
 and contains the generic point of $\mathscr B$, so $C$ meets the fibre
-over $s_0$. The first alternative in the hypothesis is impossible.
+over $b_\ast$. The first alternative in the hypothesis is impossible.
 In the second, a nonempty open subset of the irreducible $C$ lies
 in $F$, so its generic point lies in $F$, contradicting the stated
 generic exclusion. The generic boundary is therefore empty.
@@ -6260,25 +6341,25 @@ Its other charts, indexed by an entry $v_j$, are
 Here $E_1=(\sigma=0)$, $D_1=(u=0)$ and
 $\mathcal J_2=(\sigma,u)$. Thus the second centre does not meet the
 ordinary $\tau$ chart. Its $u$ chart has $\kappa=u$ and
-$\sigma=\kappa\delta$; its $\sigma$ chart has $u=\sigma\beta$.
+$\sigma=\kappa\delta$; its $\sigma$ chart has $u=\sigma\beta_{\mathrm T}$.
 The composite projections to $W$ are consequently
 \begin{align*}
  W_{\mathrm O}:&\quad \boldsymbol v=\tau\boldsymbol R,\\
  W_{\mathrm S}:&\quad \boldsymbol v=\kappa\delta\overline{\boldsymbol R},
                  \quad\tau=\kappa^2\delta,\\
  W_{\mathrm T}:&\quad \boldsymbol v=\sigma\overline{\boldsymbol R},
-                 \quad\tau=\sigma^2\beta.
+                 \quad\tau=\sigma^2\beta_{\mathrm T}.
 \end{align*}
 In $W_{\mathrm O}$ the remaining coordinates are $\overline p$,
 $\tau$ and $\boldsymbol R$. In $W_{\mathrm S}$ they are
 $\overline p,\kappa,\delta,\overline{\boldsymbol R}$, and in
-$W_{\mathrm T}$ they are $\overline p,\sigma,\beta,
+$W_{\mathrm T}$ they are $\overline p,\sigma,\beta_{\mathrm T},
 \overline{\boldsymbol R}$; a selected entry is normalized to
 $\overline{\boldsymbol R}_j=1$ in the last two charts.
 Their transition is
 \[
- \sigma=\kappa\delta,\qquad \kappa=\sigma\beta,
- \qquad\delta\beta=1.
+ \sigma=\kappa\delta,\qquad \kappa=\sigma\beta_{\mathrm T},
+ \qquad\delta\beta_{\mathrm T}=1.
 \]
 The overlap of $W_{\mathrm O}$ and $W_{\mathrm S}$ is $R_j\ne0$,
 or equivalently $\kappa\ne0$, with
@@ -6319,13 +6400,13 @@ Together with the charts above, they cover the whole modification.
 
 If
 $n=\operatorname{ord}\tau>0$ and
-$s_0=\min_j\operatorname{ord}\boldsymbol v_j$, then
+$s_0=\min_j\operatorname{ord}(\boldsymbol v)_j$, then
 $W_{\mathrm O}$ covers $s_0\ge n$, $W_{\mathrm S}$ covers
 $n/2\le s_0\le n$, and $W_{\mathrm T}$ covers $0\le s_0\le n/2$. Indeed
 \[
  \operatorname{ord}\kappa=n-s_0,\qquad
  \operatorname{ord}\delta=2s_0-n,\qquad
- \operatorname{ord}\beta=n-2s_0.
+ \operatorname{ord}\beta_{\mathrm T}=n-2s_0.
 \]
 Every curve with generic point in $Y$ lifts to $\widetilde Y$ by
 properness. The displayed nonnegative orders describe the charts
@@ -6623,23 +6704,23 @@ For the plane parametrized by $\boldsymbol v$, the special four-point family is
 \]
 The right sides are units on the inverted base. Hence this is a
 finite \emph{etale} degree-four family. The local ideal of this family is reduced.
-If a projective scheme $\mathscr Z$ contains a finite flat scheme $Y$ and
-$\mathscr Z_{b_0}=Y_{b_0}$ scheme-theoretically, properness and upper
-semicontinuity first make $\mathscr Z$ finite near $b_0$
+If a projective scheme $\mathscr Z$ contains a finite flat subscheme $\mathscr Z_0$ and
+$\mathscr Z_{b_\ast}=\mathscr Z_{0,b_\ast}$ scheme-theoretically, properness and upper
+semicontinuity first make $\mathscr Z$ finite near $b_\ast$
 \cite[Lemma~37.44.2, Tag~02UP]{StacksProject}. In
-$0\to M\to\mathcal O_{\mathscr Z} \to\mathcal O_Y\to0$, flatness of $Y$
+$0\to M\to\mathcal O_{\mathscr Z} \to\mathcal O_{\mathscr Z_0}\to0$, flatness of $\mathscr Z_0$
 preserves the left injection after taking that fibre. Nakayama then
-gives $M=0$ after shrinking. Thus equality on the fibre extends to equality near $b_0$.
+gives $M=0$ after shrinking. Thus equality on the fibre extends to equality near $b_\ast$.
 
-The valuation partition is as follows.
-For $n=\operatorname{ord}\tau>0$ and
-$s=\min\operatorname{ord}v_j$, the ordinary chart covers $s\ge n$;
-the subcritical chart has
-$(\operatorname{ord}\kappa,\operatorname{ord}\delta)=(n-s,2s-n)$;
-the supercritical chart has
-$(\operatorname{ord}\sigma,\operatorname{ord}\beta)=(s,n-2s)$.
-Their nonnegative ranges cover every $s\ge0$, after any finite
-ramification. The chart $\overline p=0$, $\boldsymbol v\ne0$ remains a separate chart.
+The orders $n,s_0$ of Lemma~\ref{r3:boundarycoverage} give
+\[
+ (\operatorname{ord}\kappa,\operatorname{ord}\delta)
+       =(n-s_0,2s_0-n),\qquad
+ (\operatorname{ord}\sigma,\operatorname{ord}\beta_{\mathrm T})
+       =(s_0,n-2s_0).
+\]
+The chart $\overline p=0$, $\boldsymbol v\ne0$ is an original
+weighted chart.
 
 The finite cover defined by the auxiliary coordinates follows from the three even compatibility polynomials $Q_1,Q_5,Q_6$. With
 $\ell=L\,v$, their weighted homogenizations have exact expressions
@@ -7062,15 +7143,15 @@ separate argument with the compatibility relations.
 To apply Lemma~\ref{r3logic:boundaryfields} at an intermediate point
 of the proper boundary modification, take a curve through
 the point meeting the affine locus. Its orders
-$n=\operatorname{ord}\tau$ and $s=\min\operatorname{ord}v_j$ give
-$\gamma=2-s/n\in(1,2)$. If $t$ is a uniformizing parameter of the
+$n=\operatorname{ord}\tau$ and $s_0=\min_j\operatorname{ord}(\boldsymbol v)_j$ give
+$\gamma=2-s_0/n\in(1,2)$. If $t$ is a uniformizing parameter of the
 normalized curve, the chart identities show that
-$t^n\widehat p$ and $t^{2n-s}\mathsf R$ are regular along it.
+$t^n\widehat p$ and $t^{2n-s_0}\mathsf R$ are regular along it.
 Their leading coordinates are unit multiples of the corresponding
 $\overline p$ and $\overline{\boldsymbol R}$ coordinates, so each group
 has a nonzero coordinate and retains its nonzero support.
-Using $t$ as the homogenizing parameter gives a point of the weighted Rees closure of the state image with integer weights $(n,2n-s)$.
-Its relative weight is $(2n-s)/n=\gamma$. Apply the lemma there.
+Using $t$ as the homogenizing parameter gives a point of the weighted Rees closure of the state image with integer weights $(n,2n-s_0)$.
+Its relative weight is $(2n-s_0)/n=\gamma$. Apply the lemma there.
 If two available coordinate fields give a nonzero horizontal minor, every
 minimal boundary component through that point dominates the base and
 contradicts the generic exclusion for that support. Thus the proper
@@ -7084,7 +7165,7 @@ retain their separate differential or local algebraic arguments.
 
 The chart types $W_{\mathrm O},W_{\mathrm S},W_{\mathrm T}$ are defined in Appendix~\ref{r3:atlas}.
 The strata are determined by the orders $n=\operatorname{ord}\tau$
-and $s_0=\min\operatorname{ord}v_j$.
+and $s_0=\min_j\operatorname{ord}(\boldsymbol v)_j$.
 Table~\ref{tab:r3-valuations} gives the corresponding valuation regions.
 
 \begin{longtable}{@{}p{0.46\linewidth}p{0.46\linewidth}@{}}
@@ -7092,11 +7173,112 @@ Table~\ref{tab:r3-valuations} gives the corresponding valuation regions.
 \toprule Region & Valuation condition\\\midrule\endfirsthead
 \toprule Region & Valuation condition\\\midrule\endhead
 Weighted boundary & $s_0=0$\\
-Ordinary & $s_0\ge n$\\
-Subcritical & $n/2<s_0<n$\\
-Critical & $s_0=n/2$\\
 Supercritical & $0<s_0<n/2$\\
+Critical & $s_0=n/2$\\
+Subcritical & $n/2<s_0<n$\\
+Ordinary & $n\le s_0\le\infty$\\
 \bottomrule\end{longtable}
+
+
+\paragraph{Support and coefficient strata.}\label{appr3:coverageindex}
+The leading incidence relations in Lemma~\ref{r3:boundarycoverage}
+give $45$, $21$ and $7$ nonempty amplitude supports when
+$\overline{\boldsymbol R}$ has one, two and three nonzero entries,
+respectively. The incidence relations give the same $73$ possible
+coordinate supports in each of the three intermediate valuation
+regions. On a chart with a single nonzero derivative coordinate,
+$\overline R_3=1$, the amplitude coordinates and support numbers are
+those of Table~\ref{tab:r3-single-supports}. On a two-coordinate
+chart, cyclically arrange $\overline R_1=0$; the incidence relations
+give $\overline p_{23}=\overline p_{32}=0$ and pair
+$\overline p_{21}$ with $\overline p_{31}$. The seven nonempty
+supports are the paired support, the two axes, the mixed support,
+and the paired support with either or both remaining amplitudes.
+On full $\overline{\boldsymbol R}$ support, the seven patterns are
+the nonempty selections of the three pairs
+$(12,32)$, $(13,23)$ and $(21,31)$.
+
+The columns of $D(\overline p)$ in Appendix~\ref{appr3:sources} have the
+disjoint supports $(31,32)$, $(21,23)$ and $(12,13)$.
+Consequently its rank is the number of nonempty groups, and rank
+zero would give $\overline p=0$, outside an intermediate chart.
+On a fixed stratum, a nonzero minor of the linear normal matrix
+eliminates the corresponding normal coordinates. Substitution gives
+the residual initial forms used in Lemmas~\ref{r3short:schur}
+and~\ref{r3short:initial}.
+For the pure axis, Proposition~\ref{r3short:pure-axis} instead gives
+$\mathcal I_\perp^4\subset I$.
+
+Table~\ref{tab:r3-support-index} records the arguments for these
+support classes. The calculation nodes refer to the exact source
+interfaces in the accompanying Rank~3 calculation package.
+
+\begin{longtable}{@{}p{0.22\linewidth}p{0.23\linewidth}p{0.23\linewidth}p{0.23\linewidth}@{}}
+\caption{Intermediate support classes and their local arguments.}
+\label{tab:r3-support-index}\\
+\toprule Support & Supercritical & Critical & Subcritical\\
+\midrule\endfirsthead
+\toprule Support & Supercritical & Critical & Subcritical\\
+\midrule\endhead
+One $\overline R_i$; $45$ patterns
+ & Unit leading coefficients (BC21)
+ & Even equations and complete normal matrix (BC14)
+ & Support table; axis and conic ideals
+   (BC16--BC18, C9\_ENDPOINT)\\
+Two $\overline R_i$; $21$ patterns
+ & Unit coefficient combinations (BC21)
+ & Full source and direction matrices; rank one endpoint equations
+   (BC15, BC32)
+ & Inactive support ideals and finite normal directions
+   (BC19, BC32); horizontal derivations (BC06)\\
+Three $\overline R_i$, one pair; $3$ patterns
+ & Paired normal matrix and kernel quadratic (BC21, BC33)
+ & Original paired normal equations (BC21, BC33)
+ & Canonical ideal and amplitude walls (BC20, BC33)\\
+Three $\overline R_i$, two pairs; $3$ patterns
+ & Original Schur matrix (BC30)
+ & Amplitude minors and four row determinant (BC30)
+ & Generic support equations and two horizontal derivations
+   (BC02, BC06, BC30, BC32)\\
+Three $\overline R_i$, three pairs; $1$ pattern
+ & Torus normal block (BC21)
+ & Amplitude rank ideal, exceptional directions and critical line
+   (BC31); material resonance (BC14)
+ & Generic support equations and two horizontal derivations
+   (BC02, BC06, BC32)\\
+\bottomrule
+\end{longtable}
+
+Coefficient zero sets refine these supports in the full local
+coefficient ring. In a paired chart, put $\ell=\overline p_{32}$.
+The amplitude walls are $D_\pm=m\ell^2\pm k=0$.
+They are disjoint because $D_+-D_-=2k$ is a unit. Each wall is
+intersected with the material resonance $k+q=0$ and its complement.
+At the canonical paired intersection, the six-generator ideal of
+Appendix~\ref{r3:boundarysources} contains $\kappa\delta$, hence
+$\tau=\kappa^2\delta$. Its three quotient-ring identities include
+the products of the amplitude, direction and exceptional
+coordinates (BC20, BC33). In an axis chart, the identity
+$29D_{15}+19D_9=960q$ makes the $D_{15}$ pivot invertible when
+$D_9=0$ (BC19, BC32).
+
+The conic is separated into $w(w^2-k)(w^2+k)\ne0$, the two walls
+$w^2=\pm k$, and the endpoint $w=0$, with
+$w=\overline p_{23}$. On $w^2=-k$, its equations give
+$\overline p_{12}=\overline p_{21}=0$, so the point has support number $10$. On $w=0$ it has
+support number $7$, or $13$ after transposition; the exact relative
+ideal is given in Appendix~\ref{appr3whole:endpoint}
+(BC18, C9\_ENDPOINT). Vanishing of another leading coordinate
+changes its support to one of the other listed patterns; that
+coordinate remains a parameter in the local equations.
+
+The original weighted charts use the cone ideal and the four-point
+intersection ideal (BC10--BC13). The ordinary charts use the radical
+containments in $\mathcal F_{\rm in}$, followed by the differential
+exclusion in Appendices~\ref{appr3:ordinaryalgebraicity}
+and~\ref{appr3ord:complete}. Their parameter intersections,
+including the additional $\tau$ wall, are described in
+Appendix~\ref{appr3tau:wall} (BC22--BC27, BC29).
 
 \subsection{Local ideals on the boundary strata}\label{r3:boundarysources}
 The local ideals below are generated by finitely many compatibility relations
@@ -7106,7 +7288,7 @@ on the entire incidence chart.
 These local ideals are contained in the local ideal of the saturated closure of the state image, to which the formal transfer arguments apply.
 The center is $(\eta ,\zeta )=(1,-1)$; the principal value ratios remain arbitrary.
 
-\subsubsection{Primary, ordinary and critical strata}
+\subsubsection{Primary, ordinary and critical strata}\label{r3:primary-supports}
 
 Table~\ref{tab:r3-primary-ideals} gives the local ideal conclusions
 for these strata, with the supports to which each applies.
@@ -7311,7 +7493,7 @@ $5A_{\mathrm c}-(-5\eta+4\zeta)B_{\mathrm c}=9q\zeta$. The rank one missing-row 
 For the ordinary boundary the local conclusion is containment in
 $\mathcal F_{\rm in}$. A boundary component dominating the ratio base meets the relative ordinary boundary family in a nonempty open set. Its generic point is already excluded, and irreducibility rules out that component. 
 
-\subsubsection{The ordinary boundary family at the exceptional section}
+\subsubsection{The ordinary boundary family at the exceptional section}\label{r3:ordinary-supports}
 The family is defined in \eqref{r3:incomingfamily}. We now specify the
 relative ideals used in its exclusion and in the local containment
 statement at $(\eta ,\zeta )=(1,-1)$.
@@ -7403,7 +7585,7 @@ the section consequently has a nonempty open subset in
 $\mathcal F_{\rm in}$; its generic point is in that family. The
 generic ordinary boundary family exclusion gives a contradiction.
 
-\subsubsection{Subcritical single-coordinate $\mathsf R$ chart}
+\subsubsection{Subcritical single-coordinate $\mathsf R$ chart}\label{r3:single-supports}
 
 Normalize $\overline{\boldsymbol R}_3=1$. The original leading relation gives $\overline p_{31}=\overline p_{32}=0$ for the leading coordinates. Put $(x,y,z,w)=(\overline p_{12},\overline p_{13},\overline p_{21},\overline p_{23})$, and number a nonempty support by the sum of $1,2,4,8$ for the nonzero coordinates $x,y,z,w$, respectively. Cyclic permutations give the other two coordinate charts.
 Table~\ref{tab:r3-single-supports} covers all fifteen nonempty supports
@@ -7491,7 +7673,7 @@ $32ky^2$ then gives $\mathcal I_\perp^4=0$. Thus the residual multiplication
 matrix surjects onto $\mathcal I_\perp^4/\mathcal I_\perp^5$ at the point. Its unit minor and one
 application of Nakayama give $\mathcal I_\perp^4\subset I$, hence $\tau^4\in I$.
 
-\subsubsection{Supercritical and inactive two-coordinate $\overline{\boldsymbol R}$ charts}
+\subsubsection{Supercritical and inactive two-coordinate $\overline{\boldsymbol R}$ charts}\label{r3:two-supports}
 
 The columns of $D$ have disjoint supports. Its rank is the number of nonempty coordinate groups. For two nonzero $\overline{\boldsymbol R}$ coordinates, the twelve exceptional configurations consist of three paired, six pure-axis and three mixed supports. In a mixed chart put $\overline p=(1,w,0,0,0,0)$ and $\overline{\boldsymbol R}=(0,t,1)$, with $wt\ne0$. Two coefficient minors have determinant $25/(4096\cdot49)$ and force $e_0^{\mathrm{alg}}=e_1^{\mathrm{alg}}=0$. The two remaining equations in the variables being eliminated have a unit cyclic resultant $1024a^2\kappa_0 ^2$.
 
@@ -7500,9 +7682,9 @@ In a pure-axis chart the alternative pivots and quotient determinants are
 
 \begin{equation}D_9=29\varrho^2+49q,\quad D_{15}=q-19\varrho^2,\quad-\frac{21\varrho q}{2D_9},\quad\frac{\varrho(\varrho^2+16q)}{4D_{15}}.\end{equation}
 
-At $D_9=0$, $D_{15}=960q/29$ and $\varrho^2+16q=415q/29$ are units. The ideal contains $(\ell s,s^2)$; a coefficient determinant $6aq$ forces $s^2=0$, hence $\delta=0$ on any reduced formal arc approaching the boundary. In the paired chart $\overline p=(1,0,0,0,0,\ell)$, $\overline{\boldsymbol R}=(\alpha\ell,0,1)$, $\ell\ne0$, the determinant for the eliminated variables is $-9q^2\ell/(14336\kappa_0 ^2)$. Put $D_\pm=m\ell^2\pm a\kappa_0 $. Off both hypersurfaces the two residual coefficients $5m\ell^2-4a\kappa_0 $ and $4m\ell^2-5a\kappa_0 $ have unit determinant $9a\kappa_0 $. On $D_-=0$, the determinant after elimination is $-\ell^2/4$ and the residual determinant is $-3\ell/256$. On $D_+=0$, the ideal contains $(\varrho E,E^4)$, with fourth-order coefficient determinant $3/(1048576a\kappa_0 )$. Thus $E=0$ on every reduced formal arc. These ideal results also cover the supercritical incidence charts after the second proper modification.
+At $D_9=0$, $D_{15}=960q/29$ and $\varrho^2+16q=415q/29$ are units. The ideal contains $(\ell s,s^2)$; a coefficient determinant $6aq$ forces $s^2=0$, hence $\delta=0$ on any reduced formal arc approaching the boundary. In the paired chart $\overline p=(1,0,0,0,0,\ell)$, $\overline{\boldsymbol R}=(\alpha\ell,0,1)$, $\ell\ne0$, the determinant for the eliminated variables is $-9q^2\ell/(14336\kappa_0 ^2)$. Put $D_\pm=m\ell^2\pm a\kappa_0 $. Off both hypersurfaces the two residual coefficients $5m\ell^2-4a\kappa_0 $ and $4m\ell^2-5a\kappa_0 $ have unit determinant $9a\kappa_0 $. On $D_-=0$, the determinant after elimination is $-\ell^2/4$ and the residual determinant is $-3\ell/256$. On $D_+=0$, the ideal contains $(\varrho E,E^4)$, with fourth-order coefficient determinant $3/(1048576a\kappa_0 )$. Thus $E=0$ on every reduced formal arc.
 
-\subsubsection{The remaining intermediate strata}
+\subsubsection{The remaining intermediate strata}\label{r3:full-supports}
 
 For full $\overline{\boldsymbol R}$ support the three original leading binomials pair $(\overline p_{12},\overline p_{32})$, $(\overline p_{13},\overline p_{23})$ and $(\overline p_{21},\overline p_{31})$. At least two surviving pairs provide two coordinate horizontal derivations on the original closure. Their base minors are units in the stated localization times the corresponding nonzero $\overline{\boldsymbol R}$ entries. Thus a minimal prime through such a cyclic point dominates the base, and the generic support exclusion applies there.  With exactly two nonzero $\overline{\boldsymbol R}$ entries, the twelve exceptional configurations have the local ideal identities established above; the remaining supports have two available horizontal derivations.
 

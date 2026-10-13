@@ -1,0 +1,20 @@
+NORMAL PIVOT p12_p32 0 0 (-1) * (nH + 1)^-2 * nr^-1 * ny * (2*nH + 1) * (nr + 1) * nH^2 * (nH*nZ - nH + nZ)^-1 seconds 2.938776716999996
+NORMAL PIVOT p12_p32 2 1 (-3/2) * (nH + 1)^-2 * (2*nH + 1)^-1 * ny * nH^2 seconds 2.9411189009999816
+NORMAL PIVOT p12_p32 4 2 (-nH + nZ)^-1 * (nZ - 1)^-1 * (ny + 1) * nZ * nH seconds 2.943647774999988
+NORMAL PIVOT p12_p32 6 3 (1/7) * (nH + 1)^-2 * (-nH + nZ)^-1 * (ny + 1)^-1 * nZ * nH * (nH*nZ - nH + nZ) seconds 2.9468840509999836
+NORMAL PIVOT p12_p32 7 4 (-nH + nZ)^-1 * (nZ - 1)^-1 * (nH + 1)^-1 * nr^-1 * ny * nZ * nH * (nr + 1) * (nH*nZ - nH + nZ)^-1 * (nH*ny^2 - nH - ny + 2) seconds 2.9532373989999883
+NORMAL PIVOT p12_p32 9 5 (1/2) * (nH + 1)^-1 * (nr + 1)^-1 * nH * ny^2 * (7*ny^2 - 7*ny - 2) * (nH*ny^2 - nH - ny + 2)^-1 seconds 2.9665815709999777
+NORMAL PIVOT p13_p23 0 0 (nH + 1)^-2 * nr^-1 * ny * (2*nH + 1) * nH^2 * (nr + 1)^2 * (nH*nZ - nH + nZ)^-1 seconds 6.271834415000001
+NORMAL PIVOT p13_p23 2 1 (3/2) * (nH + 1)^-2 * (2*nH + 1)^-1 * ny * (nr + 1) * nH^2 seconds 6.275200839999997
+NORMAL PIVOT p13_p23 3 2 (-nH + nZ)^-1 * (nZ - 1)^-1 * ny * nZ * nH seconds 6.278221123999998
+NORMAL PIVOT p13_p23 6 3 (-1/7) * (nH + 1)^-2 * (-nH + nZ)^-1 * ny^-1 * nZ * nH * (nH*nZ - nH + nZ) seconds 6.279622418999992
+NORMAL PIVOT p13_p23 7 4 (-nH + nZ)^-1 * (nZ - 1)^-1 * (nH + 1)^-1 * nr^-1 * ny * nZ * nH * (nr + 1)^2 * (nH*nZ - nH + nZ)^-1 * (nH*ny^2 + nH*ny - 3*nH + ny - 2) seconds 6.284753284999994
+NORMAL PIVOT p13_p23 9 5 (-1/2) * (nH + 1)^-1 * nH * (nr + 1) * ny^2 * (7*ny^2 - 7*ny - 2) * (nH*ny^2 + nH*ny - 3*nH + ny - 2)^-1 seconds 6.299734264999984
+NORMAL PIVOT p21_p31 1 0 (-1) * (nH + 1)^-2 * nr^-2 * (2*nH + 1) * nH^2 * (nr + 1)^2 * (nH*nZ - nH + nZ)^-1 seconds 9.726026293999979
+NORMAL PIVOT p21_p31 3 1 (-3/2) * (nH + 1)^-2 * (2*nH + 1)^-1 * nr^-1 * (nr + 1) * nH^2 seconds 9.729263072999998
+NORMAL PIVOT p21_p31 5 2 (-nH + nZ)^-1 * (nZ - 1)^-1 * nZ * nH * (nr + 1) * ny^2 seconds 9.73486471999999
+NORMAL PIVOT p21_p31 6 3 (1/7) * (nH + 1)^-2 * (-nH + nZ)^-1 * ny^-1 * (ny - 1) * nZ * nH * (nH*nZ - nH + nZ) seconds 9.737021965999986
+NORMAL PIVOT p21_p31 8 4 (-nH + nZ)^-1 * (ny - 1)^-1 * (nZ - 1)^-1 * (nH + 1)^-1 * nr^-1 * nZ * nH * (nr + 1) * (nH*nZ - nH + nZ)^-1 * (nH*ny^2 - 2*nH*ny - 2*ny^2 + 3*nH + 2) seconds 9.743423325999998
+NORMAL PIVOT p21_p31 10 5 (-1) * (nH + 1)^-1 * nr^-1 * (ny - 1) * ny * nH * (nr + 1) * (ny^2 - 10*ny + 1) * (nH*ny^2 - 2*nH*ny - 2*ny^2 + 3*nH + 2)^-1 seconds 9.75123666899998
+DONE seconds 10.711610245999992
+ISOLATED REPLAY PASS independent_RR_torus_missing_p_super_normal.py imports 1 seconds 10.714448524000005

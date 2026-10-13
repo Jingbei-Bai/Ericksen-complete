@@ -1,0 +1,4 @@
+CASE one_omega FACTORS [('cb_C', 1), ('cb_B', 1), ('cb_H - cb_Z', 1), ('cb_H - 1', 1), ('cb_Z - 1', 2), ('cb_r', 2), ('cb_Z', 3), ('cb_H', 4), ('cb_H + 1', 4), ('cb_H*cb_Z - cb_H + cb_Z', 3)]
+CASE omega_one FACTORS [('cb_C', 1), ('cb_B', 1), ('cb_H - cb_Z', 1), ('cb_H + cb_Z', 1), ('cb_Z - 1', 2), ('cb_r', 2), ('cb_Z', 3), ('cb_H', 4), ('cb_H + 1', 4), ('cb_H*cb_Z - cb_H + cb_Z', 3)]
+CASE omega_omega FACTORS [('cb_C', 1), ('cb_B', 1), ('cb_Z + 1', 1), ('cb_H - cb_Z', 1), ('cb_Z - 1', 2), ('cb_r', 2), ('cb_Z', 3), ('cb_H', 4), ('cb_H + 1', 4), ('cb_H*cb_Z - cb_H + cb_Z', 3)]
+ISOLATED REPLAY PASS independent_delta_critical_singular_old_block_review.py imports 1 seconds 0.19546569300001693

@@ -1,0 +1,2 @@
+{'PASS': True, 'checks': 36, 'seconds': 1.1379928588867188, 'Sylvester_shape': [4, 4], 'cyclic_resultant': '(1/147456) * ir^-4 * (ir + 1)^2', 'protected_material_denominators': ['ir'], 'no_F12_separation_assumed': 'complete even first forces e=0, original R40/H41 vanish, then delta unit gives literal F12/H13'}
+ISOLATED REPLAY PASS independent_critical_rankone_endpoint_certificate.py imports 3 seconds 1.139957566000021

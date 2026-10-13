@@ -1,0 +1,39 @@
+{
+  "checks": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "bounds": [
+        20,
+        20
+      ],
+      "integer_nodes": 441
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "bounds": [
+        20,
+        20
+      ],
+      "integer_nodes": 441
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "bounds": [
+        20,
+        20
+      ],
+      "integer_nodes": 441
+    }
+  ],
+  "seconds": 1.0123601579999786,
+  "scope": "Exact polynomial factor replay and integer-grid audit of three resultants."
+}

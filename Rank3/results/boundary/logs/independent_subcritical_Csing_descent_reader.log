@@ -1,0 +1,7 @@
+{
+  "checks": 24,
+  "seconds": 0.12219375600000149,
+  "H2_coefficient": "t^3",
+  "scope": "Only a genuine invariant Newton component and the established projective-p descent rule can use this coefficient to exclude persistent Csing. Not pointwise detC nonvanishing on the line."
+}
+ISOLATED REPLAY PASS independent_subcritical_Csing_descent_reader.py imports 2 seconds 0.12709144699999797

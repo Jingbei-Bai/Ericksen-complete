@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": 479,
+  "seconds": 2.4676389149999522,
+  "all_supports_and_three_material_labels": true,
+  "whole_amplitude_canonical_delta_inputs": true,
+  "whole_base_wall_kernels": true,
+  "scope": "Independent support, material and whole-base scheme-input audit.\nOriginal D masks, all three cyclic labels and every root are retained.\n"
+}

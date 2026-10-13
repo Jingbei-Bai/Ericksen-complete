@@ -1,0 +1,5 @@
+MATRIX 90 3 seconds 1.3826541550000115
+PIVOT 0 column 0
+PIVOT 1 column 1
+DONE rank 2 seconds 1.9655750290000071
+ISOLATED REPLAY PASS independent_delta_critical_amplitude_coefficients.py imports 1 seconds 1.9729166839999834

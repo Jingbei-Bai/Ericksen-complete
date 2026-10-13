@@ -100,6 +100,16 @@ Replace `ID` with an entry returned by `--list-proofs`. For example,
 corresponding recorded exact outputs and labelled coefficient matrices
 are in [Rank3/results/conic_endpoint/](Rank3/results/conic_endpoint/).
 
+The [boundary index](Rank3/BOUNDARY_INDEX.md) relates the five valuation
+regions and all 73 intermediate coordinate support patterns to the local
+ideal arguments and calculation nodes in Section 8 and Appendix C.7–C.9.
+The [JSON index](Rank3/BOUNDARY_INDEX.json) includes the source interfaces,
+dependency closures and exceptional parameter loci. Check it with:
+
+```sh
+./sage-environment/bin/python Rank3/validate_boundary_index.py
+```
+
 Compare the calculation indices with the included manuscript sources:
 
 ```sh
@@ -112,13 +122,12 @@ Compare the calculation indices with the included manuscript sources:
 | Calculation | Mathematical tasks covered | Generated input copies covered |
 |---|---:|---:|
 | Ranks 0, 1 and 2 | 63 / 63 | 0 |
-| Rank 3 | 346 / 346 | 138 / 138 |
+| Rank 3 | 375 / 375 | 149 / 149 |
 
-All registered mathematical tasks have successful clean execution records
-at the distributed source and input versions. Rank 3 includes exact
-integer interpolation at 2039 and 965 nodes and both complete independent
-readers. The table counts distinct tasks across the recorded runs;
-`VERIFICATION.json` retains their selections, run identifiers and hashes.
+The table counts distinct tasks across the recorded runs.
+`VERIFICATION.json` gives their selections, run identifiers and hashes.
+Rank 3 includes exact integer interpolation at 2039 and 965 nodes and
+the boundary source and coefficient checks in BC30–BC33.
 
 Verify the distributed files from the repository root:
 
