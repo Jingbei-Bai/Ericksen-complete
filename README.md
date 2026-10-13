@@ -20,15 +20,6 @@ classical families $\mathcal F_0,\ldots,\mathcal F_5$ defined in Section 2.2:
 homogeneous deformation, bending, straightening, inflation and torsion,
 spherical shell deformation, and logarithmic cylindrical deformation.
 
-The geometry is drawn from these maps by the
-[Python renderer](assets/build_problem_figure.py), using the same physical
-scale for the reference and current configurations within each panel.
-The [geometry record](assets/geometry_checks.json) gives the selected
-parameters, domains and exact signed Jacobians. A
-[vector PDF](assets/ericksen_problem.pdf) is also included. The Latin Modern
-font files used in the figure are in `assets/fonts/`, with their original
-GUST Font License.
-
 The paper proves local completeness of the six classical families for
 orientation preserving $C^3$ universal deformations, including their
 regular Cartesian continuations. Its principal step concerns three
