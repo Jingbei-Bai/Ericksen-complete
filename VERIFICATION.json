@@ -2,7 +2,7 @@
   "schema": "ericksen.verified-release.v5",
   "release_date": "2026-10-12",
   "status": "PASS",
-  "verified_utc": "2026-10-13T06:40:11.816816+00:00",
+  "verified_utc": "2026-10-13T06:49:35.451908+00:00",
   "environment": {
     "sage": "10.9",
     "python": "3.12.14",
@@ -14184,8 +14184,8 @@
       "bytes": 3485
     },
     "README.md": {
-      "sha256": "98e8a233f11e092ad847df4695d6f84e4f0823fa0cecd684726da58fecd21341",
-      "bytes": 6849
+      "sha256": "98cd6ba87f3ba7e26a095271ba54ad672c02faa84f6d7b0ab8d1f949451fd178",
+      "bytes": 6368
     },
     "tex/figures/rank_mechanism_geometry.pdf": {
       "sha256": "13f6c2b57642ed82d2b11109723920fa4389e4f3ba6bcf4a07c4675b76da6c88",
@@ -14218,7 +14218,7 @@
     "endpoint_calculations_rebuilt_from_empty_work_directory": true,
     "existing_mathematical_sources_inputs_arguments_and_wrappers_unchanged": true,
     "manuscript_included": true,
-    "repository_layout_updated_utc": "2026-10-13T06:40:11.816816+00:00",
+    "repository_layout_updated_utc": "2026-10-13T06:49:35.451908+00:00",
     "rank3_presentation": "single calculation package and unified proof index",
     "protected_source_and_input_files_checked": 689,
     "readme_figures": {
