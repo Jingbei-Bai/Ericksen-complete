@@ -10,7 +10,7 @@ The valuation partition is Lemma `r3:boundarycoverage`. The 73 rows below are th
 |---|---|---|---|
 | s_0 = 0 | original weighted chart | BC02, BC10, BC11, BC12, BC13 | Cone normal ideal and the four-point intersection ideal contain tau. |
 | 0 < s_0 < n/2 | W_T | BC21, BC30, BC33 | Complete leading coefficient identities; transverse normal equations on full derivative support. |
-| s_0 = n/2 | W_S intersect W_T | BC14, BC15, BC30, BC31, BC32, BC33 | Critical amplitude and direction matrices, their rank strata, original-row Schur reductions and residual equations. |
+| s_0 = n/2 | W_S intersect W_T | BC06, BC14, BC15, BC30, BC31, BC32, BC33 | First integrals and coefficient comparison for full derivative support with at least two amplitude pairs; local normal equations on one-pair, two-coordinate and single-coordinate supports. |
 | n/2 < s_0 < n | W_S | BC06, BC16, BC17, BC18, C9_ENDPOINT, BC19, BC20, BC30, BC32, BC33 | Relative local ideals on inactive supports; two horizontal derivations and generic support exclusion on the other supports. |
 | n <= s_0 <= infinity | W_O | BC22, BC23, BC24, BC25, BC26, BC27, BC29 | Local radical containment in F_in, followed by algebraicity and differential exclusion of its dominant component. |
 
@@ -150,13 +150,21 @@ Empty for positive distinct principal values.
 
 Nodes: BC15, BC32. Manuscript labels: `r3:boundarysources`.
 
-### critical full support, rank drop, point (1,1), exceptional direction or material wall
+### critical full support: s_d z_d+s_d+z_d nonzero; amplitude rank drop
 
-Use the full source matrix, its amplitude rank ideal, the rank-drop ideal and the exact Schur and resultant equations.
+On s_d z_d nonzero the normalized rank-drop ideal is ((s_d-1)^2(s_d^2-13s/2+1),(s_d-1)(z_d-1)(z_d^2-13z/2+1),(z_d-1)^2(z_d^2-13z/2+1),(s_d-1)(z_d-1)(s_d-z_d)). The incidence first integrals precede coefficient comparison.
 
-The direction and material cases are separated before inverting a minor.
+The amplitude matrix has rank zero at (1,1), and rank one at the six conjugate directions (1,omega),(omega,1),(omega,omega), omega^2-13omega/2+1=0. The source minors at (1,1) force p_bar_31^2=-q, kappa_0 p_bar_32^2=p_bar_31^2; the remaining constant is -27q^2 p_bar_31 p_bar_32/32, a unit. The other six directions use the printed determinant factors.
 
-Nodes: BC31. Manuscript labels: `appr3:sources`, `r3:boundarysources`.
+Nodes: BC06, BC31. Manuscript labels: `r3logic:boundaryconstants`, `appr3:sources`, `appr3:coverageindex`.
+
+### critical full support: s_d z_d+s_d+z_d = 0, including material wall b=a^2
+
+Retain the original delta coefficient equations on the line; its minor gcd has only the inverted direction factors. Use the three exact resultants, and the separate resultant at a kappa_0^2=mq.
+
+The critical-line calculation and its equal-material wall are indexed separately from the off-line amplitude rank-drop ideal.
+
+Nodes: BC31. Manuscript labels: `appr3:sources`, `appr3:coverageindex`.
 
 ### conic, w^2=k
 

@@ -1,7 +1,7 @@
 {
   "schema": "ericksen.boundary-execution.v1",
   "status": "PASS",
-  "verified_utc": "2026-10-13T06:30:25.831325+00:00",
+  "verified_utc": "2026-10-13T13:18:02.696972+00:00",
   "fixed_environment": {
     "schema": "ericksen_environment_check/v1",
     "status": "PASS",
@@ -22,8 +22,8 @@
     "lock_sha256": "db651778e9a788477213181183fab4bd5ec7e4c36f982477b34167d385555a56",
     "exact_ideal_arithmetic_check": true
   },
-  "selected_tasks_with_prerequisites": 102,
-  "new_mathematical_executions": 29,
+  "selected_tasks_with_prerequisites": 103,
+  "new_mathematical_executions": 30,
   "new_generated_input_copies": 11,
   "execution_runs": [
     {
@@ -39,6 +39,13 @@
       "finished_utc": "2026-10-13T05:28:39.419491+00:00",
       "inherited_execution_results_used": false,
       "current_task_successes_used": 1
+    },
+    {
+      "run_id": "675e3d3b-f2c7-4d88-b8ee-cdc8956274ff",
+      "started_utc": "2026-10-13T12:54:25.960621+00:00",
+      "finished_utc": "2026-10-13T13:14:07.199172+00:00",
+      "inherited_execution_results_used": false,
+      "current_task_successes_used": 5
     }
   ],
   "results": [
@@ -1180,6 +1187,40 @@
       "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
       "output_sha256": "1afb56e0d8b8040effc294a7b8648af6182993d703c152cb5931074453760a2a",
       "distributed_stdout_log": "results/boundary/logs/independent_critical_rankone_original_reader.copy.log"
+    },
+    {
+      "id": "rank3_readers:independent_full_support_first_integrals_reader:round10/independent_full_support_first_integrals_reader.py",
+      "run_id": "675e3d3b-f2c7-4d88-b8ee-cdc8956274ff",
+      "status": "EXECUTION_PASS",
+      "started_utc": "2026-10-13T13:14:03.193490+00:00",
+      "attempt": 1,
+      "stdout_log": "/root/ericksen_full_support_first_integrals_20261013_v2/run/jobs/005/attempt1/stdout.log",
+      "source_member": "research/ericksen_20261007/round10/independent_full_support_first_integrals_reader.py",
+      "source_sha256": "a0c7b58b12ecc95a299909c2d998c9983c01a6f3f02b001d011a5230f34d4fc4",
+      "command": [
+        "/opt/ericksen-miniforge/envs/sage/bin/python",
+        "/root/ericksen_full_support_first_integrals_20261013_v2/runtime_execution.py",
+        "/root/ericksen_full_support_first_integrals_20261013_v2/research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+        "round10/independent_full_support_first_integrals_reader.py"
+      ],
+      "supervisor_record": "/root/ericksen_full_support_first_integrals_20261013_v2/run/jobs/005/attempt1/supervision.json",
+      "task_environment": {},
+      "supervisor_pid": 805,
+      "exit_code": 0,
+      "finished_utc": "2026-10-13T13:14:07.198357+00:00",
+      "seconds": 4.004237088000082,
+      "peak_process_group_rss_bytes": 479891456,
+      "stdout_log_sha256": "746ceeda32fb0291494602e68d6f24d966b43e63a4cad8fc77444101ddba6535",
+      "execution_text_receipt": {
+        "verified": true,
+        "path": "/root/ericksen_full_support_first_integrals_20261013_v2/research/ericksen_20261007/full_recompute_20261009/rank3/source_replays/independent_full_support_first_integrals_reader/replay_record.json",
+        "sha256": "02e5bd56e712aafbbe9f5074b964000dfbcd96cfcac9bb7754babe6fd5141b24",
+        "executed_source_sha256": "a0c7b58b12ecc95a299909c2d998c9983c01a6f3f02b001d011a5230f34d4fc4"
+      },
+      "distributed_stdout_log": "results/boundary/logs/independent_full_support_first_integrals_reader.log",
+      "distributed_receipt": "results/boundary/receipts/independent_full_support_first_integrals_reader.json",
+      "distributed_receipt_sha256": "02e5bd56e712aafbbe9f5074b964000dfbcd96cfcac9bb7754babe6fd5141b24",
+      "distributed_mathematical_report": "results/boundary/independent_full_support_first_integrals_reader.json"
     }
   ],
   "prerequisite_results": [
@@ -1802,6 +1843,48 @@
       "stdout_log_sha256": "86ad2674bf2ecbd877ffc2b43981369d92f03a6401e43a1879ee882acaa85019",
       "seconds": 0,
       "output_sha256": "d45855bf065a888bf72cbcf7926b381cb6833173a7ecb81c1fd2452dc0aebaf9"
+    }
+  ],
+  "first_integral_run_prerequisites": [
+    {
+      "id": "foundations:rebuild_state17",
+      "run_id": "675e3d3b-f2c7-4d88-b8ee-cdc8956274ff",
+      "status": "EXECUTION_PASS",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/foundations/rebuild_state17.py",
+      "source_sha256": "92a4da54ae67f272d856a90bb8d47d48ca7acdf6fa9b71d319723832a634222b",
+      "stdout_log_sha256": "ce53ebe23e6c607d6c6478fbe65607105e3ef743c122d6d8a8d8b12df41268ea",
+      "seconds": 22.02291815800004,
+      "output_sha256": null
+    },
+    {
+      "id": "rank3_sources:fresh_joint_sources",
+      "run_id": "675e3d3b-f2c7-4d88-b8ee-cdc8956274ff",
+      "status": "EXECUTION_PASS",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/rank3/fresh_joint_sources.py",
+      "source_sha256": "3bc99a7266d55f9ab03a65b141981c40f8c5c871a2195094e2c76cf6e06d0fc8",
+      "stdout_log_sha256": "a5af599813a07898025a9214f0c04a80d90c0f11b4c44216816478500c26fe3b",
+      "seconds": 136.66032245900004,
+      "output_sha256": null
+    },
+    {
+      "id": "rank3_sources:fresh_global_sources",
+      "run_id": "675e3d3b-f2c7-4d88-b8ee-cdc8956274ff",
+      "status": "EXECUTION_PASS",
+      "source_member": "research/ericksen_20261007/full_recompute_20261009/rank3/fresh_global_sources.py",
+      "source_sha256": "81d0e80003401db934e3076f3458f6d95b9a6054d8a64b27d1cb66766539d362",
+      "stdout_log_sha256": "9a99c76cf16798cc5976490056137f1fae8c129b1acefe07f36888f0a5de800a",
+      "seconds": 359.91579364300003,
+      "output_sha256": null
+    },
+    {
+      "id": "rank3_current_proof:complete_global_source_views",
+      "run_id": "675e3d3b-f2c7-4d88-b8ee-cdc8956274ff",
+      "status": "EXECUTION_PASS",
+      "source_member": "reproduction/source_views.py",
+      "source_sha256": "54fa1860a5fe74a216da7d5acbcc34a020adddbaff7036289052330a68eac20b",
+      "stdout_log_sha256": "7b85be31685c898b24f2a0e2f4483f4c3ec2393a86f3880ff2e91511368435b4",
+      "seconds": 571.845701252,
+      "output_sha256": null
     }
   ]
 }

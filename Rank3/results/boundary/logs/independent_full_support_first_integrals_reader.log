@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "checks": [
+    "normalized frame component 0 0",
+    "normalized frame component 0 1",
+    "normalized frame component 0 2",
+    "normalized frame component 0 3",
+    "normalized frame component 0 4",
+    "normalized frame component 0 5",
+    "ratio component 0 0",
+    "ratio component 0 1",
+    "normalized frame component 2 0",
+    "normalized frame component 2 1",
+    "normalized frame component 2 2",
+    "normalized frame component 2 3",
+    "normalized frame component 2 4",
+    "normalized frame component 2 5",
+    "ratio component 2 0",
+    "ratio component 2 1",
+    "horizontal determinant",
+    "cyclic horizontal determinant"
+  ],
+  "source": "independent_ratio_p_boundary_second_gauge.sobj",
+  "coefficient_ring": "Fraction Field of Multivariate Polynomial Ring in a, r, eta, zeta, s, z, b0, c0 over Rational Field",
+  "incidence_frame": [
+    "1",
+    "z*b0",
+    "s",
+    "z*c0",
+    "s*b0",
+    "c0"
+  ],
+  "incidence_direction": [
+    "(-eta*c0 + zeta*c0)/(eta*zeta + zeta)",
+    "(eta*zeta*b0 - eta*b0)/(eta*zeta + zeta)",
+    "1"
+  ],
+  "records": [
+    {
+      "direction": 1,
+      "normal_frame_components": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "ratio_components": [
+        "eta*c0/(eta + 1)",
+        "eta*c0/(eta + 1)"
+      ]
+    },
+    {
+      "direction": 3,
+      "normal_frame_components": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "ratio_components": [
+        "-eta",
+        "(-eta*zeta)/(eta + 1)"
+      ]
+    }
+  ],
+  "horizontal_determinant": "(eta^3*c0 - eta^2*zeta*c0 + eta^2*c0)/(eta^2 + 2*eta + 1)",
+  "cyclic_determinant": "3/4*c0"
+}
+ISOLATED REPLAY PASS independent_full_support_first_integrals_reader.py imports 1 seconds 2.4273290990001897

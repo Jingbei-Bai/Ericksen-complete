@@ -20,6 +20,11 @@ The Sage names are local to the coefficient rings indicated below.
 | Paired and axis incidence charts | `l` or `ell` | \(\ell=\overline p_{32}\) |
 | Canonical paired chart | amplitude `s` | \(\overline p_{23}\) |
 | Two-coordinate axis chart | amplitude `s` | \(\overline p_{13}\) |
+| Critical full support with \(\overline p_{12}=\overline R_3=1\) | direction `s`, `z` | \(s_{\mathrm d}=\overline p_{21},\ z_{\mathrm d}=\overline p_{23}/\overline p_{32}\) |
+| Full incidence first integrals | `b0`, `c0` | \(\overline R_2/\beta,\ \overline p_{32}\); recover `b0` as \(\overline p_{31}/s_{\mathrm d}\) or \(\overline p_{13}/z_{\mathrm d}\) on their respective charts. |
+
+The material parameters in the critical-line resultants and the ordinary
+exceptional family are \(N_b=a\kappa_0^2\) and \(\Lambda_b=mq\).
 
 The parameters of boundary charts, including a blowup coordinate named `sigma`, are local chart coordinates. They are distinct from the curve slope `S`. The source polynomial parents specify their generators explicitly.
 

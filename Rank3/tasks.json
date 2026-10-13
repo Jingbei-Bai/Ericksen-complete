@@ -7648,6 +7648,20 @@
       "depends_on": [
         "rank3_boundary:independent_critical_rankone_original_reader"
       ]
+    },
+    {
+      "id": "rank3_readers:independent_full_support_first_integrals_reader:round10/independent_full_support_first_integrals_reader.py",
+      "group": "rank3_readers",
+      "source_member": "research/ericksen_20261007/round10/independent_full_support_first_integrals_reader.py",
+      "wrapper_member": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+      "arguments": [
+        "round10/independent_full_support_first_integrals_reader.py"
+      ],
+      "depends_on": [
+        "foundations:rebuild_state17",
+        "rank3_current_proof:complete_global_source_views"
+      ],
+      "action": "run"
     }
   ],
   "scope": "Rank-three primary proof certificates and complete source/provenance prerequisites.",

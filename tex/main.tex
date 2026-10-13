@@ -3638,8 +3638,9 @@ make this exponent nonnegative at $\gamma=1,2$, and therefore
 throughout $1<\gamma<2$.
 On the supports with two available horizontal fields, their base
 minor is nonzero and the resulting boundary component dominates
-the ratio base. On the canonical full support family, the induced
-derivations fix the direction parameters and act independently on
+the ratio base. On full derivative support with at least two surviving
+amplitude pairs, the induced derivations fix the amplitude and direction
+parameters and act independently on
 $\eta,\zeta$. The ratios are algebraically independent over the
 common constant field, so the compatibility equations can be compared
 coefficientwise (Appendix~\ref{r3logic:boundaryconstants}).
@@ -6168,10 +6169,10 @@ set $\iota(1)=3$, $\iota(5)=1$, $\iota(6)=2$. The homogeneous parts satisfy
  (Q_i)_{22}=c_i^{\mathrm{even}}\ell_{\iota(i)}^2,\qquad
  (Q_i)_{31}=\sum_{j=1}^3B_{i,j}\ell_j.
 \]
-On the critical chart with scalar coordinates $s,t,B,C$,
+On the critical chart with scalar coordinates $s_{\mathrm d},t,B,C$,
 \[
- \overline p=(1,tB/(sC),s,t,B,C),\qquad
- \overline{\boldsymbol R}=(\alpha C,\beta B/s,1),
+ \overline p=(1,tB/(s_{\mathrm d}C),s_{\mathrm d},t,B,C),\qquad
+ \overline{\boldsymbol R}=(\alpha C,\beta B/s_{\mathrm d},1),
 \]
 the boundary restrictions at $\kappa=0$ of the regularized derivative
 relations are $\sum_{j=1}^3A_{n,j}e_{j-1}^{\mathrm{alg}}+(H_n)_{41}+\delta(H_n)_{13}$;
@@ -6193,9 +6194,9 @@ are used on each of the fifteen nonempty supports.
 For the canonical critical amplitudes use the coefficient algebra
 \[
  K[b_0,c_0]/(b_0^2+q,\ c_0^2+q/\kappa_0),\qquad
- K=\mathbb Q(a,\kappa_0,\eta,\zeta,s,z),
+ K=\mathbb Q(a,\kappa_0,\eta,\zeta,s_{\mathrm d},z_{\mathrm d}),
 \]
-where $s,z$ are direction parameters. It has basis $1,b_0,c_0,b_0c_0$.
+where $s_{\mathrm d}=\overline p_{21}$ and $z_{\mathrm d}=\overline p_{23}/\overline p_{32}$ are direction parameters. It has basis $1,b_0,c_0,b_0c_0$.
 Both $b_0$ and $c_0$ are units, and the coefficient matrices are
 regarded as matrices over this algebra.
 
@@ -6399,7 +6400,7 @@ $v$ coordinates. On $\overline p_i\ne0$, the normalization with
 $c=\overline p_i$ gives the overlap with the preceding charts.
 Together with the charts above, they cover the whole modification.
 
-If
+On a chart with a nonzero $\overline p$ entry, if
 $n=\operatorname{ord}\tau>0$ and
 $s_0=\min_j\operatorname{ord}(\boldsymbol v)_j$, then
 $W_{\mathrm O}$ covers $s_0\ge n$, $W_{\mathrm S}$ covers
@@ -6544,31 +6545,37 @@ minimality therefore force that polynomial to be a nonzero constant,
 contradicting propriety of $Q$. Hence $Q=0$.
 \end{proof}
 
-\paragraph{First integrals on the canonical intermediate boundary.}
+\paragraph{First integrals on the intermediate boundary.}
 \label{r3logic:boundaryconstants}
-Fix the principal value ratios and work on full support with
-$1<\gamma<2$. In the normalization
-$\overline p_{12}=\overline{\boldsymbol R}_3=1$, the canonical family is
+Fix the principal value ratios and work with
+$1<\gamma<2$, full derivative support and at least two nonzero
+amplitude pairs. After a cyclic relabeling normalize
+$\overline p_{12}=\overline{\boldsymbol R}_3=1$. The incidence
+relations give
 \[
- \overline p=(1,b_0z,s,c_0z,sb_0,c_0),\qquad
+ \overline p=(1,b_0z_{\mathrm d},s_{\mathrm d},c_0z_{\mathrm d},s_{\mathrm d}b_0,c_0),\qquad
  \overline{\boldsymbol R}=(\alpha c_0,\beta b_0,1),\qquad
- b_0^2=-q,\quad c_0^2=-q/\kappa_0.
+ b_0c_0\ne0,\quad(s_{\mathrm d},z_{\mathrm d})\ne(0,0).
 \]
-Here $\alpha,\beta,b_0,c_0,s,z$ have the meanings fixed in
-Appendix~\ref{appr3:sources}. Denote by $D_1,D_2$ the boundary
+Here $c_0=\overline p_{32}$, $s_{\mathrm d}=\overline p_{21}$ and
+$z_{\mathrm d}=\overline p_{23}/c_0$; the coefficients $\alpha,\beta$ are those
+of Appendix~\ref{appr3:sources}. Denote by $D_1,D_2$ the boundary
 derivations induced by the first and third coordinate gauges,
 respectively, as in Lemma~\ref{r3logic:boundaryfields}.
-At these weights their principal $\widehat p$ components have
-bidegree $(1,1)$ in $(\widehat p,\mathsf R)$, and their principal
-ratio components have bidegree $(0,1)$.
-On this family the principal $\widehat p$ components of the gauged
-frame equations are multiples of $\overline p$.
-Projective normalization therefore gives
+The terms of bidegrees $(1,1)$ and $(0,1)$ in the gauged state
+equations give the principal frame and ratio components, respectively.
+On the weighted Rees chart divide these derivations by the selected
+nonzero homogeneous derivative coordinate.
+Substitution of the displayed incidence coordinates in the frame
+equations makes the principal frame components multiples of
+$\overline p$. Projective normalization therefore gives
 \[
  D_i\overline p_{jk}=0\quad(j\ne k),\qquad
- D_i s=D_i z=D_i b_0=D_i c_0=0,\qquad i=1,2,
+ D_i s_{\mathrm d}=D_i z_{\mathrm d}=D_i c_0=0,\qquad i=1,2.
 \]
-and
+On $s_{\mathrm d}\ne0$, recover $b_0=\overline p_{31}/s_{\mathrm d}$; on $z_{\mathrm d}\ne0$, recover
+$b_0=\overline p_{13}/z_{\mathrm d}$. Thus $D_i b_0=0$ on both charts.
+The ratio components are
 \[
  \begin{pmatrix}
  D_1\eta&D_1\zeta\\
@@ -6589,7 +6596,7 @@ which equals $3c_0/4$ at $(\eta,\zeta)=(1,-1)$.
 Shrink $\mathscr U$ so that this determinant is a unit.
 
 On an irreducible invariant boundary component in this family,
-$s,z,b_0,c_0$ belong to the common constant field of the induced
+$s_{\mathrm d},z_{\mathrm d},b_0,c_0$ belong to the common constant field of the induced
 derivations on its function field. The ratios $\eta,\zeta$ are
 algebraically independent over that constant field. Indeed, choose
 a nonzero polynomial relation of least total degree, if one exists.
@@ -7253,6 +7260,27 @@ Three $\overline R_i$, three pairs; $1$ pattern
 On the selected fibre in $W_{\mathrm T}$, normalize
 $\overline R_3=1$ and suppose that
 $\overline R_1=0$, $\overline R_2\ne0$.
+Along an approaching arc, the affine coordinates have orders at least
+$-n$ and $s_0-2n$, respectively. The auxiliary identity gives
+\[
+ L(\widehat p)\mathsf R
+      =\tau^{-2}\boldsymbol e^{\mathrm{alg}}.
+\]
+The factorization $(R_\nu)_{31}=DC L\mathsf R$ in
+Appendix~\ref{appr3:sources} and the factorization of $(H_j)_{32}$
+therefore give
+\[
+ \operatorname{ord}(R_\nu)_{31}\ge-4n,\qquad
+ \operatorname{ord}(H_j)_{32}\ge-6n+s_0.
+\]
+All remaining parts except $(R_\nu)_{12}$ and $(H_j)_{13}$ have
+these lower bounds, by the ordinary and weighted degree bounds.
+The two exceptional parts have orders at least $-5n+2s_0$ and
+$-7n+3s_0$. Since $2s_0<n$, these are strictly smaller bounds.
+Multiplying the complete relations by
+$\tau^5/(\boldsymbol v)_3^2$ and $\tau^7/(\boldsymbol v)_3^3$,
+respectively, and taking residues gives the $(1,2)$ and $(1,3)$
+equations evaluated at $(\overline p,\overline{\boldsymbol R})$.
 One leading compatibility relation, after multiplication by a unit, is
 \[
  \overline p_{21}\overline R_2^3=0.
@@ -7282,6 +7310,68 @@ coordinates (BC20, BC33). In an axis chart, the identity
 $29D_{15}+19D_9=960q$ makes the $D_{15}$ pivot invertible when
 $D_9=0$ (BC19, BC32).
 
+For critical full amplitude support, take
+$s_{\mathrm d}=\overline p_{21}$ and $z_{\mathrm d}=\overline p_{23}/\overline p_{32}$
+in the normalization $\overline p_{12}=\overline R_3=1$.
+These parameters and the amplitudes belong to the common constant
+field by Appendix~\ref{r3logic:boundaryconstants}.
+On $s_{\mathrm d}z_{\mathrm d}+s_{\mathrm d}+z_{\mathrm d}\ne0$, the amplitude coefficient matrix with three columns,
+acting on $(1,\overline p_{32}^2,\overline p_{31}^2)^{\mathsf T}$,
+has kernel vector $(-\kappa_0,q,\kappa_0q s_{\mathrm d}^2)^{\mathsf T}$.
+After the unit column and row normalizations, the ideal where its rank drops
+on $s_{\mathrm d}z_{\mathrm d}\ne0$ is generated by
+\[
+ \begin{gathered}
+ (s_{\mathrm d}-1)^2(s_{\mathrm d}^2-\tfrac{13}{2}s_{\mathrm d}+1),\quad
+ (s_{\mathrm d}-1)(z_{\mathrm d}-1)(z_{\mathrm d}^2-\tfrac{13}{2}z_{\mathrm d}+1),\\
+ (z_{\mathrm d}-1)^2(z_{\mathrm d}^2-\tfrac{13}{2}z_{\mathrm d}+1),\quad
+ (s_{\mathrm d}-1)(z_{\mathrm d}-1)(s_{\mathrm d}-z_{\mathrm d}).
+ \end{gathered}
+\]
+Its zero set consists of $(1,1)$ and
+$(1,\omega),(\omega,1),(\omega,\omega)$ for the two roots
+$\omega^2-\tfrac{13}{2}\omega+1=0$.
+The amplitude matrix has rank zero at $(1,1)$ and rank one
+at the other six points. At $(1,1)$, two source minors give
+$\overline p_{31}^2=-q$ and
+$\kappa_0\overline p_{32}^2=\overline p_{31}^2$.
+The remaining source has zero coefficient of $\delta$ and constant
+coefficient $-27q^2\overline p_{31}\overline p_{32}/32$ on the selected
+ratio fibre, a unit. For the other six points use the determinant
+factors in Appendix~\ref{appr3:sources}.
+On $s_{\mathrm d}z_{\mathrm d}+s_{\mathrm d}+z_{\mathrm d}=0$, the original coefficient equations are retained;
+write $s_{\mathrm d}=-z_{\mathrm d}/(z_{\mathrm d}+1)$, with $z_{\mathrm d}(z_{\mathrm d}+1)\ne0$.
+Order the principal values as in Appendix~\ref{appr3:sources} and put
+$N_b=a\kappa_0^2$, $\Lambda_b=mq$. Then
+\[
+ N_b>0,\quad\Lambda_b>0,\quad
+ 1-N_b-\Lambda_b=-\kappa_0(a+1+2a\kappa_0)>0.
+\]
+After removing the direction factors $z_{\mathrm d},z_{\mathrm d}+1$, the resultant of the
+first and third even polynomials is, up to a nonzero rational factor,
+\[
+ \begin{aligned}
+ &(\Lambda_b^2-1)(N_b^2-1)(N_b+\Lambda_b)^2
+       (\Lambda_b-N_b)^4N_b^6\Lambda_b^6\\
+ &\quad\cdot(8N_b\Lambda_b+N_b+\Lambda_b)
+       ((N_b-\Lambda_b)^2+N_b+\Lambda_b)\\
+ &\quad\cdot\left[9(1-N_b-\Lambda_b)
+       (1-(N_b-\Lambda_b)^2)+8N_b\Lambda_b\right].
+ \end{aligned}
+\]
+Every factor except $\Lambda_b-N_b$ is nonzero on this parameter
+region. Thus a common zero requires $N_b=\Lambda_b$, equivalently
+$b=a^2$. On that wall,
+$N_b=-\kappa_0(1+\kappa_0)\le1/4$.
+Dividing the first two reduced polynomials on this wall by their
+remaining direction factor $z_{\mathrm d}$ gives resultant
+\[
+ 64N_b^{16}(N_b-\tfrac32)(N_b+9)(N_b+1)^3(N_b-1)^5
+       (N_b^2-\tfrac12N_b+\tfrac12).
+\]
+It is nonzero for $0<N_b\le1/4$, which excludes the material wall
+(BC31).
+
 The conic is separated into $w(w^2-k)(w^2+k)\ne0$, the two walls
 $w^2=\pm k$, and the endpoint $w=0$, with
 $w=\overline p_{23}$. On $w^2=-k$, its equations give
@@ -7310,14 +7400,14 @@ The center is $(\eta ,\zeta )=(1,-1)$; the principal value ratios remain arbitra
 
 \subsubsection{Primary, ordinary and critical strata}\label{r3:primary-supports}
 
-Table~\ref{tab:r3-primary-ideals} gives the local ideal conclusions
+Table~\ref{tab:r3-primary-ideals} gives the local conclusions
 for these strata, with the supports to which each applies.
 
 \begin{longtable}{@{}p{0.305\linewidth}p{0.305\linewidth}p{0.305\linewidth}@{}}
 
-\caption{Local ideals on the primary and critical strata.}\label{tab:r3-primary-ideals}\\
-\toprule Chart & Local ideal & Stratum\\\midrule\endfirsthead
-\toprule Chart & Local ideal & Stratum\\\midrule\endhead
+\caption{Boundary conclusions on the primary and critical strata.}\label{tab:r3-primary-ideals}\\
+\toprule Chart & Conclusion & Stratum\\\midrule\endfirsthead
+\toprule Chart & Conclusion & Stratum\\\midrule\endhead
 
 Original weighted boundary $\boldsymbol v\ne0$ & $\tau\in I$ locally & All one-, two- and three-coordinate $\boldsymbol v$ supports.\\
 
@@ -7329,7 +7419,13 @@ Critical single $\mathsf R$ & $\tau\in\sqrt I$ locally & Eight roots of the auxi
 
 Critical two $\mathsf R$ & $\tau\in\sqrt I$ locally & Rank three, rank two and rank one coefficient strata.\\
 
-Critical three $\mathsf R$ & $\tau\in\sqrt I$ locally & All supports of paired amplitudes and hypersurfaces.\\
+Critical three $\mathsf R$; at least two amplitude pairs
+ & No invariant boundary component dominating the ratio plane
+ & First integrals, amplitude coefficient equations and their rank strata.\\
+
+Critical three $\mathsf R$; one amplitude pair
+ & $\tau\in\sqrt I$ locally
+ & Paired normal equations and the hypersurface kernel quadratic.\\
 
 \bottomrule\end{longtable}
 
@@ -7508,7 +7604,7 @@ are removed, are respectively
  B_{\mathrm c}=5t^2+4q.
 \]
 They satisfy the B\'ezout identity
-$5A_{\mathrm c}-(-5\eta+4\zeta)B_{\mathrm c}=9q\zeta$. The rank one missing-row stratum was excluded above. For three nonzero $\overline{\boldsymbol R}$ coordinates, the paired coefficients have rank three when at least two amplitudes survive; the remaining one-amplitude chart has a determinant for the eliminated variables independent of its free kernel parameter, and its hypersurface kernel has a nonzero $k^2$ coefficient. 
+$5A_{\mathrm c}-(-5\eta+4\zeta)B_{\mathrm c}=9q\zeta$. The rank one missing-row stratum was excluded above. For three nonzero $\overline{\boldsymbol R}$ coordinates, $D(\overline p)$ has rank three when at least two amplitude pairs survive; the remaining one-amplitude chart has a determinant for the eliminated variables independent of its free kernel parameter, and its hypersurface kernel has a nonzero $k^2$ coefficient.
 
 For the ordinary boundary the local conclusion is containment in
 $\mathcal F_{\rm in}$. A boundary component dominating the ratio base meets the relative ordinary boundary family in a nonempty open set. Its generic point is already excluded, and irreducibility rules out that component. 
@@ -7566,8 +7662,8 @@ At the cyclic section, the only containment case is
 \[
        u=0,\qquad v=-2,\qquad \kappa_0 \ell^2+q=0.
 \]
-For either complex value of $\ell$, put
-$N_b=k\kappa_0 >0$ and $\Lambda_b=mq>0$. In local normal coordinates the
+For either complex value of $\ell$, use the material constants
+$N_b=a\kappa_0^2$ and $\Lambda_b=mq$ of Appendix~\ref{appr3:coverageindex}. In local normal coordinates the
 boundary ideal generated by the compatibility polynomials has, off $\Lambda_b=N_b$, the radical
 of
 \[

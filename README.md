@@ -113,12 +113,13 @@ Compare the calculation indices with the included manuscript sources:
 | Calculation | Mathematical tasks covered | Generated input copies covered |
 |---|---:|---:|
 | Ranks 0, 1 and 2 | 63 / 63 | 0 |
-| Rank 3 | 375 / 375 | 149 / 149 |
+| Rank 3 | 376 / 376 | 149 / 149 |
 
 The table counts distinct tasks across the recorded runs.
 `VERIFICATION.json` gives their selections, run identifiers and hashes.
 Rank 3 includes exact integer interpolation at 2039 and 965 nodes and
-the boundary source and coefficient checks in BC30–BC33.
+the boundary source and coefficient checks in BC30–BC33, together with
+the first integrals on the intermediate incidence charts.
 
 Verify the distributed files from the repository root:
 

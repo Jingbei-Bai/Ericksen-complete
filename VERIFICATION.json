@@ -2,7 +2,7 @@
   "schema": "ericksen.verified-release.v5",
   "release_date": "2026-10-12",
   "status": "PASS",
-  "verified_utc": "2026-10-13T08:38:34.500120+00:00",
+  "verified_utc": "2026-10-13T13:27:22.077026+00:00",
   "environment": {
     "sage": "10.9",
     "python": "3.12.14",
@@ -17,15 +17,15 @@
     "email": "bjb23@mails.tsinghua.edu.cn",
     "computational_repository": "https://github.com/Jingbei-Bai/Ericksen-complete",
     "main_source_path": "tex/main.tex",
-    "main_tex_sha256": "8dded22c5b20448253ca3bea7fe7a14f2f5eb0a2a25535362449f59417e37237",
+    "main_tex_sha256": "c63de334e291f5d7aae6b6676a14973894979f5002671b7cfacba099f29f4ac4",
     "supplement_source_path": "tex/supplement.tex",
     "supplement_tex_sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
     "pdf_path": "A local solution of Ericksen's problem.pdf",
-    "pdf_sha256": "9a690788924843e9145f9320aad68a483b101ab201f0b9a367cac381b6013ee5",
+    "pdf_sha256": "205c411cc412ff3eae82fae6e8efd4903271d47848f49aac6d4d488d33e8b152",
     "pages": {
-      "A local solution of Ericksen's problem.pdf": 213
+      "A local solution of Ericksen's problem.pdf": 214
     },
-    "supplement_first_page": 171,
+    "supplement_first_page": 172,
     "supplement_included_after_appendix": "E",
     "single_abstract": true,
     "included_in_repository": true,
@@ -33,11 +33,11 @@
     "source_build_verification": {
       "status": "PASS",
       "passes": 2,
-      "pages": 213,
+      "pages": 214,
       "every_page_text_matches_root_pdf": true,
       "all_label_records_match_canonical": true,
       "title": "A local solution of Ericksen's problem",
-      "paper_source_sha256": "8dded22c5b20448253ca3bea7fe7a14f2f5eb0a2a25535362449f59417e37237"
+      "paper_source_sha256": "c63de334e291f5d7aae6b6676a14973894979f5002671b7cfacba099f29f4ac4"
     },
     "boundary_coverage_lemma": {
       "label": "r3:boundarycoverage",
@@ -49,7 +49,8 @@
       "appendix": "C.7",
       "pages": [
         98,
-        99
+        99,
+        100
       ]
     }
   },
@@ -78,19 +79,19 @@
         "indexed_roots": 63,
         "registered_tasks": 63,
         "dependency_closure": 63,
-        "paper_sha256": "8dded22c5b20448253ca3bea7fe7a14f2f5eb0a2a25535362449f59417e37237",
+        "paper_sha256": "c63de334e291f5d7aae6b6676a14973894979f5002671b7cfacba099f29f4ac4",
         "formula_inputs": 1
       },
       "format": "directory",
       "files": 124,
       "uncompressed_bytes": 1235944,
-      "directory_tree_sha256": "544a747ebf7c8d58c9d01f796ff4d1235fc78c55201ab573bfcce07084e25741"
+      "directory_tree_sha256": "e02a1854933aae3fbbdc798a0857e7e77de6445d8d23b5f22811d390eb0f03f4"
     },
     "rank3": {
       "status": "PASS",
       "path": "Rank3",
-      "registered_tasks": 524,
-      "actual_mathematical_executions": 375,
+      "registered_tasks": 525,
+      "actual_mathematical_executions": 376,
       "fresh_generated_copies": 149,
       "inherited_execution_results_used": false,
       "generated_outputs_initially_absent": true,
@@ -105,16 +106,16 @@
       "current_paper_index": {
         "status": "INDEX_PASS",
         "proof_nodes": 56,
-        "indexed_roots": 305,
-        "registered_tasks": 524,
-        "dependency_closure": 524,
-        "paper_sha256": "8dded22c5b20448253ca3bea7fe7a14f2f5eb0a2a25535362449f59417e37237",
+        "indexed_roots": 306,
+        "registered_tasks": 525,
+        "dependency_closure": 525,
+        "paper_sha256": "c63de334e291f5d7aae6b6676a14973894979f5002671b7cfacba099f29f4ac4",
         "formula_inputs": 1
       },
       "format": "directory",
-      "files": 735,
-      "uncompressed_bytes": 386136526,
-      "directory_tree_sha256": "85b8d1b839ede08a95238fdf50e352b2073694e67de4008075b186bc3734e555",
+      "files": 739,
+      "uncompressed_bytes": 386200319,
+      "directory_tree_sha256": "3659e85d18fba0cc8708db3daa6cadbaefae454c42d80c57db51808e275c097e",
       "byte_identity_scope": "Each distributed mathematical source, input, argument and wrapper matches its recorded clean execution.",
       "execution_runs": [
         {
@@ -138,14 +139,15 @@
         },
         {
           "record": "Rank3/results/boundary/execution.json",
-          "record_sha256": "b2371c6a31ef57286eeb9ab88eb780d49c0f3cca8923bae9c91f4e52ae8654a7",
-          "selection": "BC30-BC33 with their prerequisite tasks and the exact rank-minor input interface",
-          "selected_tasks": 102,
-          "distinct_math_tasks_contributed": 29,
+          "record_sha256": "160127a89bb86ba79f3c4285346fa24f9a869cbf60f888f0c379a0cff49e3219",
+          "selection": "BC30-BC33 and the full-support first-integral check, with prerequisite tasks and the exact rank-minor input interface",
+          "selected_tasks": 103,
+          "distinct_math_tasks_contributed": 30,
           "distinct_input_copies_contributed": 11,
           "run_ids": [
             "a4cfd597-882b-49cb-808c-57e7b73fe9c1",
-            "e7ae37d5-48ef-49ae-bc2d-b00f8ada745e"
+            "e7ae37d5-48ef-49ae-bc2d-b00f8ada745e",
+            "675e3d3b-f2c7-4d88-b8ee-cdc8956274ff"
           ]
         }
       ],
@@ -154,9 +156,9 @@
         "valuation_regions": 5,
         "support_patterns": 73,
         "intermediate_region_support_pairs": 219,
-        "exceptional_loci": 13,
+        "exceptional_loci": 14,
         "proof_nodes": 34,
-        "registered_tasks": 524,
+        "registered_tasks": 525,
         "dependency_graph_acyclic": true
       }
     }
@@ -10676,8 +10678,8 @@
       "bytes": 1699
     },
     "A local solution of Ericksen's problem.pdf": {
-      "sha256": "9a690788924843e9145f9320aad68a483b101ab201f0b9a367cac381b6013ee5",
-      "bytes": 1458200
+      "sha256": "205c411cc412ff3eae82fae6e8efd4903271d47848f49aac6d4d488d33e8b152",
+      "bytes": 1464844
     },
     "assets/build_problem_figure.py": {
       "sha256": "dcf3685cb0249c46812f8a68c2e03c72132008bf7a9e322393a4f00388cab132",
@@ -10820,7 +10822,7 @@
       "bytes": 71505
     },
     "Rank012/MANIFEST.json": {
-      "sha256": "d1f33c9f907dd8e20bb415b9a5e6be9f6fd9b0a471cc94a27dfadbc73f465927",
+      "sha256": "af9e01a142aa47d6922a6641ea97d9546ee3f2fa26c3e7ae1202b3f2014e4a7a",
       "bytes": 93895
     },
     "Rank012/paper_index.py": {
@@ -10828,11 +10830,11 @@
       "bytes": 5939
     },
     "Rank012/PROOF_MAP.json": {
-      "sha256": "66b6978eae5ef02d68c5efd3ce576bcdbf5f217931ed257eabf458ab4f4d4e5d",
+      "sha256": "f89b56092fdcb17232844b845682107c40769ac6615a6ae58615702cf5e3e876",
       "bytes": 174895
     },
     "Rank012/PROOF_MAP.md": {
-      "sha256": "a71d9236d91e6f48ef224bcd17e8bf1cd142922140bcc38e66c6466e6c6fb825",
+      "sha256": "e0e8a486b6b2c99734a612eb9c8aa3a1bfd8611587899e5297540aaf930d7221",
       "bytes": 2702
     },
     "Rank012/README.txt": {
@@ -11244,12 +11246,12 @@
       "bytes": 40631
     },
     "Rank3/BOUNDARY_INDEX.json": {
-      "sha256": "b45285297a527cda04b6e894919f2c7ceab467ea6ee715f326ca7ede319c91a3",
-      "bytes": 409894
+      "sha256": "2a0f66e586cd447cb574286c430a59fa142ed5fcb27edce50064e7ff3f269570",
+      "bytes": 414307
     },
     "Rank3/BOUNDARY_INDEX.md": {
-      "sha256": "bfe1e8e05f616a1af9d1b8c6dc1c4bdf48b47dbe9c98f17ef87c5d19606ab251",
-      "bytes": 10392
+      "sha256": "6d09f26829af3500443bd05d869e4451ace09ee37a8543810ca4f9a8da99500c",
+      "bytes": 11345
     },
     "Rank3/check_environment.py": {
       "sha256": "bd1601143ccb69d01e88769252258694e7a4efdf23dc672898a27fc0d89e423b",
@@ -12252,28 +12254,28 @@
       "bytes": 7799
     },
     "Rank3/MANIFEST.json": {
-      "sha256": "3727fbb1c89953d62525dfc16f3a5fef83cd2b190d4cef5762d8042380f8cc30",
-      "bytes": 474541
+      "sha256": "ad6594aaaa3b689b046538eea833ed70e124601c93bc8fbbf088bb3d4d67dc53",
+      "bytes": 476228
     },
     "Rank3/paper_index.py": {
       "sha256": "7a6c9355d6ea60b9aa2a11470dc508d0da41822a8539a7f92c39d75e9e5b8cda",
       "bytes": 5939
     },
     "Rank3/PROOF_MAP.json": {
-      "sha256": "f106755402b4cbb64ccc1badae92b8e105a3fde9fe1a116c24e06c51bc8f9496",
-      "bytes": 1442138
+      "sha256": "7128cbe54aee427b1255aa16c2abd1b1beff298121ca8af0977f9cdcb8c72367",
+      "bytes": 1484029
     },
     "Rank3/PROOF_MAP.md": {
-      "sha256": "a37816ad470b5498aabb42b5121924378104a6078c4752b00d3c39c00e6a67ec",
-      "bytes": 6844
+      "sha256": "9172d37cd9106efd27fef012c0cd7b6365c8766c700356a80bbfe934ed08414b",
+      "bytes": 6985
     },
     "Rank3/README.md": {
       "sha256": "cc2ee933024ada851c6ad645949f0c85e8ef58882530e8790d59c2384da7c07b",
       "bytes": 4212
     },
     "Rank3/results/boundary/execution.json": {
-      "sha256": "b2371c6a31ef57286eeb9ab88eb780d49c0f3cca8923bae9c91f4e52ae8654a7",
-      "bytes": 107858
+      "sha256": "160127a89bb86ba79f3c4285346fa24f9a869cbf60f888f0c379a0cff49e3219",
+      "bytes": 112537
     },
     "Rank3/results/boundary/independent_critical_inactive_fullRR_beta_polynomial_reader.json": {
       "sha256": "54c456a4fb821c34a20706879afd8593806edf382459cc54f372ccc8a252735e",
@@ -12342,6 +12344,10 @@
     "Rank3/results/boundary/independent_delta_critical_singular_old_block_review.json": {
       "sha256": "37211b593506783729fc8873eaf26d327755d122791095aec900e86a83e84f8b",
       "bytes": 135
+    },
+    "Rank3/results/boundary/independent_full_support_first_integrals_reader.json": {
+      "sha256": "843d3514c1eec889ba8a6e886cc719a9ada8ec11c71a64666d09582cf0ee0c23",
+      "bytes": 1712
     },
     "Rank3/results/boundary/independent_inactive_fullRR_subcritical_independent_coverage_reader.json": {
       "sha256": "8c0c96713a9d672d00b8509ecb47052d89cdf344c420975c870d41e6f4023a8d",
@@ -12475,6 +12481,10 @@
       "sha256": "3687ea8832c2454f1a2e00aadeea25a5c04fcfc3924d4e5bb3b402e8e607c46d",
       "bytes": 696
     },
+    "Rank3/results/boundary/logs/independent_full_support_first_integrals_reader.log": {
+      "sha256": "746ceeda32fb0291494602e68d6f24d966b43e63a4cad8fc77444101ddba6535",
+      "bytes": 1821
+    },
     "Rank3/results/boundary/logs/independent_inactive_fullRR_subcritical_independent_coverage_reader.log": {
       "sha256": "cf71ffa073bc2c635920343c2340a3f31d8b2465f8839087c75338247679c77d",
       "bytes": 636
@@ -12606,6 +12616,10 @@
     "Rank3/results/boundary/receipts/independent_delta_critical_singular_old_block_review.json": {
       "sha256": "e95eaad0162129620445490eca229d8f03314b125c7651a13c2694090b488192",
       "bytes": 2898
+    },
+    "Rank3/results/boundary/receipts/independent_full_support_first_integrals_reader.json": {
+      "sha256": "02e5bd56e712aafbbe9f5074b964000dfbcd96cfcac9bb7754babe6fd5141b24",
+      "bytes": 2948
     },
     "Rank3/results/boundary/receipts/independent_inactive_fullRR_subcritical_independent_coverage_reader.json": {
       "sha256": "b1066e14dc76edf95b2f23d7b09c8b3eb32de44de06c96e44eeaa291ba1f5e91",
@@ -13258,6 +13272,10 @@
     "Rank3/sources/research/ericksen_20261007/round10/independent_extra_quartic_source_reader.py": {
       "sha256": "c094a3e386505d4f403136990fd5a80ea8aad53405cd8211b474b52e6a3eea5d",
       "bytes": 4338
+    },
+    "Rank3/sources/research/ericksen_20261007/round10/independent_full_support_first_integrals_reader.py": {
+      "sha256": "a0c7b58b12ecc95a299909c2d998c9983c01a6f3f02b001d011a5230f34d4fc4",
+      "bytes": 2357
     },
     "Rank3/sources/research/ericksen_20261007/round10/independent_fullsupport_axis_reader.py": {
       "sha256": "e3ea6e4826c84b392ec73c8396b609a204ed9ac1ccd991d0d17db391b27072f5",
@@ -14172,20 +14190,20 @@
       "bytes": 2516
     },
     "Rank3/SYMBOLS.md": {
-      "sha256": "3e4e8dda402db4d37f5368f3f503687bb244a50e81572e36f2f51c0449a10d16",
-      "bytes": 3006
+      "sha256": "c4ecb5f4884c11c64f72714ace5bee291eb5b6864085abb0563870fa867c4997",
+      "bytes": 3532
     },
     "Rank3/tasks.json": {
-      "sha256": "7f7e9964dec3b9df4ba6f1f37b72e3d6b5f6451b3d79f4735ee12e480351ee97",
-      "bytes": 406465
+      "sha256": "3a7ea69adfbc0aac55dd4426043f84346e8878b974f673d6ed64e8446c71795f",
+      "bytes": 407130
     },
     "Rank3/validate_boundary_index.py": {
       "sha256": "223dd94c1b4fd2885749d36bfb355e99a20412b5b1b13cf78f1d2b2ef46b831e",
       "bytes": 3485
     },
     "README.md": {
-      "sha256": "98cd6ba87f3ba7e26a095271ba54ad672c02faa84f6d7b0ab8d1f949451fd178",
-      "bytes": 6368
+      "sha256": "6e56257e222acd2490994ff5bfb91dd04333a8c17b7a78764c9797c7cf46df7f",
+      "bytes": 6440
     },
     "tex/figures/rank_mechanism_geometry.pdf": {
       "sha256": "13f6c2b57642ed82d2b11109723920fa4389e4f3ba6bcf4a07c4675b76da6c88",
@@ -14200,8 +14218,8 @@
       "bytes": 1946
     },
     "tex/main.tex": {
-      "sha256": "8dded22c5b20448253ca3bea7fe7a14f2f5eb0a2a25535362449f59417e37237",
-      "bytes": 605899
+      "sha256": "c63de334e291f5d7aae6b6676a14973894979f5002671b7cfacba099f29f4ac4",
+      "bytes": 610844
     },
     "tex/supplement.tex": {
       "sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
@@ -14218,7 +14236,7 @@
     "endpoint_calculations_rebuilt_from_empty_work_directory": true,
     "existing_mathematical_sources_inputs_arguments_and_wrappers_unchanged": true,
     "manuscript_included": true,
-    "repository_layout_updated_utc": "2026-10-13T08:38:34.500120+00:00",
+    "repository_layout_updated_utc": "2026-10-13T13:27:22.077026+00:00",
     "rank3_presentation": "single calculation package and unified proof index",
     "protected_source_and_input_files_checked": 689,
     "readme_figures": {
@@ -14240,6 +14258,6 @@
       "proof_builder": "assets/build_proof_figure.py"
     },
     "boundary_coverage_index_added": true,
-    "boundary_source_checks_rebuilt": 29
+    "boundary_source_checks_rebuilt": 30
   }
 }

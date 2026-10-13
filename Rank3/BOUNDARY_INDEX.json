@@ -12,7 +12,9 @@
     "beta_T": "T-chart coordinate tau/sigma^2",
     "ell": "p_bar_32 on a paired chart",
     "kappa_0": "material constant",
-    "kappa": "First blowup coordinate in tau=sigma kappa, pulled back to W_S and W_T."
+    "kappa": "First blowup coordinate in tau=sigma kappa, pulled back to W_S and W_T.",
+    "s_d": "p_bar_21 in the full incidence chart; the local Sage direction name is s.",
+    "z_d": "p_bar_23/p_bar_32 in the full incidence chart; the local Sage direction name is z."
   },
   "valuation_regions": [
     {
@@ -50,6 +52,7 @@
       "condition": "s_0 = n/2",
       "chart": "W_S intersect W_T",
       "nodes": [
+        "BC06",
         "BC14",
         "BC15",
         "BC30",
@@ -58,10 +61,11 @@
         "BC33"
       ],
       "anchors": [
+        "r3logic:boundaryconstants",
         "r3:boundarysources",
         "appr3:sources"
       ],
-      "argument": "Critical amplitude and direction matrices, their rank strata, original-row Schur reductions and residual equations."
+      "argument": "First integrals and coefficient comparison for full derivative support with at least two amplitude pairs; local normal equations on one-pair, two-coordinate and single-coordinate supports."
     },
     {
       "condition": "n/2 < s_0 < n",
@@ -4213,15 +4217,29 @@
       ]
     },
     {
-      "locus": "critical full support, rank drop, point (1,1), exceptional direction or material wall",
-      "identity": "Use the full source matrix, its amplitude rank ideal, the rank-drop ideal and the exact Schur and resultant equations.",
-      "result": "The direction and material cases are separated before inverting a minor.",
+      "locus": "critical full support: s_d z_d+s_d+z_d nonzero; amplitude rank drop",
+      "identity": "On s_d z_d nonzero the normalized rank-drop ideal is ((s_d-1)^2(s_d^2-13s/2+1),(s_d-1)(z_d-1)(z_d^2-13z/2+1),(z_d-1)^2(z_d^2-13z/2+1),(s_d-1)(z_d-1)(s_d-z_d)). The incidence first integrals precede coefficient comparison.",
+      "result": "The amplitude matrix has rank zero at (1,1), and rank one at the six conjugate directions (1,omega),(omega,1),(omega,omega), omega^2-13omega/2+1=0. The source minors at (1,1) force p_bar_31^2=-q, kappa_0 p_bar_32^2=p_bar_31^2; the remaining constant is -27q^2 p_bar_31 p_bar_32/32, a unit. The other six directions use the printed determinant factors.",
+      "nodes": [
+        "BC06",
+        "BC31"
+      ],
+      "paper_labels": [
+        "r3logic:boundaryconstants",
+        "appr3:sources",
+        "appr3:coverageindex"
+      ]
+    },
+    {
+      "locus": "critical full support: s_d z_d+s_d+z_d = 0, including material wall b=a^2",
+      "identity": "Retain the original delta coefficient equations on the line; its minor gcd has only the inverted direction factors. Use the three exact resultants, and the separate resultant at a kappa_0^2=mq.",
+      "result": "The critical-line calculation and its equal-material wall are indexed separately from the off-line amplitude rank-drop ideal.",
       "nodes": [
         "BC31"
       ],
       "paper_labels": [
         "appr3:sources",
-        "r3:boundarysources"
+        "appr3:coverageindex"
       ]
     },
     {
@@ -4527,9 +4545,10 @@
       "node": "BC06",
       "paper_labels": [
         "r3logic:boundaryfields",
-        "appr3:fielddegrees"
+        "appr3:fielddegrees",
+        "r3logic:boundaryconstants"
       ],
-      "exact_mathematical_statement": "Complete support-gauge field numerators satisfy the incidence replacement identities and the two endpoint weighted degree bounds. Their regular Rees lifts preserve the actual ideal; the selected horizontal determinant is a unit.",
+      "exact_mathematical_statement": "Complete support-gauge field numerators satisfy the incidence replacement identities and the two endpoint weighted degree bounds. Their regular Rees lifts preserve the actual ideal; the selected horizontal determinant is a unit. On the full incidence boundary with at least two amplitude pairs, the normalized frame coordinates are first integrals before imposing canonical amplitude relations; the two ratio rows have determinant eta^2(eta-zeta+1)c0/(eta+1)^2.",
       "geometric_interface": "An actual boundary component carrying these fields dominates the ratio plane.",
       "direct_tasks": [
         {
@@ -4567,12 +4586,25 @@
           "action": "run",
           "input_views": {},
           "environment": {}
+        },
+        {
+          "task_id": "rank3_readers:independent_full_support_first_integrals_reader:round10/independent_full_support_first_integrals_reader.py",
+          "source": "research/ericksen_20261007/round10/independent_full_support_first_integrals_reader.py",
+          "source_sha256": "a0c7b58b12ecc95a299909c2d998c9983c01a6f3f02b001d011a5230f34d4fc4",
+          "wrapper": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+          "arguments": [
+            "round10/independent_full_support_first_integrals_reader.py"
+          ],
+          "action": "run",
+          "input_views": {},
+          "environment": {}
         }
       ],
       "necessary_dependency_task_ids": [
         "foundations:rebuild_state17",
         "rank3_coverage:independent_support_Newton_field_reader:independent_support_Newton_field_reader",
         "rank3_current_proof:complete_global_source_views",
+        "rank3_readers:independent_full_support_first_integrals_reader:round10/independent_full_support_first_integrals_reader.py",
         "rank3_readers:independent_intermediate_atlas_H_reader:round10/independent_intermediate_atlas_H_reader.py",
         "rank3_readers:independent_relative_Newton_cyclic_regularity_reader:round10/independent_relative_Newton_cyclic_regularity_reader.py",
         "rank3_sources:fresh_global_sources",
@@ -8856,7 +8888,8 @@
         "r3:boundarysources",
         "appr3:fielddegrees",
         "r3:primary-supports",
-        "r3:full-supports"
+        "r3:full-supports",
+        "r3logic:boundaryconstants"
       ],
       "exact_mathematical_statement": "Complete five-source amplitude minors, the canonical amplitude kernel, the critical four-row determinant and the supercritical Schur block are reconstructed. Polynomial Bezout identities remove every remaining nonzero direction.",
       "geometric_interface": "All three full derivative supports with exactly two nonzero amplitude pairs.",
@@ -8922,17 +8955,34 @@
             "research/ericksen_20261007/round10/independent_subcritical_two_RR_even_probe.sobj": "reproduction/boundary/two_derivative_rank_minors.sobj"
           },
           "environment": {}
+        },
+        {
+          "task_id": "rank3_readers:independent_full_support_first_integrals_reader:round10/independent_full_support_first_integrals_reader.py",
+          "source": "research/ericksen_20261007/round10/independent_full_support_first_integrals_reader.py",
+          "source_sha256": "a0c7b58b12ecc95a299909c2d998c9983c01a6f3f02b001d011a5230f34d4fc4",
+          "wrapper": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+          "arguments": [
+            "round10/independent_full_support_first_integrals_reader.py"
+          ],
+          "action": "run",
+          "input_views": {},
+          "environment": {}
         }
       ],
       "necessary_dependency_task_ids": [
         "boundary_alias:round10/independent_RR_torus_missing_p_closure.sobj",
         "boundary_alias:round10/independent_RR_torus_missing_p_critical_amplitudes.sobj",
         "boundary_alias:round10/independent_RR_torus_missing_p_super_normal.sobj",
+        "foundations:rebuild_state17",
         "rank3_boundary:independent_RR_torus_missing_p_closure",
         "rank3_boundary:independent_RR_torus_missing_p_critical_amplitudes",
         "rank3_boundary:independent_RR_torus_missing_p_reader",
         "rank3_boundary:independent_RR_torus_missing_p_super_normal",
-        "rank3_boundary:independent_subcritical_missing_support_certificate"
+        "rank3_boundary:independent_subcritical_missing_support_certificate",
+        "rank3_current_proof:complete_global_source_views",
+        "rank3_readers:independent_full_support_first_integrals_reader:round10/independent_full_support_first_integrals_reader.py",
+        "rank3_sources:fresh_global_sources",
+        "rank3_sources:fresh_joint_sources"
       ]
     },
     {
@@ -8941,7 +8991,8 @@
         "appr3:sources",
         "r3:boundarysources",
         "appr3:localcriteria",
-        "r3:primary-supports"
+        "r3:primary-supports",
+        "r3logic:boundaryconstants"
       ],
       "exact_mathematical_statement": "The complete amplitude coefficient matrix is reconstructed, its rank-two ideal and rank-drop ideal are computed, and the point (1,1), the exceptional number-field directions, the critical line and the material wall are checked with original source rows and exact resultants.",
       "geometric_interface": "Critical full support and vanishing amplitude and direction minors.",
@@ -9113,6 +9164,18 @@
           "action": "run",
           "input_views": {},
           "environment": {}
+        },
+        {
+          "task_id": "rank3_readers:independent_full_support_first_integrals_reader:round10/independent_full_support_first_integrals_reader.py",
+          "source": "research/ericksen_20261007/round10/independent_full_support_first_integrals_reader.py",
+          "source_sha256": "a0c7b58b12ecc95a299909c2d998c9983c01a6f3f02b001d011a5230f34d4fc4",
+          "wrapper": "research/ericksen_20261007/full_recompute_20261009/rank3/replay_source_reader.py",
+          "arguments": [
+            "round10/independent_full_support_first_integrals_reader.py"
+          ],
+          "action": "run",
+          "input_views": {},
+          "environment": {}
         }
       ],
       "necessary_dependency_task_ids": [
@@ -9138,7 +9201,11 @@
         "rank3_boundary:independent_delta_critical_ranktwo_Q0_bridge",
         "rank3_boundary:independent_delta_critical_ranktwo_structure",
         "rank3_boundary:independent_delta_critical_singular_old_block_review",
-        "rank3_readers:independent_delta_critical_canonical_amplitude:round10/independent_delta_critical_canonical_amplitude.py"
+        "rank3_current_proof:complete_global_source_views",
+        "rank3_readers:independent_delta_critical_canonical_amplitude:round10/independent_delta_critical_canonical_amplitude.py",
+        "rank3_readers:independent_full_support_first_integrals_reader:round10/independent_full_support_first_integrals_reader.py",
+        "rank3_sources:fresh_global_sources",
+        "rank3_sources:fresh_joint_sources"
       ]
     },
     {
