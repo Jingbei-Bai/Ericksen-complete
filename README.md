@@ -112,29 +112,3 @@ Verify the distributed files from the repository root:
 ```sh
 sha256sum --check SHA256SUMS.txt
 ```
-
-## Build the paper and proof diagram
-
-The manuscript was compiled with TeX Live 2025. From `tex/`, run:
-
-```sh
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-```
-
-The supplementary material is included after Appendix E by `main.tex`.
-It shares the article's bibliography and has no separate abstract.
-
-The proof diagram is drawn with TeX and rendered by Python. With
-`pdflatex` and Poppler's `pdftoppm` on `PATH`, run from the repository root:
-
-```sh
-python assets/build_proof_figure.py
-```
-
-The [vector PDF](assets/proof_structure.pdf) and
-[TeX source](assets/proof_structure.tex) are included. The warm problem
-illustration was produced with the built-in image generation tool; its
-[prompt](assets/ericksen_problem_prompt.txt) is included. It depicts a
-classical deformation schematically.
