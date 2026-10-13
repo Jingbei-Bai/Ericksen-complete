@@ -12,7 +12,7 @@
     "beta_T": "T-chart coordinate tau/sigma^2",
     "ell": "p_bar_32 on a paired chart",
     "kappa_0": "material constant",
-    "kappa": "S-chart blowup coordinate"
+    "kappa": "First blowup coordinate in tau=sigma kappa, pulled back to W_S and W_T."
   },
   "valuation_regions": [
     {
@@ -1749,7 +1749,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "In the canonical missing-R_1 chart, the leading equation p_bar_21 R_bar_2^3=0 contradicts the nonzero paired amplitude."
         },
         "critical": {
           "nodes": [
@@ -1802,7 +1802,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "After the complete leading (1,2) equations, the unit combinations of the (1,3) equations force both remaining amplitudes p_bar_12 and p_bar_13 to vanish."
         },
         "critical": {
           "nodes": [
@@ -1860,7 +1860,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "In the canonical missing-R_1 chart, the leading equation p_bar_21 R_bar_2^3=0 contradicts the nonzero paired amplitude."
         },
         "critical": {
           "nodes": [
@@ -1913,7 +1913,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "After the complete leading (1,2) equations, the unit combinations of the (1,3) equations force both remaining amplitudes p_bar_12 and p_bar_13 to vanish."
         },
         "critical": {
           "nodes": [
@@ -1971,7 +1971,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "In the canonical missing-R_1 chart, the leading equation p_bar_21 R_bar_2^3=0 contradicts the nonzero paired amplitude."
         },
         "critical": {
           "nodes": [
@@ -2026,7 +2026,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "After the complete leading (1,2) equations, the unit combinations of the (1,3) equations force both remaining amplitudes p_bar_12 and p_bar_13 to vanish."
         },
         "critical": {
           "nodes": [
@@ -2086,7 +2086,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "In the canonical missing-R_1 chart, the leading equation p_bar_21 R_bar_2^3=0 contradicts the nonzero paired amplitude."
         },
         "critical": {
           "nodes": [
@@ -2941,7 +2941,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "After the complete leading (1,2) equations, the unit combinations of the (1,3) equations force both remaining amplitudes p_bar_12 and p_bar_13 to vanish."
         },
         "critical": {
           "nodes": [
@@ -2995,7 +2995,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "After the complete leading (1,2) equations, the unit combinations of the (1,3) equations force both remaining amplitudes p_bar_12 and p_bar_13 to vanish."
         },
         "critical": {
           "nodes": [
@@ -3051,7 +3051,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "After the complete leading (1,2) equations, the unit combinations of the (1,3) equations force both remaining amplitudes p_bar_12 and p_bar_13 to vanish."
         },
         "critical": {
           "nodes": [
@@ -3107,7 +3107,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "In the canonical missing-R_1 chart, the leading equation p_bar_21 R_bar_2^3=0 contradicts the nonzero paired amplitude."
         },
         "critical": {
           "nodes": [
@@ -3164,7 +3164,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "In the canonical missing-R_1 chart, the leading equation p_bar_21 R_bar_2^3=0 contradicts the nonzero paired amplitude."
         },
         "critical": {
           "nodes": [
@@ -3221,7 +3221,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "In the canonical missing-R_1 chart, the leading equation p_bar_21 R_bar_2^3=0 contradicts the nonzero paired amplitude."
         },
         "critical": {
           "nodes": [
@@ -3280,7 +3280,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "In the canonical missing-R_1 chart, the leading equation p_bar_21 R_bar_2^3=0 contradicts the nonzero paired amplitude."
         },
         "critical": {
           "nodes": [
@@ -3333,7 +3333,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "After the complete leading (1,2) equations, the unit combinations of the (1,3) equations force both remaining amplitudes p_bar_12 and p_bar_13 to vanish."
         },
         "critical": {
           "nodes": [
@@ -3387,7 +3387,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "After the complete leading (1,2) equations, the unit combinations of the (1,3) equations force both remaining amplitudes p_bar_12 and p_bar_13 to vanish."
         },
         "critical": {
           "nodes": [
@@ -3443,7 +3443,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "After the complete leading (1,2) equations, the unit combinations of the (1,3) equations force both remaining amplitudes p_bar_12 and p_bar_13 to vanish."
         },
         "critical": {
           "nodes": [
@@ -3499,7 +3499,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "In the canonical missing-R_1 chart, the leading equation p_bar_21 R_bar_2^3=0 contradicts the nonzero paired amplitude."
         },
         "critical": {
           "nodes": [
@@ -3556,7 +3556,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "In the canonical missing-R_1 chart, the leading equation p_bar_21 R_bar_2^3=0 contradicts the nonzero paired amplitude."
         },
         "critical": {
           "nodes": [
@@ -3613,7 +3613,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "In the canonical missing-R_1 chart, the leading equation p_bar_21 R_bar_2^3=0 contradicts the nonzero paired amplitude."
         },
         "critical": {
           "nodes": [
@@ -3672,7 +3672,7 @@
           "nodes": [
             "BC21"
           ],
-          "argument": "The two coefficient combinations are units and force both remaining amplitudes to vanish."
+          "argument": "In the canonical missing-R_1 chart, the leading equation p_bar_21 R_bar_2^3=0 contradicts the nonzero paired amplitude."
         },
         "critical": {
           "nodes": [
@@ -4165,7 +4165,7 @@
     {
       "locus": "D_- = 0 or D_+ = 0",
       "identity": "D_+ - D_- = 2k is a unit.",
-      "result": "The walls are disjoint. The positive wall has residual determinant -3 ell/256; the negative wall uses (rho E,E^4).",
+      "result": "The walls are disjoint. On D_-=0 the residual determinant is -3 ell/256; on D_+=0 the residual ideal contains (rho E,E^4).",
       "nodes": [
         "BC19",
         "BC20",
@@ -4463,7 +4463,7 @@
         "r3:boundarycoverage",
         "appr3:coverageindex"
       ],
-      "exact_mathematical_statement": "O: v=tau R; S: v=kappa delta Rbar, tau=kappa^2 delta; T: v=sigma Rbar, tau=sigma^2 beta. The S/T overlap satisfies delta beta=1. The valuation inequalities exhaust all orders after finite ramification.",
+      "exact_mathematical_statement": "O: v=tau R; S: v=kappa delta Rbar, tau=kappa^2 delta; T: v=sigma Rbar, tau=sigma^2 beta_T. The first blowup has tau=sigma kappa; the S/T overlap satisfies delta beta_T=1. The five valuation regions are defined by n=ord(tau) and s_0=min ord(v_j), including s_0=infinity for v=0.",
       "geometric_interface": "Every reduced arc from the affine locus reaches one of the listed boundary charts.",
       "direct_tasks": [],
       "necessary_dependency_task_ids": []

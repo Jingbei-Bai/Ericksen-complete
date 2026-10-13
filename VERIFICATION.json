@@ -2,7 +2,7 @@
   "schema": "ericksen.verified-release.v5",
   "release_date": "2026-10-12",
   "status": "PASS",
-  "verified_utc": "2026-10-13T06:49:35.451908+00:00",
+  "verified_utc": "2026-10-13T08:38:34.500120+00:00",
   "environment": {
     "sage": "10.9",
     "python": "3.12.14",
@@ -17,11 +17,11 @@
     "email": "bjb23@mails.tsinghua.edu.cn",
     "computational_repository": "https://github.com/Jingbei-Bai/Ericksen-complete",
     "main_source_path": "tex/main.tex",
-    "main_tex_sha256": "ea9c004891c1e9f24d2535ea4e8714f8c08f184608ab2fa83f44a9597d6fed42",
+    "main_tex_sha256": "8dded22c5b20448253ca3bea7fe7a14f2f5eb0a2a25535362449f59417e37237",
     "supplement_source_path": "tex/supplement.tex",
     "supplement_tex_sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
     "pdf_path": "A local solution of Ericksen's problem.pdf",
-    "pdf_sha256": "bc9c77f247c300fb525ddb06601c01b60ef2ab62d848e72a26b4df73f0f93ff1",
+    "pdf_sha256": "9a690788924843e9145f9320aad68a483b101ab201f0b9a367cac381b6013ee5",
     "pages": {
       "A local solution of Ericksen's problem.pdf": 213
     },
@@ -37,7 +37,7 @@
       "every_page_text_matches_root_pdf": true,
       "all_label_records_match_canonical": true,
       "title": "A local solution of Ericksen's problem",
-      "paper_source_sha256": "ea9c004891c1e9f24d2535ea4e8714f8c08f184608ab2fa83f44a9597d6fed42"
+      "paper_source_sha256": "8dded22c5b20448253ca3bea7fe7a14f2f5eb0a2a25535362449f59417e37237"
     },
     "boundary_coverage_lemma": {
       "label": "r3:boundarycoverage",
@@ -78,13 +78,13 @@
         "indexed_roots": 63,
         "registered_tasks": 63,
         "dependency_closure": 63,
-        "paper_sha256": "ea9c004891c1e9f24d2535ea4e8714f8c08f184608ab2fa83f44a9597d6fed42",
+        "paper_sha256": "8dded22c5b20448253ca3bea7fe7a14f2f5eb0a2a25535362449f59417e37237",
         "formula_inputs": 1
       },
       "format": "directory",
       "files": 124,
       "uncompressed_bytes": 1235944,
-      "directory_tree_sha256": "2a04504bd997e8f73e1e6f648a49185251afb5c7a9ce71da80039f9d00029e71"
+      "directory_tree_sha256": "544a747ebf7c8d58c9d01f796ff4d1235fc78c55201ab573bfcce07084e25741"
     },
     "rank3": {
       "status": "PASS",
@@ -108,13 +108,13 @@
         "indexed_roots": 305,
         "registered_tasks": 524,
         "dependency_closure": 524,
-        "paper_sha256": "ea9c004891c1e9f24d2535ea4e8714f8c08f184608ab2fa83f44a9597d6fed42",
+        "paper_sha256": "8dded22c5b20448253ca3bea7fe7a14f2f5eb0a2a25535362449f59417e37237",
         "formula_inputs": 1
       },
       "format": "directory",
       "files": 735,
-      "uncompressed_bytes": 386133159,
-      "directory_tree_sha256": "b6f611c016f8c65b7f563ea658782cd3ff2a568f17cb2a1a3e1b3e8a0c257d77",
+      "uncompressed_bytes": 386136526,
+      "directory_tree_sha256": "85b8d1b839ede08a95238fdf50e352b2073694e67de4008075b186bc3734e555",
       "byte_identity_scope": "Each distributed mathematical source, input, argument and wrapper matches its recorded clean execution.",
       "execution_runs": [
         {
@@ -10676,8 +10676,8 @@
       "bytes": 1699
     },
     "A local solution of Ericksen's problem.pdf": {
-      "sha256": "bc9c77f247c300fb525ddb06601c01b60ef2ab62d848e72a26b4df73f0f93ff1",
-      "bytes": 1457427
+      "sha256": "9a690788924843e9145f9320aad68a483b101ab201f0b9a367cac381b6013ee5",
+      "bytes": 1458200
     },
     "assets/build_problem_figure.py": {
       "sha256": "dcf3685cb0249c46812f8a68c2e03c72132008bf7a9e322393a4f00388cab132",
@@ -10820,7 +10820,7 @@
       "bytes": 71505
     },
     "Rank012/MANIFEST.json": {
-      "sha256": "09d29ae75aa63ec450e268abc84347a16e7a4e7bfd756d25199266db90a42079",
+      "sha256": "d1f33c9f907dd8e20bb415b9a5e6be9f6fd9b0a471cc94a27dfadbc73f465927",
       "bytes": 93895
     },
     "Rank012/paper_index.py": {
@@ -10828,7 +10828,7 @@
       "bytes": 5939
     },
     "Rank012/PROOF_MAP.json": {
-      "sha256": "1fa3ee218f05b09bccc55aba65766da894877a2d8180111137951dee70c5e949",
+      "sha256": "66b6978eae5ef02d68c5efd3ce576bcdbf5f217931ed257eabf458ab4f4d4e5d",
       "bytes": 174895
     },
     "Rank012/PROOF_MAP.md": {
@@ -11244,12 +11244,12 @@
       "bytes": 40631
     },
     "Rank3/BOUNDARY_INDEX.json": {
-      "sha256": "82987b9734a977d57b67515199e1662ed3f8fcf58a6c2e002421143f5dc9185d",
-      "bytes": 408828
+      "sha256": "b45285297a527cda04b6e894919f2c7ceab467ea6ee715f326ca7ede319c91a3",
+      "bytes": 409894
     },
     "Rank3/BOUNDARY_INDEX.md": {
-      "sha256": "03cb3c3d317225a78425f457fc6ee0dccd5c3d11f2de3d5b78529f6c33490d37",
-      "bytes": 10384
+      "sha256": "bfe1e8e05f616a1af9d1b8c6dc1c4bdf48b47dbe9c98f17ef87c5d19606ab251",
+      "bytes": 10392
     },
     "Rank3/check_environment.py": {
       "sha256": "bd1601143ccb69d01e88769252258694e7a4efdf23dc672898a27fc0d89e423b",
@@ -12252,7 +12252,7 @@
       "bytes": 7799
     },
     "Rank3/MANIFEST.json": {
-      "sha256": "f04976b74d5f22531185d44fcc3758d302fc41fe2a84058a1150571a277e0e31",
+      "sha256": "3727fbb1c89953d62525dfc16f3a5fef83cd2b190d4cef5762d8042380f8cc30",
       "bytes": 474541
     },
     "Rank3/paper_index.py": {
@@ -12260,12 +12260,12 @@
       "bytes": 5939
     },
     "Rank3/PROOF_MAP.json": {
-      "sha256": "56261cea5e2a30f37caaa6990a99bf57bb57d4f632dcc181b82e10a5ac427de4",
-      "bytes": 1439850
+      "sha256": "f106755402b4cbb64ccc1badae92b8e105a3fde9fe1a116c24e06c51bc8f9496",
+      "bytes": 1442138
     },
     "Rank3/PROOF_MAP.md": {
-      "sha256": "b3e0c3a14573fe85db9272ad852d45ca5f27df9c7e1c0f92ca53cea6d5dbb87b",
-      "bytes": 6839
+      "sha256": "a37816ad470b5498aabb42b5121924378104a6078c4752b00d3c39c00e6a67ec",
+      "bytes": 6844
     },
     "Rank3/README.md": {
       "sha256": "cc2ee933024ada851c6ad645949f0c85e8ef58882530e8790d59c2384da7c07b",
@@ -14200,8 +14200,8 @@
       "bytes": 1946
     },
     "tex/main.tex": {
-      "sha256": "ea9c004891c1e9f24d2535ea4e8714f8c08f184608ab2fa83f44a9597d6fed42",
-      "bytes": 605126
+      "sha256": "8dded22c5b20448253ca3bea7fe7a14f2f5eb0a2a25535362449f59417e37237",
+      "bytes": 605899
     },
     "tex/supplement.tex": {
       "sha256": "32d7da8ca26ca1807cae9cba9eb97ea3706c0ed12a5b300c7accf04fad81b698",
@@ -14218,7 +14218,7 @@
     "endpoint_calculations_rebuilt_from_empty_work_directory": true,
     "existing_mathematical_sources_inputs_arguments_and_wrappers_unchanged": true,
     "manuscript_included": true,
-    "repository_layout_updated_utc": "2026-10-13T06:49:35.451908+00:00",
+    "repository_layout_updated_utc": "2026-10-13T08:38:34.500120+00:00",
     "rank3_presentation": "single calculation package and unified proof index",
     "protected_source_and_input_files_checked": 689,
     "readme_figures": {

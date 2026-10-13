@@ -12,7 +12,7 @@
       "work_path": "PROOF_MAP.json",
       "kind": "documentation",
       "bytes": 174895,
-      "sha256": "1fa3ee218f05b09bccc55aba65766da894877a2d8180111137951dee70c5e949"
+      "sha256": "66b6978eae5ef02d68c5efd3ce576bcdbf5f217931ed257eabf458ab4f4d4e5d"
     },
     {
       "archive_path": "PROOF_MAP.md",
@@ -1496,5 +1496,5 @@
     }
   ],
   "registered_tasks": 63,
-  "paper_sha256": "ea9c004891c1e9f24d2535ea4e8714f8c08f184608ab2fa83f44a9597d6fed42"
+  "paper_sha256": "8dded22c5b20448253ca3bea7fe7a14f2f5eb0a2a25535362449f59417e37237"
 }

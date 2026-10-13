@@ -12,15 +12,15 @@
       "archive_path": "PROOF_MAP.json",
       "work_path": "PROOF_MAP.json",
       "kind": "documentation",
-      "bytes": 1439850,
-      "sha256": "56261cea5e2a30f37caaa6990a99bf57bb57d4f632dcc181b82e10a5ac427de4"
+      "bytes": 1442138,
+      "sha256": "f106755402b4cbb64ccc1badae92b8e105a3fde9fe1a116c24e06c51bc8f9496"
     },
     {
       "archive_path": "PROOF_MAP.md",
       "work_path": "PROOF_MAP.md",
       "kind": "documentation",
-      "bytes": 6839,
-      "sha256": "b3e0c3a14573fe85db9272ad852d45ca5f27df9c7e1c0f92ca53cea6d5dbb87b"
+      "bytes": 6844,
+      "sha256": "a37816ad470b5498aabb42b5121924378104a6078c4752b00d3c39c00e6a67ec"
     },
     {
       "archive_path": "README.md",
@@ -7306,15 +7306,15 @@
       "archive_path": "BOUNDARY_INDEX.json",
       "work_path": "BOUNDARY_INDEX.json",
       "kind": "documentation",
-      "bytes": 408828,
-      "sha256": "82987b9734a977d57b67515199e1662ed3f8fcf58a6c2e002421143f5dc9185d"
+      "bytes": 409894,
+      "sha256": "b45285297a527cda04b6e894919f2c7ceab467ea6ee715f326ca7ede319c91a3"
     },
     {
       "archive_path": "BOUNDARY_INDEX.md",
       "work_path": "BOUNDARY_INDEX.md",
       "kind": "documentation",
-      "bytes": 10384,
-      "sha256": "03cb3c3d317225a78425f457fc6ee0dccd5c3d11f2de3d5b78529f6c33490d37"
+      "bytes": 10392,
+      "sha256": "bfe1e8e05f616a1af9d1b8c6dc1c4bdf48b47dbe9c98f17ef87c5d19606ab251"
     },
     {
       "archive_path": "validate_boundary_index.py",
@@ -7324,7 +7324,7 @@
       "sha256": "223dd94c1b4fd2885749d36bfb355e99a20412b5b1b13cf78f1d2b2ef46b831e"
     }
   ],
-  "paper_sha256": "ea9c004891c1e9f24d2535ea4e8714f8c08f184608ab2fa83f44a9597d6fed42",
+  "paper_sha256": "8dded22c5b20448253ca3bea7fe7a14f2f5eb0a2a25535362449f59417e37237",
   "recorded_outputs": [
     {
       "path": "results/conic_endpoint/subcritical_single_endpoint_whole_J3_reader.json",

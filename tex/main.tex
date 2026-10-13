@@ -3414,7 +3414,7 @@ means that every entry vanishes. These are finitely many locally
 closed conditions. Each additional coefficient factor is then
 partitioned into its zero and nonzero loci. Intersecting these finite
 partitions proves \textup{(iii)}. On a paired chart put
-$\ell=\overline p_{32}$ and use $k=a\kappa_0$, $m=1+k$
+$\overline p_{12}=1$, $\ell=\overline p_{32}$ and use $k=a\kappa_0$, $m=1+k$
 as in Appendix~\ref{appr3:sources}. The two conditions
 $m\ell^2=\pm k$ are disjoint, since
 $2k\ne0$. Each is considered both on and off the material
@@ -3423,7 +3423,8 @@ ring, with the coefficient factors that vanish at the special point
 retained as parameters.
 
 Finally, the strict transform $\widetilde Y$ is the irreducible closure
-of $Y$ in the modification. Its generic point lies in $Y$ and
+of $Y$ in the modification. It is Noetherian, being of finite type
+over $\mathbb C$. Its generic point lies in $Y$ and
 specializes to every closed point of $\widetilde Y$.
 A discrete valuation ring realizes this specialization
 \cite[Lemma~28.5.10, Tag~054F]{StacksProject}; completing it gives
@@ -6336,12 +6337,12 @@ $\boldsymbol v=\tau\boldsymbol R$, on which $D_1$ is empty.
 Its other charts, indexed by an entry $v_j$, are
 \[
  \boldsymbol v=\sigma\overline{\boldsymbol R},\qquad
- \tau=\sigma u,\qquad \overline{\boldsymbol R}_j=1.
+ \tau=\sigma\kappa,\qquad \overline{\boldsymbol R}_j=1.
 \]
-Here $E_1=(\sigma=0)$, $D_1=(u=0)$ and
-$\mathcal J_2=(\sigma,u)$. Thus the second centre does not meet the
-ordinary $\tau$ chart. Its $u$ chart has $\kappa=u$ and
-$\sigma=\kappa\delta$; its $\sigma$ chart has $u=\sigma\beta_{\mathrm T}$.
+Here $E_1=(\sigma=0)$, $D_1=(\kappa=0)$ and
+$\mathcal J_2=(\sigma,\kappa)$. Thus the second centre does not meet the
+ordinary $\tau$ chart. Its $\kappa$ chart has
+$\sigma=\kappa\delta$; its $\sigma$ chart has $\kappa=\sigma\beta_{\mathrm T}$.
 The composite projections to $W$ are consequently
 \begin{align*}
  W_{\mathrm O}:&\quad \boldsymbol v=\tau\boldsymbol R,\\
@@ -6370,10 +6371,10 @@ or equivalently $\kappa\ne0$, with
 Changing the selected entry from $j$ to $k$, with
 $r=\overline{\boldsymbol R}_k$ a unit, changes the first blowup coordinates by
 \[
- (\sigma,u,\overline{\boldsymbol R})
-       \longmapsto(\sigma r,u/r,\overline{\boldsymbol R}/r).
+ (\sigma,\kappa,\overline{\boldsymbol R})
+       \longmapsto(\sigma r,\kappa/r,\overline{\boldsymbol R}/r).
 \]
-This preserves $(\sigma,u)$ and induces the same second blowup on
+This preserves $(\sigma,\kappa)$ and induces the same second blowup on
 both charts. These transition maps and the changes of
 $\overline p$ normalization glue the displayed charts.
 
@@ -7249,8 +7250,27 @@ Three $\overline R_i$, three pairs; $1$ pattern
 \bottomrule
 \end{longtable}
 
+On the selected fibre in $W_{\mathrm T}$, normalize
+$\overline R_3=1$ and suppose that
+$\overline R_1=0$, $\overline R_2\ne0$.
+One leading compatibility relation, after multiplication by a unit, is
+\[
+ \overline p_{21}\overline R_2^3=0.
+\]
+It gives $\overline p_{21}=\overline p_{31}=0$ at the boundary point.
+The other leading relations give
+\[
+ (\overline R_2^2+q)\overline p_{12}
+   =(\overline R_2^2+q)\overline p_{13}=0.
+\]
+Since $\overline p\ne0$, they imply $\overline R_2^2=-q$.
+The unit coefficient combinations in Appendix~\ref{r3:full-supports}
+then force $\overline p_{12}=\overline p_{13}=0$,
+contrary to $\overline p\ne0$ (BC21).
+
 Coefficient zero sets refine these supports in the full local
-coefficient ring. In a paired chart, put $\ell=\overline p_{32}$.
+coefficient ring. In a paired chart, put $\overline p_{12}=1$ and
+$\ell=\overline p_{32}$.
 The amplitude walls are $D_\pm=m\ell^2\pm k=0$.
 They are disjoint because $D_+-D_-=2k$ is a unit. Each wall is
 intersected with the material resonance $k+q=0$ and its complement.

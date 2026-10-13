@@ -122,7 +122,7 @@ Nodes: BC19, BC32. Manuscript labels: `r3:boundarysources`.
 
 D_+ - D_- = 2k is a unit.
 
-The walls are disjoint. The positive wall has residual determinant -3 ell/256; the negative wall uses (rho E,E^4).
+The walls are disjoint. On D_-=0 the residual determinant is -3 ell/256; on D_+=0 the residual ideal contains (rho E,E^4).
 
 Nodes: BC19, BC20, BC33. Manuscript labels: `r3:boundarysources`.
 
