@@ -12,15 +12,15 @@
       "archive_path": "PROOF_MAP.json",
       "work_path": "PROOF_MAP.json",
       "kind": "documentation",
-      "bytes": 1484765,
-      "sha256": "df2d1a115f9af64c599da956e2f9ab9c3ddd902a1ef2e7d2aed16ec62fee3d7c"
+      "bytes": 1487104,
+      "sha256": "49d64ad0414f3425d6b12370d5cbd1474233a6e400822ca5b60acc807d15c675"
     },
     {
       "archive_path": "PROOF_MAP.md",
       "work_path": "PROOF_MAP.md",
       "kind": "documentation",
       "bytes": 6985,
-      "sha256": "9c26bea91ffd1db3cf530124738342960f858afe5a290fa80146c18df6de749e"
+      "sha256": "cb0dbc41fd4ffe33a8089f48dc4c96abe7e05f05f3a172380b1b6c8f331a92a5"
     },
     {
       "archive_path": "README.md",
@@ -7335,7 +7335,7 @@
       "mathematical_role": "Principal incidence equations and first integrals for intermediate full support"
     }
   ],
-  "paper_sha256": "cfe4d5ddd02fc25b6e79fdc44e76e61743b21d2bbfbd0168923dc2bfeba07354",
+  "paper_sha256": "b1e45aa764bf543ef82f5cae0698130beeffa7664468df7cc92d26c5c72ec5da",
   "recorded_outputs": [
     {
       "path": "results/conic_endpoint/subcritical_single_endpoint_whole_J3_reader.json",

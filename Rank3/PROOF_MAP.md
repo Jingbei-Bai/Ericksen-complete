@@ -31,8 +31,8 @@
 | BC26 | `r3:boundarysources`, `r3:ordinary-supports` | C.8 (p. 100); C.8.2 (p. 103) | 2 |
 | BC27 | `appr3ord:complete`, `r3:ordinary-supports` | C.11 (p. 117); C.8.2 (p. 103) | 7 |
 | BC28 | `r3:dominantfinite`, `r3:curvefibre`, `r3:theorem` | 8.10 (p. 55); 8.13 (p. 61); 8.1 (p. 46) | 0 |
-| BC29 | `appr3tau:wall`, `appr3tau:linearmodule`, `appr3tau:J`, `appr3tau:rangeidentity`, `appr3tau:Q`, `appr3tau:relativeform`, `appr3tau:bounds`, `appr3tau:determinant`, `appr3tau:norm`, `appr3tau:laurent`, `r3:ordinary-supports` | C.12 (p. 119); C.17 (p. 119); C.18 (p. 119); C.19 (p. 119); C.20 (p. 120); C.21 (p. 120); C.22 (p. 121); C.23 (p. 121); C.24 (p. 121); C.25 (p. 121); C.8.2 (p. 103) | 14 |
-| ER01 | `appr3fib:scope`, `r3:directioncoordinates`, `appr3:moments`, `appr3:curvetangencies` | C.13 (p. 123); C.28 (p. 124); C.18 (p. 137); C.32 (p. 138) | 12 |
+| BC29 | `appr3tau:wall`, `appr3tau:linearmodule`, `appr3tau:J`, `appr3tau:rangeidentity`, `appr3tau:Q`, `appr3tau:relativeform`, `appr3tau:bounds`, `appr3tau:determinant`, `appr3tau:norm`, `appr3tau:laurent`, `r3:ordinary-supports` | C.12 (p. 119); C.17 (p. 119); C.18 (p. 119); C.19 (p. 119); C.20 (p. 120); C.21 (p. 120); C.22 (p. 121); C.23 (p. 121); C.24 (p. 121); C.25 (p. 122); C.8.2 (p. 103) | 14 |
+| ER01 | `appr3fib:scope`, `r3:directioncoordinates`, `appr3:moments`, `appr3:curvetangencies` | C.13 (p. 124); C.28 (p. 124); C.18 (p. 137); C.32 (p. 138) | 12 |
 | ER02 | `appr3fib:pencils` | C.14 (p. 125) | 10 |
 | ER03 | `appr3fib:pencils` | C.14 (p. 125) | 2 |
 | ER04 | `appr3fib:pencils` | C.14 (p. 125) | 8 |
@@ -53,7 +53,7 @@
 | ER19 | `appr3:determinantreduction` | C.21 (p. 140) | 4 |
 | ER20 | `r3:Qcoefficients`, `r3:columntransform`, `r3:transformedmomentquadric`, `r3schur:reduction`, `r3schur:basic`, `r3schur:columns`, `r3schur:fulladj`, `r3schur:norm`, `r3schur:normidentity`, `appr3:norm` | C.40 (p. 140); C.41 (p. 140); C.42 (p. 141); C.10 (p. 141); C.43 (p. 141); C.44 (p. 141); C.45 (p. 141); C.12 (p. 142); C.46 (p. 142); C.22 (p. 142) | 5 |
 | ER21 | `appr3:contactcalculation`, `appr3:contact`, `r3:contact`, `r3:contactelimination`, `tab:r3-contact-orders`, `r3:curve-differentiation`, `r3:exceptional-ratio-loci` | C.23 (p. 143); C.23 (p. 143); C.23 (p. 143); C.13 (p. 143); 8 (p. 143); 8.10 (p. 60); 8.11 (p. 61) | 2 |
-| ER22 | `appr3fib:scope`, `appr3fib:pencils`, `r3:balancedline`, `appr3fib:support`, `appr3fib:Bwall`, `appr3:moments`, `appr3:momentrepresentation`, `appr3:eliminants`, `appr3:determinantreduction`, `appr3:norm`, `appr3:contactcalculation`, `r3:curvefibre`, `r3:theorem`, `r3:completion` | C.13 (p. 123); C.14 (p. 125); C.15 (p. 128); C.16 (p. 130); C.17 (p. 135); C.18 (p. 137); C.19 (p. 138); C.20 (p. 139); C.21 (p. 140); C.22 (p. 142); C.23 (p. 143); 8.13 (p. 61); 8.1 (p. 46); 8.4 (p. 61) | 0 |
+| ER22 | `appr3fib:scope`, `appr3fib:pencils`, `r3:balancedline`, `appr3fib:support`, `appr3fib:Bwall`, `appr3:moments`, `appr3:momentrepresentation`, `appr3:eliminants`, `appr3:determinantreduction`, `appr3:norm`, `appr3:contactcalculation`, `r3:curvefibre`, `r3:theorem`, `r3:completion` | C.13 (p. 124); C.14 (p. 125); C.15 (p. 128); C.16 (p. 130); C.17 (p. 135); C.18 (p. 137); C.19 (p. 138); C.20 (p. 139); C.21 (p. 140); C.22 (p. 142); C.23 (p. 143); 8.13 (p. 61); 8.1 (p. 46); 8.4 (p. 61) | 0 |
 | BC30 | `appr3:sources`, `r3:boundarysources`, `appr3:fielddegrees`, `r3:primary-supports`, `r3:full-supports`, `r3logic:boundaryconstants` | C.1 (p. 83); C.8 (p. 100); C.6 (p. 97); C.8.1 (p. 100); C.8.6 (p. 106); C.3 (p. 90) | 6 |
 | BC31 | `appr3:sources`, `r3:boundarysources`, `appr3:localcriteria`, `r3:primary-supports`, `r3logic:boundaryconstants` | C.1 (p. 83); C.8 (p. 100); C.5 (p. 96); C.8.1 (p. 100); C.3 (p. 90) | 15 |
 | BC32 | `r3:boundarysources`, `appr3:fielddegrees`, `r3:primary-supports`, `r3:two-supports` | C.8 (p. 100); C.6 (p. 97); C.8.1 (p. 100); C.8.5 (p. 106) | 7 |

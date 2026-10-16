@@ -7987,6 +7987,10 @@ reducing modulo $(\kappa s)$ gives
 \]
 Since $C$, $\kappa x^3$ and $\kappa s$ belong to $J_{10}$,
 this gives $(k+w^2)\kappa x^2\in J_{10}$.
+Replacing $C$ by its displayed remainder modulo $s^2$ subtracts a
+multiple of the generator $s^2$. The ideal remains $J_{10}$, and the
+coefficient matrix used in Nakayama's lemma is multiplied by an
+invertible elementary matrix.
 
 The twenty-eight relations and the three pair relations vanish
 modulo $J_{10}$; the third even relation reduces to $C$. The incidence pullback of each pair relation has numerator divisible
@@ -8803,8 +8807,8 @@ undivided cokernel identity is
               -d_AM_{j1}M_6=0 .
  \end{aligned}
 \end{equation}
-This identity holds modulo $\ell^2=d$ at $u=0,v=-2$ and cancels
-the third order corrections to the eliminated variables.  The norm of $\Delta$ is nonzero on the specified base
+This identity holds in the coefficient algebra $\ell^2=d$ at
+$u=0,v=-2$. The norm of $\Delta$ is nonzero on the specified base
 open set.  The formal implicit function theorem therefore solves
 $(\rho_0,\rho_1,\rho_2)=R(W,n)$, with $R(W,0)=0$.  The identities on the entire family
 \eqref{appr3tau:linearmodule} give
@@ -8908,6 +8912,23 @@ Thus
  \end{aligned}
 \end{equation}
 The valuation argument applies after arbitrary finite ramification.
+
+Along such an arc the linear normal matrix satisfies
+\[
+ M(\ell,u,v)=M(\ell_0,0,-2)+O(\tau^2).
+\]
+Its variation multiplied by the third order correction to the
+eliminated variables is $O(\tau^5)$. Thus the coefficient of that
+correction in the third order system is $M(\ell_0,0,-2)$, which is
+annihilated by the row combination in \eqref{appr3tau:rangeidentity}.
+The variation of $M$ multiplied by the first order normal term instead
+contributes at order three. These terms give the columns for the
+second order corrections of $\ell,u,v$. In particular,
+\[
+ g\tau=2\ell_0(\ell-\ell_0)\tau+O(\tau^5).
+\]
+The mixed coefficients in the fifteen-column matrix above supply
+these contributions to the third order system.
 
 The five bounded quotients obtained by dividing the corrections in
 \eqref{appr3tau:bounds} by $\tau^2$ have arbitrary residues.  The
@@ -10103,7 +10124,13 @@ For a plane polynomial $f$, put
               &{}-\eta\zeta(\zeta^2-1)f_\zeta^2.
  \end{aligned}
 \]
-This is the tangency polynomial of $f=0$ on $\mathcal P_0=0$.
+On a nonvertical irreducible curve $f=0$, differentiation gives
+$\varsigma=-f_\eta/f_\zeta$ at its generic point. Substitution in
+$\mathcal P_0=0$ and multiplication by $f_\zeta^2$ give
+$\Theta_{\mathcal P_0}(f)\equiv0\pmod f$.
+A B\'ezout identity for $f$ and $\Theta_{\mathcal P_0}(f)$ with
+right hand side $1$ over $\mathbb Q(\eta)[\zeta]$ then excludes
+such a curve with nonconstant $\eta$.
 
 The norms of the leading coefficient and root separation of the determinant of the coefficient matrix have, besides localization factors, the factor
 $(\eta+1)\zeta-\eta$, $P_{\mathrm{lc}}$ and $P_{\mathrm{sep}}$.
