@@ -2,7 +2,7 @@
   "schema": "ericksen.verified-release.v5",
   "release_date": "2026-10-12",
   "status": "PASS",
-  "verified_utc": "2026-10-16T16:24:07.250986+00:00",
+  "verified_utc": "2026-10-16T16:43:29.756479+00:00",
   "environment": {
     "sage": "10.9",
     "python": "3.12.14",
@@ -19,9 +19,9 @@
     "main_source_path": "tex/main.tex",
     "main_tex_sha256": "cfe4d5ddd02fc25b6e79fdc44e76e61743b21d2bbfbd0168923dc2bfeba07354",
     "supplement_source_path": "tex/supplement.tex",
-    "supplement_tex_sha256": "3178bf48146a4e1fc751bb3d856ae5b815bcfce800c2cdb73bb50e5b9cfa3791",
+    "supplement_tex_sha256": "8e7d1bce4b669c97b2d1ce1e188783ab54fa891eea2eb5637f30505e13796b19",
     "pdf_path": "A local solution of Ericksen's problem.pdf",
-    "pdf_sha256": "046ac2ca20a85483138e220c4a567ce9c1cb45236eaafea2252aedc93c844015",
+    "pdf_sha256": "4a7ef8ded7adc83c894ea4af5299641cb1ad6b682a766132825761ed64751e1a",
     "pages": {
       "A local solution of Ericksen's problem.pdf": 214
     },
@@ -10678,8 +10678,8 @@
       "bytes": 1699
     },
     "A local solution of Ericksen's problem.pdf": {
-      "sha256": "046ac2ca20a85483138e220c4a567ce9c1cb45236eaafea2252aedc93c844015",
-      "bytes": 1462938
+      "sha256": "4a7ef8ded7adc83c894ea4af5299641cb1ad6b682a766132825761ed64751e1a",
+      "bytes": 1463587
     },
     "assets/build_problem_figure.py": {
       "sha256": "dcf3685cb0249c46812f8a68c2e03c72132008bf7a9e322393a4f00388cab132",
@@ -14222,8 +14222,8 @@
       "bytes": 610644
     },
     "tex/supplement.tex": {
-      "sha256": "3178bf48146a4e1fc751bb3d856ae5b815bcfce800c2cdb73bb50e5b9cfa3791",
-      "bytes": 120534
+      "sha256": "8e7d1bce4b669c97b2d1ce1e188783ab54fa891eea2eb5637f30505e13796b19",
+      "bytes": 121190
     }
   },
   "packaging": {
@@ -14236,7 +14236,7 @@
     "endpoint_calculations_rebuilt_from_empty_work_directory": true,
     "existing_mathematical_sources_inputs_arguments_and_wrappers_unchanged": true,
     "manuscript_included": true,
-    "repository_layout_updated_utc": "2026-10-16T16:24:07.250986+00:00",
+    "repository_layout_updated_utc": "2026-10-16T16:43:29.756479+00:00",
     "rank3_presentation": "single calculation package and unified proof index",
     "protected_source_and_input_files_checked": 689,
     "readme_figures": {

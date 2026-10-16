@@ -17,6 +17,17 @@
 \makeatletter
 \@fleqntrue
 \@mathmargin=0pt
+% Use the amsmath fleqn equation environment after the local layout switch.
+\renewenvironment{equation}{%
+  \incr@eqnum
+  \mathdisplay@push
+  \st@rredfalse \global\@eqnswtrue
+  \mathdisplay{equation}%
+}{%
+  \endmathdisplay{equation}%
+  \mathdisplay@pop
+  \ignorespacesafterend
+}
 \makeatother
 \let\suppaligned\aligned
 \let\endsuppaligned\endaligned
@@ -1142,13 +1153,14 @@ At the positive amplitude hypersurface, with $N=a\kappa_0^2$,
  f_1=21622N-989(k+q),\quad f_2=14006N+377(k+q),
  \qquad 377f_1+989f_2=22003428N.
 \]
-The associated differential obstruction is
+For fixed $\eta$ and nonconstant $v$, the incoming connection gives
 
 \begin{equation}\label{supp:r3:residue-identity}
  d\left(\frac{\zeta}{v+2}\right)
  =-\frac{(\eta+1)v}{(v-2\eta)(v+2)^2}\,dv.
 \end{equation}
 
+On the branch $v=2\eta$, where $u\ne0$,
 \begin{equation}\label{supp:r3:logarithmic-obstruction}
  D_\zeta\log(u/\beta)=-\frac1{2\eta}.
 \end{equation}
@@ -1170,8 +1182,7 @@ The local coordinates of Appendix~\ref{appr3tau:wall} are
  \end{aligned}
 \end{equation}
 
-The entire linear normal module, its cokernel identity and the
-relative equations are
+Put $w=v+2$ and $g=\ell^2-d$. The linear normal coefficients satisfy
 
 \begin{equation}\label{supp:appr3tau:linearmodule}
  \begin{aligned}
@@ -1185,10 +1196,14 @@ relative equations are
  J=(un_\perp,\;w k_\perp,\;u\tau,\;w\tau,\;g\tau).
 \end{equation}
 
+At $u=0,v=-2$, set $A=M_{(2,18),(2,3)}$, $d_A=\det A$,
+$c=M_{6,1}$, $\Delta=d_Ac$ and
+$(C_{j1},C_{j2})=(M_{j2},M_{j3})\operatorname{adj}A$.
+The cokernel relation is
 \begin{equation}\label{supp:appr3tau:rangeidentity}
  \begin{aligned}
  \Delta M_j-cC_{j1}M_2-cC_{j2}M_{18}
-              -d_AM_{j1}M_6=0 .
+              -d_AM_{j1}M_6\equiv0\pmod{\ell^2-d}.
  \end{aligned}
 \end{equation}
 
@@ -1355,12 +1370,12 @@ The quadratic factor is
  -2(\eta^2-\zeta^2)\varsigma+\eta\zeta(1-\zeta^2).
 \end{equation}
 
-For a projected irreducible factor $f$, contact on
-$\mathcal P_0=0$ has the exact form
+For a nonvertical irreducible curve $f(\eta,\zeta)=0$, contact with
+$\mathcal P_0=0$ requires
 \[
  \eta\zeta(\eta^2-1)f_\eta^2
  -2(\zeta^2-\eta^2)f_\eta f_\zeta
- -\eta\zeta(\zeta^2-1)f_\zeta^2=0.
+ -\eta\zeta(\zeta^2-1)f_\zeta^2\equiv0\pmod f.
 \]
 The leading and separation norm polynomials have total degrees $19$
 and $20$, both of bidegree $(12,14)$; the rank-drop norm polynomial
@@ -1487,6 +1502,7 @@ P_*=
 \end{pmatrix}.
 \end{equation}
 
+With $x=P_*y$, the quadratic form becomes
 \begin{equation}\label{supp:r3:transformedmomentquadric}
 \begin{aligned}
 Qx_2x_3-x_1x_4
@@ -1506,7 +1522,8 @@ On a constant-column minor chart, write
  \mathsf L_{\mathrm{Schur}}=
        \begin{pmatrix}-\operatorname{adj}(A_0)B_0\\\Delta\operatorname{Id}_2\end{pmatrix}.
 \]
-The exact block identities are
+Write $E_0=\operatorname{adj}A_0$ and
+$J_0=\operatorname{adj}\mathsf R_{\mathrm{Schur}}$. The block identities are
 
 \begin{align}
  \det\mathsf R_{\mathrm{Schur}}&=\Delta\det\widetilde{\mathsf N},
